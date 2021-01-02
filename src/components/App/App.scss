@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Prompt', sans-serif;
+}
+
+button, a {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  font-style: italic;
+  font-size: 2.08rem;
+  font-weight: 900;
+  &:hover {
+    color: white;
+  }
+}
+
+div {
+  display: flex;
+}
+
+
+/* @media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+} */
