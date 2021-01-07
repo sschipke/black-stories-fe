@@ -1,0 +1,10 @@
+.genre-page {
+  background-image: linear-gradient(to right, #FDE997, #5ADA44);
+}
+
+.movies-container {
+  overflow-y: auto;
+  flex-wrap: wrap;
+  width: 70%;
+  height: 80vh;
+}
