@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import GenresList from '../../containers/GenresList/GenresList';
 import GenrePage from '../../containers/GenrePage/GenrePage';
 import MovieView from '../../containers/MovieView/MovieView';
+import VideoPlayer from '../VideoPlayer/VideoPlayer';
 import Main from '../../containers/Main/Main';
 import './App.scss';
 
@@ -29,6 +30,7 @@ class App extends Component {
     return (
       <div className="App">
         {/* <div>Width: {windowWidth}</div> */}
+        <VideoPlayer />
       <Switch>
         <Route exact path='/' render={ () => <Main /> } />
         <Route path='/genres' render={() => <GenresList />} />

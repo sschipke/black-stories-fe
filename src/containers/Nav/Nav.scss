@@ -1,13 +1,27 @@
-h1 {
+h1, h2 {
   font-size: 3.5rem;
   font-style: italic;
   font-weight: 900;
   line-height: 100%;
 }
 
+.nav-headers-container {
+  flex-direction: column;
+  width: 100%;
+  min-width: 435px;
+  h2 {
+    margin-top: 50px;
+  }
+}
+
 .links-container {
+  min-height: 20%;
+  align-items: flex-end;
+  max-width: 390px;
+  flex-wrap: wrap;
   a {
     margin: 10px;
+    font-size: 1.5rem;
   }
 }
 
@@ -15,6 +29,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 40%;
+    width: 650px;
     height: 80vh;
+    margin-right: 20px;
   }

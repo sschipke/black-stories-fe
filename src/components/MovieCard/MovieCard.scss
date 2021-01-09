@@ -1,11 +1,53 @@
+.movie-link {
+  margin-bottom: 35px;
+}
 .movie {
+  display: inline-block;
   flex-direction: column;
   align-items: center;
+  font-style: normal;
+  margin: 0 10px 50px;
+  width: 238px;
+  height: 357px;
+  text-align: center;
+  .card-image {
+    width: 238px;
+    height: 357px;
+  }
+
   &:hover {
-    border: 10px white solid;
+    outline: 10px white solid;
+  }
+
+  .card__text-container {
+    flex-direction: column;
+      h4 {
+    line-height: 100%;
+    font-size: 1.2rem;
+    font-weight: 700;
+    }
+
+    p {
+      font-size: 0.9rem;
+      font-weight: 300;
+    }
+    p.card__release-date {
+      font-size: 1.2rem;
+    }
+  }
+  .movie-genres-container {
+    flex-direction: column;
+    min-height: 10px;
+  }
+  .director-icons-container {
+    margin: 10px auto;
+    justify-content: center;
   }
   .director-icon {
-    height: 16px;
-    width: 16px;
+    height: 40px;
+    width: 40px;
+    &:hover {
+      fill: white;
+    }
   }
 }

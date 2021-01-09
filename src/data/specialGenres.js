@@ -62,7 +62,7 @@ const specialGenres = [
   {
       "id": 53,
       "name": "Thriller"
-  },
+  }
 ]
 
 export default specialGenres

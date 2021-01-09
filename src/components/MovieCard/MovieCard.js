@@ -2,30 +2,38 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 // import { connect } from 'react-redux';
+import { displayTwoGenres } from  '../../util/helpers';
 import DirectorIcon from './DirectorIcon';
 import './MovieCard.scss';
-import femaleIcon from '../../assets/images/female_directed.svg';
-import directorIcon from '../../assets/images/black_directed.svg';
+import femaleIcon from '../../assets/icons/female_directed.svg';
+import directorIcon from '../../assets/icons/black_directed.svg';
+
 
 export const MovieCard = ({ movie }) => {
   const genres = movie.genres
   const blackDirectorSrc = genres.includes(100) ? directorIcon : '';
   const femaleDirectorSrc = genres.includes(6251) ? femaleIcon : '';
+  const genresToDisplay =  displayTwoGenres(movie.genres).map(genreName => (<p className="movie-card-genre">
+    {genreName}
+  </p>));
+  console.log(genresToDisplay.length)
   return (
-    <Link to={`/movie/${movie.id}-${movie.title.replaceAll(' ', '-').toLowerCase()}`}>
+    <Link className="movie-link" to={`/movie/${movie.id}-${movie.title.replaceAll(' ', '-').toLowerCase()}`}>
       <div className="movie" movie_id={movie.movie_id}>
         <img
-          className="card__image"
+          className="card-image"
           alt="movie poster"
           src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} 
         />
-        <div className="card__header">
+        <div className="card__text-container">
+          <h4>{movie.title.toUpperCase()}</h4>
+          <p className="card__release-date">
+            {movie.release_date.slice(0, 4)}
+          </p>
+          <div className="movie-genres-container">
+            {genresToDisplay}
+          </div>
         </div>
-        <h4>{movie.title}</h4>
-        <p className="card__release-date">
-          {movie.release_date.slice(0, 4)}
-        </p>
-        {/* genres need to go in here, two at a time */}
         <div className="director-icons-container">
           <DirectorIcon src={femaleDirectorSrc} />
           <DirectorIcon src={blackDirectorSrc} />

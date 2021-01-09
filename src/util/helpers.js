@@ -1,3 +1,4 @@
+import genreMap from '../data/genreMap';
 export const determineMainImage = () => {
     console.log('Here is the width: ', window.innerWidth);
   if(window.innerWidth > 720) {
@@ -16,4 +17,21 @@ function generateRandomImageNumber(max) {
     }
     console.log({randomNum})
   return randomNum
+}
+
+export const displayTwoGenres=(genres) => {
+  console.log('genres first', genres)
+  let genreElements = [];
+  if(!genres) {
+    return []
+  }
+  for (let i = 0; genreElements.length <= 1 && i < genres.length; i++) {
+    console.log('iteration', i)
+    if(genres[i] && genreMap[genres[i]]) {
+      console.log('genres i', genres[i], 'map', genreMap[genres[i]])
+    genreElements.push(genreMap[genres[i]]);
+    }
+  }
+  console.log('in function', genreElements)
+  return genreElements
 }

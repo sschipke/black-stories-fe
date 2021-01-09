@@ -1,10 +1,20 @@
 .genre-page {
   background-image: linear-gradient(to right, #FDE997, #5ADA44);
+  scroll-padding-top: 0;
 }
 
 .movies-container {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+  scroll-padding-top: 0;
   overflow-y: auto;
   flex-wrap: wrap;
-  width: 70%;
-  height: 80vh;
+  min-width: 500px;
+  height: 90vh;
+  padding-left: 25px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
