@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
+import GenresList from '../../containers/GenresList/GenresList';
+import GenrePage from '../../containers/GenrePage/GenrePage';
+import MovieView from '../../containers/MovieView/MovieView';
+import VideoPlayer from '../VideoPlayer/VideoPlayer';
 import Main from '../../containers/Main/Main';
 import './App.scss';
 
@@ -26,8 +30,25 @@ class App extends Component {
     return (
       <div className="App">
         {/* <div>Width: {windowWidth}</div> */}
+        <VideoPlayer />
       <Switch>
-        <Route path='/' render={ () => <Main /> } />
+        <Route exact path='/' render={ () => <Main /> } />
+        <Route path='/genres' render={() => <GenresList />} />
+        <Route 
+          path='/genre/:genre_id-:genre_title' 
+          render={({match}) => {
+          let genreId = match.params.genre_id;
+          let genreTitle = match.params.genre_title;
+          return (<GenrePage genreId={Number(genreId)} genreTitle={genreTitle} />)
+          }}
+        />
+        <Route 
+          path='/movie/:movieId-:movie_title' 
+          render={({match}) => {
+          let id = match.params.movieId;
+          return (<MovieView movieId={id} />)
+          }}
+        />
         {/* add 404 page here */}
       </Switch>
       </div> 

@@ -1,31 +1,13 @@
-main {
+main{
   background-image: linear-gradient(to right, #FDE997, #EC0000);
   display: flex;
   padding: 75px;
   height: 100vh;
   width: 100vw;
-  .main-text-container {
-    flex-direction: column;
-    justify-content: space-between;
-    width: 40%;
-    height: 80vh;
-  }
-  img {
+  img.main-image {
     display: block;
-    height: 105%;
     width: 60%;
-  }
-}
-
-h1 {
-  font-size: 3.83rem;
-  font-style: italic;
-  font-weight: 900;
-  line-height: 100%;
-}
-
-.links-container {
-  a {
-    margin: 10px;
+    min-width: 800px;
+    margin-left: min(50px)
   }
 }

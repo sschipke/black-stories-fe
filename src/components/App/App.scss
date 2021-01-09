@@ -6,8 +6,16 @@
 }
 
 button, a {
-  &:hover {
-    cursor: pointer;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000000;
+  font-style: italic;
+  font-size: 2.08rem;
+  font-weight: 900;
+  transition: color 200ms ease-in-out;
+    &:hover {
+    // cursor: pointer;
+    color: white;
   }
 }
 
@@ -17,9 +25,16 @@ a {
   font-style: italic;
   font-size: 2.08rem;
   font-weight: 900;
-  &:hover {
-    color: white;
-  }
+}
+
+button {
+    display: inline;
+    background: none;
+    border: none;
+    color: #000000;
+    font-size: 2.08rem;
+    -webkit-appearance: none;
+    -moz-appearance: none;
 }
 
 div {

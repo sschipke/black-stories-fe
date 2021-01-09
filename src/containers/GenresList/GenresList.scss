@@ -1,0 +1,16 @@
+main.genres-list-view {
+  background-image: linear-gradient(to right, #FDE997, #920099);
+}
+.genre-links-container {
+  flex-wrap: wrap;
+  min-width: 500px;
+  max-height: 60vh;
+  margin-left: 30px;
+  a {
+    display: inline-block;
+    margin: 0 8px 15px;
+    font-size: 2.5rem;
+    max-height: 10px;
+  }
+}
+
