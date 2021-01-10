@@ -1,5 +1,12 @@
 .movie-link {
   margin-bottom: 35px;
+  &:hover {
+    .card-image{
+      outline-offset: -5px;
+      outline: 5px solid white;
+    }
+    color: #000000;
+  }
 }
 .movie {
   display: inline-block;
@@ -7,16 +14,13 @@
   align-items: center;
   font-style: normal;
   margin: 0 10px 50px;
-  width: 238px;
-  height: 357px;
+  width: 200px;
+  height: 320px;
   text-align: center;
   .card-image {
-    width: 238px;
-    height: 357px;
-  }
+    width: 200px;
+    height: 315px;
 
-  &:hover {
-    outline: 10px white solid;
   }
 
   .card__text-container {

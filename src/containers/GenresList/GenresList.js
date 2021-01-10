@@ -5,7 +5,7 @@ import specialGenres from '../../data/specialGenres';
 import './GenresList.scss';
 
 export const GenresList = () => {
-  const genreLinks =  specialGenres.map(genre => <Link key={genre.id} to={'genre/'+genre.id + '-' + genre.name.replace(' ', '_').toLocaleLowerCase()}>{genre.name.toUpperCase()}</Link>)
+  const genreLinks =  specialGenres.map(genre => <Link key={genre.id} to={'genre/'+genre.id + '-' + genre.name.replace(' ', '_').toLocaleLowerCase()}><span>{genre.name.toUpperCase()}</span></Link>)
   return <main className="genres-list-view">
     <Nav />
     <div className="genre-links-container">
