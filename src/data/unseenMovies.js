@@ -1,4 +1,4 @@
-const unseenMovies = 
+const unseenMovies =
 [
   {
     "id": 17364,
@@ -903,7 +903,7 @@ const unseenMovies =
     "id": 557726,
     "title": "Everybody Dies!",
     "genres": [
-      
+
     ],
     "overview": "In this recreated public access television show, Ripa the Grim Reaper teaches black kids about the day they'll die.",
     "video_key": null,
@@ -918,7 +918,7 @@ const unseenMovies =
     "id": 323837,
     "title": "Boneshaker",
     "genres": [
-      
+
     ],
     "overview": "An African family, lost in America, travels to a Louisiana church to cure its problem child.",
     "video_key": null,
@@ -950,7 +950,7 @@ const unseenMovies =
     "id": 390416,
     "title": "Reluctantly Queer",
     "genres": [
-      
+
     ],
     "overview": "This epistolary short film invites us into the unsettling life of a young Ghanaian man struggling to reconcile his love for his mother with his love for same-sex desire. Berlin International Film Festival 2016: Nominated Golden Berlin Bear for Best Short Film and Teddy Best Short Film.",
     "video_key": null,
@@ -965,7 +965,7 @@ const unseenMovies =
     "id": 507735,
     "title": "Rebirth Is Necessary",
     "genres": [
-      
+
     ],
     "overview": "Director Jenn Nkiru authors a personal and powerful exploration of blackness through piecing together dreamlike portraits with stunning archival footage that includes Afrofuturism pioneer Sun Ra and revolutionary organization the Black Panther Party.",
     "video_key": null,
@@ -1607,7 +1607,8 @@ const unseenMovies =
     "genres": [
       18,
       100,
-      10749
+      10749,
+      889
     ],
     "overview": "A cowherd with a skull-mounted motorcycle and a university student meet in Dakar; put off by life in Senegal, they plan to make money in Paris.",
     "video_key": "EZtNBIFUr2A",
