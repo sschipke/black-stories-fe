@@ -7,7 +7,9 @@ const unseenMovies =
       18,
       100,
       6251,
-      10749
+      10749,
+      36,
+      88
     ],
     "overview": "A drama set in the 1920s, where free-spirited Janie Crawford's search for happiness leads her through several different marriages, challenging the morals of her small town. Based on the novel by Zora Neale Hurston.",
     "video_key": null,
@@ -22,7 +24,10 @@ const unseenMovies =
     "id": 84175,
     "title": "Beasts of the Southern Wild",
     "genres": [
-      18
+      18,
+      14,
+      888,
+      89
     ],
     "overview": "Hushpuppy, an intrepid six-year-old girl, lives with her father, Wink in 'the Bathtub', a southern Delta community at the edge of the world. Wink’s tough love prepares her for the unraveling of the universe—for a time when he’s no longer there to protect her. When Wink contracts a mysterious illness, nature flies out of whack—temperatures rise, and the ice caps melt, unleashing an army of prehistoric creatures called aurochs. With the waters rising, the aurochs coming, and Wink’s health fading, Hushpuppy goes in search of her lost mother.",
     "video_key": "pvqZzSMIZa0",
@@ -40,7 +45,9 @@ const unseenMovies =
       35,
       100,
       18,
-      10749
+      10749,
+      87,
+      88
     ],
     "overview": "Through good times and bad, Stella and Delilah have always had each other. Now, Stella's so busy building a life that she's forgotten how to really live. But Delilah is about to change all that. What starts as a quick trip to Jamaica, end as an exhilarating voyage of self discovery as Stella learns to open her heart and find love - even if it's with a man 20 years her junior.",
     "video_key": "0eF0BYJM1FY",
@@ -62,7 +69,8 @@ const unseenMovies =
       80,
       18,
       10402,
-      53
+      53,
+      87
     ],
     "overview": "Super Fly is a cocaine dealer who begins to realize that his life will soon end with either prison or his death. He decides to build an escape from the life by making his biggest deal yet.",
     "video_key": "4SqdLsCsjYw",
@@ -82,7 +90,8 @@ const unseenMovies =
       100,
       1977,
       18,
-      80
+      80,
+      887
     ],
     "overview": "After saving a Black Panther from some racist cops, a black male prostitute goes on the run from \"the man\" with the help of the ghetto community and some disillusioned Hells Angels.",
     "video_key": "5jHSd7nTHZw",
@@ -102,7 +111,8 @@ const unseenMovies =
       100,
       1977,
       80,
-      53
+      53,
+      87
     ],
     "overview": "Cool black private eye John Shaft is hired by a crime lord to find and retrieve his kidnapped daughter.",
     "video_key": "NiCB2isZcRM",
@@ -136,7 +146,9 @@ const unseenMovies =
     "title": "Sidewalk Stories",
     "genres": [
       100,
-      35
+      35,
+      888,
+      90
     ],
     "overview": "A street artist (Charles Lane) rescues a baby girl (Nicole Alysia) after her father is murdered. The artist then sets off to find the mother, but has to first learn how to care for the child. Ultimately he ends up in a horse drawn chase of the murderers.",
     "video_key": "Bwace_Bn1fU",
@@ -154,7 +166,8 @@ const unseenMovies =
       80,
       100,
       18,
-      35
+      35,
+      86
     ],
     "overview": "Malcolm is carefully surviving life in a tough neighborhood in Los Angeles while juggling college applications, academic interviews, and the SAT. A chance invitation to an underground party leads him into an adventure that could allow him to go from being a geek, to being dope, to ultimately being himself.",
     "video_key": "sNlSBM8jVOY",
@@ -220,7 +233,8 @@ const unseenMovies =
     "title": "Chisholm '72: Unbought & Unbossed",
     "genres": [
       100,
-      99
+      99,
+      6251
     ],
     "overview": "In 1968, Shirley Chisholm becomes the first black woman elected to Congress. In 1972, she becomes the first black woman to run for president. Shunned by the political establishment, she's supported by a motley crew of blacks, feminists, and young voters. Their campaign-trail adventures are frenzied, fierce and fundamentally right on!",
     "video_key": null,
@@ -286,8 +300,7 @@ const unseenMovies =
     "genres": [
       100,
       6251,
-      99,
-      6251
+      99
     ],
     "overview": "An in-depth look at the prison system in the United States and how it reveals the nation's history of racial inequality.",
     "video_key": "K6IXQbXPO3I",
@@ -338,9 +351,11 @@ const unseenMovies =
     "title": "Black Girl",
     "genres": [
       18,
-      100
+      100,
+      889,
+      91
     ],
-    "overview": "Eager to find a better life abroad, a Senegalese woman becomes a mere governess to a family in southern France, suffering from discrimination and marginalization.",
+    "overview": "The film centers on Diouana, a young Senegalese woman, who moves from Dakar, Senegal to Antibes, France to work for a rich French couple. In France, Diouana hopes to continue her former job as a nanny, and anticipates a new cosmopolitan lifestyle. However, upon her arrival in Antibes, Diouana experiences harsh treatment from the couple, who force her to work as a servant. She becomes increasingly aware of her constrained and alienated situation and starts to question her life in France. ",
     "video_key": "167022630",
     "poster_path": "/g6b2aPQmJsk8YIPO9pzKaCWSLju.jpg",
     "backdrop_path": "/3NcTGBFQnGpUUvfloymFiTaejZA.jpg",
@@ -370,7 +385,9 @@ const unseenMovies =
     "title": "Yardie",
     "genres": [
       100,
-      80
+      80,
+      18,
+      88
     ],
     "overview": "Jamaica, 1973. When a young boy witnesses his brother’s assassination, a powerful Don gives him a home. But 10 years later, when he’s sent to London, his past catches up to him.",
     "video_key": "ee24QB3o16o",
@@ -386,7 +403,9 @@ const unseenMovies =
     "title": "Boyz n the Hood",
     "genres": [
       100,
-      18
+      18,
+      80,
+      86
     ],
     "overview": "Boyz n the Hood is the popular and successful film and social criticism from John Singleton about the conditions in South Central Los Angeles where teenagers are involved in gun fights and drug dealing on a daily basis.",
     "video_key": "AE4BdijGtu4",
@@ -402,7 +421,10 @@ const unseenMovies =
     "title": "Down in the Delta",
     "genres": [
       18,
-      100
+      100,
+      86,
+      6251,
+      888
     ],
     "overview": "A single mother plagued by alcohol and drug addictions is sent with her children from Chicago to her ancestral home in the Mississippi Delta, to live with her uncle and aunt for the summer.",
     "video_key": null,
@@ -418,7 +440,10 @@ const unseenMovies =
     "title": "Mudbound",
     "genres": [
       18,
-      100
+      100,
+      6251,
+      36,
+      88
     ],
     "overview": "In the post–World War II South, two families are pitted against a barbaric social hierarchy and an unrelenting landscape as they simultaneously fight the battle at home and the battle abroad.",
     "video_key": "vAZWhFI9lLQ",
@@ -434,7 +459,9 @@ const unseenMovies =
     "title": "Drylongso",
     "genres": [
       18,
-      100
+      100,
+      6251,
+      888
     ],
     "overview": "A young woman (Toby Smith) in a photography class begins taking pictures of black men out of fear they will soon be extinct.",
     "video_key": null,
@@ -452,7 +479,8 @@ const unseenMovies =
       35,
       100,
       18,
-      10749
+      10749,
+      6251
     ],
     "overview": "Lisette and husband Chino face marital difficulties. She is fed up with the kids, while he has job troubles. His mother Rosaria hates Lisette and the neighborhood tramp has designs on Chino. Things get even worse when Chino goes to jail and Lisette gets a good job uptown. Can this marriage be saved?",
     "video_key": "mVzmH9toJp0",
@@ -468,7 +496,9 @@ const unseenMovies =
     "title": "Do the Right Thing",
     "genres": [
       18,
-      100
+      100,
+      87,
+      35
     ],
     "overview": "Salvatore \"Sal\" Fragione is the Italian owner of a pizzeria in Brooklyn. A neighborhood local, Buggin' Out, becomes upset when he sees that the pizzeria's Wall of Fame exhibits only Italian actors. Buggin' Out believes a pizzeria in a black neighborhood should showcase black actors, but Sal disagrees. The wall becomes a symbol of racism and hate to Buggin' Out and to other people in the neighborhood, and tensions rise.",
     "video_key": "rAQSa0963T8",
@@ -486,8 +516,8 @@ const unseenMovies =
       18,
       100,
       36,
-      28,
-      53
+      53,
+      91
     ],
     "overview": "Spurred by a white woman's lie, vigilantes destroy a black Florida town and slay inhabitants in 1923.",
     "video_key": "veXzhAxlvxw",
@@ -503,7 +533,10 @@ const unseenMovies =
     "title": "Panther",
     "genres": [
       18,
-      100
+      100,
+      36,
+      87,
+      88
     ],
     "overview": "Panther is a semi-historic film about the origins of The Black Panther Party for Self-Defense. The movie spans about 3 years (1966-68) of the Black Panther's history in Oakland. Panther also uses historical footage (B/W) to emphasize some points.",
     "video_key": "jCNHQXLMye4",
@@ -520,7 +553,9 @@ const unseenMovies =
     "genres": [
       18,
       100,
-      10402
+      10402,
+      36,
+      89
     ],
     "overview": "Tensions rise when the trailblazing Mother of the Blues and her band gather at a Chicago recording studio in 1927. Adapted from August Wilson's play.",
     "video_key": "ord7gP151vk",
@@ -557,7 +592,9 @@ const unseenMovies =
       18,
       100,
       80,
-      35
+      35,
+      10402,
+      89
     ],
     "overview": "A modern day adaptation of the ancient Greek play Lysistrata by Aristophanes, set against the backdrop of gang violence in Chicago.",
     "video_key": "FEbeUK4EAbM",
@@ -589,8 +626,9 @@ const unseenMovies =
     "id": 44784,
     "title": "Symbiopsychotaxiplasm: Take 2 ½",
     "genres": [
-      99,
-      100
+      100,
+      887,
+      888
     ],
     "overview": "A movie about making movies about making movies. In 1968, William Greaves shot several pairs of actors in a scene in which a woman confronts her husband and ends their relationship. In \"Take 2 1/2,\" Greaves starts with 1968 takes of one of these pairs of actors plus footage of the crew discussing the film's progress. Then, 35 years later, Greaves brings back to Central Park those actors and some of the original crew (plus others) to film a reunion of the characters Alice and Freddie. We watch scenes of these characters and discussions among the actors and crew. Greaves explores and dramatizes the dialectic in the creative process.",
     "video_key": null,
@@ -626,9 +664,10 @@ const unseenMovies =
       18,
       100,
       14,
-      27
+      27,
+      887
     ],
-    "overview": "After being stabbed with an ancient, germ-infested knife, a doctor's assistant finds himself with an insatiable desire for blood.",
+    "overview": "The film follows the exploits of anthropologist Dr. Hess Green, who becomes a vampire after his intelligent but unstable assistant stabs him with an ancient cursed dagger. Green falls in love with his assistant's widow, Ganja, who learns Green's dark secret.",
     "video_key": "xVmZ_BrAe9Y",
     "poster_path": "/mdQYKF4rmeDUNKpdee7DjVCzN9N.jpg",
     "backdrop_path": "/ruQIT30GxUN3gckMdt1LYMkmDqp.jpg",
@@ -643,9 +682,10 @@ const unseenMovies =
     "genres": [
       80,
       27,
-      53
+      53,
+      100
     ],
-    "overview": "A strange funeral director tells four strange tales of horror with an African American focus to three drug dealers he traps in his place of business.",
+    "overview": "The film presents four short urban-themed horror stories based on problem concepts that affect the African-American community in the order of police corruption, domestic abuse, institutional racism and gang violence; all presented within a frame story of three drug dealers buying some \"found\" drugs from an eccentric and story-prone funeral director.",
     "video_key": "hrn2PzAk6iw",
     "poster_path": "/2AgQBaFCkQxcSZPIhYztDT8DiaV.jpg",
     "backdrop_path": "/oGOxyppJeOElQtCIltDSQZENOb0.jpg",
@@ -660,7 +700,8 @@ const unseenMovies =
     "genres": [
       35,
       100,
-      18
+      18,
+      6251
     ],
     "overview": "A comedy-drama about a Black American female philosophy professor and her insensitive, philandering, and flamboyant artist husband who are having a marital crisis. When the wife goes off on an almost unbelievable journey to find \"ecstasy\", her husband is forced to see her in a different light.",
     "video_key": "5cKLqLuZJzs",
@@ -675,9 +716,12 @@ const unseenMovies =
     "id": 91735,
     "title": "My Brother's Wedding",
     "genres": [
-      18
+      18,
+      100,
+      888,
+      35
     ],
-    "overview": "A man who despises his upwardly mobile lawyer brother reluctantly agrees to be best man at his wedding.",
+    "overview": "Pierce Mundy has low ambitions and no plans settles for working at his parent's dry cleaners in South Central Los Angeles after being fired from his previous job. Pierce wastes his days fooling around with his childhood friend, Soldier, who has been recently released from prison. When his brother Wendell  plans on marrying someone of a higher social class, Sonia , his disdain for her prevents him from making the morally right decision.",
     "video_key": null,
     "poster_path": "/ou66bJnkz33zGtoBe5LIIfs9pHf.jpg",
     "backdrop_path": "/aH5eCDPQxG3S6qMG0RqU2gqjFvS.jpg",
@@ -691,7 +735,10 @@ const unseenMovies =
     "title": "Just Another Girl on the I.R.T.",
     "genres": [
       18,
-      100
+      100,
+      6251,
+      888,
+      35
     ],
     "overview": "Chantel Mitchell, a hip, articulate, black high-school girl in Brooklyn, is determined not to become \"just another girl on the IRT\" (the IRT is one of NYC's subway lines). She dreams of medical school, a family, and an escape from the generational poverty and street-corner life her friends seem to have accepted as their lot. But personal and sexual challenges confront Chantel on her way to fulfilling these dreams.",
     "video_key": "FNPuHRPFyUk",
@@ -707,7 +754,10 @@ const unseenMovies =
     "title": "Middle of Nowhere",
     "genres": [
       18,
-      100
+      100,
+      6251,
+      888,
+      10749
     ],
     "overview": "When her husband is sentenced to eight years in prison, Ruby drops out of medical school in order to focus on her husband's well-being while he's incarcerated - leading her on a journey of self-discovery in the process.",
     "video_key": "Nlt9i4gfS48",
@@ -722,9 +772,11 @@ const unseenMovies =
     "id": 94725,
     "title": "To Sleep with Anger",
     "genres": [
-      18
+      18,
+      100,
+      888
     ],
-    "overview": "An enigmatic drifter from the South comes to visit an old acquaintance who now lives in South-Central LA.",
+    "overview": "Danny Glover plays the enigmatic southern drifter Harry, a devilish charmer who turns up out of the blue on the South Central Los Angeles doorstep of his old friends. In short order, Harry’s presence seems to cast a chaotic spell on what appeared to be a peaceful household, exposing smoldering tensions between parents and children, tradition and change, virtue and temptation. Interweaving evocative strains of gospel and blues with rich, poetic-realist images, To Sleep with Anger is a sublimely stirring film from an autonomous artistic sensibility, a portrait of family resilience steeped in the traditions of African American mysticism and folklore.",
     "video_key": "s5PWGIb6vhc",
     "poster_path": "/k97OYGAbHIP6MNuOOGDUgYDnncW.jpg",
     "backdrop_path": "/72Tej5edjAMnSe7RLmH7H0qomnd.jpg",
@@ -739,7 +791,10 @@ const unseenMovies =
     "genres": [
       35,
       100,
-      18
+      18,
+      888,
+      86,
+      36
     ],
     "overview": "From Spike Lee comes this vibrant semi-autobiographical portrait of a school-teacher, her stubborn jazz-musician husband and their five kids living in '70s Brooklyn.",
     "video_key": "KnYl1TfWD-U",
@@ -756,7 +811,8 @@ const unseenMovies =
     "genres": [
       18,
       100,
-      10749
+      10749,
+      888
     ],
     "overview": "Waking from a one-night stand that neither remembers, Micah and Joanne find themselves wandering the streets of San Francisco, sharing coffee and conversation and searching for a deeper connection.",
     "video_key": "yl6veyWvV08",
@@ -772,7 +828,9 @@ const unseenMovies =
     "title": "Brother to Brother",
     "genres": [
       18,
-      100
+      100,
+      888,
+      69
     ],
     "overview": "A drama that looks back on the Harlem Renaissance from the perspective of an elderly, black writer who meets a gay teenager in a New York homeless shelter.",
     "video_key": "poD6D4o2GhM",
@@ -788,9 +846,11 @@ const unseenMovies =
     "title": "Blackbird",
     "genres": [
       18,
-      100
+      100,
+      69,
+      88
     ],
-    "overview": "Seventeen-year-old Randy tries very hard to be a good person. Since his father left, Randy takes care of his emotionally disturbed mother, and he's the kind of friend all of his classmates can depend on. As strong as he seems on the outside, Randy is hiding a secret inner struggle and denial of his true self. It's not until he opens himself up to love that he discovers that becoming a man means accepting who you really are.",
+    "overview": "Randy, a devout high school choir boy, struggles with his sexuality while living in his conservative Mississippi town. His mother blames him for his sister's disappearance as his father guides him into manhood.",
     "video_key": "U3KEVWeHPg8",
     "poster_path": "/30ZQdfpt8097DwD3USxJDymHW8Q.jpg",
     "backdrop_path": "/s0a9MaV8fwBiQNcsy55Vm2sJn4B.jpg",
@@ -804,7 +864,11 @@ const unseenMovies =
     "title": "Moonlight",
     "genres": [
       18,
-      100
+      100,
+      69,
+      10749,
+      86,
+      89
     ],
     "overview": "The tender, heartbreaking story of a young man’s struggle to find himself, told across three defining chapters in his life as he experiences the ecstasy, pain, and beauty of falling in love, while grappling with his own sexuality.",
     "video_key": "_OuY1gyPMnY",
@@ -837,7 +901,11 @@ const unseenMovies =
     "title": "Belle",
     "genres": [
       18,
-      100
+      100,
+      6251,
+      36,
+      10749,
+      91
     ],
     "overview": "BELLE is inspired by the true story of Dido Elizabeth Belle, the illegitimate mixed race daughter of a Royal Navy Admiral. Raised by her aristocratic great-uncle Lord Mansfield and his wife, Belle's lineage affords her certain privileges, yet the color of her skin prevents her from fully participating in the traditions of her social standing. Left to wonder if she will ever find love, Belle falls for an idealistic young vicar's son bent on change who, with her help, shapes Lord Mansfield's role as Lord Chief Justice to end slavery in England",
     "video_key": "bTz5VjBscGk",
@@ -854,7 +922,9 @@ const unseenMovies =
     "genres": [
       18,
       100,
-      10749
+      10749,
+      88,
+      88
     ],
     "overview": "After her fiance is falsely imprisoned, a pregnant African-American woman sets out to clear his name and prove his innocence.",
     "video_key": "k2zvPTGiJj4",
@@ -871,7 +941,8 @@ const unseenMovies =
     "genres": [
       99,
       100,
-      6251
+      6251,
+      52
     ],
     "overview": "A dreamlike conversation with the past and the present, reimagining of Latasha Harlins' story by excavating intimate memories shared by those who loved her.",
     "video_key": "xCvjaaqqVzU",
@@ -888,7 +959,9 @@ const unseenMovies =
     "genres": [
       99,
       100,
-      6251
+      6251,
+      52,
+      10402
     ],
     "overview": "BLACK TO TECHNO is a music documentary charting the anthropological, socio-economical, geopolitical roots of techno from Detroit and how it travelled and translated into becoming the soundtrack to the fall of the wall in Berlin.",
     "video_key": null,
@@ -903,7 +976,11 @@ const unseenMovies =
     "id": 557726,
     "title": "Everybody Dies!",
     "genres": [
-
+      6251,
+      52,
+      100,
+      887,
+      18
     ],
     "overview": "In this recreated public access television show, Ripa the Grim Reaper teaches black kids about the day they'll die.",
     "video_key": null,
@@ -918,7 +995,11 @@ const unseenMovies =
     "id": 323837,
     "title": "Boneshaker",
     "genres": [
-
+      6251,
+      52,
+      100,
+      887,
+      18
     ],
     "overview": "An African family, lost in America, travels to a Louisiana church to cure its problem child.",
     "video_key": null,
@@ -935,7 +1016,10 @@ const unseenMovies =
     "genres": [
       18,
       100,
-      6251
+      6251,
+      52,
+      887,
+      18
     ],
     "overview": "16th July 1969: America prepares to launch Apollo 11. Thousands of kilometers away, a ragtag group of Zambian exiles is trying to beat America to the Moon.",
     "video_key": "lb3pu5jXWHU",
@@ -950,7 +1034,11 @@ const unseenMovies =
     "id": 390416,
     "title": "Reluctantly Queer",
     "genres": [
-
+      6251,
+      52,
+      100,
+      18,
+      69
     ],
     "overview": "This epistolary short film invites us into the unsettling life of a young Ghanaian man struggling to reconcile his love for his mother with his love for same-sex desire. Berlin International Film Festival 2016: Nominated Golden Berlin Bear for Best Short Film and Teddy Best Short Film.",
     "video_key": null,
@@ -965,7 +1053,11 @@ const unseenMovies =
     "id": 507735,
     "title": "Rebirth Is Necessary",
     "genres": [
-
+      6251,
+      52,
+      100,
+      887,
+      18
     ],
     "overview": "Director Jenn Nkiru authors a personal and powerful exploration of blackness through piecing together dreamlike portraits with stunning archival footage that includes Afrofuturism pioneer Sun Ra and revolutionary organization the Black Panther Party.",
     "video_key": null,
@@ -983,7 +1075,9 @@ const unseenMovies =
       16,
       100,
       6251,
-      99
+      99,
+      52,
+      887
     ],
     "overview": "In this award-winning short documentary, Kenyan filmmaker Ng'endo Mukii, inspired by her interest in the concept of skin and race and what they imply; and in “the ideas and theories sown into our flesh that change with the arc of time”, explores African women's self-image. Through the use of memories, interviews; and mixed media, she describes their “almost schizophrenic pursuit of globalized beauty”.",
     "video_key": null,
@@ -1000,9 +1094,10 @@ const unseenMovies =
     "genres": [
       18,
       100,
-      10749
+      10749,
+      90
     ],
-    "overview": "Abandoned by her fiancé, an educated negro woman with a shocking past dedicates herself to helping a near bankrupt school for impoverished negro youths.",
+    "overview": "The plot features an African-American woman who goes North in an effort to raise money for a rural school in the Deep South for poor black children. Her romance with a black doctor eventually leads to revelations about her family's past and her own mixed-race, European ancestry. The film portrays racial violence under white supremacy, and the lynching of black people. Produced, written and directed by Micheaux, it is the oldest known surviving film made by an African-American director.",
     "video_key": "kD_FwBz3JY8",
     "poster_path": "/fpYu6zTCaAHMX0t8HGAD5q9syWz.jpg",
     "backdrop_path": "/eGhQXfGeNdJfywH6ZmjRwN3f1X8.jpg",
@@ -1017,7 +1112,8 @@ const unseenMovies =
     "genres": [
       18,
       100,
-      10749
+      10749,
+      90
     ],
     "overview": "A minister is malevolent and sinister behind his righteous facade. He consorts with, and later extorts from, the owner of a gambling house, and betrays an honest girl, eventually driving them both to ruin.",
     "video_key": null,
@@ -1033,7 +1129,9 @@ const unseenMovies =
     "title": "Eve's Bayou",
     "genres": [
       18,
-      100
+      100,
+      6251,
+      53
     ],
     "overview": "Summer heats up in rural Louisiana beside Eve’s Bayou, 1962, as the Batiste family tries to survive the secrets they’ve kept and the betrayals they’ve endured.",
     "video_key": "MVKP1G95fyM",
@@ -1049,7 +1147,9 @@ const unseenMovies =
     "title": "What's Love Got to Do with It",
     "genres": [
       18,
-      10402
+      10402,
+      85,
+      88
     ],
     "overview": "A film about the singer Tina Turner and how she rose to stardom with her abusive husband Ike Turner and how she gained the courage to break free.",
     "video_key": null,
@@ -1064,7 +1164,10 @@ const unseenMovies =
     "id": 17978,
     "title": "The Great White Hope",
     "genres": [
-      18
+      18,
+      92,
+      85,
+      89
     ],
     "overview": "A black champion boxer and his white female companion struggle to survive while the white boxing establishment looks for ways to knock him down.",
     "video_key": "PjFVa3hPxC4",
@@ -1081,7 +1184,9 @@ const unseenMovies =
     "genres": [
       18,
       35,
-      36
+      36,
+      85,
+      1977
     ],
     "overview": "The story of Rudy Ray Moore, who created the iconic big screen pimp character Dolemite in the 1970s.",
     "video_key": "Ws1YIKsuTjQ",
@@ -1098,7 +1203,8 @@ const unseenMovies =
     "genres": [
       28,
       35,
-      80
+      80,
+      1977
     ],
     "overview": "Dolemite is a pimp who was set up by Willie Greene and the cops, who have planted drugs, stolen furs, and guns in his trunk and got him sentenced to 20 years in jail. One day, Queen B and a warden planned to get him out of Jail and get Willie Green and Mitchell busted for what they did to him.",
     "video_key": "pJKknBOrE5E",
@@ -1113,9 +1219,9 @@ const unseenMovies =
     "id": 22048,
     "title": "Foxy Brown",
     "genres": [
-      53,
       28,
-      80
+      80,
+      1977
     ],
     "overview": "A voluptuous black woman takes a job as a high-class prostitute in order to get revenge on the mobsters who murdered her boyfriend.",
     "video_key": "uu6QrLstUlM",
@@ -1130,7 +1236,10 @@ const unseenMovies =
     "id": 37754,
     "title": "Cornbread, Earl and Me",
     "genres": [
-      18
+      18,
+      1977,
+      86,
+      88
     ],
     "overview": "The unintentional shooting by police of a star basketball player has profound personal, political and community repercussions in this acclaimed adaptation of the novel Hog Butcher by Ronald Fair. This was one of the more thoughtful urban dramas produced at the height of the \"blaxploitation\" craze. Also released under the title Hit the Open Man, it features the screen debut of Laurence Fishburne, who was barely a teenager at the time.",
     "video_key": "YUGHOnVoWLk",
@@ -1146,7 +1255,8 @@ const unseenMovies =
     "title": "The House on Skull Mountain",
     "genres": [
       27,
-      53
+      53,
+      1977
     ],
     "overview": "Four cousins who have never met are invited by their Great-Grandmother Christophe to visit her mansion outside of Atlanta. When they arrive, they learn she has just died. They stay to hear the reading of her will and soon are being killed off one-by-one with voodoo magic. The survivors try to find the killer before he finishes them all off.",
     "video_key": "p-BslybxoII",
@@ -1163,7 +1273,8 @@ const unseenMovies =
     "genres": [
       80,
       28,
-      27
+      27,
+      1977
     ],
     "overview": "When her boyfriend is brutally murdered, after refusing to be shaken down by the local gangsters running their protection racket, Sugar Hill, decides not to get mad, but BAD! Calling upon the help of aged voodoo queen Mama Maitresse, Sugar entreats her to call upon Baron Zamedi, the Lord of the Dead, for help in gaining a gruesome revenge. In exchange for her soul, the Dark Master raises up a zombie army to do her bidding. The bad guys who thought they were getting away clean are about to find out that they're DEAD wrong.",
     "video_key": "pjSxal7RxWg",
@@ -1193,7 +1304,8 @@ const unseenMovies =
     "id": 267685,
     "title": "American Revolution 2",
     "genres": [
-      99
+      99,
+      100
     ],
     "overview": "American Revolution 2 begins with footage of the political demonstrations at the 1968 Democratic Convention and the forceful reaction of the Chicago Police Department and the National Guard. Investigating the lack of an African American presence at the protests, the filmmakers follow members of the Chicago chapter of the Black Panther Party as they search for common ground with a variety of white activist groups.  In one scene, Panther Bobby Lee and members of the Young Patriots, a community of white Appalachian activists living in the Uptown neighborhood of Chicago, organize to protest police brutality. The seemingly disparate groups find shared social and political objectives that overcome racial differences – police violence, poverty, lack of employment, and poor living conditions. This potential for a cross-racial and interethnic political movement is the movie’s beautiful but unrealized dream.",
     "video_key": null,
@@ -1208,7 +1320,9 @@ const unseenMovies =
     "id": 83232,
     "title": "Portrait of Jason",
     "genres": [
-      99
+      99,
+      6251,
+      69
     ],
     "overview": "Interview with Jason Holliday aka Aaron Payne. House-boy, would-be cabaret performer, and self-proclaimed hustler giving one man's gin-soaked, pill-popped view of what it was like to be coloured and gay in 1960s Unites States.",
     "video_key": "t-ehssx01b0",
@@ -1223,7 +1337,7 @@ const unseenMovies =
     "id": 566235,
     "title": "Toni Morrison: The Pieces I Am",
     "genres": [
-      99
+      99,
     ],
     "overview": "This artful and intimate meditation on the legendary storyteller examines her life, her works, and the powerful themes she has confronted throughout her literary career. Toni Morrison leads an assembly of her peers, critics, and colleagues on an exploration of race, history, the United States, and the human condition.",
     "video_key": "aFkw7nOOJhA",
@@ -1268,7 +1382,8 @@ const unseenMovies =
     "id": 32063,
     "title": "Unforgivable Blackness: The Rise and Fall of Jack Johnson",
     "genres": [
-      99
+      99,
+      92
     ],
     "overview": "The story of Jack Johnson, the first African American Heavyweight boxing champion.",
     "video_key": "M5CpDcIAXWU",
@@ -1329,7 +1444,9 @@ const unseenMovies =
     "id": 553646,
     "title": "ReMastered: The Two Killings of Sam Cooke",
     "genres": [
-      99
+      99,
+      6251,
+      10402
     ],
     "overview": "This investigation examines the mysterious shooting of soul icon Sam Cooke, whose death silenced one of the most vital voices in the civil rights movement.",
     "video_key": "QJjOb5PQEwc",
@@ -1345,7 +1462,8 @@ const unseenMovies =
     "title": "Grace Jones: Bloodlight and Bami",
     "genres": [
       10402,
-      99
+      99,
+      6251
     ],
     "overview": "A documentary which traces the life of the magnetic, world-conquering, Jamaican musician, model and party queen Grace Jones.",
     "video_key": "fPDu1e8uZTs",
@@ -1377,7 +1495,8 @@ const unseenMovies =
     "title": "Uptight",
     "genres": [
       18,
-      53
+      53,
+      88
     ],
     "overview": "Black militants building up an arsenal of weapons in preparation for a race war are betrayed by one of their own.",
     "video_key": null,
@@ -1393,7 +1512,10 @@ const unseenMovies =
     "title": "Night of the Living Dead",
     "genres": [
       27,
-      53
+      53,
+      878,
+      87,
+      888
     ],
     "overview": "A group of people try to survive an attack of bloodthirsty zombies while trapped in a rural Pennsylvania farmhouse.",
     "video_key": "-xv062_vcsI",
@@ -1408,7 +1530,9 @@ const unseenMovies =
     "id": 43513,
     "title": "Stormy Weather",
     "genres": [
-      10402
+      10402,
+      87,
+      35
     ],
     "overview": "Dancing great Bill Williamson sees his face on the cover of Theatre World magazine and reminisces: Just back from World War I, he meets lovely singer Selina Rogers at a soldiers' ball and promises to come back to her when he \"gets to be somebody.\" Years go by, and Bill and Selina's rising careers intersect only briefly, since Selina is unwilling to settle down. Will she ever change her mind? Concludes with a big all-star show hosted by Cab Calloway.",
     "video_key": null,
@@ -1423,8 +1547,9 @@ const unseenMovies =
     "id": 59964,
     "title": "Cabin in the Sky",
     "genres": [
-      14,
-      10402
+      10402,
+      87,
+      89
     ],
     "overview": "When compulsive gambler Little Joe Jackson dies in a drunken fight, he awakens in purgatory, where he learns that he will be sent back to Earth for six months to prove that he deserves to be in heaven. He awakens, remembering nothing and struggles to do right by his devout wife, Petunia, while an angel known as the General and the devil's son, Lucifer Jr., fight for his soul.",
     "video_key": "AhKvNQv5Ugw",
@@ -1440,7 +1565,8 @@ const unseenMovies =
     "title": "Dreamgirls",
     "genres": [
       18,
-      10402
+      10402,
+      89
     ],
     "overview": "Three young women dream of becoming pop stars—and get their wish when they're chosen to be backup singers for the legendary James 'Thunder' Early.",
     "video_key": "DTgGuFOh2M0",
@@ -1455,7 +1581,8 @@ const unseenMovies =
     "id": 208781,
     "title": "Dry Wood",
     "genres": [
-      99
+      99,
+      10402
     ],
     "overview": "Featuring the stories and music of seminal Cajun musicians \"Bois Sec\" Ardoin and Canray Fontenot, Dry Wood is a short, vibrant documentary portrait of life, food, music and festivity in the Louisiana Delta from the singular Les Blank.",
     "video_key": null,
@@ -1472,7 +1599,9 @@ const unseenMovies =
     "genres": [
       18,
       10749,
-      878
+      878,
+      6251,
+      10402
     ],
     "overview": "The story of a young woman named Jane 57821, who is living in a totalitarian near-future society where citizens are referred to as 'computers.' 'Dirty Computer' explores humanity and what truly happens to life, liberty and the pursuit of happiness when mind and machines merge, and when the government chooses fear over freedom.",
     "video_key": "A9k89DYdHKQ",
@@ -1490,7 +1619,7 @@ const unseenMovies =
       10402,
       100,
       6251,
-      10770
+      91
     ],
     "overview": "The second \"visual album\" (a collection of short films) by Beyoncé, this time around she takes a piercing look at racial issues and feminist concepts through a sexualized, satirical, and solemn tone.",
     "video_key": "BB5zLq1zcdo",
@@ -1505,7 +1634,10 @@ const unseenMovies =
     "id": 585560,
     "title": "When I Get Home",
     "genres": [
-      10402
+      10402,
+      6251,
+      887,
+      37
     ],
     "overview": "In the three years since her seminal album \"A Seat at the Table\", Solange has broadened her artistic reach, expanding her work to museum installations, unconventional live performances, and striking videos. With her fourth album, \"When I Get Home\", the singer continues to push her vision forward with an exploration of roots and their lifelong influence. In Solange's case, that's the culturally rich Houston of her childhood. Some will know these references - candy paint, the late legend DJ Screw - via the city's mid-aughts hip-hop explosion, but through Solange's lens, these same touchstones are elevated to high art.",
     "video_key": "Q55AVeXzqeE",
@@ -1522,7 +1654,8 @@ const unseenMovies =
     "genres": [
       100,
       6251,
-      10402
+      10402,
+      10751
     ],
     "overview": "This visual album from Beyoncé reimagines the lessons of \"The Lion King\" (2019) for today’s young kings and queens in search of their own crowns.",
     "video_key": "L765oDjNaBA",
@@ -1541,7 +1674,9 @@ const unseenMovies =
       100,
       10749,
       14,
-      9648
+      9648,
+      6251,
+      889
     ],
     "overview": "Along the Atlantic coast, a soon-to-be-inaugurated futuristic tower looms over a suburb of Dakar. Ada, 17, is in love with Souleiman, a young construction worker. But she has been promised to another man. One night, Souleiman and his co-workers leave the country by sea, in hope of a better future. Several days later, a fire ruins Ada’s wedding and a mysterious fever starts to spread. Little does Ada know that Souleiman has returned.",
     "video_key": "kl0Ypq9AG2g",
@@ -1557,7 +1692,10 @@ const unseenMovies =
     "title": "Europa, “Based on a True Story”",
     "genres": [
       99,
-      100
+      100,
+      887,
+      91,
+      889
     ],
     "overview": "A hybrid film set in London by a Rwandan director, exploring a three­way relationship between a mysterious Nigerian man, a British woman and her ex. After his death, Simon appears to the ex as a ghost to tell his story, demanding a presence that was denied him as an asylum seeker. British and European political furor threaten both the director’s film plans and his stay in the UK. The fictional scenes are intercut with scenes of demonstrations.",
     "video_key": null,
@@ -1573,7 +1711,9 @@ const unseenMovies =
     "title": "L'afrance",
     "genres": [
       100,
-      18
+      18,
+      10749,
+      889
     ],
     "overview": "El Hadj is studying in Paris. He is one of the young Senegalese men who have come to Paris since the French colony became independent to get a good education so that he can serve his fatherland on his return. Unexpectedly he is suddenly confronted by a problem with his residence papers, just because he has arranged an extension too late. His pleasant life filled with good prospects has gone in one fell swoop. He faces a dilemma. He can stay illegally in France, the country where he feels at home, where he has his friends, has fallen in love and can drink water from the tap. Or he can return (without graduating) to the 3rd-world country of Senegal to use the knowledge he has acquired. It is not only a practical choice. It comes down to the question of who he is, who he thought he could be.",
     "video_key": null,
@@ -1590,7 +1730,9 @@ const unseenMovies =
     "genres": [
       10402,
       100,
-      18
+      18,
+      889,
+      10402
     ],
     "overview": "Félicité, a strong and proud woman, sings in bars in Kinshasa. She drifts away from reality when her 14-year-old son gets into an accident. In electric Kinshasa, she wanders in a world of music & dreams... until love unexpectedly brings her back to life.",
     "video_key": "LGwszd1otzk",
@@ -1598,6 +1740,135 @@ const unseenMovies =
     "backdrop_path": "/nN5B50BFzUVnMCsSJZwfAiFoRi0.jpg",
     "release_date": "2017-03-29",
     "watch_data": "https://www.themoviedb.org/movie/436340-felicite/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 76636,
+    "title": "Xala",
+    "genres": [
+      102,
+      35,
+      100,
+      889,
+      101
+    ],
+    "overview": "It is the dawn of Senegal's independence from France, but as the citizens celebrate in the streets we soon become aware that only the faces have changed. White money still controls the government. One official, Aboucader Beye, known by the title \"El Hadji,\" takes advantage of some of that money to marry his third wife, to the sorrow and chagrin of his first two wives and the resentment of his nationalist daughter. But he discovers on his wedding night that he has been struck with a \"xala,\" a curse of impotence. El Hadji goes to comic lengths to find the cause and remove the xala, resulting in a scathing satirical ending.",
+    "video_key": "Zt8BReAHx54",
+    "poster_path": "/pa8SLJpQE91ra9edLqREVkCVrPt.jpg",
+    "backdrop_path": "/f9tflFxfFXPS5w0BMF5sGSNIOBo.jpg",
+    "release_date": "1975-10-01",
+    "watch_data": "https://www.youtube.com/watch?v=t-a15ZLKxjM",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 97029,
+    "title": "Ceddo",
+    "genres": [
+      100,
+      889,
+      101,
+      18
+    ],
+    "overview": "The Ceddo try to preserve their traditional African culture against the onslaught of Islam, Christianity, and the slave trade. When King Demba War sides with the Muslims, the Ceddo kidnap his daughter, Princess Dior Yacine, to protest their forcible conversion to Islam.",
+    "video_key": "2EPMDDZa6hQ",
+    "poster_path": "/wWnL07ozLePVcptd8QgnJeSuFv4.jpg",
+    "backdrop_path": "/n89wDfFNsIeXzzn8cKltQn2CrZX.jpg",
+    "release_date": "1977-06-01",
+    "watch_data": "https://www.youtube.com/watch?v=9ipcync79CI",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 202425,
+    "title": "La Vie est belle",
+    "genres": [
+      889,
+      18,
+      10749,
+      10402
+    ],
+    "overview": "A young man with dreams of pursuing a career in music moves form his small village to  the capital. Along the way he falls head over heels for a woman - the same woman his boss is also pursuing for his own reasons.",
+    "video_key": "ex0jclLEm00",
+    "poster_path": "/aWU6bdzk1vqmGhMTKixafxIEeBW.jpg",
+    "backdrop_path": "/m5lhj4vTcbIZKVSMVFXDBacLoPy.jpg",
+    "release_date": "1987-11-17",
+    "watch_data": "https://vimeo.com/ondemand/lavieestbelle",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 57602,
+    "title": "A Screaming Man",
+    "genres": [
+      10752,
+      100,
+      889,
+      18
+    ],
+    "overview": "Present-day Chad. Adam, fifty something, a former swimming champion, is the pool attendant at a  N'Djamena hotel. When the hotel gets taken over by new Chinese owners, he is forced to give up his job to his son Abdel. Terribly resentful, he feels socially humiliated. The country is in the throes of a civil war. Rebel forces are attacking the government. Authorities demand that the population contribute to the war effort, giving money or volunteers old enough to fight off the rebels. The District Chief constantly harasses Adam for his contribution. But Adam is penniless; he only has his son.",
+    "video_key": "ex0jclLEm00",
+    "poster_path": "/q90ysGM6CQmHnUTGGU4x5TBv4hn.jpg",
+    "backdrop_path": "/5hv5VSNlt9maW6KewGq5qNSs24E.jpg",
+    "release_date": "2010-09-28",
+    "watch_data": "https://www.themoviedb.org/movie/57602-un-homme-qui-crie/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 242493,
+    "title": "The Bloodettes",
+    "genres": [
+      80,
+      53,
+      35,
+      9648,
+      889,
+      100
+    ],
+    "overview": "Best friends Majolie and Chouchou are two beautiful young women trying to get ahead in a near-future Cameroon. After accidentally killing a powerful politician during sex, the two come up with a plot to dispose of the body, and get into the glamorous wakes that have taken over the local nightlife.",
+    "video_key": "TVaaDPkeuP0",
+    "poster_path": "/fKPL6u2iLXyd6W5sNsrH0J49a16.jpg",
+    "backdrop_path": "/fKeeSrFswJHfmhTFDnWVHEmMAsa.jpg",
+    "release_date": "2005-05-20",
+    "watch_data": "https://www.kanopy.com/product/bloodettes",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 124085,
+    "title": "Hyenas",
+    "genres": [
+      889,
+      100,
+      35,
+      18
+    ],
+    "overview": "After being kicked out of her African village three decades earlier for getting pregnant out of wedlock, Linguere (Ami Diakhate) has returned home. While Linguere has done well for herself, her home village has fallen on hard economic times. Intent on punishing Dramaan (Mansour Diouf), the man who fathered her child but refused to own up to the act, Linguere makes a proposal: She will help the town financially, if the locals agree to execute Dramaan.",
+    "video_key": "xEsF9RR3FOs",
+    "poster_path": "/or2P5W4SHTOYS40F2LifY8wm1e4.jpg",
+    "backdrop_path": "/y7iCuZZ8pD3u30lSpC5LkFTf8am.jpg",
+    "release_date": "1992-09-18",
+    "watch_data": "https://www.themoviedb.org/movie/124085-ramatou/watch?locale=AU",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 87392,
+    "title": "Sambizanga",
+    "genres": [
+      889,
+      100,
+      18,
+      10752
+    ],
+    "overview": "Domingos is a member of an African liberation movement, arrested by the Portuguese secret police, after bloody events in Angola. He does not betray his companions, but is beaten to death in prison, and not knowing he is dead, his wife goes from a prison station to another, trying in vain to know where he is.",
+    "video_key": "OLEGv1jXTq8",
+    "poster_path": "/d2yVMyxRnqJaSnadVPA5DtqvQj6.jpg",
+    "backdrop_path": "/4earU0g74hTO3pqLn962Nh7GGB7.jpg",
+    "release_date": "1973-04-25",
+    "watch_data": "https://www.youtube.com/watch?v=QvoaUprC5bg",
     "chosen_by": null,
     "date_watched": null
   },
