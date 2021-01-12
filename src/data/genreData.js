@@ -12,6 +12,10 @@ const genreData = [
       "name": "Crime"
     },
     {
+      "id": 86,
+      "name": "Coming of Age"
+    },
+    {
       "id": 10751,
       "name": "Family"
     },

@@ -35,6 +35,9 @@ button {
     font-size: 2.08rem;
     -webkit-appearance: none;
     -moz-appearance: none;
+    &:focus {
+    outline: none;
+  }
 }
 
 div {

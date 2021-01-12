@@ -12,26 +12,25 @@ export const VideoPlayer = ({currentMovie, isOpen, closeVideoPlayer}) => {
   }
   const {video_key} = currentMovie;
   return (
+    // <div className="modal">
     <div className="modal-background" >
+      <div className="modal-content">
+        <div className="preview-container">
+          <iframe
+          allow="fullscreen"
+            id="preview-container-iframe"
+            title={video_key}
+            src={`https://www.youtube-nocookie.com/embed/${video_key}?modestbranding=1&controls=1&autoplay=0&iv_load_policy=3&showinfo=0&frameBorder=0&allowFullScreen=1`}
+          />
+        </div>
+      </div>
       <button 
-      className="video-close-button"
-      type="button"
-      onClick={() => closeVideoPlayer()}
-      >
-        <img src={closeIcon} alt="close video" />
-      </button>
-      <iframe
-        className="preview-container"
-        title={video_key}
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '70%',
-          height: '80%'
-        }}
-        src={`https://www.youtube-nocookie.com/embed/${video_key}?modestbranding=1&controls=1&autoplay=0&iv_load_policy=3&showinfo=0&frameBorder=0&allowFullScreen=1`}
-      />
+            className="video-close-button"
+            type="button"
+            onClick={() => closeVideoPlayer()}
+            >
+            <img src={closeIcon} alt="close video" />
+          </button>
     </div>
   )
 

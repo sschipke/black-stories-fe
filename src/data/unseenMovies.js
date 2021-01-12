@@ -82,27 +82,6 @@ const unseenMovies =
     "date_watched": null
   },
   {
-    "id": 5822,
-    "title": "Sweet Sweetback's Baadasssss Song",
-    "genres": [
-      28,
-      100,
-      100,
-      1977,
-      18,
-      80,
-      887
-    ],
-    "overview": "After saving a Black Panther from some racist cops, a black male prostitute goes on the run from \"the man\" with the help of the ghetto community and some disillusioned Hells Angels.",
-    "video_key": "5jHSd7nTHZw",
-    "poster_path": "/mHTHMwFFSIqTkzMu8tUUzpWiJ6w.jpg",
-    "backdrop_path": "/2O1u67c67TcrknqVnxwL7cVzX5a.jpg",
-    "release_date": "1971-04-23",
-    "watch_data": "https://www.themoviedb.org/movie/5822-sweet-sweetback-s-baadasssss-song/watch?locale=US",
-    "chosen_by": null,
-    "date_watched": null
-  },
-  {
     "id": 482,
     "title": "Shaft",
     "genres": [
@@ -156,25 +135,6 @@ const unseenMovies =
     "backdrop_path": "/ApVd7q1l4xZOkFkh2tkawICBE4I.jpg",
     "release_date": "1989-09-15",
     "watch_data": "https://www.themoviedb.org/movie/73823-sidewalk-stories/watch?locale=US",
-    "chosen_by": null,
-    "date_watched": null
-  },
-  {
-    "id": 308639,
-    "title": "Dope",
-    "genres": [
-      80,
-      100,
-      18,
-      35,
-      86
-    ],
-    "overview": "Malcolm is carefully surviving life in a tough neighborhood in Los Angeles while juggling college applications, academic interviews, and the SAT. A chance invitation to an underground party leads him into an adventure that could allow him to go from being a geek, to being dope, to ultimately being himself.",
-    "video_key": "sNlSBM8jVOY",
-    "poster_path": "/9j5yZ3cAZARJ479QerpvrRLolDu.jpg",
-    "backdrop_path": "/pyCspB4drqIYJcum8MgiYxnGd6x.jpg",
-    "release_date": "2015-06-19",
-    "watch_data": "https://www.themoviedb.org/movie/308639-dope/watch?locale=US",
     "chosen_by": null,
     "date_watched": null
   },
@@ -544,25 +504,6 @@ const unseenMovies =
     "backdrop_path": "/wLNDiDL0o4Ht2UsLd1jGu4tCM5N.jpg",
     "release_date": "1995-05-04",
     "watch_data": null,
-    "chosen_by": null,
-    "date_watched": null
-  },
-  {
-    "id": 615667,
-    "title": "Ma Rainey's Black Bottom",
-    "genres": [
-      18,
-      100,
-      10402,
-      36,
-      89
-    ],
-    "overview": "Tensions rise when the trailblazing Mother of the Blues and her band gather at a Chicago recording studio in 1927. Adapted from August Wilson's play.",
-    "video_key": "ord7gP151vk",
-    "poster_path": "/pvtyxijaBrCSbByXLcUIDDSvc40.jpg",
-    "backdrop_path": "/9UFwcWa3lKeAllcW0EvkmOuHqek.jpg",
-    "release_date": "2020-11-25",
-    "watch_data": "https://www.themoviedb.org/movie/615667-ma-rainey-s-black-bottom/watch?locale=US",
     "chosen_by": null,
     "date_watched": null
   },
