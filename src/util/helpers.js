@@ -35,3 +35,20 @@ export const displayTwoGenres=(genres) => {
   console.log('in function', genreElements)
   return genreElements
 }
+
+export const displayGenres = (genres) => {
+  if (genres && genres.length > 0) {
+    return genres.reduce((finalString, genre, index) => {
+      if (!genreMap[genre]) {
+        return finalString
+      }
+      if(index === genres.length -1) {
+        finalString += genreMap[genre]
+        return finalString
+      }
+      finalString += genreMap[genre] + ", "
+        return finalString
+    }, '')
+  }
+  return ''
+}
