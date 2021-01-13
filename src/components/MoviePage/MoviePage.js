@@ -2,6 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { openVideoPlayer, setCurrentMovie } from '../../actions';
+import { displayGenres } from '../../util/helpers';
 import './MoviePage.scss';
 
 const MoviePage = ({movie, setCurrentMovie, openVideoPlayer}) => {
@@ -13,17 +14,36 @@ const MoviePage = ({movie, setCurrentMovie, openVideoPlayer}) => {
       alt="Movie backrop"
       src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
       />
-      <h1>{movie.title.toUpperCase()}</h1>
-      {movie.video_key && 
+      <h1 className="movie-page-title">{movie.title}</h1>
+      <div className="movie-info-div">
+        <div className="movie-interactions-div">
+          <div>
+            <p className="movie-info">{movie.release_date.slice(0,4)}</p>
+        {movie.video_key && 
           <button 
+          className="trailer-button movie-info"
           type="button"
           onClick={() => openVideoPlayer()}
           >
-            VIEW TRAILER
+            TRAILER
           </button>}
-      <div>
-        {movie.overview}
+          { movie.watch_data && 
+          <a className="movie-info" 
+          href={movie.watch_data}
+          target="_blank" 
+          rel="noreferrer"
+          >
+            WATCH
+          </a>
+          }
+          </div>
+            <p className="movie-overview">{movie.overview}</p>
+        </div>
+          <div className="movie-page-genres-div">
+          <p className="movie-info genres">{displayGenres(movie.genres)}</p>
+          </div>
       </div>
+
   </section>
 }
 

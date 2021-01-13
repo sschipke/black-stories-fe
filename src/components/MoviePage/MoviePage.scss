@@ -1,8 +1,37 @@
 section {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  margin-left: 25px;
+  .movie-page-title {
+    margin: 10px 0;
+    font-size: 2.3rem;
+  }
+  .movie-interactions-div {
+    flex-direction: column;
+    width: 100%;
+  }
+  .movie-info {
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+  p.movie-overview {
+    padding-right: 15px;
+  }
+  .movie-page-genres-div {
+    width: 25%;
+    height: 100%;
+  }
+  p.genres {
+    font-size: 1rem;
+    word-break: keep-all;
+  }
+
 }
 .movie-view-backdrop {
-  height: 603px;
-  width: 1072px;
+  height: auto;
+  width: 100%;
 }
