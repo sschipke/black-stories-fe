@@ -13,7 +13,9 @@ export const VideoPlayer = ({currentMovie, isOpen, closeVideoPlayer}) => {
   const {video_key} = currentMovie;
   return (
     // <div className="modal">
-    <div className="modal-background" >
+    <div className="modal-background" 
+    title="close video player"
+    onClick={() => closeVideoPlayer()}>
       <div className="modal-content">
         <div className="preview-container">
           <iframe
@@ -26,11 +28,10 @@ export const VideoPlayer = ({currentMovie, isOpen, closeVideoPlayer}) => {
       </div>
       <button 
             className="video-close-button"
+            title="close video player"
             type="button"
             onClick={() => closeVideoPlayer()}
-            >
-            <img src={closeIcon} alt="close video" />
-          </button>
+            />
     </div>
   )
 
