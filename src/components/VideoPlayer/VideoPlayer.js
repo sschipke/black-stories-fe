@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { openVideoPlayer, closeVideoPlayer } from '../../actions';
-import closeIcon from '../../assets/icons/video_player_close.svg';
 import './VideoPlayer.scss';
 
 export const VideoPlayer = ({currentMovie, isOpen, closeVideoPlayer}) => {
