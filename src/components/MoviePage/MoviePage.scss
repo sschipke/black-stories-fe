@@ -3,6 +3,7 @@ section {
   flex-direction: column;
   width: 100%;
   margin-left: 25px;
+  max-height: 100%;
   .movie-page-title {
     margin: 10px 0;
     font-size: 2.3rem;
@@ -10,6 +11,10 @@ section {
   .movie-interactions-div {
     flex-direction: column;
     width: 100%;
+    max-height: 100%;
+  }
+  .movie-info-div {
+    max-height: 90%;
   }
   .movie-info {
     font-size: 1.5rem;
@@ -18,8 +23,18 @@ section {
     text-transform: uppercase;
     margin-right: 10px;
   }
+  .movie-overview-div {
+    height: 100px;
+  }
   p.movie-overview {
-    padding-right: 15px;
+    margin-right: 20px;
+    max-height: 200px;
+    padding-bottom: 5px;
+    overflow: auto;
+    text-overflow: ellipsis;
+      &::-webkit-scrollbar {
+      display: none;
+    }
   }
   .movie-page-genres-div {
     width: 25%;
@@ -33,5 +48,7 @@ section {
 }
 .movie-view-backdrop {
   height: auto;
-  width: 100%;
+  max-height: 60%;
+  width: auto;
+  max-width: 100%;
 }

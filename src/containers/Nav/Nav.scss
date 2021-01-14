@@ -8,10 +8,15 @@ h1, h2 {
 
 .nav-headers-container {
   flex-direction: column;
+  min-height: 435px;
   width: 100%;
   min-width: 435px;
-  h2 {
+  .subheader-div {
     margin-top: 50px;
+    min-height: 200px;
+  }
+  .home-link:hover {
+    color: #000000;
   }
 }
 
@@ -31,6 +36,6 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     width: 650px;
-    height: 80vh;
+    height: 100%;
     margin-right: 20px;
   }

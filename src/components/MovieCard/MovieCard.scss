@@ -20,6 +20,7 @@
   .card-image {
     width: 100%;
     height: auto;
+    min-height: 262px; 
   }
 
   .card__text-container {
@@ -28,6 +29,8 @@
     line-height: 100%;
     font-size: 1.2rem;
     font-weight: 700;
+    overflow: hidden;
+    text-overflow: ellipsis;
     }
 
     p {
