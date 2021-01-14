@@ -19,7 +19,6 @@ function generateRandomImageNumber(max) {
 }
 
 export const displayTwoGenres=(genres, excludeGenreId) => {
-  let excludedGenre = genreMap[excludeGenreId]
   let genreElements = [];
   if(!genres) {
     return []
