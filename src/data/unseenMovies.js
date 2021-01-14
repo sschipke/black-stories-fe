@@ -12,11 +12,468 @@ const unseenMovies =
       88
     ],
     "overview": "A drama set in the 1920s, where free-spirited Janie Crawford's search for happiness leads her through several different marriages, challenging the morals of her small town. Based on the novel by Zora Neale Hurston.",
-    "video_key": null,
+    "video_key": "mc5T4c_mj1U",
     "poster_path": "/vVn2KohzehZMN40YmNM69HqXxWm.jpg",
     "backdrop_path": "/rUjagGCyE7Ggad4dKEvTc95e0Qe.jpg",
     "release_date": "2005-03-06",
-    "watch_data": null,
+    "watch_data": "https://www.youtube.com/watch?v=teUi8N5ZaNs",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 51044,
+    "title": "Carmen Jones",
+    "genres": [
+      18,
+      10402,
+      10749,
+      89
+    ],
+    "overview": "The tale of the cigarette-maker Carmen and the Spanish cavalry soldier Don Jose is translated into a modern-day story of a parachute factory worker and a stalwart GI named Joe who is about to go to flying school. Conflict arises when a prize-ring champ captures the heart of Carmen after she has seduced Joe and caused him to go AWOL.",
+    "video_key": "OPe2HLwqgc8",
+    "poster_path": "/5Vo4NeE7dlXBUaikbGnUOmUNHJ3.jpg",
+    "backdrop_path": "/xoUIM9TXXL062YKN1o6a56MJY0X.jpg",
+    "release_date": "1954-10-28",
+    "watch_data": "https://www.themoviedb.org/movie/51044-carmen-jones/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 9400,
+    "title": "Set It Off",
+    "genres": [
+      18,
+      100,
+      80,
+      53
+    ],
+    "overview": "Four black women, all of whom have suffered for lack of money and at the hands of the majority, undertake to rob banks. While initially successful, a policeman who was involved in shooting one of the women's brothers is on their trail. As the women add to the loot, their tastes and interests begin to change and their suspicions of each other increase on the way to a climactic robbery.",
+    "video_key": "bKB2KclDMTY",
+    "poster_path": "/gXMfASh25sLvES9D7riFGBNNJrm.jpg",
+    "backdrop_path": "/wFDpKNEAtUo6cuEcuecoKttD0w1.jpg",
+    "release_date": "1996-11-06",
+    "watch_data": "https://www.themoviedb.org/movie/9400-set-it-off/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 21539,
+    "title": "The Preacher's Wife",
+    "genres": [
+      18,
+      10749,
+      14,
+      103,
+      10751
+    ],
+    "overview": "Good natured Reverend Henry Biggs finds that his marriage to choir mistress Julia is flagging, due to his constant absence caring for the deprived neighborhood they live in. On top of all this, his church is coming under threat from property developer Joe Hamilton. In desperation, Rev. Biggs prays to God for help - and help arrives in the form of an angel named Dudley.",
+    "video_key": "kYIFhk4lutY",
+    "poster_path": "/z1mU4g9poAgoDQRNLcfNdj3iiMs.jpg",
+    "backdrop_path": "/hagiqBRxjzkJhq7ByddAISfzwuR.jpg",
+    "release_date": "1996-12-13",
+    "watch_data": "https://www.themoviedb.org/movie/21539-the-preacher-s-wife/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 18423,
+    "title": "B.A.P.S.",
+    "genres": [
+      100,
+      35
+    ],
+    "overview": "Two clueless homegirls move to L.A. to become dancers, but instead find themselves scamming a dying millionaire to eventually become B*A*P*S (Black American Princesses).",
+    "video_key": "cHPpnwYVV8s",
+    "poster_path": "/yi40NrDfdv8vX0aoWvis3CnCVWj.jpg",
+    "backdrop_path": "/HDPq5KVV9Yw2H0fhvMug3Oi9Xv.jpg",
+    "release_date": "1997-03-28",
+    "watch_data": "https://www.themoviedb.org/movie/18423-b-a-p-s/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 46702,
+    "title": "Why Do Fools Fall In Love",
+    "genres": [
+      18,
+      10749,
+      91
+    ],
+    "overview": "In the mid-80s, three women (each with an attorney) arrive at the office of New York entertainment manager, Morris Levy. One is an L.A. singer, formerly of the Platters; one is a petty thief from Philly; one teaches school in a small Georgia town. Each claims to be the widow of long-dead doo-wop singer-songwriter Frankie Lyman, and each wants years of royalties due to his estate, money Levy has never shared. During an ensuing civil trial, flashbacks tell the story of each one's life with Lyman, a boyish, high-pitched, dynamic performer, lost to heroin. Slowly, the three wives establish their own bond.",
+    "video_key": "lIlWN0Dxvfw",
+    "poster_path": "/44a2SIKFpTvjH6XK8UgADAAUs3a.jpg",
+    "backdrop_path": "/e8kClV1nNDESWnO5ovRaZsHHO8b.jpg",
+    "release_date": "1998-08-28",
+    "watch_data": "https://www.themoviedb.org/movie/46702-why-do-fools-fall-in-love/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 23148,
+    "title": "Lady Sings the Blues",
+    "genres": [
+      18,
+      10402,
+      10749,
+      89,
+      91,
+      85
+    ],
+    "overview": "Chronicles the rise and fall of legendary blues singer Billie Holiday. Her late childhood, stint as a prostitute, early tours, marriages and drug addiction are featured.",
+    "video_key": "LLMlK7-_wjA",
+    "poster_path": "/jr528gGK1RrOW6YAZHUj5lF9RrO.jpg",
+    "backdrop_path": "/wE2SQSG49PddvGxcnEqN3mZBpTb.jpg",
+    "release_date": "1972-10-12",
+    "watch_data": "https://www.youtube.com/watch?v=pScVQQDDyuI",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 22021,
+    "title": "Coffy",
+    "genres": [
+      28,
+      1977,
+      80,
+      87
+    ],
+    "overview": "After her younger sister gets involved in drugs and is severely injured by contaminated heroin, a nurse sets out on a mission of vengeance and vigilante justice, killing drug dealers, pimps, and mobsters who cross her path.",
+    "video_key": "L3DPuPILahg",
+    "poster_path": "/pceYnmWdFxlWYcvFxwZaWPnqJjQ.jpg",
+    "backdrop_path": "/npM8eilsWSdjUr9vXGEjM8imzi0.jpg",
+    "release_date": "1973-06-13",
+    "watch_data": "https://www.themoviedb.org/movie/22021-coffy/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 26196,
+    "title": "Cleopatra Jones",
+    "genres": [
+      28,
+      1977,
+      80,
+      87,
+      100
+    ],
+    "overview": "Cleopatra Jones is assigned to crack down on drug trafficking in the United States and abroad. After she burns a Turkish poppy field, the notorious drug lord Mommy is furious at the loss of her supply and vows to destroy her.",
+    "video_key": "EtTLopqFWO8",
+    "poster_path": "/4OSECojnKInUAr0Yi6Ih1DTTWyl.jpg",
+    "backdrop_path": "/xmt4lh3Stwk8OZMeapjuC97XmMn.jpg",
+    "release_date": "1973-07-13",
+    "watch_data": "https://www.themoviedb.org/movie/26196-cleopatra-jones/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 27716,
+    "title": "Coonskin",
+    "genres": [
+      16,
+      18,
+      35,
+      1977,
+      80
+    ],
+    "overview": "Brother Rabbit, Brother Bear, and Preacher Fox rise to the top of the crime ranks in Harlem by going up against a con-man, a racist cop, and the Mafia.",
+    "video_key": "rqTLJJpB89k",
+    "poster_path": "/3zrxUkbeLl2KmSIRywNTwiGOZ2y.jpg",
+    "backdrop_path": "/m0h8qVyCfLPMin2tgQT7JRWON6b.jpg",
+    "release_date": "1975-08-20",
+    "watch_data": "https://www.themoviedb.org/movie/27716-coonskin/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 136718,
+    "title": "Steel Magnolias",
+    "genres": [
+      100,
+      89,
+      18,
+      35,
+      10770
+    ],
+    "overview": "In an updated contemporary version of the beloved stage play and 1989 film, \"Steel Magnolias\" chronicles the lives and friendship of six women in Louisiana. Supporting each other through their triumphs and tragedies, they congregate at Truvy’s beauty shop to ponder the mysteries of life and death, husbands and children - and hair and nails - all the important topics that truly unite and celebrate women.",
+    "video_key": "rciPtlcW2m0",
+    "poster_path": "/nufQPRcu9sVOIwECC9fKvHlu39y.jpg",
+    "backdrop_path": "/yeQzzSZ8o5U6vkXzwXAmEC8b4MM.jpg",
+    "release_date": "2012-10-07",
+    "watch_data": "https://www.themoviedb.org/movie/136718-steel-magnolias/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 36739,
+    "title": "School Daze",
+    "genres": [
+      100,
+      18,
+      35,
+      10402,
+      888
+    ],
+    "overview": "Fraternity and sorority members clash with other students at a historically black college during homecoming weekend.",
+    "video_key": "uLT3Qu76-bw",
+    "poster_path": "/iQaYQjnFJqQ4CCAcoYJit7HTbCz.jpg",
+    "backdrop_path": "/pGKSvG6wc1FAFn9ZH8V872m6ITP.jpg",
+    "release_date": "1988-02-12",
+    "watch_data": "https://www.themoviedb.org/movie/36739-school-daze/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 13763,
+    "title": "Purple Rain",
+    "genres": [
+      18,
+      10402,
+      10749
+    ],
+    "overview": "A victim of his own anger, the Kid is a Minneapolis musician on the rise with his band, the Revolution, escaping a tumultuous home life through music. While trying to avoid making the same mistakes as his truculent father, the Kid navigates the club scene and a rocky relationship with a captivating singer, Apollonia. But another musician, Morris, looks to steal the Kid's spotlight -- and his girl.",
+    "video_key": "AuXK8ZbTmLk",
+    "poster_path": "/gi8CJcDoZJc9o1nuOFccAXpRdTH.jpg",
+    "backdrop_path": "/tbo3VaDzP3hGwpcmxidhuADtuE0.jpg",
+    "release_date": "1984-07-24",
+    "watch_data": "https://www.themoviedb.org/movie/13763-purple-rain/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 24664,
+    "title": "Bamboozled",
+    "genres": [
+      100,
+      35,
+      102,
+      18,
+      888
+    ],
+    "overview": "TV producer Pierre Delacroix becomes frustrated when network brass reject his sitcom idea. Hoping to get fired, Delacroix pitches the worst idea he can think of: a 21st century minstrel show. The network not only airs it, but it becomes a smash hit.",
+    "video_key": "aPBmOEpviOg",
+    "poster_path": "/mVqN3gKTekvlR0axqgIdZoYdsCP.jpg",
+    "backdrop_path": "/AnIVn2sQHkUa4DoqqzHWgWFarqh.jpg",
+    "release_date": "2000-10-06",
+    "watch_data": "https://www.themoviedb.org/movie/24664-bamboozled/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 26522,
+    "title": "A Soldier's Story",
+    "genres": [
+      18,
+      9648,
+      10752,
+      80
+    ],
+    "overview": "In a rural town in Louisiana, a black Master Sergeant is found shot to death just outside the local Army Base. Military lawyer, Captain Davenport—also a black man—is sent from Washington to conduct an investigation. Facing an uncooperative chain of command and fearful black troops, Davenport must battle with deceit and prejudice in order to find out exactly who really did kill the Master Sergeant.",
+    "video_key": "SG1mF1jtul0",
+    "poster_path": "/aty7kaYU1MK0Io3gDfcno3Iumge.jpg",
+    "backdrop_path": "/icwt5mIyzEZ8YwLQT1fbPhrksUC.jpg",
+    "release_date": "1984-09-18",
+    "watch_data": "https://www.themoviedb.org/movie/26522-a-soldier-s-story/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 35711,
+    "title": "Cooley High",
+    "genres": [
+      100,
+      86,
+      35,
+      18
+    ],
+    "overview": "In the mid-1960s, a group of high school friends who live on the Near North Side of Chicago enjoy life to the fullest...parties, hanging out, meeting new friends. Then life changes for two of the guys when they meet a pair of career criminals and get falsely arrested in connection with stealing a Cadillac. We follow their lives through the end of high school and the dramatic end to their school.",
+    "video_key": "VfwkA9lO4Eo",
+    "poster_path": "/nFvdjlxZhfiW4Co9GroPlvZwnPp.jpg",
+    "backdrop_path": "/iChv2RTNJhouwCdk6ESlm4OC9l6.jpg",
+    "release_date": "1975-06-25",
+    "watch_data": "https://www.themoviedb.org/movie/35711-cooley-high/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 41363,
+    "title": "Jackie's Back!",
+    "genres": [
+      35,
+      102,
+      100
+    ],
+    "overview": "A mockumentary of Jackie Washington, a fictonal star of music, stage and screen played by Jenifer Lewis. The movie now follows Jackie as she tells her story to stardom and fall from grace as she prepares for her own comeback. Full of cameo apperances and funny interviews from stars like Dolly Parton, Whoopi Goldberg, Liza Minnelli, Bette Midler, Chris Rock, Sean Hayes, Ricki Lake, Rosie O'Donnell, David Hyde Pierce, Melissa Etheridge and many others.",
+    "video_key": "fB7Bj7bqyKc",
+    "poster_path": "/1NeQxxMWjkpbX9VVzDUN3mJtwGn.jpg",
+    "backdrop_path": "/zVUtRqNBcwNDKnHSKhRFb7aCxRL.jpg",
+    "release_date": "1999-06-14",
+    "watch_data": "https://www.youtube.com/watch?v=oYUy505lFAs",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 653668,
+    "title": "Miss Juneteenth",
+    "genres": [
+      6251,
+      100,
+      18
+    ],
+    "overview": "Turquoise, a former beauty queen turned hardworking single mother, prepares her rebellious teenage daughter for the “Miss Juneteenth” pageant, hoping to keep her from repeating the same mistakes in life that she did.",
+    "video_key": "Vb3oREG_DdA",
+    "poster_path": "/o3EBp3yXueuOjbvVcZs0AL7jhDv.jpg",
+    "backdrop_path": "/n0uefHZH2sX0HxU5Ec1w1tF8n3k.jpg",
+    "release_date": "2020-09-15",
+    "watch_data": "https://www.themoviedb.org/movie/653668-miss-juneteenth/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 653668,
+    "title": "Love & Basketball",
+    "genres": [
+      35,
+      18,
+      10749,
+      100,
+      6251
+    ],
+    "overview": "A young African-American couple navigates the tricky paths of romance and athletics in this drama. Quincy McCall and Monica Wright grew up in the same neighborhood and have known each other since childhood. As they grow into adulthood, they fall in love, but they also share another all-consuming passion: basketball. They've followed the game all their lives and have no small amount of talent on the court. As Quincy and Monica struggle to make their relationship work, they follow separate career paths though high school and college basketball and, they hope, into stardom in big-league professional ball.",
+    "video_key": "Ur83i6_BjbE",
+    "poster_path": "/zNZWNX19FZ5QyedprVM0ldsXFiP.jpg",
+    "backdrop_path": "/cL0GxrBnjgWV381C1NLroeNUcTn.jpg",
+    "release_date": "2000-04-21",
+    "watch_data": "https://www.themoviedb.org/movie/14736-love-basketball/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 162660,
+    "title": "Illusions",
+    "genres": [
+      100,
+      6251,
+      888,
+      99,
+      52
+    ],
+    "overview": "No filmmaker writes history like Julie Dash. In this radical revisionist drama that fully realizes the medium's audiovisual capacities, a passing Hollywood producer sets out to change nothing less than the way Black people are seen on the big screen.",
+    "video_key": null,
+    "poster_path": "/f7jJlhShXKs1kMs9cxMstebUrPo.jpg",
+    "backdrop_path": "/uXTJ6dhG9QhVCyvQNyuDdDhr1Pu.jpg",
+    "release_date": "1982-01-01",
+    "watch_data": "https://www.youtube.com/watch?v=a_O_ONYINLY",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 349003,
+    "title": "I Am Somebody",
+    "genres": [
+      100,
+      6251,
+      888,
+      99,
+      52
+    ],
+    "overview": "Madeline Anderson’s documentary brings viewers to the front lines of the civil rights movement during the 1969 Charleston hospital workers’ strike, when 400 poorly paid Black women went on strike to demand union recognition and a wage increase, only to find themselves in confrontation with the National Guard and the state government. Anderson personally participated in the strike, along with such notable figures as Coretta Scott King, Ralph Abernathy and Andrew Young, all affiliated with Martin Luther King’s Southern Christian Leadership Conference. Anderson’s film shows the courage and resiliency of the strikers and the support they received from the local black community. It is an essential filmed record of this important moment in the history of civil and women’s rights. The film is also notable as arguably the first televised documentary on civil rights directed by a woman of color, solidifying its place in American film history.",
+    "video_key": null,
+    "poster_path": "/ea7V3R85ufb6TxBwAjcCY1LQK9y.jpg",
+    "backdrop_path": "/24lCXJEet7DSXXJQlSQLu1woDkX.jpg",
+    "release_date": "1970-01-01",
+    "watch_data": "https://www.youtube.com/watch?v=UD-V8UvLpMg",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 337215,
+    "title": "Hidden Memories",
+    "genres": [
+      100,
+      6251,
+      888,
+      18,
+      52
+    ],
+    "overview": "Frazier evocatively experiments with sound, editing, image, and POV in this gutsy and unusual memory piece. As her protagonist recalls an unwanted teenage pregnancy, Frazier passes no judgment, honoring the sanctity of a woman’s choice.",
+    "video_key": null,
+    "poster_path": "/d6yx2hwoyYI7GGL9YxyXghSWJUJ.jpg",
+    "backdrop_path": "/oBAdjN9RvkuqBxbAZuAJwc5zgZB.jpg",
+    "release_date": "1977-01-01",
+    "watch_data": "https://www.youtube.com/watch?v=sbfHaaJ_klI",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 369403,
+    "title": "Happy Birthday, Marsha!",
+    "genres": [
+      100,
+      6251,
+      888,
+      18,
+      52,
+      69
+    ],
+    "overview": "It's a hot summer day in June, 1969. Marsha throws herself a birthday party and dreams of performing at a club in town, but no one shows up. Sylvia, Marsha’s best friend, distraught from an unsuccessful introduction between her lover and her family, gets so stoned she forgets about the party. Marsha, Sylvia, and friends eventually meet at the Stonewall Inn to celebrate Marsha's birth. When the police arrive to raid the bar, Marsha and Sylvia are among the first to fight back.",
+    "video_key": null,
+    "poster_path": "/swu2EWvICxYtZxLTfXHOyWfTr8N.jpg",
+    "backdrop_path": "/eASEoQsPg59dGu3dBg0GUfZOXSu.jpg",
+    "release_date": "2018-03-10",
+    "watch_data": "https://vimeo.com/ondemand/happybirthdaymarsha",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 159005,
+    "title": "Gideon's Army",
+    "genres": [
+      100,
+      6251,
+      99
+    ],
+    "overview": "Follows three young, committed Public Defenders who are dedicated to working for the people society would rather forget. Long hours, low pay and staggering caseloads are so common that even the most committed often give up.",
+    "video_key": "IYaREgaMPxc",
+    "poster_path": "/2tikTF3YstYMwTngwf6WeaMQrQn.jpg",
+    "backdrop_path": "/j6FUXK7yo1A64a2gE2MRxBHAOGF.jpg",
+    "release_date": "2013-01-21",
+    "watch_data": "https://www.themoviedb.org/movie/159005-gideon-s-army/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 32075,
+    "title": "A Dry White Season",
+    "genres": [
+      100,
+      6251,
+      18,
+      9648
+    ],
+    "overview": "During the 1976 Soweto uprising, a white school teacher's life and values are threatened when he asks questions about the death of a young black boy who died in police custody.",
+    "video_key": "bRJp3C8isMo",
+    "poster_path": "/6Wx9oZ7WUoootNLv70EDq6nyDqW.jpg",
+    "backdrop_path": "/7UDdd8ZY15LVwywQneM65SQXfJA.jpg",
+    "release_date": "1989-01-01",
+    "watch_data": "https://www.themoviedb.org/movie/32075-a-dry-white-season/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 449757,
+    "title": "I Am Not a Witch",
+    "genres": [
+      100,
+      6251,
+      18,
+      102
+    ],
+    "overview": "Convicted of witchcraft, 8-year-old Shula is brought to live in a penal colony where witches do hard labor in service of the government in this ravishing and revelatory feature debut. I Am Not a Witch is the rare satire that inspires laughter and tears within the span of a single scene.",
+    "video_key": "IYaREgaMPxc",
+    "poster_path": "/tWkbuUHugbckItwcyCf8uq1utOJ.jpg",
+    "backdrop_path": "/cChIitABjNGrkECYejCfGhlrOHq.jpg",
+    "release_date": "2018-09-07",
+    "watch_data": "https://www.themoviedb.org/movie/449757-i-am-not-a-witch/watch?locale=US",
     "chosen_by": null,
     "date_watched": null
   },
@@ -68,14 +525,13 @@ const unseenMovies =
       1977,
       80,
       18,
-      10402,
       53,
       87
     ],
     "overview": "Super Fly is a cocaine dealer who begins to realize that his life will soon end with either prison or his death. He decides to build an escape from the life by making his biggest deal yet.",
     "video_key": "4SqdLsCsjYw",
     "poster_path": "/nFAD8tGmQ5jDUoOhXXFkUW1Q7z1.jpg",
-    "backdrop_path": "/468tPHO5kZY6V1ceWxMKXrGMQy4.jpg",
+    "backdrop_path": "/hIx2p8ladz3JkMSMVdIcpBG9Mhb.jpg",
     "release_date": "1972-08-04",
     "watch_data": "https://www.themoviedb.org/movie/21968-super-fly/watch?locale=US",
     "chosen_by": null,
@@ -114,7 +570,7 @@ const unseenMovies =
     "overview": "An 18th century African prince is turned into a vampire while visiting Transylvania. Two centuries later, he rises from his coffin attacking various residents of Los Angeles and meets Tina, a woman who he believes is the reincarnation of his deceased wife.",
     "video_key": "V8Sfrhj5IP4",
     "poster_path": "/yLqtFeZfRPoUUzzro3ogCdobB6q.jpg",
-    "backdrop_path": "/4vCeVuJc6NV50hiEXQCmf3WoMWN.jpg",
+    "backdrop_path": "/kEDokgzcVskRRKkDfLoIDjaf1cj.jpg",
     "release_date": "1972-08-25",
     "watch_data": "https://www.themoviedb.org/movie/30566-blacula/watch?locale=US",
     "chosen_by": null,
@@ -134,7 +590,7 @@ const unseenMovies =
     "poster_path": "/8Lc4h2WEf6cTgrl9oUOYG9ed9nA.jpg",
     "backdrop_path": "/ApVd7q1l4xZOkFkh2tkawICBE4I.jpg",
     "release_date": "1989-09-15",
-    "watch_data": "https://www.themoviedb.org/movie/73823-sidewalk-stories/watch?locale=US",
+    "watch_data": "https://www.youtube.com/watch?v=fePUqYN3nFg",
     "chosen_by": null,
     "date_watched": null
   },
@@ -166,7 +622,7 @@ const unseenMovies =
     "overview": "Marcus is a successful advertising executive who woos and beds women almost at will. After a company merger he finds that his new boss, the ravishing Jacqueline, is treating him in exactly the same way. Completely traumatised by this, his work goes badly downhill.",
     "video_key": "Sr60MOJ_fhc",
     "poster_path": "/cc9YAZq5NXiIEJsHjW7p2FaHQkp.jpg",
-    "backdrop_path": "/rNulkgxFcmlgre3G8S7ABegzPVm.jpg",
+    "backdrop_path": "/5AzRvWHwNxxugXaIdZn9WF0o441.jpg",
     "release_date": "1992-06-30",
     "watch_data": "https://www.themoviedb.org/movie/11066-boomerang/watch?locale=US",
     "chosen_by": null,
@@ -180,7 +636,7 @@ const unseenMovies =
       99
     ],
     "overview": "Part film, part baptism, in BLACK MOTHER director Khalik Allah brings us on a spiritual journey through Jamaica. Soaking up its bustling metropolises and tranquil countryside, Allah introduces us to a succession of vividly rendered souls who call this island home. Their candid testimonies create a polyphonic symphony, set against a visual prayer of indelible portraiture. Thoroughly immersed between the sacred and profane, BLACK MOTHER channels rebellion and reverence into a deeply personal ode informed by Jamaica’s turbulent history but existing in the urgent present.",
-    "video_key": null,
+    "video_key": "gheWdNNcv5w",
     "poster_path": "/6lD2qZWM7CKxlcme6YDmdXJw4UV.jpg",
     "backdrop_path": "/qVWe0wlbea2G3Z8kSM06MMYTWyU.jpg",
     "release_date": "2018-11-02",
@@ -197,7 +653,7 @@ const unseenMovies =
       6251
     ],
     "overview": "In 1968, Shirley Chisholm becomes the first black woman elected to Congress. In 1972, she becomes the first black woman to run for president. Shunned by the political establishment, she's supported by a motley crew of blacks, feminists, and young voters. Their campaign-trail adventures are frenzied, fierce and fundamentally right on!",
-    "video_key": null,
+    "video_key": "PJrH-9cgSd0",
     "poster_path": "/2AzPwr7B0ipJeU6y4THGxs0UZVv.jpg",
     "backdrop_path": "/tjjWBMfTkKxL227nBQALjyz9sc1.jpg",
     "release_date": "2004-01-14",
@@ -213,7 +669,7 @@ const unseenMovies =
       99
     ],
     "overview": "A journey into the life and work of beat poet and activist Bob Kaufman and his insistence that poetry is fundamental to humanity's moral survival.",
-    "video_key": null,
+    "video_key": "zPNmWQcE0nk",
     "poster_path": "/dGEM3Smoj3SRIJF8cNBphjEVkmF.jpg",
     "backdrop_path": "/JjsM3CPzCzuImbTzFFlYMFvH3X.jpg",
     "release_date": "2015-10-23",
@@ -298,11 +754,11 @@ const unseenMovies =
       69
     ],
     "overview": "Frequently marginalized within a community that already struggles against marginalization -- that is, the gay, lesbian and bisexual community -- African American transgender males make their voices heard in this film from Kortney Ryan Ziegler. Six articulate black transmen -- who are also artists, students, husbands, fathers, lawyers and teachers -- speak candidly about race, gender, body image and status.",
-    "video_key": null,
+    "video_key": "JLdyvodyCCM",
     "poster_path": "/rnAejaSUUVAPYkmGGxm0UkXkVpG.jpg",
     "backdrop_path": "/7uMgZL8stjqbifWhoB9p7W2e79I.jpg",
     "release_date": "2008-11-15",
-    "watch_data": null,
+    "watch_data": "http://www.stillblackfilm.org/purchase/",
     "chosen_by": null,
     "date_watched": null
   },
@@ -370,7 +826,7 @@ const unseenMovies =
     "overview": "Boyz n the Hood is the popular and successful film and social criticism from John Singleton about the conditions in South Central Los Angeles where teenagers are involved in gun fights and drug dealing on a daily basis.",
     "video_key": "AE4BdijGtu4",
     "poster_path": "/v4ox4aSCNT5vyLXl4Q71JiWwCXW.jpg",
-    "backdrop_path": "/6SnFa3qfCvh4aARg6y3UevKLROh.jpg",
+    "backdrop_path": "/82jhYGf2uCKanF0wnbizd4mlLIb.jpg",
     "release_date": "1991-07-12",
     "watch_data": "https://www.themoviedb.org/movie/650-boyz-n-the-hood/watch?locale=US",
     "chosen_by": null,
@@ -387,7 +843,7 @@ const unseenMovies =
       888
     ],
     "overview": "A single mother plagued by alcohol and drug addictions is sent with her children from Chicago to her ancestral home in the Mississippi Delta, to live with her uncle and aunt for the summer.",
-    "video_key": null,
+    "video_key": "MYBukURE62w",
     "poster_path": "/2ygShFSdj1hug8xj2q28OMktAU4.jpg",
     "backdrop_path": "/4hS2FAz65RKwNYmzyAq4uc994CG.jpg",
     "release_date": "1998-12-25",
@@ -408,7 +864,7 @@ const unseenMovies =
     "overview": "In the post–World War II South, two families are pitted against a barbaric social hierarchy and an unrelenting landscape as they simultaneously fight the battle at home and the battle abroad.",
     "video_key": "vAZWhFI9lLQ",
     "poster_path": "/7cL7UgVMeP9xDSxU2NyAqeAQAbt.jpg",
-    "backdrop_path": "/h5eLFfFcYSFL9qai3wUfJACEGlZ.jpg",
+    "backdrop_path": "/fpL7AHiAlLMU1LhobIcdXwfOafh.jpg",
     "release_date": "2017-11-16",
     "watch_data": "https://www.themoviedb.org/movie/414425-mudbound/watch?locale=US",
     "chosen_by": null,
@@ -428,7 +884,7 @@ const unseenMovies =
     "poster_path": "/8ethJ2FuHMMwMYh0hJR2hpec0YX.jpg",
     "backdrop_path": "/dtbtAEYwZXd8S2qF5uvg5nbrnjG.jpg",
     "release_date": "1998-10-17",
-    "watch_data": null,
+    "watch_data": "https://www.youtube.com/watch?v=Q3iyMrf9E7c",
     "chosen_by": null,
     "date_watched": null
   },
@@ -503,7 +959,7 @@ const unseenMovies =
     "poster_path": "/gxGOkt6WBhSIdZiQqyVEccRURVv.jpg",
     "backdrop_path": "/wLNDiDL0o4Ht2UsLd1jGu4tCM5N.jpg",
     "release_date": "1995-05-04",
-    "watch_data": null,
+    "watch_data": "https://www.youtube.com/watch?v=YlU9GgIsh90",
     "chosen_by": null,
     "date_watched": null
   },
@@ -540,7 +996,7 @@ const unseenMovies =
     "overview": "A modern day adaptation of the ancient Greek play Lysistrata by Aristophanes, set against the backdrop of gang violence in Chicago.",
     "video_key": "FEbeUK4EAbM",
     "poster_path": "/ml3LitMKejwxrYNTQWdwIbyhDeb.jpg",
-    "backdrop_path": "/wmlQqGUdS0zTSipyHQGLcC6d93G.jpg",
+    "backdrop_path": "/2DDR3a4aVVnQAJUrKOWrcjqXd2J.jpg",
     "release_date": "2015-12-04",
     "watch_data": "https://www.themoviedb.org/movie/340275-chi-raq/watch?locale=US",
     "chosen_by": null,
@@ -592,7 +1048,7 @@ const unseenMovies =
     "overview": "Chris and his girlfriend Rose go upstate to visit her parents for the weekend. At first, Chris reads the family's overly accommodating behavior as nervous attempts to deal with their daughter's interracial relationship, but as the weekend progresses, a series of increasingly disturbing discoveries lead him to a truth that he never could have imagined.",
     "video_key": "xnGTjx-AVdc",
     "poster_path": "/qbaIViX3tgWSTSFXbldq0ODMdi4.jpg",
-    "backdrop_path": "/vZ7EVk7FaNEWYqlVWbFLHP8Z0LU.jpg",
+    "backdrop_path": "/lZsaB4igyglJuPONSd65NoiwnfH.jpg",
     "release_date": "2017-02-24",
     "watch_data": "https://www.themoviedb.org/movie/419430-get-out/watch?locale=US",
     "chosen_by": null,
@@ -663,7 +1119,7 @@ const unseenMovies =
       35
     ],
     "overview": "Pierce Mundy has low ambitions and no plans settles for working at his parent's dry cleaners in South Central Los Angeles after being fired from his previous job. Pierce wastes his days fooling around with his childhood friend, Soldier, who has been recently released from prison. When his brother Wendell  plans on marrying someone of a higher social class, Sonia , his disdain for her prevents him from making the morally right decision.",
-    "video_key": null,
+    "video_key": "CXwMohfsapg",
     "poster_path": "/ou66bJnkz33zGtoBe5LIIfs9pHf.jpg",
     "backdrop_path": "/aH5eCDPQxG3S6qMG0RqU2gqjFvS.jpg",
     "release_date": "1983-09-13",
@@ -829,7 +1285,7 @@ const unseenMovies =
       10749
     ],
     "overview": "The summer before she leaves for college, Ayanna meets handsome and mysterious outsider Isaiah; her entire world is turned upside down as she navigates the demanding terrain of young love against a changing Harlem landscape.",
-    "video_key": null,
+    "video_key": "CE5awNqk-18",
     "poster_path": "/fBObPsFFSnV7fOAkciYzTXJHEQ5.jpg",
     "backdrop_path": "/gz8eQ8ysCcHIImHRvLr1mgx6Eot.jpg",
     "release_date": "2020-02-21",
@@ -909,7 +1365,7 @@ const unseenMovies =
     "poster_path": "/u4IhbcmRLSqf4QmsrL82Y1iqXcv.jpg",
     "backdrop_path": "/5ko8USZZWXiIYDuNnIRaOCGyoh9.jpg",
     "release_date": "2019-08-08",
-    "watch_data": null,
+    "watch_data": "https://vimeo.com/389428918",
     "chosen_by": null,
     "date_watched": null
   },
@@ -928,7 +1384,7 @@ const unseenMovies =
     "poster_path": "/hIQC7xDpq62LDNuCT1SrMKu6Taj.jpg",
     "backdrop_path": "/dOlSxPFMMd4hd3fUlrHJ555dt4Z.jpg",
     "release_date": "2016-03-13",
-    "watch_data": null,
+    "watch_data": "https://vimeo.com/178011614#t=2736s",
     "chosen_by": null,
     "date_watched": null
   },
@@ -947,7 +1403,7 @@ const unseenMovies =
     "poster_path": "/fyHSENRbTLjd8GWqkVQDlLzKjV.jpg",
     "backdrop_path": "/1x847ZGP9f0jYhlon2vFx0zRVJW.jpg",
     "release_date": "2013-01-19",
-    "watch_data": null,
+    "watch_data": "https://vimeo.com/183085974",
     "chosen_by": null,
     "date_watched": null
   },
@@ -963,11 +1419,11 @@ const unseenMovies =
       18
     ],
     "overview": "16th July 1969: America prepares to launch Apollo 11. Thousands of kilometers away, a ragtag group of Zambian exiles is trying to beat America to the Moon.",
-    "video_key": "lb3pu5jXWHU",
+    "video_key": null,
     "poster_path": "/khe08dqAIAmGOz2wi2HAQxOu11D.jpg",
     "backdrop_path": "/qinRV5FpUtU31Pgv2C1jvKKEkVd.jpg",
     "release_date": "2014-01-18",
-    "watch_data": "https://www.themoviedb.org/movie/266714-afronauts/watch?locale=US",
+    "watch_data": "https://www.youtube.com/watch?v=lb3pu5jXWHU",
     "chosen_by": null,
     "date_watched": null
   },
@@ -986,7 +1442,7 @@ const unseenMovies =
     "poster_path": "/wyVUsyYYLNNwa1OsPDMbfnaGFnL.jpg",
     "backdrop_path": "/yCgY0rE9WSSdEQoH5mGJrt1vN9i.jpg",
     "release_date": "2016-02-16",
-    "watch_data": null,
+    "watch_data": "https://www.pbs.org/pov/watch/reluctantlyqueer/video-reluctantly-queer/",
     "chosen_by": null,
     "date_watched": null
   },
@@ -1005,7 +1461,7 @@ const unseenMovies =
     "poster_path": "/3ryhhViNoO1LvxHW3tmpLjFzOhL.jpg",
     "backdrop_path": "/sDhTiKRPI4z0aqUPeLgRuSYbNNV.jpg",
     "release_date": "2017-09-20",
-    "watch_data": null,
+    "watch_data": "https://www.youtube.com/watch?v=vemJFbayDrM",
     "chosen_by": null,
     "date_watched": null
   },
@@ -1025,7 +1481,7 @@ const unseenMovies =
     "poster_path": "/WvKCOEZGxkBuNWB9jf6BwVUZ4S.jpg",
     "backdrop_path": "/n01HPRuwgBazgDHwFw012SD4mml.jpg",
     "release_date": "2012-09-01",
-    "watch_data": "https://www.themoviedb.org/movie/285265-yellow-fever/watch?locale=US",
+    "watch_data": "https://vimeo.com/122574484",
     "chosen_by": null,
     "date_watched": null
   },
@@ -1043,7 +1499,7 @@ const unseenMovies =
     "poster_path": "/fpYu6zTCaAHMX0t8HGAD5q9syWz.jpg",
     "backdrop_path": "/eGhQXfGeNdJfywH6ZmjRwN3f1X8.jpg",
     "release_date": "1920-01-12",
-    "watch_data": "https://www.themoviedb.org/movie/77621-within-our-gates/watch?locale=US",
+    "watch_data": "https://www.youtube.com/watch?v=h1E0NrcnwAE",
     "chosen_by": null,
     "date_watched": null
   },
@@ -1061,7 +1517,7 @@ const unseenMovies =
     "poster_path": "/rLPrttxRyYtkcQEGXjsTXp1Glh4.jpg",
     "backdrop_path": "/v5B596E3IvllVvIJc3EpJJj0VwM.jpg",
     "release_date": "1925-11-09",
-    "watch_data": "https://www.themoviedb.org/movie/86955-body-and-soul/watch?locale=US",
+    "watch_data": "https://www.youtube.com/watch?v=-A9alUp1pa8",
     "chosen_by": null,
     "date_watched": null
   },
@@ -1095,7 +1551,7 @@ const unseenMovies =
     "overview": "A film about the singer Tina Turner and how she rose to stardom with her abusive husband Ike Turner and how she gained the courage to break free.",
     "video_key": null,
     "poster_path": "/oFAgqsmjPmwRP4dZqbe51HlpPIi.jpg",
-    "backdrop_path": "/2caJqm18xLKMNuBdpz4v4ry0X4F.jpg",
+    "backdrop_path": "/ow5u27LapD6xMe24o2ITnZDoz7z.jpg",
     "release_date": "1993-06-09",
     "watch_data": "https://www.themoviedb.org/movie/15765-what-s-love-got-to-do-with-it/watch?locale=US",
     "chosen_by": null,
@@ -1115,7 +1571,7 @@ const unseenMovies =
     "poster_path": "/8I97W0YqmclNNnAsVSzNTnQBcjc.jpg",
     "backdrop_path": "/cauqyUWjhJy8s4uvsxE1r1D1fFz.jpg",
     "release_date": "1970-10-11",
-    "watch_data": null,
+    "watch_data": "https://www.youtube.com/watch?reload=9&v=NYgYH1o-J8c",
     "chosen_by": null,
     "date_watched": null
   },
@@ -1132,7 +1588,7 @@ const unseenMovies =
     "overview": "The story of Rudy Ray Moore, who created the iconic big screen pimp character Dolemite in the 1970s.",
     "video_key": "Ws1YIKsuTjQ",
     "poster_path": "/sZuQkwHEiXxWN3W2Z8cJelKWbRE.jpg",
-    "backdrop_path": "/cTuS5DJWhu1UoZVNJaUjgMNW5h7.jpg",
+    "backdrop_path": "/8FuiFasbeFQj24Vqx6JqSCqj5lO.jpg",
     "release_date": "2019-10-04",
     "watch_data": "https://www.themoviedb.org/movie/528888-dolemite-is-my-name/watch?locale=US",
     "chosen_by": null,
@@ -1150,7 +1606,7 @@ const unseenMovies =
     "overview": "Dolemite is a pimp who was set up by Willie Greene and the cops, who have planted drugs, stolen furs, and guns in his trunk and got him sentenced to 20 years in jail. One day, Queen B and a warden planned to get him out of Jail and get Willie Green and Mitchell busted for what they did to him.",
     "video_key": "pJKknBOrE5E",
     "poster_path": "/sAXm4DekviDqETxnxsTQM4druy5.jpg",
-    "backdrop_path": "/sytoeq1ScNHTbjUaAPRzshjtN63.jpg",
+    "backdrop_path": "/yJBJl3jXczTzf70bPvYS40oaUy2.jpg",
     "release_date": "1975-04-26",
     "watch_data": "https://www.themoviedb.org/movie/19174-dolemite/watch?locale=US",
     "chosen_by": null,
@@ -1187,7 +1643,7 @@ const unseenMovies =
     "poster_path": "/jCPX7opP2FCCCimff7bN8sNNzgb.jpg",
     "backdrop_path": "/mQ1G4eW50RCnzejcpjvskqFJbWi.jpg",
     "release_date": "1975-05-21",
-    "watch_data": null,
+    "watch_data": "https://www.youtube.com/watch?v=kb-SBGpuoZc",
     "chosen_by": null,
     "date_watched": null
   },
@@ -1204,7 +1660,7 @@ const unseenMovies =
     "poster_path": "/obIfAZlmsCe7cl0ikeo2a2itZvG.jpg",
     "backdrop_path": "/vjjPoelqwMkOUJkB59cdFfrrVkV.jpg",
     "release_date": "1974-10-04",
-    "watch_data": "https://www.themoviedb.org/movie/68714-the-house-on-skull-mountain/watch?locale=US",
+    "watch_data": "https://www.youtube.com/watch?v=pULIS_CbTvg",
     "chosen_by": null,
     "date_watched": null
   },
@@ -1237,7 +1693,7 @@ const unseenMovies =
     "poster_path": "/6g1cwaNx4ETFJTyu8RPNFUDiRuZ.jpg",
     "backdrop_path": "/wGNIBWZBVDbaVjQaIbf53zedvte.jpg",
     "release_date": "1998-10-16",
-    "watch_data": null,
+    "watch_data": "https://www.youtube.com/watch?v=HI7T68PUTIU",
     "chosen_by": null,
     "date_watched": null
   },
@@ -1249,11 +1705,11 @@ const unseenMovies =
       100
     ],
     "overview": "American Revolution 2 begins with footage of the political demonstrations at the 1968 Democratic Convention and the forceful reaction of the Chicago Police Department and the National Guard. Investigating the lack of an African American presence at the protests, the filmmakers follow members of the Chicago chapter of the Black Panther Party as they search for common ground with a variety of white activist groups.  In one scene, Panther Bobby Lee and members of the Young Patriots, a community of white Appalachian activists living in the Uptown neighborhood of Chicago, organize to protest police brutality. The seemingly disparate groups find shared social and political objectives that overcome racial differences – police violence, poverty, lack of employment, and poor living conditions. This potential for a cross-racial and interethnic political movement is the movie’s beautiful but unrealized dream.",
-    "video_key": null,
+    "video_key": "Q96AcP_q-rE",
     "poster_path": "/y03qyZJhg3XaTBuK6TDoQEswupJ.jpg",
     "backdrop_path": "/yxB7QG6QTUtjLhlWNpLcRrAM5M4.jpg",
     "release_date": "1969-01-01",
-    "watch_data": null,
+    "watch_data": "https://vimeo.com/351632080",
     "chosen_by": null,
     "date_watched": null
   },
@@ -1300,7 +1756,7 @@ const unseenMovies =
     "poster_path": "/aKlQ8Sjr07OkCLuYkRYtpVSMm3e.jpg",
     "backdrop_path": "/f1YohZe2PDV5OgTPwNVvRhhV935.jpg",
     "release_date": "2012-05-24",
-    "watch_data": "https://www.themoviedb.org/movie/124067-the-central-park-five/watch?locale=US",
+    "watch_data": "https://www.pbs.org/kenburns/the-central-park-five/",
     "chosen_by": null,
     "date_watched": null
   },
@@ -1331,7 +1787,7 @@ const unseenMovies =
     "poster_path": "/9A3hG4XsV49t1Cc3QAnBk6bTW5a.jpg",
     "backdrop_path": "/tt0zJM9SAFDkd6hndBI7lcEmFZi.jpg",
     "release_date": "2004-09-04",
-    "watch_data": null,
+    "watch_data": "https://www.youtube.com/watch?v=q0gRGoDchMU",
     "chosen_by": null,
     "date_watched": null
   },
@@ -1342,7 +1798,7 @@ const unseenMovies =
       99
     ],
     "overview": "A documentary film that highlights two street derived dance styles, Clowning and Krumping, that came out of the low income neighborhoods of L.A.. Director David LaChapelle interviews each dance crew about how their unique dances evolved. A new and positive activity away from the drugs, guns, and gangs that ruled their neighborhood. A raw film about a growing sub-culture movements in America.",
-    "video_key": null,
+    "video_key": "wwLo32UulVY",
     "poster_path": "/7vMjrEtNPUOxiztcHOKxCuu6NS3.jpg",
     "backdrop_path": "/n7OSD6R6wtpTVPaNIKYWWdJlv3Y.jpg",
     "release_date": "2005-01-15",
@@ -1361,7 +1817,7 @@ const unseenMovies =
     "poster_path": "/d0rDkNZ7gtwgI3jhwH57qDw7XH4.jpg",
     "backdrop_path": "/deOstkfYizaEBHqLc2p44v1bEay.jpg",
     "release_date": "2018-03-18",
-    "watch_data": null,
+    "watch_data": "https://www.hulu.com/watch/70b899bd-985e-4ff0-9193-c00a236b2f0a",
     "chosen_by": null,
     "date_watched": null
   },
@@ -1370,10 +1826,11 @@ const unseenMovies =
     "title": "A Well Spent Life",
     "genres": [
       99,
-      10402
+      10402,
+      52
     ],
     "overview": "A tribute to the Texas songster, Mance Lipscomb, considered by many to be the greatest guitarist of all time.",
-    "video_key": null,
+    "video_key": "HVq2zoPHgMs",
     "poster_path": "/yBbLB4ntcod8EFack9aVCDjUf0z.jpg",
     "backdrop_path": "/ssq8bxHS1sKYUIcUmqREY7TbIUw.jpg",
     "release_date": "1971-03-11",
@@ -1409,7 +1866,7 @@ const unseenMovies =
     "overview": "A documentary which traces the life of the magnetic, world-conquering, Jamaican musician, model and party queen Grace Jones.",
     "video_key": "fPDu1e8uZTs",
     "poster_path": "/2ui0HxKINUwmEfYpuUGP7GeoiQd.jpg",
-    "backdrop_path": "/zy6qnP8PfyvQYDY2zOS5aUuu5ep.jpg",
+    "backdrop_path": "/h0mdfd70SIm2F13aWitdDYAEg4m.jpg",
     "release_date": "2017-10-25",
     "watch_data": "https://www.themoviedb.org/movie/470831-grace-jones-bloodlight-and-bami/watch?locale=US",
     "chosen_by": null,
@@ -1437,14 +1894,15 @@ const unseenMovies =
     "genres": [
       18,
       53,
-      88
+      88,
+      1977
     ],
     "overview": "Black militants building up an arsenal of weapons in preparation for a race war are betrayed by one of their own.",
     "video_key": null,
     "poster_path": "/AarSCjmzKvKe7rXW7AwnXVbwFjE.jpg",
     "backdrop_path": "/3u8f16v26jKjpOHhIBN6BHUC7x0.jpg",
     "release_date": "1968-12-28",
-    "watch_data": "https://www.themoviedb.org/movie/121971-uptight/watch?locale=US",
+    "watch_data": "https://www.youtube.com/watch?v=gam5QLZaYlk&t=1s",
     "chosen_by": null,
     "date_watched": null
   },
@@ -1461,7 +1919,7 @@ const unseenMovies =
     "overview": "A group of people try to survive an attack of bloodthirsty zombies while trapped in a rural Pennsylvania farmhouse.",
     "video_key": "-xv062_vcsI",
     "poster_path": "/rSBkU4g4uvZQIMOSpvrmvR4VwhA.jpg",
-    "backdrop_path": "/msPUiG0tIVPcLblsCs43yRKEdBr.jpg",
+    "backdrop_path": "/hoxR6RPNKLBz75wZ0Ru2N1MIvfB.jpg",
     "release_date": "1968-10-04",
     "watch_data": "https://www.themoviedb.org/movie/10331-night-of-the-living-dead/watch?locale=US",
     "chosen_by": null,
@@ -1476,7 +1934,7 @@ const unseenMovies =
       35
     ],
     "overview": "Dancing great Bill Williamson sees his face on the cover of Theatre World magazine and reminisces: Just back from World War I, he meets lovely singer Selina Rogers at a soldiers' ball and promises to come back to her when he \"gets to be somebody.\" Years go by, and Bill and Selina's rising careers intersect only briefly, since Selina is unwilling to settle down. Will she ever change her mind? Concludes with a big all-star show hosted by Cab Calloway.",
-    "video_key": null,
+    "video_key": "m3uGnMtzOog",
     "poster_path": "/d6XpJ69jXvP5WXzVsKVR4rUJhe1.jpg",
     "backdrop_path": "/7yoJ3hV78s6QqX9PiRiXg4OKmK3.jpg",
     "release_date": "1943-07-21",
@@ -1523,7 +1981,8 @@ const unseenMovies =
     "title": "Dry Wood",
     "genres": [
       99,
-      10402
+      10402,
+      52
     ],
     "overview": "Featuring the stories and music of seminal Cajun musicians \"Bois Sec\" Ardoin and Canray Fontenot, Dry Wood is a short, vibrant documentary portrait of life, food, music and festivity in the Louisiana Delta from the singular Les Blank.",
     "video_key": null,
@@ -1542,12 +2001,13 @@ const unseenMovies =
       10749,
       878,
       6251,
-      10402
+      10402,
+      100
     ],
     "overview": "The story of a young woman named Jane 57821, who is living in a totalitarian near-future society where citizens are referred to as 'computers.' 'Dirty Computer' explores humanity and what truly happens to life, liberty and the pursuit of happiness when mind and machines merge, and when the government chooses fear over freedom.",
     "video_key": "A9k89DYdHKQ",
     "poster_path": "/1hu0J8UTfnsI5GrhgqkfIj0Ihp7.jpg",
-    "backdrop_path": "/dzBqwS4bfPLMQ5ePDnER10vEbUl.jpg",
+    "backdrop_path": "/8vLwhDGFOpLfiy2uJcUf9rKwy2m.jpg",
     "release_date": "2018-04-23",
     "watch_data": "https://www.themoviedb.org/movie/517582-dirty-computer/watch?locale=US",
     "chosen_by": null,
@@ -1578,12 +2038,13 @@ const unseenMovies =
       10402,
       6251,
       887,
-      37
+      37,
+      100
     ],
     "overview": "In the three years since her seminal album \"A Seat at the Table\", Solange has broadened her artistic reach, expanding her work to museum installations, unconventional live performances, and striking videos. With her fourth album, \"When I Get Home\", the singer continues to push her vision forward with an exploration of roots and their lifelong influence. In Solange's case, that's the culturally rich Houston of her childhood. Some will know these references - candy paint, the late legend DJ Screw - via the city's mid-aughts hip-hop explosion, but through Solange's lens, these same touchstones are elevated to high art.",
     "video_key": "Q55AVeXzqeE",
     "poster_path": "/r9UHy41r7NgHSTFNPLEzrXuUS5v.jpg",
-    "backdrop_path": "/lBrcSpcdxwIyYE96V3ERT6UNiD1.jpg",
+    "backdrop_path": "/mkgTuMl54PYnzn0JfBuD0DywCd.jpg",
     "release_date": "2019-03-01",
     "watch_data": null,
     "chosen_by": null,
@@ -1624,7 +2085,7 @@ const unseenMovies =
     "poster_path": "/zRvDHCqsYDFgEGpV0M2sSK728Xw.jpg",
     "backdrop_path": "/sopMsXMsgGLP3PnDwAO5NLuUKeO.jpg",
     "release_date": "2019-10-02",
-    "watch_data": null,
+    "watch_data": "https://www.justwatch.com/us/movie/atlantics-2019",
     "chosen_by": null,
     "date_watched": null
   },
@@ -1639,7 +2100,7 @@ const unseenMovies =
       889
     ],
     "overview": "A hybrid film set in London by a Rwandan director, exploring a three­way relationship between a mysterious Nigerian man, a British woman and her ex. After his death, Simon appears to the ex as a ghost to tell his story, demanding a presence that was denied him as an asylum seeker. British and European political furor threaten both the director’s film plans and his stay in the UK. The fictional scenes are intercut with scenes of demonstrations.",
-    "video_key": null,
+    "video_key": "69xEOn4wokc",
     "poster_path": "/dpmQprXRYvpMn1STCkdoYshQP94.jpg",
     "backdrop_path": "/xfItINhmLe1RuMauRAqmu5cHz1V.jpg",
     "release_date": "",
@@ -1657,11 +2118,11 @@ const unseenMovies =
       889
     ],
     "overview": "El Hadj is studying in Paris. He is one of the young Senegalese men who have come to Paris since the French colony became independent to get a good education so that he can serve his fatherland on his return. Unexpectedly he is suddenly confronted by a problem with his residence papers, just because he has arranged an extension too late. His pleasant life filled with good prospects has gone in one fell swoop. He faces a dilemma. He can stay illegally in France, the country where he feels at home, where he has his friends, has fallen in love and can drink water from the tap. Or he can return (without graduating) to the 3rd-world country of Senegal to use the knowledge he has acquired. It is not only a practical choice. It comes down to the question of who he is, who he thought he could be.",
-    "video_key": null,
+    "video_key": "e1yPF-OWInc",
     "poster_path": "/8YN08WRXVjn84zL54wsrraIRwCg.jpg",
     "backdrop_path": "/iObUl9ATqasrZAdSt9v5Uqs7Kf7.jpg",
     "release_date": "2001-01-01",
-    "watch_data": null,
+    "watch_data": "https://www.youtube.com/watch?v=VoIast31FOE",
     "chosen_by": null,
     "date_watched": null
   },
