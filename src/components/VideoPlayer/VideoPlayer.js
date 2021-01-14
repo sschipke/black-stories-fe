@@ -5,7 +5,6 @@ import { openVideoPlayer, closeVideoPlayer } from '../../actions';
 import './VideoPlayer.scss';
 
 export const VideoPlayer = ({currentMovie, isOpen, closeVideoPlayer}) => {
-  console.log({isOpen}, {currentMovie})
   if(!isOpen) {
     return '';
   }

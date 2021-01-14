@@ -6,7 +6,6 @@ import { displayGenres } from '../../util/helpers';
 import './MoviePage.scss';
 
 const MoviePage = ({movie, setCurrentMovie, openVideoPlayer}) => {
-  console.log({movie})
   setCurrentMovie(movie)
   return <section className="movie-section" >
       <img 

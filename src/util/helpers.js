@@ -15,24 +15,24 @@ function generateRandomImageNumber(max) {
     if(randomNum < 1 || randomNum > max) {
       return generateRandomImageNumber(max);
     }
-    console.log({randomNum})
   return randomNum
 }
 
-export const displayTwoGenres=(genres) => {
-  console.log('genres first', genres)
+export const displayTwoGenres=(genres, excludeGenreId) => {
+  let excludedGenre = genreMap[excludeGenreId]
   let genreElements = [];
   if(!genres) {
     return []
   }
   for (let i = 0; genreElements.length <= 1 && i < genres.length; i++) {
-    console.log('iteration', i)
-    if(genres[i] && genreMap[genres[i]]) {
-      console.log('genres i', genres[i], 'map', genreMap[genres[i]])
+    let currentGenre = genres[i]
+    if(currentGenre === 100 || currentGenre === 6251 || currentGenre === excludeGenreId) {
+      continue
+    }
+    if(currentGenre && genreMap[currentGenre]) {
     genreElements.push(genreMap[genres[i]]);
     }
   }
-  console.log('in function', genreElements)
   return genreElements
 }
 
