@@ -6,7 +6,6 @@ import unseenMovies from '../../data/unseenMovies';
 import './MovieView.scss';
 
 const MovieView = ({movieId}) => {
-  console.log('In movie view. ID=: ', {movieId})
   const currentMovie = unseenMovies.find(movie => movie.id === Number(movieId))
   return <main className="movie-view">
     <Nav  />
