@@ -14,7 +14,7 @@ export const MovieCard = ({ movie, selectedGenreId }) => {
   const blackDirectorSrc = genres.includes(100) ? directorIcon : '';
   const femaleDirectorSrc = genres.includes(6251) ? femaleIcon : '';
   const genresToDisplay =  displayTwoGenres(movie.genres, selectedGenreId).map(genreName => (<p 
-  key={genreName}
+  key={genreName + selectedGenreId}
   className="movie-card-genre">
     {genreName}
   </p>));

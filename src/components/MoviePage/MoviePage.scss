@@ -11,7 +11,8 @@ section {
   .movie-interactions-div {
     flex-direction: column;
     width: 100%;
-    max-height: 100%;
+    max-height: calc(100% - 15px);
+    padding-bottom: 10px;
   }
   .movie-info-div {
     max-height: 90%;
@@ -23,13 +24,9 @@ section {
     text-transform: uppercase;
     margin-right: 10px;
   }
-  .movie-overview-div {
-    height: 100px;
-  }
   p.movie-overview {
     margin-right: 20px;
-    max-height: 200px;
-    padding-bottom: 5px;
+    max-height: 150px;
     overflow: auto;
     text-overflow: ellipsis;
       &::-webkit-scrollbar {
@@ -42,13 +39,12 @@ section {
   }
   p.genres {
     font-size: 1rem;
-    word-break: keep-all;
   }
 
 }
 .movie-view-backdrop {
   height: auto;
-  max-height: 60%;
+  // max-height: 350px;
   width: auto;
   max-width: 100%;
 }
