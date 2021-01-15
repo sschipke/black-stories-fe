@@ -8,12 +8,11 @@ h1, h2 {
 
 .nav-headers-container {
   flex-direction: column;
-  min-height: 435px;
   width: 100%;
   min-width: 435px;
-  .subheader-div {
+  h2 {
+    hyphens: auto;
     margin-top: 50px;
-    min-height: 200px;
   }
   .home-link:hover {
     color: #000000;

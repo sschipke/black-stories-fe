@@ -26,12 +26,6 @@ section {
   }
   p.movie-overview {
     margin-right: 20px;
-    max-height: 150px;
-    overflow: auto;
-    text-overflow: ellipsis;
-      &::-webkit-scrollbar {
-      display: none;
-    }
   }
   .movie-page-genres-div {
     width: 25%;
@@ -44,7 +38,6 @@ section {
 }
 .movie-view-backdrop {
   height: auto;
-  // max-height: 350px;
   width: auto;
   max-width: 100%;
 }
