@@ -43,6 +43,9 @@ button {
 div {
   display: flex;
 }
+.App {
+  height: calc(100vh - 2rem);
+}
 
 
 /* @media (prefers-reduced-motion: no-preference) {
