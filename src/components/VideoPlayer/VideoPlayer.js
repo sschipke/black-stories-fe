@@ -2,18 +2,18 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { openVideoPlayer, closeVideoPlayer } from '../../actions';
-import closeIcon from '../../assets/icons/video_player_close.svg';
 import './VideoPlayer.scss';
 
 export const VideoPlayer = ({currentMovie, isOpen, closeVideoPlayer}) => {
-  console.log({isOpen}, {currentMovie})
   if(!isOpen) {
     return '';
   }
   const {video_key} = currentMovie;
   return (
     // <div className="modal">
-    <div className="modal-background" >
+    <div className="modal-background" 
+    title="close video player"
+    onClick={() => closeVideoPlayer()}>
       <div className="modal-content">
         <div className="preview-container">
           <iframe
@@ -26,11 +26,10 @@ export const VideoPlayer = ({currentMovie, isOpen, closeVideoPlayer}) => {
       </div>
       <button 
             className="video-close-button"
+            title="close video player"
             type="button"
             onClick={() => closeVideoPlayer()}
-            >
-            <img src={closeIcon} alt="close video" />
-          </button>
+            />
     </div>
   )
 

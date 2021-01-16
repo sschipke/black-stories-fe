@@ -6,7 +6,9 @@ import './Main.scss';
 const Main = () => {
   return <main className="landing-page">
       <Nav />
-      <img className="main-image" src={determineMainImage()} alt="movie backdrop" />
+      <div className="main-image-div">
+        <img className="main-image" src={determineMainImage()} alt="movie backdrop" />
+      </div>
   </main>
 }
 

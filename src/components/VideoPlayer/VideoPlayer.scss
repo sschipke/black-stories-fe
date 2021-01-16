@@ -9,16 +9,51 @@
   width: 100vw;
   max-height:100vh;
   align-items: flex-start;
-  .video-close-button {
-    margin: 30px 30px 0 0;
-    transform: rotate(45deg);
-    transition: 0.30s;
-    &:hover {
-      transition: 0.50s;
-
-      transform: rotate(0deg);
-    }
+  &:hover  {
+    cursor: pointer;
   }
+.video-close-button {
+    $size: 50px;
+    height: $size;
+    width: $size;
+    margin: 25px 25px 0 0;
+    position: relative;
+    line-height: $size;
+    display: inline-block;
+
+    &:before, &:after {
+        $width: 75px;
+        $height: 10px;
+        transform: rotate(45deg);
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-top: -$height/2;
+        margin-left: -$width/2;
+        display: block;
+        height: $height;
+        width: $width;
+        border-radius: 10px;
+        background-color: #fff;
+        transition: all 0.5s ease-out;
+    }
+
+    &:after {
+        transform: rotate(-45deg);
+    }
+
+    &:hover {
+
+        &:before {
+            transform: rotate(-45deg);
+        }
+      &:after {
+        transform: rotate(45deg)
+      }
+    }
+}
+
 }
 
 .modal-content {

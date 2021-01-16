@@ -9,14 +9,8 @@ export const GenrePage = ({genreId, genreTitle}) => {
   if(genreTitle && genreId) {
     genreTitle = genreTitle.replace('_', ' ').toUpperCase();
     genreMovies = unseenMovies.filter(movie => movie.genres.includes(genreId))
-    .map(movie => <MovieCard movie={movie} key={movie.id}/>)
+    .map(movie => <MovieCard movie={movie} selectedGenreId={genreId} key={movie.id}/>)
   }
-
-  // if (genreMovies.length > 0) {
-
-  // }
-  
-  console.log({genreTitle}, {genreId});
   return <main className="genre-page">
     <Nav subHeader={genreTitle} />
     <div className="movies-container">

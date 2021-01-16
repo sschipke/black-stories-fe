@@ -5,10 +5,11 @@ main{
   min-height: 100vh;
   height:100%;
   width: 100vw;
-  img.main-image {
-    display: block;
-    height: auto;
-    width: 60%;
+  .main-image-div {
     margin-left: min(50px)
+  }
+  img.main-image {
+    height: auto;
+    width: 100%;
   }
 }
