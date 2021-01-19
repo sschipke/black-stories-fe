@@ -28,6 +28,7 @@ const genreMap = {
   '878': 'Science Fiction',
   '887': 'Experimental',
   '888': 'Indie',
+  '889': 'Foreign',
   '1977': 'Blaxploitation',
   '6251': 'Female Director',
   '9648': 'Mystery',
