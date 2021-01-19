@@ -1,5 +1,4 @@
-const unseenMovies =
-[
+const unseenMovies =[
   {
     "id": 17364,
     "title": "Their Eyes Were Watching God",
@@ -18,7 +17,9 @@ const unseenMovies =
     "release_date": "2005-03-06",
     "watch_data": "https://www.youtube.com/watch?v=teUi8N5ZaNs",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 113
   },
   {
     "id": 51044,
@@ -36,7 +37,9 @@ const unseenMovies =
     "release_date": "1954-10-28",
     "watch_data": "https://www.themoviedb.org/movie/51044-carmen-jones/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 105
   },
   {
     "id": 9400,
@@ -54,7 +57,9 @@ const unseenMovies =
     "release_date": "1996-11-06",
     "watch_data": "https://www.themoviedb.org/movie/9400-set-it-off/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 123
   },
   {
     "id": 21539,
@@ -73,7 +78,9 @@ const unseenMovies =
     "release_date": "1996-12-13",
     "watch_data": "https://www.themoviedb.org/movie/21539-the-preacher-s-wife/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 124
   },
   {
     "id": 18423,
@@ -89,7 +96,9 @@ const unseenMovies =
     "release_date": "1997-03-28",
     "watch_data": "https://www.themoviedb.org/movie/18423-b-a-p-s/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 90
   },
   {
     "id": 46702,
@@ -106,7 +115,9 @@ const unseenMovies =
     "release_date": "1998-08-28",
     "watch_data": "https://www.themoviedb.org/movie/46702-why-do-fools-fall-in-love/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 116
   },
   {
     "id": 23148,
@@ -126,7 +137,9 @@ const unseenMovies =
     "release_date": "1972-10-12",
     "watch_data": "https://www.youtube.com/watch?v=pScVQQDDyuI",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 144
   },
   {
     "id": 22021,
@@ -144,7 +157,9 @@ const unseenMovies =
     "release_date": "1973-06-13",
     "watch_data": "https://www.themoviedb.org/movie/22021-coffy/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 90
   },
   {
     "id": 26196,
@@ -163,7 +178,9 @@ const unseenMovies =
     "release_date": "1973-07-13",
     "watch_data": "https://www.themoviedb.org/movie/26196-cleopatra-jones/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 89
   },
   {
     "id": 27716,
@@ -182,7 +199,9 @@ const unseenMovies =
     "release_date": "1975-08-20",
     "watch_data": "https://www.themoviedb.org/movie/27716-coonskin/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 83
   },
   {
     "id": 136718,
@@ -201,7 +220,9 @@ const unseenMovies =
     "release_date": "2012-10-07",
     "watch_data": "https://www.themoviedb.org/movie/136718-steel-magnolias/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 90
   },
   {
     "id": 36739,
@@ -220,7 +241,9 @@ const unseenMovies =
     "release_date": "1988-02-12",
     "watch_data": "https://www.themoviedb.org/movie/36739-school-daze/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 121
   },
   {
     "id": 13763,
@@ -237,7 +260,9 @@ const unseenMovies =
     "release_date": "1984-07-24",
     "watch_data": "https://www.themoviedb.org/movie/13763-purple-rain/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 111
   },
   {
     "id": 24664,
@@ -256,7 +281,9 @@ const unseenMovies =
     "release_date": "2000-10-06",
     "watch_data": "https://www.themoviedb.org/movie/24664-bamboozled/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 136
   },
   {
     "id": 26522,
@@ -274,7 +301,9 @@ const unseenMovies =
     "release_date": "1984-09-18",
     "watch_data": "https://www.themoviedb.org/movie/26522-a-soldier-s-story/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 101
   },
   {
     "id": 35711,
@@ -292,7 +321,9 @@ const unseenMovies =
     "release_date": "1975-06-25",
     "watch_data": "https://www.themoviedb.org/movie/35711-cooley-high/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 107
   },
   {
     "id": 41363,
@@ -309,7 +340,9 @@ const unseenMovies =
     "release_date": "1999-06-14",
     "watch_data": "https://www.youtube.com/watch?v=oYUy505lFAs",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 91
   },
   {
     "id": 653668,
@@ -326,7 +359,9 @@ const unseenMovies =
     "release_date": "2020-09-15",
     "watch_data": "https://www.themoviedb.org/movie/653668-miss-juneteenth/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 103
   },
   {
     "id": 653668,
@@ -345,7 +380,9 @@ const unseenMovies =
     "release_date": "2000-04-21",
     "watch_data": "https://www.themoviedb.org/movie/14736-love-basketball/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 103
   },
   {
     "id": 162660,
@@ -364,7 +401,9 @@ const unseenMovies =
     "release_date": "1982-01-01",
     "watch_data": "https://www.youtube.com/watch?v=a_O_ONYINLY",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 34
   },
   {
     "id": 349003,
@@ -383,7 +422,9 @@ const unseenMovies =
     "release_date": "1970-01-01",
     "watch_data": "https://www.youtube.com/watch?v=UD-V8UvLpMg",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 30
   },
   {
     "id": 337215,
@@ -402,7 +443,9 @@ const unseenMovies =
     "release_date": "1977-01-01",
     "watch_data": "https://www.youtube.com/watch?v=sbfHaaJ_klI",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 10
   },
   {
     "id": 369403,
@@ -422,7 +465,9 @@ const unseenMovies =
     "release_date": "2018-03-10",
     "watch_data": "https://vimeo.com/ondemand/happybirthdaymarsha",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 14
   },
   {
     "id": 159005,
@@ -439,7 +484,9 @@ const unseenMovies =
     "release_date": "2013-01-21",
     "watch_data": "https://www.themoviedb.org/movie/159005-gideon-s-army/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 96
   },
   {
     "id": 32075,
@@ -457,7 +504,9 @@ const unseenMovies =
     "release_date": "1989-01-01",
     "watch_data": "https://www.themoviedb.org/movie/32075-a-dry-white-season/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 107
   },
   {
     "id": 449757,
@@ -475,7 +524,9 @@ const unseenMovies =
     "release_date": "2018-09-07",
     "watch_data": "https://www.themoviedb.org/movie/449757-i-am-not-a-witch/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 93
   },
   {
     "id": 84175,
@@ -493,7 +544,9 @@ const unseenMovies =
     "release_date": "2012-06-29",
     "watch_data": "https://www.themoviedb.org/movie/84175-beasts-of-the-southern-wild/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 93
   },
   {
     "id": 33644,
@@ -513,7 +566,9 @@ const unseenMovies =
     "release_date": "1998-08-14",
     "watch_data": "https://www.themoviedb.org/movie/33644-how-stella-got-her-groove-back/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 124
   },
   {
     "id": 21968,
@@ -535,7 +590,9 @@ const unseenMovies =
     "release_date": "1972-08-04",
     "watch_data": "https://www.themoviedb.org/movie/21968-super-fly/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 93
   },
   {
     "id": 482,
@@ -556,7 +613,9 @@ const unseenMovies =
     "release_date": "1971-06-25",
     "watch_data": "https://www.themoviedb.org/movie/482-shaft/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 100
   },
   {
     "id": 30566,
@@ -574,7 +633,9 @@ const unseenMovies =
     "release_date": "1972-08-25",
     "watch_data": "https://www.themoviedb.org/movie/30566-blacula/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 93
   },
   {
     "id": 73823,
@@ -592,7 +653,9 @@ const unseenMovies =
     "release_date": "1989-09-15",
     "watch_data": "https://www.youtube.com/watch?v=fePUqYN3nFg",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 97
   },
   {
     "id": 114750,
@@ -609,7 +672,9 @@ const unseenMovies =
     "release_date": "2014-10-17",
     "watch_data": "https://www.themoviedb.org/movie/114750-dear-white-people/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 108
   },
   {
     "id": 11066,
@@ -626,7 +691,9 @@ const unseenMovies =
     "release_date": "1992-06-30",
     "watch_data": "https://www.themoviedb.org/movie/11066-boomerang/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 117
   },
   {
     "id": 500859,
@@ -642,7 +709,9 @@ const unseenMovies =
     "release_date": "2018-11-02",
     "watch_data": "https://www.themoviedb.org/movie/500859-black-mother/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 77
   },
   {
     "id": 89585,
@@ -659,7 +728,9 @@ const unseenMovies =
     "release_date": "2004-01-14",
     "watch_data": "https://www.themoviedb.org/movie/89585-chisholm-72-unbought-unbossed/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 75
   },
   {
     "id": 368928,
@@ -675,7 +746,9 @@ const unseenMovies =
     "release_date": "2015-10-23",
     "watch_data": "https://www.themoviedb.org/movie/368928-and-when-i-die-i-won-t-stay-dead/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 90
   },
   {
     "id": 450875,
@@ -692,7 +765,9 @@ const unseenMovies =
     "release_date": "2017-04-28",
     "watch_data": "https://www.themoviedb.org/movie/450875-la-92/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 114
   },
   {
     "id": 319089,
@@ -708,7 +783,9 @@ const unseenMovies =
     "release_date": "2015-03-08",
     "watch_data": "https://www.themoviedb.org/movie/319089-the-black-panthers-vanguard-of-the-revolution/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 113
   },
   {
     "id": 407806,
@@ -725,7 +802,9 @@ const unseenMovies =
     "release_date": "2016-10-07",
     "watch_data": "https://www.themoviedb.org/movie/407806-13th/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 100
   },
   {
     "id": 121983,
@@ -742,7 +821,9 @@ const unseenMovies =
     "release_date": "2012-09-09",
     "watch_data": "https://www.themoviedb.org/movie/121983-free-angela-and-all-political-prisoners/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 101
   },
   {
     "id": 309991,
@@ -760,7 +841,9 @@ const unseenMovies =
     "release_date": "2008-11-15",
     "watch_data": "http://www.stillblackfilm.org/purchase/",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 78
   },
   {
     "id": 95597,
@@ -778,7 +861,9 @@ const unseenMovies =
     "release_date": "1966-01-01",
     "watch_data": "https://www.themoviedb.org/movie/95597-la-noire-de/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 60
   },
   {
     "id": 137765,
@@ -794,7 +879,9 @@ const unseenMovies =
     "release_date": "1984-12-12",
     "watch_data": "https://www.themoviedb.org/movie/137765-bless-their-little-hearts/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 85
   },
   {
     "id": 420915,
@@ -812,7 +899,9 @@ const unseenMovies =
     "release_date": "2018-08-31",
     "watch_data": "https://www.themoviedb.org/movie/420915-yardie/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 101
   },
   {
     "id": 650,
@@ -830,7 +919,9 @@ const unseenMovies =
     "release_date": "1991-07-12",
     "watch_data": "https://www.themoviedb.org/movie/650-boyz-n-the-hood/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 112
   },
   {
     "id": 125582,
@@ -849,7 +940,9 @@ const unseenMovies =
     "release_date": "1998-12-25",
     "watch_data": "https://www.themoviedb.org/movie/125582-down-in-the-delta/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 112
   },
   {
     "id": 414425,
@@ -868,7 +961,9 @@ const unseenMovies =
     "release_date": "2017-11-16",
     "watch_data": "https://www.themoviedb.org/movie/414425-mudbound/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 135
   },
   {
     "id": 329587,
@@ -886,7 +981,9 @@ const unseenMovies =
     "release_date": "1998-10-17",
     "watch_data": "https://www.youtube.com/watch?v=Q3iyMrf9E7c",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 86
   },
   {
     "id": 48992,
@@ -905,7 +1002,9 @@ const unseenMovies =
     "release_date": "1994-10-14",
     "watch_data": "https://www.themoviedb.org/movie/48992-i-like-it-like-that/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 104
   },
   {
     "id": 925,
@@ -923,7 +1022,9 @@ const unseenMovies =
     "release_date": "1989-06-14",
     "watch_data": "https://www.themoviedb.org/movie/925-do-the-right-thing/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 120
   },
   {
     "id": 25624,
@@ -942,7 +1043,9 @@ const unseenMovies =
     "release_date": "1997-02-21",
     "watch_data": "https://www.themoviedb.org/movie/25624-rosewood/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 140
   },
   {
     "id": 41478,
@@ -961,7 +1064,9 @@ const unseenMovies =
     "release_date": "1995-05-04",
     "watch_data": "https://www.youtube.com/watch?v=YlU9GgIsh90",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 124
   },
   {
     "id": 41823,
@@ -980,7 +1085,9 @@ const unseenMovies =
     "release_date": "1990-08-03",
     "watch_data": "https://www.themoviedb.org/movie/41823-mo-better-blues/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 129
   },
   {
     "id": 340275,
@@ -1000,7 +1107,9 @@ const unseenMovies =
     "release_date": "2015-12-04",
     "watch_data": "https://www.themoviedb.org/movie/340275-chi-raq/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 127
   },
   {
     "id": 8291,
@@ -1017,7 +1126,9 @@ const unseenMovies =
     "release_date": "1993-07-23",
     "watch_data": "https://www.themoviedb.org/movie/8291-poetic-justice/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 109
   },
   {
     "id": 44784,
@@ -1034,7 +1145,9 @@ const unseenMovies =
     "release_date": "2005-01-01",
     "watch_data": "https://www.themoviedb.org/movie/44784-symbiopsychotaxiplasm-take-2/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 99
   },
   {
     "id": 419430,
@@ -1052,7 +1165,9 @@ const unseenMovies =
     "release_date": "2017-02-24",
     "watch_data": "https://www.themoviedb.org/movie/419430-get-out/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 104
   },
   {
     "id": 83096,
@@ -1071,7 +1186,9 @@ const unseenMovies =
     "release_date": "1973-04-20",
     "watch_data": "https://www.themoviedb.org/movie/83096-ganja-hess/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 110
   },
   {
     "id": 25066,
@@ -1089,7 +1206,9 @@ const unseenMovies =
     "release_date": "1995-05-24",
     "watch_data": "https://www.themoviedb.org/movie/25066-tales-from-the-hood/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 98
   },
   {
     "id": 273896,
@@ -1107,7 +1226,9 @@ const unseenMovies =
     "release_date": "1982-06-02",
     "watch_data": "https://www.themoviedb.org/movie/273896-losing-ground/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 86
   },
   {
     "id": 91735,
@@ -1125,7 +1246,9 @@ const unseenMovies =
     "release_date": "1983-09-13",
     "watch_data": "https://www.themoviedb.org/movie/91735-my-brother-s-wedding/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 81
   },
   {
     "id": 124088,
@@ -1144,7 +1267,9 @@ const unseenMovies =
     "release_date": "1993-01-01",
     "watch_data": "https://www.themoviedb.org/movie/124088-just-another-girl-on-the-i-r-t/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 92
   },
   {
     "id": 83588,
@@ -1163,7 +1288,9 @@ const unseenMovies =
     "release_date": "2012-10-12",
     "watch_data": "https://www.themoviedb.org/movie/83588-middle-of-nowhere/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 101
   },
   {
     "id": 94725,
@@ -1180,7 +1307,9 @@ const unseenMovies =
     "release_date": "1990-10-12",
     "watch_data": "https://www.themoviedb.org/movie/94725-to-sleep-with-anger/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 101
   },
   {
     "id": 34152,
@@ -1200,7 +1329,9 @@ const unseenMovies =
     "release_date": "1994-05-13",
     "watch_data": "https://www.themoviedb.org/movie/34152-crooklyn/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 115
   },
   {
     "id": 24885,
@@ -1218,7 +1349,9 @@ const unseenMovies =
     "release_date": "2008-03-07",
     "watch_data": "https://www.themoviedb.org/movie/24885-medicine-for-melancholy/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 88
   },
   {
     "id": 47272,
@@ -1236,7 +1369,9 @@ const unseenMovies =
     "release_date": "2004-01-17",
     "watch_data": "https://www.themoviedb.org/movie/47272-brother-to-brother/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 94
   },
   {
     "id": 287322,
@@ -1254,7 +1389,9 @@ const unseenMovies =
     "release_date": "2014-02-16",
     "watch_data": "https://www.themoviedb.org/movie/287322-blackbird/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 99
   },
   {
     "id": 376867,
@@ -1274,7 +1411,9 @@ const unseenMovies =
     "release_date": "2016-10-21",
     "watch_data": "https://www.themoviedb.org/movie/376867-moonlight/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 110
   },
   {
     "id": 565379,
@@ -1291,7 +1430,9 @@ const unseenMovies =
     "release_date": "2020-02-21",
     "watch_data": "https://www.themoviedb.org/movie/565379-premature/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 86
   },
   {
     "id": 205601,
@@ -1311,7 +1452,9 @@ const unseenMovies =
     "release_date": "2013-05-01",
     "watch_data": "https://www.themoviedb.org/movie/205601-belle/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 105
   },
   {
     "id": 465914,
@@ -1330,7 +1473,9 @@ const unseenMovies =
     "release_date": "2018-12-14",
     "watch_data": "https://www.themoviedb.org/movie/465914-if-beale-street-could-talk/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 120
   },
   {
     "id": 631344,
@@ -1348,7 +1493,9 @@ const unseenMovies =
     "release_date": "2019-04-28",
     "watch_data": "https://www.themoviedb.org/movie/631344-a-love-song-for-latasha/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 18
   },
   {
     "id": 619513,
@@ -1367,7 +1514,9 @@ const unseenMovies =
     "release_date": "2019-08-08",
     "watch_data": "https://vimeo.com/389428918",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 20
   },
   {
     "id": 557726,
@@ -1386,7 +1535,9 @@ const unseenMovies =
     "release_date": "2016-03-13",
     "watch_data": "https://vimeo.com/178011614#t=2736s",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 10
   },
   {
     "id": 323837,
@@ -1405,7 +1556,9 @@ const unseenMovies =
     "release_date": "2013-01-19",
     "watch_data": "https://vimeo.com/183085974",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 13
   },
   {
     "id": 266714,
@@ -1425,7 +1578,9 @@ const unseenMovies =
     "release_date": "2014-01-18",
     "watch_data": "https://www.youtube.com/watch?v=lb3pu5jXWHU",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 14
   },
   {
     "id": 390416,
@@ -1444,7 +1599,9 @@ const unseenMovies =
     "release_date": "2016-02-16",
     "watch_data": "https://www.pbs.org/pov/watch/reluctantlyqueer/video-reluctantly-queer/",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 8
   },
   {
     "id": 507735,
@@ -1463,7 +1620,9 @@ const unseenMovies =
     "release_date": "2017-09-20",
     "watch_data": "https://www.youtube.com/watch?v=vemJFbayDrM",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 10
   },
   {
     "id": 285265,
@@ -1483,7 +1642,9 @@ const unseenMovies =
     "release_date": "2012-09-01",
     "watch_data": "https://vimeo.com/122574484",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 7
   },
   {
     "id": 77621,
@@ -1501,7 +1662,9 @@ const unseenMovies =
     "release_date": "1920-01-12",
     "watch_data": "https://www.youtube.com/watch?v=h1E0NrcnwAE",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 74
   },
   {
     "id": 86955,
@@ -1519,7 +1682,9 @@ const unseenMovies =
     "release_date": "1925-11-09",
     "watch_data": "https://www.youtube.com/watch?v=-A9alUp1pa8",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 93
   },
   {
     "id": 45153,
@@ -1537,7 +1702,9 @@ const unseenMovies =
     "release_date": "1997-11-07",
     "watch_data": "https://www.themoviedb.org/movie/45153-eve-s-bayou/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 109
   },
   {
     "id": 15765,
@@ -1555,7 +1722,9 @@ const unseenMovies =
     "release_date": "1993-06-09",
     "watch_data": "https://www.themoviedb.org/movie/15765-what-s-love-got-to-do-with-it/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 118
   },
   {
     "id": 17978,
@@ -1573,7 +1742,9 @@ const unseenMovies =
     "release_date": "1970-10-11",
     "watch_data": "https://www.youtube.com/watch?reload=9&v=NYgYH1o-J8c",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 103
   },
   {
     "id": 528888,
@@ -1592,7 +1763,9 @@ const unseenMovies =
     "release_date": "2019-10-04",
     "watch_data": "https://www.themoviedb.org/movie/528888-dolemite-is-my-name/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 118
   },
   {
     "id": 19174,
@@ -1610,7 +1783,9 @@ const unseenMovies =
     "release_date": "1975-04-26",
     "watch_data": "https://www.themoviedb.org/movie/19174-dolemite/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 90
   },
   {
     "id": 22048,
@@ -1627,7 +1802,9 @@ const unseenMovies =
     "release_date": "1974-04-05",
     "watch_data": "https://www.themoviedb.org/movie/22048-foxy-brown/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 94
   },
   {
     "id": 37754,
@@ -1645,7 +1822,9 @@ const unseenMovies =
     "release_date": "1975-05-21",
     "watch_data": "https://www.youtube.com/watch?v=kb-SBGpuoZc",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 95
   },
   {
     "id": 68714,
@@ -1662,7 +1841,9 @@ const unseenMovies =
     "release_date": "1974-10-04",
     "watch_data": "https://www.youtube.com/watch?v=pULIS_CbTvg",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 89
   },
   {
     "id": 54008,
@@ -1680,7 +1861,9 @@ const unseenMovies =
     "release_date": "1974-02-01",
     "watch_data": "https://www.themoviedb.org/movie/54008-sugar-hill/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 91
   },
   {
     "id": 92674,
@@ -1695,7 +1878,9 @@ const unseenMovies =
     "release_date": "1998-10-16",
     "watch_data": "https://www.youtube.com/watch?v=HI7T68PUTIU",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 53
   },
   {
     "id": 267685,
@@ -1711,7 +1896,9 @@ const unseenMovies =
     "release_date": "1969-01-01",
     "watch_data": "https://vimeo.com/351632080",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 76
   },
   {
     "id": 83232,
@@ -1728,13 +1915,15 @@ const unseenMovies =
     "release_date": "1967-09-29",
     "watch_data": "https://www.themoviedb.org/movie/83232-portrait-of-jason/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 105
   },
   {
     "id": 566235,
     "title": "Toni Morrison: The Pieces I Am",
     "genres": [
-      99,
+      99
     ],
     "overview": "This artful and intimate meditation on the legendary storyteller examines her life, her works, and the powerful themes she has confronted throughout her literary career. Toni Morrison leads an assembly of her peers, critics, and colleagues on an exploration of race, history, the United States, and the human condition.",
     "video_key": "aFkw7nOOJhA",
@@ -1743,7 +1932,9 @@ const unseenMovies =
     "release_date": "2019-01-27",
     "watch_data": "https://www.themoviedb.org/movie/566235-toni-morrison-the-pieces-i-am/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 119
   },
   {
     "id": 124067,
@@ -1758,7 +1949,9 @@ const unseenMovies =
     "release_date": "2012-05-24",
     "watch_data": "https://www.pbs.org/kenburns/the-central-park-five/",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 119
   },
   {
     "id": 72711,
@@ -1773,7 +1966,9 @@ const unseenMovies =
     "release_date": "2011-07-29",
     "watch_data": "https://www.themoviedb.org/movie/72711-the-interrupters/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 125
   },
   {
     "id": 32063,
@@ -1789,7 +1984,9 @@ const unseenMovies =
     "release_date": "2004-09-04",
     "watch_data": "https://www.youtube.com/watch?v=q0gRGoDchMU",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 214
   },
   {
     "id": 2287,
@@ -1804,7 +2001,9 @@ const unseenMovies =
     "release_date": "2005-01-15",
     "watch_data": "https://www.themoviedb.org/movie/2287-rize/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 86
   },
   {
     "id": 491052,
@@ -1819,7 +2018,9 @@ const unseenMovies =
     "release_date": "2018-03-18",
     "watch_data": "https://www.hulu.com/watch/70b899bd-985e-4ff0-9193-c00a236b2f0a",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 94
   },
   {
     "id": 124019,
@@ -1836,7 +2037,9 @@ const unseenMovies =
     "release_date": "1971-03-11",
     "watch_data": "https://www.themoviedb.org/movie/124019-a-well-spent-life/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 44
   },
   {
     "id": 553646,
@@ -1853,7 +2056,9 @@ const unseenMovies =
     "release_date": "2019-02-08",
     "watch_data": "https://www.themoviedb.org/movie/553646-remastered-the-two-killings-of-sam-cooke/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 74
   },
   {
     "id": 470831,
@@ -1870,7 +2075,9 @@ const unseenMovies =
     "release_date": "2017-10-25",
     "watch_data": "https://www.themoviedb.org/movie/470831-grace-jones-bloodlight-and-bami/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 115
   },
   {
     "id": 250705,
@@ -1886,7 +2093,9 @@ const unseenMovies =
     "release_date": "2014-08-01",
     "watch_data": "https://www.themoviedb.org/movie/250705-finding-fela/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 120
   },
   {
     "id": 121971,
@@ -1904,7 +2113,9 @@ const unseenMovies =
     "release_date": "1968-12-28",
     "watch_data": "https://www.youtube.com/watch?v=gam5QLZaYlk&t=1s",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 104
   },
   {
     "id": 10331,
@@ -1923,7 +2134,9 @@ const unseenMovies =
     "release_date": "1968-10-04",
     "watch_data": "https://www.themoviedb.org/movie/10331-night-of-the-living-dead/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 96
   },
   {
     "id": 43513,
@@ -1940,7 +2153,9 @@ const unseenMovies =
     "release_date": "1943-07-21",
     "watch_data": "https://www.themoviedb.org/movie/43513-stormy-weather/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 78
   },
   {
     "id": 59964,
@@ -1957,7 +2172,9 @@ const unseenMovies =
     "release_date": "1943-04-09",
     "watch_data": "https://www.themoviedb.org/movie/59964-cabin-in-the-sky/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 98
   },
   {
     "id": 1125,
@@ -1974,7 +2191,9 @@ const unseenMovies =
     "release_date": "2006-12-25",
     "watch_data": "https://www.themoviedb.org/movie/1125-dreamgirls/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 134
   },
   {
     "id": 208781,
@@ -1991,7 +2210,9 @@ const unseenMovies =
     "release_date": "1973-10-01",
     "watch_data": "https://www.themoviedb.org/movie/208781-dry-wood/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 37
   },
   {
     "id": 517582,
@@ -2011,7 +2232,9 @@ const unseenMovies =
     "release_date": "2018-04-23",
     "watch_data": "https://www.themoviedb.org/movie/517582-dirty-computer/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 49
   },
   {
     "id": 394269,
@@ -2029,7 +2252,9 @@ const unseenMovies =
     "release_date": "2016-04-23",
     "watch_data": null,
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 65
   },
   {
     "id": 585560,
@@ -2048,7 +2273,9 @@ const unseenMovies =
     "release_date": "2019-03-01",
     "watch_data": null,
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 41
   },
   {
     "id": 719643,
@@ -2066,7 +2293,9 @@ const unseenMovies =
     "release_date": "2020-07-31",
     "watch_data": "https://www.themoviedb.org/movie/719643-black-is-king/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 85
   },
   {
     "id": 496967,
@@ -2087,7 +2316,9 @@ const unseenMovies =
     "release_date": "2019-10-02",
     "watch_data": "https://www.justwatch.com/us/movie/atlantics-2019",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 104
   },
   {
     "id": 652678,
@@ -2106,7 +2337,9 @@ const unseenMovies =
     "release_date": "",
     "watch_data": null,
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 92
   },
   {
     "id": 49931,
@@ -2124,7 +2357,9 @@ const unseenMovies =
     "release_date": "2001-01-01",
     "watch_data": "https://www.youtube.com/watch?v=VoIast31FOE",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 90
   },
   {
     "id": 436340,
@@ -2143,7 +2378,9 @@ const unseenMovies =
     "release_date": "2017-03-29",
     "watch_data": "https://www.themoviedb.org/movie/436340-felicite/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 123
   },
   {
     "id": 76636,
@@ -2162,7 +2399,9 @@ const unseenMovies =
     "release_date": "1975-10-01",
     "watch_data": "https://www.youtube.com/watch?v=t-a15ZLKxjM",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 123
   },
   {
     "id": 97029,
@@ -2180,7 +2419,9 @@ const unseenMovies =
     "release_date": "1977-06-01",
     "watch_data": "https://www.youtube.com/watch?v=9ipcync79CI",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 112
   },
   {
     "id": 202425,
@@ -2198,7 +2439,9 @@ const unseenMovies =
     "release_date": "1987-11-17",
     "watch_data": "https://vimeo.com/ondemand/lavieestbelle",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 80
   },
   {
     "id": 57602,
@@ -2216,7 +2459,9 @@ const unseenMovies =
     "release_date": "2010-09-28",
     "watch_data": "https://www.themoviedb.org/movie/57602-un-homme-qui-crie/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 92
   },
   {
     "id": 242493,
@@ -2236,7 +2481,9 @@ const unseenMovies =
     "release_date": "2005-05-20",
     "watch_data": "https://www.kanopy.com/product/bloodettes",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 97
   },
   {
     "id": 124085,
@@ -2254,7 +2501,9 @@ const unseenMovies =
     "release_date": "1992-09-18",
     "watch_data": "https://www.themoviedb.org/movie/124085-ramatou/watch?locale=AU",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 110
   },
   {
     "id": 87392,
@@ -2272,7 +2521,9 @@ const unseenMovies =
     "release_date": "1973-04-25",
     "watch_data": "https://www.youtube.com/watch?v=QvoaUprC5bg",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 102
   },
   {
     "id": 77771,
@@ -2290,7 +2541,10 @@ const unseenMovies =
     "release_date": "1973-07-01",
     "watch_data": "https://www.themoviedb.org/movie/77771-touki-bouki/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "seen": false,
+    "runtime": 91
   }
 ]
+
 export default unseenMovies;

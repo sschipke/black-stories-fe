@@ -51,3 +51,9 @@ export const displayGenres = (genres) => {
   }
   return ''
 }
+
+export const displayRuntime = (time) => {
+  const hours = Math.floor(time / 60);  
+  const minutes = time % 60;
+  return `${hours}H ${minutes}M`;         
+}

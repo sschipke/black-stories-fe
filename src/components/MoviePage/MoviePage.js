@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { openVideoPlayer, setCurrentMovie } from '../../actions';
-import { displayGenres } from '../../util/helpers';
+import { displayGenres, displayRuntime } from '../../util/helpers';
 import './MoviePage.scss';
 
 const MoviePage = ({movie, setCurrentMovie, openVideoPlayer}) => {
@@ -17,7 +17,8 @@ const MoviePage = ({movie, setCurrentMovie, openVideoPlayer}) => {
       <div className="movie-info-div">
         <div className="movie-interactions-div">
           <div>
-            <p className="movie-info">{movie.release_date.slice(0,4)}</p>
+            <p className="movie-info">{movie.release_date.slice(0,4)}</p> 
+            <p className="movie-info">{displayRuntime(movie.runtime)}</p>
         {movie.video_key && 
           <button 
           className="trailer-button movie-info"
