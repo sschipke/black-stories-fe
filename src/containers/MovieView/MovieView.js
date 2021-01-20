@@ -1,4 +1,5 @@
 import React from 'react';
+import { Redirect } from 'react-router-dom'
 import Nav from '../Nav/Nav';
 import MoviePage from '../../components/MoviePage/MoviePage';
 import unseenMovies from '../../data/unseenMovies';
@@ -11,6 +12,7 @@ const MovieView = ({movieId}) => {
     <Nav  />
     <div className="movie-container">
       {currentMovie && <MoviePage movie={currentMovie} />}
+      {!currentMovie && <Redirect to="/genres" />}
     </div>
   </main>
 }
