@@ -5,7 +5,6 @@ import MovieCard from '../../components/MovieCard/MovieCard';
 import './GenrePage.scss';
 
 export const GenrePage = ({genreId, genreTitle, watchList}) => {
-
   let genreMovies = [];
   if(genreTitle && genreId) {
     genreTitle = genreTitle.replace('_', ' ').toUpperCase();
