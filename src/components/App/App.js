@@ -6,32 +6,16 @@ import MovieView from '../../containers/MovieView/MovieView';
 import VideoPlayer from '../VideoPlayer/VideoPlayer';
 import Main from '../../containers/Main/Main';
 import NotFound from '../../containers/NotFound/NotFound';
-import genreMap from '../../data/genreMap'
+import MobileMenu from '../../containers/MobileMenu/MobileMenu';
+import genreMap from '../../data/genreMap';
 import './App.scss';
 
 class App extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = { windowWidth: window.innerWidth };
-  // }
-
-  // handleResize = (e) => {
-  //   this.setState({ windowWidth: window.innerWidth });
-  // };
-
-  // componentDidMount() {
-  //   window.addEventListener("resize", this.handleResize);
-  // }
-
-  // componentWillUnmount() {
-  //   window.addEventListener("resize", this.handleResize);
-  // } 
 
   render = () => {
-    // const {windowWidth} = this.state;
     return (
       <div className="App">
-        {/* <div>Width: {windowWidth}</div> */}
+        <MobileMenu />
         <VideoPlayer />
       <Switch>
         <Route exact path='/' render={ () => <Main /> } />
