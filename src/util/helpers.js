@@ -1,6 +1,5 @@
 import genreMap from '../data/genreMap';
 export const determineMainImage = () => {
-    console.log('Here is the width: ', window.innerWidth);
   if(window.innerWidth > 720) {
     const num = generateRandomImageNumber(16);
     return `../images/main/desktop/${num}-DSK.jpg`
@@ -56,4 +55,13 @@ export const displayRuntime = (time) => {
   const hours = Math.floor(time / 60);  
   const minutes = time % 60;
   return `${hours}H ${minutes}M`;         
+}
+
+export const removeArticles = (title) => {
+  let words = title.split(" ");
+  if (words.length <= 1) return title
+  if (words[0] === 'a' || words[0] === 'an' || words[0] === 'the') {
+    return words.splice(1).join(" ")
+  }
+  return title;
 }

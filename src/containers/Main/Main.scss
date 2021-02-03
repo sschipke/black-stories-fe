@@ -13,3 +13,15 @@ main{
     width: 100%;
   }
 }
+
+
+@media screen and (max-width: 950px) {
+  main {
+    flex-direction: column;
+    height: 100vh;
+    min-width: 100vw;
+      .main-image-div {
+    margin-left: 0;
+    }
+  } 
+}

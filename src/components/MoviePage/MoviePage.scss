@@ -41,3 +41,23 @@ section {
   width: auto;
   max-width: 100%;
 }
+
+@media screen and (max-width: 950px) {
+  .movie-stats-div {
+    flex-wrap: wrap;
+  }
+  section {
+    margin-left: 0;
+    h1.movie-page-title {
+        // max-width: 100%;
+        overflow-wrap:break-word;
+      }
+    .movie-info-div {
+      flex-direction: column;
+      max-height: none;
+    }
+    .movie-page-genres-div {
+    width: 100%;
+    }
+  }  
+}

@@ -12,7 +12,6 @@ const NotFound = ({ location }) => {
     if(!genreName) {
       return <Redirect to="/genres" />
     }
-    console.log({genreId}, {genreName})
     return <Redirect to={`/genre/${genreId}-${genreName.toLowerCase().replace(' ', '_')}`} />
   }
   if(pathname.includes("/movie/")) {
