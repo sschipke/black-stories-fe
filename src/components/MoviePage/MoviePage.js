@@ -6,7 +6,9 @@ import { displayGenres, displayRuntime } from '../../util/helpers';
 import './MoviePage.scss';
 
 const MoviePage = ({movie, setCurrentMovie, openVideoPlayer}) => {
-  setCurrentMovie(movie)
+  setTimeout(() => {
+    setCurrentMovie(movie)
+  }, 10);
   return <section className="movie-section" >
       <img 
       className="movie-view-backdrop"
