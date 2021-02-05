@@ -11,6 +11,7 @@ const unseenMovies =[
       88
     ],
     "overview": "A drama set in the 1920s, where free-spirited Janie Crawford's search for happiness leads her through several different marriages, challenging the morals of her small town. Based on the novel by Zora Neale Hurston.",
+    "triggers": "Abuse, Sexual Abuse",
     "video_key": "mc5T4c_mj1U",
     "poster_path": "/vVn2KohzehZMN40YmNM69HqXxWm.jpg",
     "backdrop_path": "/rUjagGCyE7Ggad4dKEvTc95e0Qe.jpg",
@@ -131,6 +132,7 @@ const unseenMovies =[
       85
     ],
     "overview": "Chronicles the rise and fall of legendary blues singer Billie Holiday. Her late childhood, stint as a prostitute, early tours, marriages and drug addiction are featured.",
+    "triggers": "Sexual Abuse",
     "video_key": "LLMlK7-_wjA",
     "poster_path": "/jr528gGK1RrOW6YAZHUj5lF9RrO.jpg",
     "backdrop_path": "/wE2SQSG49PddvGxcnEqN3mZBpTb.jpg",
@@ -151,6 +153,7 @@ const unseenMovies =[
       87
     ],
     "overview": "After her younger sister gets involved in drugs and is severely injured by contaminated heroin, a nurse sets out on a mission of vengeance and vigilante justice, killing drug dealers, pimps, and mobsters who cross her path.",
+    "triggers": "Abuse, Sexual Abuse",
     "video_key": "L3DPuPILahg",
     "poster_path": "/pceYnmWdFxlWYcvFxwZaWPnqJjQ.jpg",
     "backdrop_path": "/npM8eilsWSdjUr9vXGEjM8imzi0.jpg",
@@ -181,27 +184,6 @@ const unseenMovies =[
     "date_watched": null,
     "seen": false,
     "runtime": 89
-  },
-  {
-    "id": 27716,
-    "title": "Coonskin",
-    "genres": [
-      16,
-      18,
-      35,
-      1977,
-      80
-    ],
-    "overview": "Brother Rabbit, Brother Bear, and Preacher Fox rise to the top of the crime ranks in Harlem by going up against a con-man, a racist cop, and the Mafia.",
-    "video_key": "rqTLJJpB89k",
-    "poster_path": "/3zrxUkbeLl2KmSIRywNTwiGOZ2y.jpg",
-    "backdrop_path": "/m0h8qVyCfLPMin2tgQT7JRWON6b.jpg",
-    "release_date": "1975-08-20",
-    "watch_data": "https://www.themoviedb.org/movie/27716-coonskin/watch?locale=US",
-    "chosen_by": null,
-    "date_watched": null,
-    "seen": false,
-    "runtime": 83
   },
   {
     "id": 136718,
@@ -498,6 +480,7 @@ const unseenMovies =[
       9648
     ],
     "overview": "During the 1976 Soweto uprising, a white school teacher's life and values are threatened when he asks questions about the death of a young black boy who died in police custody.",
+    "triggers": "Torture",
     "video_key": "bRJp3C8isMo",
     "poster_path": "/6Wx9oZ7WUoootNLv70EDq6nyDqW.jpg",
     "backdrop_path": "/7UDdd8ZY15LVwywQneM65SQXfJA.jpg",
@@ -856,7 +839,7 @@ const unseenMovies =[
     ],
     "overview": "The film centers on Diouana, a young Senegalese woman, who moves from Dakar, Senegal to Antibes, France to work for a rich French couple. In France, Diouana hopes to continue her former job as a nanny, and anticipates a new cosmopolitan lifestyle. However, upon her arrival in Antibes, Diouana experiences harsh treatment from the couple, who force her to work as a servant. She becomes increasingly aware of her constrained and alienated situation and starts to question her life in France. ",
     "video_key": "167022630",
-    "poster_path": "/g6b2aPQmJsk8YIPO9pzKaCWSLju.jpg",
+    "poster_path": "/qP1slk6opnpKEFzSNvTFk4wBipW.jpg",
     "backdrop_path": "/3NcTGBFQnGpUUvfloymFiTaejZA.jpg",
     "release_date": "1966-01-01",
     "watch_data": "https://www.themoviedb.org/movie/95597-la-noire-de/watch?locale=US",
@@ -913,6 +896,7 @@ const unseenMovies =[
       86
     ],
     "overview": "Boyz n the Hood is the popular and successful film and social criticism from John Singleton about the conditions in South Central Los Angeles where teenagers are involved in gun fights and drug dealing on a daily basis.",
+    "triggers": "Abuse, Child Abuse",
     "video_key": "AE4BdijGtu4",
     "poster_path": "/v4ox4aSCNT5vyLXl4Q71JiWwCXW.jpg",
     "backdrop_path": "/82jhYGf2uCKanF0wnbizd4mlLIb.jpg",
@@ -955,6 +939,7 @@ const unseenMovies =[
       88
     ],
     "overview": "In the post–World War II South, two families are pitted against a barbaric social hierarchy and an unrelenting landscape as they simultaneously fight the battle at home and the battle abroad.",
+    "triggers": "Abuse, Torture, white supremacist violence",
     "video_key": "vAZWhFI9lLQ",
     "poster_path": "/7cL7UgVMeP9xDSxU2NyAqeAQAbt.jpg",
     "backdrop_path": "/fpL7AHiAlLMU1LhobIcdXwfOafh.jpg",
@@ -975,6 +960,7 @@ const unseenMovies =[
       888
     ],
     "overview": "A young woman (Toby Smith) in a photography class begins taking pictures of black men out of fear they will soon be extinct.",
+    "trigger": "Abuse",
     "video_key": null,
     "poster_path": "/8ethJ2FuHMMwMYh0hJR2hpec0YX.jpg",
     "backdrop_path": "/dtbtAEYwZXd8S2qF5uvg5nbrnjG.jpg",
@@ -1037,6 +1023,7 @@ const unseenMovies =[
       91
     ],
     "overview": "Spurred by a white woman's lie, vigilantes destroy a black Florida town and slay inhabitants in 1923.",
+    "triggers": "Abuse",
     "video_key": "veXzhAxlvxw",
     "poster_path": "/5EeTYDXdrpD9mZSSwsrFbqgok9U.jpg",
     "backdrop_path": "/mvBQh4Qy9YRf9ckAGPmNkOQAyUq.jpg",
@@ -1200,6 +1187,7 @@ const unseenMovies =[
       100
     ],
     "overview": "The film presents four short urban-themed horror stories based on problem concepts that affect the African-American community in the order of police corruption, domestic abuse, institutional racism and gang violence; all presented within a frame story of three drug dealers buying some \"found\" drugs from an eccentric and story-prone funeral director.",
+    "trigger": "Abuse, Child Abuse",
     "video_key": "hrn2PzAk6iw",
     "poster_path": "/2AgQBaFCkQxcSZPIhYztDT8DiaV.jpg",
     "backdrop_path": "/oGOxyppJeOElQtCIltDSQZENOb0.jpg",
@@ -1519,70 +1507,6 @@ const unseenMovies =[
     "runtime": 20
   },
   {
-    "id": 557726,
-    "title": "Everybody Dies!",
-    "genres": [
-      6251,
-      52,
-      100,
-      887,
-      18
-    ],
-    "overview": "In this recreated public access television show, Ripa the Grim Reaper teaches black kids about the day they'll die.",
-    "video_key": null,
-    "poster_path": "/hIQC7xDpq62LDNuCT1SrMKu6Taj.jpg",
-    "backdrop_path": "/dOlSxPFMMd4hd3fUlrHJ555dt4Z.jpg",
-    "release_date": "2016-03-13",
-    "watch_data": "https://vimeo.com/178011614#t=2736s",
-    "chosen_by": null,
-    "date_watched": null,
-    "seen": false,
-    "runtime": 10
-  },
-  {
-    "id": 323837,
-    "title": "Boneshaker",
-    "genres": [
-      6251,
-      52,
-      100,
-      887,
-      18
-    ],
-    "overview": "An African family, lost in America, travels to a Louisiana church to cure its problem child.",
-    "video_key": null,
-    "poster_path": "/fyHSENRbTLjd8GWqkVQDlLzKjV.jpg",
-    "backdrop_path": "/1x847ZGP9f0jYhlon2vFx0zRVJW.jpg",
-    "release_date": "2013-01-19",
-    "watch_data": "https://vimeo.com/183085974",
-    "chosen_by": null,
-    "date_watched": null,
-    "seen": false,
-    "runtime": 13
-  },
-  {
-    "id": 266714,
-    "title": "Afronauts",
-    "genres": [
-      18,
-      100,
-      6251,
-      52,
-      887,
-      18
-    ],
-    "overview": "16th July 1969: America prepares to launch Apollo 11. Thousands of kilometers away, a ragtag group of Zambian exiles is trying to beat America to the Moon.",
-    "video_key": null,
-    "poster_path": "/khe08dqAIAmGOz2wi2HAQxOu11D.jpg",
-    "backdrop_path": "/qinRV5FpUtU31Pgv2C1jvKKEkVd.jpg",
-    "release_date": "2014-01-18",
-    "watch_data": "https://www.youtube.com/watch?v=lb3pu5jXWHU",
-    "chosen_by": null,
-    "date_watched": null,
-    "seen": false,
-    "runtime": 14
-  },
-  {
     "id": 390416,
     "title": "Reluctantly Queer",
     "genres": [
@@ -1604,49 +1528,6 @@ const unseenMovies =[
     "runtime": 8
   },
   {
-    "id": 507735,
-    "title": "Rebirth Is Necessary",
-    "genres": [
-      6251,
-      52,
-      100,
-      887,
-      18
-    ],
-    "overview": "Director Jenn Nkiru authors a personal and powerful exploration of blackness through piecing together dreamlike portraits with stunning archival footage that includes Afrofuturism pioneer Sun Ra and revolutionary organization the Black Panther Party.",
-    "video_key": null,
-    "poster_path": "/3ryhhViNoO1LvxHW3tmpLjFzOhL.jpg",
-    "backdrop_path": "/sDhTiKRPI4z0aqUPeLgRuSYbNNV.jpg",
-    "release_date": "2017-09-20",
-    "watch_data": "https://www.youtube.com/watch?v=vemJFbayDrM",
-    "chosen_by": null,
-    "date_watched": null,
-    "seen": false,
-    "runtime": 10
-  },
-  {
-    "id": 285265,
-    "title": "Yellow Fever",
-    "genres": [
-      16,
-      100,
-      6251,
-      99,
-      52,
-      887
-    ],
-    "overview": "In this award-winning short documentary, Kenyan filmmaker Ng'endo Mukii, inspired by her interest in the concept of skin and race and what they imply; and in “the ideas and theories sown into our flesh that change with the arc of time”, explores African women's self-image. Through the use of memories, interviews; and mixed media, she describes their “almost schizophrenic pursuit of globalized beauty”.",
-    "video_key": null,
-    "poster_path": "/WvKCOEZGxkBuNWB9jf6BwVUZ4S.jpg",
-    "backdrop_path": "/n01HPRuwgBazgDHwFw012SD4mml.jpg",
-    "release_date": "2012-09-01",
-    "watch_data": "https://vimeo.com/122574484",
-    "chosen_by": null,
-    "date_watched": null,
-    "seen": false,
-    "runtime": 7
-  },
-  {
     "id": 77621,
     "title": "Within Our Gates",
     "genres": [
@@ -1656,6 +1537,7 @@ const unseenMovies =[
       90
     ],
     "overview": "The plot features an African-American woman who goes North in an effort to raise money for a rural school in the Deep South for poor black children. Her romance with a black doctor eventually leads to revelations about her family's past and her own mixed-race, European ancestry. The film portrays racial violence under white supremacy, and the lynching of black people. Produced, written and directed by Micheaux, it is the oldest known surviving film made by an African-American director.",
+    "triggers": "Lynching, Sexual Abuse",
     "video_key": "kD_FwBz3JY8",
     "poster_path": "/fpYu6zTCaAHMX0t8HGAD5q9syWz.jpg",
     "backdrop_path": "/eGhQXfGeNdJfywH6ZmjRwN3f1X8.jpg",
@@ -1716,6 +1598,7 @@ const unseenMovies =[
       88
     ],
     "overview": "A film about the singer Tina Turner and how she rose to stardom with her abusive husband Ike Turner and how she gained the courage to break free.",
+    "triggers": "Abuse, Sexual Abuse",
     "video_key": null,
     "poster_path": "/oFAgqsmjPmwRP4dZqbe51HlpPIi.jpg",
     "backdrop_path": "/ow5u27LapD6xMe24o2ITnZDoz7z.jpg",
@@ -1758,7 +1641,7 @@ const unseenMovies =[
     ],
     "overview": "The story of Rudy Ray Moore, who created the iconic big screen pimp character Dolemite in the 1970s.",
     "video_key": "Ws1YIKsuTjQ",
-    "poster_path": "/sZuQkwHEiXxWN3W2Z8cJelKWbRE.jpg",
+    "poster_path": "/fbIaxhgyBnmkYDRgaaKJ8XdLx0r.jpg",
     "backdrop_path": "/8FuiFasbeFQj24Vqx6JqSCqj5lO.jpg",
     "release_date": "2019-10-04",
     "watch_data": "https://www.themoviedb.org/movie/528888-dolemite-is-my-name/watch?locale=US",
@@ -1796,6 +1679,7 @@ const unseenMovies =[
       1977
     ],
     "overview": "A voluptuous black woman takes a job as a high-class prostitute in order to get revenge on the mobsters who murdered her boyfriend.",
+    "triggers": "Sexual Abuse, Torture",
     "video_key": "uu6QrLstUlM",
     "poster_path": "/d0K6SWsZi1VrZm6nALMY4Y1PxZq.jpg",
     "backdrop_path": "/fBbaoVkZjzmF3Rea40xz87qwwf3.jpg",
@@ -2515,6 +2399,7 @@ const unseenMovies =[
       10752
     ],
     "overview": "Domingos is a member of an African liberation movement, arrested by the Portuguese secret police, after bloody events in Angola. He does not betray his companions, but is beaten to death in prison, and not knowing he is dead, his wife goes from a prison station to another, trying in vain to know where he is.",
+    "triggers": "Torture",
     "video_key": "OLEGv1jXTq8",
     "poster_path": "/d2yVMyxRnqJaSnadVPA5DtqvQj6.jpg",
     "backdrop_path": "/4earU0g74hTO3pqLn962Nh7GGB7.jpg",
@@ -2544,6 +2429,115 @@ const unseenMovies =[
     "date_watched": null,
     "seen": false,
     "runtime": 91
+  },
+  {
+    "id": 566076,
+    "title": "The United States vs. Billie Holiday",
+    "genres": [
+      100,
+      85,
+      10402,
+      18,
+    ],
+    "overview": "The Federal Bureau of Narcotics launches an undercover sting operation against jazz singer Billie Holiday.",
+    "video_key": "USi-ppCfxEA",
+    "poster_path": "/fGASjFF8l9hHPEl8qvnzk6LD5uF.jpg",
+    "backdrop_path": "/qHJHUB3CDcl4eCQ7lj6h6pfWahZ.jpg",
+    "release_date": "2021-02-26",
+    "watch_data": "https://www.hulu.com/movie/the-united-states-vs-billie-holiday-6f7be3b0-69c5-49ab-8472-2b5b1dabcfe8",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 57868,
+    "title": "The Autobiography of Miss Jane Pittman",
+    "genres": [
+      88,
+      85,
+      36,
+      10770,
+      18
+    ],
+    "overview": "In February, 1962, as the civil rights movement reaches Bayonne, Louisiana, a New York journalist arrives to interview Jane Pittman, who has just turned 110. She tells him her story dating back to her earliest memories before slavery ended. In between the chapters of her life, the present-day struggles of Blacks in Bayonne, urged on by Jimmy, are dramatized.",
+    "video_key": "T29WirVtR5I",
+    "poster_path": "/xZEpeJdGZbYwFKTB7pu0inlCgUU.jpg",
+    "backdrop_path": "/j7WVdj0KiCKTQV348uGlJYJm4vL.jpg",
+    "release_date": "1974-01-31",
+    "watch_data": "https://www.themoviedb.org/movie/57868-the-autobiography-of-miss-jane-pittman/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 57868,
+    "title": "Sounder",
+    "genres": [
+      87,
+      18,
+      36,
+      88
+    ],
+    "overview": "The Morgans, a loving and strong family of Black sharecroppers in Louisiana in 1933, face a serious family crisis when the husband and father, Nathan Lee Morgan, is convicted of a petty crime and sent to a prison camp. After some weeks or months, the wife and mother, Rebecca Morgan, sends the oldest son, who is about 11 years old, to visit his father at the camp. The trip becomes something of an odyssey for the boy. During the journey, he stays a little while with a dedicated Black schoolteacher.",
+    "video_key": "ulCdv0OMY1U",
+    "poster_path": "/wKwQARV79qobIujRvzIiKjOc4fG.jpg",
+    "backdrop_path": "/m7CNqOu8FZXLlBGMlwYogtpBkd.jpg",
+    "release_date": "1972-09-24",
+    "watch_data": "https://www.youtube.com/watch?v=j1TqnIgn1P4",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 583406,
+    "title": "Judas and the Black Messiah",
+    "genres": [
+      100,
+      18,
+      53,
+      91
+    ],
+    "overview": "Bill O'Neal infiltrates the Black Panthers per FBI Agent Mitchell and J. Edgar Hoover. As Black Panther Chairman Fred Hampton ascends, falling for a fellow revolutionary en route, a battle wages for O’Neal’s soul.",
+    "video_key": "sSjtGqRXQ9Y",
+    "poster_path": "/v5LEZkMY5HzVjaLy3mR9FpchuAu.jpg",
+    "backdrop_path": "/mMge4AXCLzIqFSgZrQkLByf2tp5.jpg",
+    "release_date": "2021-02-12",
+    "watch_data": "https://www.themoviedb.org/movie/583406-judas-and-the-black-messiah/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 661914,
+    "title": "One Night in Miami...",
+    "genres": [
+      100,
+      6251,
+      18,
+      36
+    ],
+    "overview": "In the aftermath of Cassius Clay's defeat of Sonny Liston in 1964, the boxer meets with Malcolm X, Sam Cooke and Jim Brown to change the course of history in the segregated South.",
+    "video_key": "K8vf_Cmh9nY",
+    "poster_path": "/nh7gM1T9400WtfoEHPnaJ3h46e8.jpg",
+    "backdrop_path": "/6n68tfFGHc93ZVFAOAAg262AIgs.jpg",
+    "release_date": "2020-12-25",
+    "watch_data": "https://www.themoviedb.org/movie/661914-one-night-in-miami/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
+  },
+  {
+    "id": 581859,
+    "title": "Da 5 Bloods",
+    "genres": [
+      100,
+      18,
+      10752,
+      36
+    ],
+    "overview": "Four African-American Vietnam veterans return to Vietnam. They are in search of the remains of their fallen squad leader and the promise of buried treasure. These heroes battle forces of humanity and nature while confronted by the lasting ravages of the immorality of the Vietnam War.",
+    "video_key": "D5RDTPfsLAI",
+    "poster_path": "/ud0D6bMsIpXNTwL3QXCtoVJpu3E.jpg",
+    "backdrop_path": "/gAOQVMzoJQM51blMF9Vw16Cg1zj.jpg",
+    "release_date": "2020-06-12",
+    "watch_data": "https://www.themoviedb.org/movie/581859-da-5-bloods/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
   }
 ]
 
