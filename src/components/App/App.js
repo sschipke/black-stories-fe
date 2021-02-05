@@ -5,6 +5,8 @@ import GenrePage from '../../containers/GenrePage/GenrePage';
 import MovieView from '../../containers/MovieView/MovieView';
 import VideoPlayer from '../VideoPlayer/VideoPlayer';
 import Main from '../../containers/Main/Main';
+import NotFound from '../../containers/NotFound/NotFound';
+import genreMap from '../../data/genreMap'
 import './App.scss';
 
 class App extends Component {
@@ -38,7 +40,7 @@ class App extends Component {
           path='/genre/:genre_id-:genre_title' 
           render={({match}) => {
           let genreId = match.params.genre_id;
-          let genreTitle = match.params.genre_title;
+          let genreTitle = genreMap[genreId];
           return (<GenrePage genreId={Number(genreId)} genreTitle={genreTitle} />)
           }}
         />
@@ -49,7 +51,7 @@ class App extends Component {
           return (<MovieView movieId={id} />)
           }}
         />
-        {/* add 404 page here */}
+        <NotFound />
       </Switch>
       </div> 
     );
