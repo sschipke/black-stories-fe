@@ -36,6 +36,10 @@ const specialGenres = [
     "name": "Female Director"
   },
   {
+    "id": 889,
+    "name": "Foreign"
+  },
+  {
       "id": 27,
       "name": "Horror"
   },
@@ -58,10 +62,6 @@ const specialGenres = [
   {
     "id": 52,
     "name": "Shorts"
-  },
-  {
-    "id": 889,
-    "name": "Foreign"
   },
   {
       "id": 53,
