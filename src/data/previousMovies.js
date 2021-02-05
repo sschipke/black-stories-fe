@@ -544,6 +544,123 @@ const previousMovies = [
     "watch_data": "https://www.themoviedb.org/movie/5822-sweet-sweetback-s-baadasssss-song/watch?locale=US",
     "chosen_by": "Scott",
     "date_watched": "01/18/2021"
+  },
+    {
+    "id": 323837,
+    "title": "Boneshaker",
+    "genres": [
+      6251,
+      52,
+      100,
+      887,
+      18
+    ],
+    "overview": "An African family, lost in America, travels to a Louisiana church to cure its problem child.",
+    "video_key": null,
+    "poster_path": "/fyHSENRbTLjd8GWqkVQDlLzKjV.jpg",
+    "backdrop_path": "/1x847ZGP9f0jYhlon2vFx0zRVJW.jpg",
+    "release_date": "2013-01-19",
+    "watch_data": "https://vimeo.com/183085974",
+    "chosen_by": "Garrett",
+    "date_watched": "01/21/2021"
+  },
+  {
+    "id": 266714,
+    "title": "Afronauts",
+    "genres": [
+      18,
+      100,
+      6251,
+      52,
+      887,
+      18
+    ],
+    "overview": "16th July 1969: America prepares to launch Apollo 11. Thousands of kilometers away, a ragtag group of Zambian exiles is trying to beat America to the Moon.",
+    "video_key": null,
+    "poster_path": "/khe08dqAIAmGOz2wi2HAQxOu11D.jpg",
+    "backdrop_path": "/qinRV5FpUtU31Pgv2C1jvKKEkVd.jpg",
+    "release_date": "2014-01-18",
+    "watch_data": "https://www.youtube.com/watch?v=lb3pu5jXWHU",
+    "chosen_by": "Garrett",
+    "date_watched": "01/21/2021"
+  },
+  {
+    "id": 557726,
+    "title": "Everybody Dies!",
+    "genres": [
+      6251,
+      52,
+      100,
+      887,
+      18
+    ],
+    "overview": "In this recreated public access television show, Ripa the Grim Reaper teaches black kids about the day they'll die.",
+    "video_key": null,
+    "poster_path": "/hIQC7xDpq62LDNuCT1SrMKu6Taj.jpg",
+    "backdrop_path": "/dOlSxPFMMd4hd3fUlrHJ555dt4Z.jpg",
+    "release_date": "2016-03-13",
+    "watch_data": "https://vimeo.com/178011614#t=2736s",
+    "chosen_by": "Garrett",
+    "date_watched": "01/21/2021"
+  },
+  {
+    "id": 285265,
+    "title": "Yellow Fever",
+    "genres": [
+      16,
+      100,
+      6251,
+      99,
+      52,
+      887
+    ],
+    "overview": "In this award-winning short documentary, Kenyan filmmaker Ng'endo Mukii, inspired by her interest in the concept of skin and race and what they imply; and in “the ideas and theories sown into our flesh that change with the arc of time”, explores African women's self-image. Through the use of memories, interviews; and mixed media, she describes their “almost schizophrenic pursuit of globalized beauty”.",
+    "video_key": null,
+    "poster_path": "/WvKCOEZGxkBuNWB9jf6BwVUZ4S.jpg",
+    "backdrop_path": "/n01HPRuwgBazgDHwFw012SD4mml.jpg",
+    "release_date": "2012-09-01",
+    "watch_data": "https://vimeo.com/122574484",
+    "chosen_by": "Garrett",
+    "date_watched": "01/21/2021"
+  },
+  {
+    "id": 507735,
+    "title": "Rebirth Is Necessary",
+    "genres": [
+      6251,
+      52,
+      100,
+      887,
+      18
+    ],
+    "overview": "Director Jenn Nkiru authors a personal and powerful exploration of blackness through piecing together dreamlike portraits with stunning archival footage that includes Afrofuturism pioneer Sun Ra and revolutionary organization the Black Panther Party.",
+    "video_key": null,
+    "poster_path": "/3ryhhViNoO1LvxHW3tmpLjFzOhL.jpg",
+    "backdrop_path": "/sDhTiKRPI4z0aqUPeLgRuSYbNNV.jpg",
+    "release_date": "2017-09-20",
+    "watch_data": "https://www.youtube.com/watch?v=vemJFbayDrM",
+    "chosen_by": "Garrett",
+    "date_watched": "01/21/2021"
+  },
+  {
+    "id": 324857,
+    "title": "Spider-Man: Into the Spider-Verse",
+    "genres": [
+      100,
+      12,
+      16,
+      14,
+      28,
+      10751
+    ],
+    "overview": "Miles Morales is juggling his life between being a high school student and being a spider-man. When Kingpin uses a super collider, others from across the Spider-Verse are transported to this dimension.",
+    "video_key": "tg52up16eq0",
+    "poster_path": "/aVGDZYISKsiyyGdlX09LPLK01fb.jpg",
+    "backdrop_path": "/6qVF0gnLnbKCgcMfCpCB8GH7B5I.jpg",
+    "release_date": "2018-12-14",
+    "watch_data": "https://www.themoviedb.org/movie/324857-spider-man-into-the-spider-verse/watch?locale=US",
+    "chosen_by": "Gillian",
+    "date_watched": "02/01/2021"
   }
 ]
 
