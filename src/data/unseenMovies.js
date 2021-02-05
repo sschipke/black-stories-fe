@@ -1880,7 +1880,7 @@ const unseenMovies =[
     ],
     "overview": "A documentary film that highlights two street derived dance styles, Clowning and Krumping, that came out of the low income neighborhoods of L.A.. Director David LaChapelle interviews each dance crew about how their unique dances evolved. A new and positive activity away from the drugs, guns, and gangs that ruled their neighborhood. A raw film about a growing sub-culture movements in America.",
     "video_key": "wwLo32UulVY",
-    "poster_path": "/7vMjrEtNPUOxiztcHOKxCuu6NS3.jpg",
+    "poster_path": "/bx7UAcyumQZuNj3dZFK7Wh4dbRl.jpg",
     "backdrop_path": "/n7OSD6R6wtpTVPaNIKYWWdJlv3Y.jpg",
     "release_date": "2005-01-15",
     "watch_data": "https://www.themoviedb.org/movie/2287-rize/watch?locale=US",
