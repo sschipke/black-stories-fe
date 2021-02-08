@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { openVideoPlayer, setCurrentMovie } from '../../actions';
@@ -6,9 +6,9 @@ import { displayGenres, displayRuntime } from '../../util/helpers';
 import './MoviePage.scss';
 
 const MoviePage = ({movie, setCurrentMovie, openVideoPlayer}) => {
-  setTimeout(() => {
-    setCurrentMovie(movie)
-  }, 10);
+  useEffect(() => {
+    setCurrentMovie(movie);
+  })
   return <section className="movie-section" >
       <img 
       className="movie-view-backdrop"
