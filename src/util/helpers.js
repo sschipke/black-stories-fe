@@ -1,11 +1,11 @@
 import genreMap from '../data/genreMap';
 export const determineMainImage = () => {
   if(window.innerWidth > 720) {
-    const num = generateRandomImageNumber(16);
+    const num = generateRandomImageNumber(19);
     return `../images/main/desktop/${num}-DSK.jpg`
   } else {
-    const num = generateRandomImageNumber(19)
-    return `../images/main/mobile/${num}-DSK.jpg`
+    const num = generateRandomImageNumber(16);
+    return `../images/main/mobile/${num}-MOB.jpg`
   }
 }
 
