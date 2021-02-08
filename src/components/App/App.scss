@@ -48,8 +48,10 @@ div {
 }
 
 
-/* @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media screen and (max-width: 950px) {
+  .App {
+    height: 100%;
+    width: 100%;
+    overflow:auto;
   }
-} */
+}

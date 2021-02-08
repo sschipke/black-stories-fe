@@ -1,14 +1,14 @@
 import React from 'react';
-import unseenMovies from '../../data/unseenMovies';
+import { connect } from 'react-redux';
 import Nav from '../Nav/Nav';
 import MovieCard from '../../components/MovieCard/MovieCard';
 import './GenrePage.scss';
 
-export const GenrePage = ({genreId, genreTitle}) => {
+export const GenrePage = ({genreId, genreTitle, watchList}) => {
   let genreMovies = [];
   if(genreTitle && genreId) {
     genreTitle = genreTitle.replace('_', ' ').toUpperCase();
-    genreMovies = unseenMovies.filter(movie => movie.genres.includes(genreId))
+    genreMovies = watchList.filter(movie => movie.genres.includes(genreId))
     .map(movie => <MovieCard movie={movie} selectedGenreId={genreId} key={movie.id}/>)
   }
   return <main className="genre-page">
@@ -20,4 +20,8 @@ export const GenrePage = ({genreId, genreTitle}) => {
   </main>
 }
 
-export default GenrePage;
+export const mapStateToProps = (state) => ({
+  watchList: state.data.watchList
+})
+
+export default connect(mapStateToProps)(GenrePage);

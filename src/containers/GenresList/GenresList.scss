@@ -18,10 +18,15 @@ main.genres-list-view {
 }
 
 @media screen and (max-width: 950px) {
+  .genres-list-view {
+    nav {
+      height: 15%;
+    }
+  }
   .genre-links-container {
     height: 100%;
-    flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: flex-start;
+    margin: 0;
     span {
       font-size: 1.5rem;
     }

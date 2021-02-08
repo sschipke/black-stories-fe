@@ -18,3 +18,18 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 950px) {
+  .genre-page {
+    overflow-y: auto;
+    -ms-overflow-style: none;
+  scrollbar-width: none;
+    &::-webkit-scrollbar {
+    display: none;
+    }
+  }
+  .movies-container {
+    overflow-y: visible;
+    height: 100%;
+  }
+}

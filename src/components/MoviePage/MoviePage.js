@@ -6,7 +6,9 @@ import { displayGenres, displayRuntime } from '../../util/helpers';
 import './MoviePage.scss';
 
 const MoviePage = ({movie, setCurrentMovie, openVideoPlayer}) => {
-  setCurrentMovie(movie)
+  setTimeout(() => {
+    setCurrentMovie(movie)
+  }, 10);
   return <section className="movie-section" >
       <img 
       className="movie-view-backdrop"
@@ -16,7 +18,7 @@ const MoviePage = ({movie, setCurrentMovie, openVideoPlayer}) => {
       <h1 className="movie-page-title">{movie.title}</h1>
       <div className="movie-info-div">
         <div className="movie-interactions-div">
-          <div>
+          <div className="movie-stats-div">
             <p className="movie-info">{movie.release_date.slice(0,4)}</p> 
             <p className="movie-info">{displayRuntime(movie.runtime)}</p>
         {movie.video_key && 
