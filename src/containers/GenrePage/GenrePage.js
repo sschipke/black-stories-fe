@@ -23,5 +23,4 @@ export const GenrePage = ({genreId, genreTitle, watchList}) => {
 export const mapStateToProps = (state) => ({
   watchList: state.data.watchList,
 });
-
 export default connect(mapStateToProps)(GenrePage);
