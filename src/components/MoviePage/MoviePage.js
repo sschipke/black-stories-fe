@@ -39,6 +39,7 @@ const MoviePage = ({movie, setCurrentMovie, openVideoPlayer}) => {
           </a>
           }
           </div>
+          {movie['triggers'] && <p><strong>Possible Triggers:</strong> {movie.triggers}</p>}
             <p className="movie-overview">{movie.overview}</p>
         </div>
           <div className="movie-page-genres-div">
