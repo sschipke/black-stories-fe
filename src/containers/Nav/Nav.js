@@ -11,6 +11,7 @@ const Nav = ({subHeader}) => {
         </div>
         <div className="links-container">
           <Link to="/genres">GENRES</Link>
+          <Link to="/previouslywatched">PREVIOUSLY WATCHED</Link>
           <a href="https://discord.gg/uAyxbp23" target="_blank" rel="noreferrer">DISCORD</a>
         </div>
       </nav>
