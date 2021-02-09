@@ -202,7 +202,7 @@ const previousMovies = [
       69,
       6251
     ],
-    "overview": "25 years after Paris is Burning, we dive back into the fierce world of voguing battles in the Kiki scene of New York City, where competition between Houses demands leadership, painstaking practice, and performances on point. A film collaboration between Kiki gatekeeper, Twiggy Pucci Garçon, and Swedish filmmaker Sara Jordenö, we’re granted exclusive access into this high stakes world, where tough competitions act as a gateway into the daily lives of LGBTQ youth of color in NYC. The new generation of ballroom youth use the motto, \“Not About us Without Us\”. Twiggy and Sara’s insider-outsider approach to their stories breathes fresh life into the representation of a marginalized community who demand visibility and real political power.",
+    "overview": "25 years after Paris is Burning, we dive back into the fierce world of voguing battles in the Kiki scene of New York City, where competition between Houses demands leadership, painstaking practice, and performances on point. A film collaboration between Kiki gatekeeper, Twiggy Pucci Garçon, and Swedish filmmaker Sara Jordenö, we’re granted exclusive access into this high stakes world, where tough competitions act as a gateway into the daily lives of LGBTQ youth of color in NYC. The new generation of ballroom youth use the motto, 'Not About us Without Us'. Twiggy and Sara’s insider-outsider approach to their stories breathes fresh life into the representation of a marginalized community who demand visibility and real political power.",
     "video_key": "QHhs7GY5ft0",
     "poster_path": "/n8iw1B4F2Dg3FnnXwzqQJjAlENo.jpg",
     "backdrop_path": "/9CWBE9JcBkWIkLLYw2Ls7aMC8zj.jpg",
