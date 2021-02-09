@@ -23,6 +23,13 @@ const Nav = ({subHeader, isMobileMenuOpen, toggleMobileMenu}) => {
           onClick={() => toggleMobileMenu()}
           role="button"
         >
+            <div className={"hamburger-menu" + openClass}></div>
+        </div>
+        <div
+          className="mobile-menu-wrapper"
+          onClick={() => toggleMobileMenu()}
+          role="button"
+        >
             <div className={"hamburger-menu" + openClass}></div>	          </div>
       </nav>
   )
