@@ -7,7 +7,7 @@ const Main = () => {
   return <main className="landing-page">
       <Nav />
       <div className="main-image-div">
-        <img className="main-image" src={determineMainImage()} alt="movie backdrop" />
+        <img className="main-image" src={determineMainImage()} loading="eager" alt="movie backdrop" />
       </div>
   </main>
 }

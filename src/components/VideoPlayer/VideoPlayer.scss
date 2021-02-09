@@ -1,13 +1,13 @@
 .modal-background {
   position:fixed;
   background:rgba(0, 0, 0, 0.8);
-  // z-index: 1;
   left: 0;
-  top: 0;/* Full width */
-  height: 100vh; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
+  top: 0;
+  height: 100vh; 
+  overflow: auto;
   width: 100vw;
   max-height:100vh;
+  z-index: 300;
   align-items: flex-start;
   &:hover  {
     cursor: pointer;
@@ -72,5 +72,27 @@
   #preview-container-iframe {
     width: 100%;
     height: 100%;
+  }
+}
+
+@media screen and (max-width: 950px) { 
+  .modal-background {
+    .video-close-button {
+      position: fixed;
+      right: -10px;
+      top: 5px;
+      margin: 0;
+      height: 0px;
+      width: 0px;
+      &:before, &:after {
+        height: 50px;
+        width: 5px;
+      }
+    }
+    .modal-content {
+      padding: 5px;
+      height: 90%;
+      width: 75%;
+    }
   }
 }
