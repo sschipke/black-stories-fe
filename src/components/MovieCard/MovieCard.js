@@ -1,15 +1,30 @@
-import React from 'react';
-// import PropTypes from 'prop-types';
+import React, { createRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
 import { displayTwoGenres } from  '../../util/helpers';
 import DirectorIcon from './DirectorIcon';
-import './MovieCard.scss';
 import femaleIcon from '../../assets/icons/female_directed.svg';
 import directorIcon from '../../assets/icons/black_directed.svg';
+import './MovieCard.scss';
 
 
-export const MovieCard = ({ movie, selectedGenreId }) => {
+export const MovieCard = ({ movie, selectedGenreId, currentMovie }) => {
+  let movieRef = createRef(movie.id);
+  
+  useEffect(() => {
+    scrollToPreviousMovie();
+  })
+
+  function scrollToPreviousMovie() {
+    if(currentMovie && movie.genres.includes(selectedGenreId) && movie.id === currentMovie.id) {
+      const movieToScrollTo = movieRef.current
+      if(movieToScrollTo) {
+        movieToScrollTo.scrollIntoView()
+      }
+    }
+    return 
+  }
+
   const genres = movie.genres
   const blackDirectorSrc = genres.includes(100) ? directorIcon : '';
   const femaleDirectorSrc = genres.includes(6251) ? femaleIcon : '';
@@ -20,11 +35,12 @@ export const MovieCard = ({ movie, selectedGenreId }) => {
   </p>));
   return (
     <Link className="movie-link" to={`/movie/${movie.id}-${movie.title.replaceAll(' ', '-').toLowerCase()}`}>
-      <div className="movie" movie_id={movie.movie_id}>
+      <div className="movie" id={movie.id} ref={movieRef}>
         <img
           className="card-image"
+          loading="lazy"
           alt="movie poster"
-          src={`https://image.tmdb.org/t/p/original/${movie.poster_path}`} 
+          src={"https://image.tmdb.org/t/p/original/"+movie.poster_path} 
         />
         <div className="card__text-container">
           <h4>{movie.title.toUpperCase()}</h4>
@@ -44,16 +60,8 @@ export const MovieCard = ({ movie, selectedGenreId }) => {
   );
 };
 
-export default MovieCard
+export const mapStateToProps = (state) => ({
+  currentMovie: state.data.currentMovie
+})
 
-// export const mapStateToProps = (state) => ({
-//   favorites: state.favorites,
-// });
-
-// export default connect(mapStateToProps)(MovieCard);
-
-// MovieCard.propTypes = {
-//   movie: PropTypes.object.isRequired,
-//   toggleFavorites: PropTypes.func.isRequired,
-//   favorites: PropTypes.array.isRequired
-// }
+export default connect(mapStateToProps)(MovieCard);

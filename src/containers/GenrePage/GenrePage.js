@@ -6,10 +6,12 @@ import './GenrePage.scss';
 
 export const GenrePage = ({genreId, genreTitle, watchList}) => {
   let genreMovies = [];
-  if(genreTitle && genreId) {
+  if(genreId && genreTitle) {
     genreTitle = genreTitle.replace('_', ' ').toUpperCase();
     genreMovies = watchList.filter(movie => movie.genres.includes(genreId))
     .map(movie => <MovieCard movie={movie} selectedGenreId={genreId} key={movie.id}/>)
+  } else if(genreId === 0) {
+    genreMovies = watchList.map(movie => <MovieCard movie={movie} selectedGenreId={genreId} key={movie.id}/>)
   }
   return <main className="genre-page">
     <Nav subHeader={genreTitle} />
@@ -18,10 +20,9 @@ export const GenrePage = ({genreId, genreTitle, watchList}) => {
       {genreMovies.length > 0 && genreMovies}
     </div>
   </main>
-}
+};
 
 export const mapStateToProps = (state) => ({
-  watchList: state.data.watchList
-})
-
+  watchList: state.data.watchList,
+});
 export default connect(mapStateToProps)(GenrePage);

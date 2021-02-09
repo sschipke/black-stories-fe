@@ -18,8 +18,8 @@ class App extends Component {
         <MobileMenu />
         <VideoPlayer />
       <Switch>
-        <Route exact path='/' render={ () => <Main /> } />
-        <Route path='/genres' render={() => <GenresList />} />
+        <Route exact path='/' component={Main} />
+        <Route path='/genres' component={GenresList} />
         <Route 
           path='/genre/:genre_id-:genre_title' 
           render={({match}) => {
