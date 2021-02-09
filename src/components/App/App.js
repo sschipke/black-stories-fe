@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import GenresList from '../../containers/GenresList/GenresList';
-import GenrePage from '../../containers/GenrePage/GenrePage';
+import MovieList from '../../containers/MovieList/MovieList';
 import MovieView from '../../containers/MovieView/MovieView';
 import VideoPlayer from '../VideoPlayer/VideoPlayer';
 import Main from '../../containers/Main/Main';
@@ -25,7 +25,7 @@ class App extends Component {
 
   // componentWillUnmount() {
   //   window.addEventListener("resize", this.handleResize);
-  // } 
+  // }
 
   render = () => {
     // const {windowWidth} = this.state;
@@ -36,16 +36,17 @@ class App extends Component {
       <Switch>
         <Route exact path='/' render={ () => <Main /> } />
         <Route path='/genres' render={() => <GenresList />} />
-        <Route 
-          path='/genre/:genre_id-:genre_title' 
+        <Route path='/previouslywatched' render={() => <MovieList type='Previously Watched' />} />
+        <Route
+          path='/genre/:genre_id-:genre_title'
           render={({match}) => {
           let genreId = match.params.genre_id;
           let genreTitle = genreMap[genreId];
-          return (<GenrePage genreId={Number(genreId)} genreTitle={genreTitle} />)
+          return (<MovieList genreId={Number(genreId)} genreTitle={genreTitle} />)
           }}
         />
-        <Route 
-          path='/movie/:movieId-:movie_title' 
+        <Route
+          path='/movie/:movieId-:movie_title'
           render={({match}) => {
           let id = match.params.movieId;
           return (<MovieView movieId={id} />)
@@ -53,7 +54,7 @@ class App extends Component {
         />
         <NotFound />
       </Switch>
-      </div> 
+      </div>
     );
   };
 }
