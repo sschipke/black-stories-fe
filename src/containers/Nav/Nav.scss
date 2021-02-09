@@ -1,3 +1,7 @@
+$bar-width: 50px;
+$bar-height: 5px;
+$bar-spacing: 14px;
+
 h1, h2 {
   font-size: 3.5rem;
   font-style: italic;
@@ -30,6 +34,10 @@ h1, h2 {
   }
 }
 
+  .mobile-menu-wrapper {
+    display: none;
+  }
+
 nav {
     display: flex;
     flex-direction: column;
@@ -38,3 +46,86 @@ nav {
     height: 100%;
     margin-right: 20px;
   }
+
+  @media screen and (max-width: 950px) {
+    nav {
+      margin: 0;
+      height: 30%;
+      max-width: 100%;
+      margin-bottom: 20px;
+      flex-direction: row;
+      h1, h2 {
+        font-size: 1.5rem;
+        width: 75%;
+      }
+      .nav-headers-container{
+        width: 70%;
+        min-width: 0;
+        h2 {
+          hyphens: none;
+          margin-top: 10px;
+        }
+      }
+      .links-container{
+      display: none;
+      }
+    }
+
+    .mobile-menu-wrapper {
+    z-index: 200;
+    position: fixed;
+    right: 30px;
+    display: block;
+    width: $bar-width;
+    height: $bar-height + $bar-spacing*2;
+    cursor: pointer;
+}
+
+.hamburger-menu,
+.hamburger-menu:after,
+.hamburger-menu:before {
+  width: $bar-width;
+  height: $bar-height;
+  border-radius: 5px;
+}
+
+.hamburger-menu {
+	position: relative;
+	transform: translateY($bar-spacing);
+	background: #000000;
+	transition: all 0ms 300ms;
+  &.animate {
+    background: rgba(255, 255, 255, 0); 
+  }
+}
+
+.hamburger-menu:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: $bar-spacing;
+	background: #000000;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu:after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: $bar-spacing;
+	background: #000000;
+	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu.animate:after {
+	top: 0;
+	transform: rotate(45deg);
+	transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}
+
+.hamburger-menu.animate:before {
+	bottom: 0;
+	transform: rotate(-45deg);
+	transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+}   
+}
