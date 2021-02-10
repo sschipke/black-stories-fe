@@ -28,11 +28,16 @@ section {
     margin-right: 20px;
   }
   .movie-page-genres-div {
+    flex-wrap: wrap;
+    align-items: start;
     width: 25%;
-    height: 100%;
+    height: calc(10vh - 10%);
   }
-  p.genres {
+  .movie-page-genres {
+    display: inline;
     font-size: 1rem;
+    margin-left: 5px;
+    text-transform: uppercase;
   }
 
 }
@@ -49,12 +54,12 @@ section {
   section {
     margin-left: 0;
     h1.movie-page-title {
-        // max-width: 100%;
         overflow-wrap:break-word;
       }
     .movie-info-div {
       flex-direction: column;
       max-height: none;
+      flex-direction: column-reverse;
     }
     .movie-page-genres-div {
     width: 100%;
