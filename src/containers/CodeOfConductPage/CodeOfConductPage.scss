@@ -1,0 +1,37 @@
+.code-of-conduct-page {
+  background-image: linear-gradient(to right, #FDE997, #FF9300);
+  overflow: auto;
+}
+
+.ground-rules-div {
+  padding-left: 30px;
+  flex-direction: column;
+  overflow: auto;
+  p {
+    font-size: .85rem;
+    margin-bottom: 8px;
+  }
+  h3 {
+    font-size: 1.05rem;
+    margin-top: 10px;
+  }
+}
+
+.conduct-article-links {
+  font-size: .85rem;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 950px) {
+  .ground-rules-div {
+    overflow: visible;
+  padding-left: 0;
+  padding-right: 35px;
+  }
+  .conduct-article-links {
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+}

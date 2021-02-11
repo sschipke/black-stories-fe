@@ -24,12 +24,10 @@ h1, h2 {
 }
 
 .links-container {
-  min-height: 20%;
-  align-items: flex-end;
   max-width: 390px;
   flex-wrap: wrap;
   a {
-    margin: 10px;
+    margin: 0 15px 0 0;
     font-size: 1.5rem;
   }
 }
