@@ -16,7 +16,7 @@ export const MovieCard = ({ movie, selectedGenreId, currentMovie }) => {
   })
 
   function scrollToPreviousMovie() {
-    if(currentMovie && movie.genres.includes(selectedGenreId) && movie.id === currentMovie.id) {
+    if(currentMovie && movie.id === currentMovie.id) {
       const movieToScrollTo = movieRef.current
       if(movieToScrollTo) {
         movieToScrollTo.scrollIntoView()

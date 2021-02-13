@@ -66,6 +66,10 @@ const specialGenres = [
   {
       "id": 53,
       "name": "Thriller"
+  },
+  {
+    id: 0,
+    "name": "All Movies"
   }
 ]
 

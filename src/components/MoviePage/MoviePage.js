@@ -1,14 +1,27 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { openVideoPlayer, setCurrentMovie } from '../../actions';
-import { displayGenres, displayRuntime } from '../../util/helpers';
+import { displayRuntime } from '../../util/helpers';
+import genreMap from '../../data/genreMap';
 import './MoviePage.scss';
 
 const MoviePage = ({movie, setCurrentMovie, openVideoPlayer}) => {
   useEffect(() => {
     setCurrentMovie(movie);
   })
+  const displayGenres = (genres) => {
+  if (genres && genres.length > 0) {
+    return genres.map((genreId, i) => {
+      if(i === genres.length -1) {
+        return (<Link className="movie-page-genres" key={genreId} to={'/genre/'+ genreId + '-' + genreMap[genreId].replaceAll(' ', '_').toLowerCase()}>{genreMap[genreId]}</Link>)
+      }
+      return (<Link className="movie-page-genres" key={genreId} to={'/genre/'+ genreId + '-' + genreMap[genreId].replaceAll(' ', '_').toLowerCase()}>{genreMap[genreId] + ","}</Link>)
+    })
+  }
+  return
+}
   return <section className="movie-section" >
       <img 
       className="movie-view-backdrop"
@@ -39,10 +52,11 @@ const MoviePage = ({movie, setCurrentMovie, openVideoPlayer}) => {
           </a>
           }
           </div>
+          {movie['triggers'] && <p><strong>Possible Triggers:</strong> {movie.triggers}</p>}
             <p className="movie-overview">{movie.overview}</p>
         </div>
           <div className="movie-page-genres-div">
-          <p className="movie-info genres">{displayGenres(movie.genres)}</p>
+          {displayGenres(movie.genres)}
           </div>
       </div>
 
