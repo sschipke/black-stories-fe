@@ -34,24 +34,10 @@ export const displayTwoGenres=(genres, excludeGenreId) => {
   return genreElements
 }
 
-export const displayGenres = (genres) => {
-  if (genres && genres.length > 0) {
-    return genres.reduce((finalString, genre, index) => {
-      if (!genreMap[genre]) {
-        return finalString
-      }
-      if(index === genres.length -1) {
-        finalString += genreMap[genre]
-        return finalString
-      }
-      finalString += genreMap[genre] + ", "
-        return finalString
-    }, '')
-  }
-  return ''
-}
-
 export const displayRuntime = (time) => {
+  if(!time || !parseInt(time)) {
+    return ''
+  }
   const hours = Math.floor(time / 60);  
   const minutes = time % 60;
   return `${hours}H ${minutes}M`;         

@@ -15,6 +15,9 @@ export const MobileMenu = ({ isMobileMenuOpen, toggleMobileMenu }) => {
       <Link className="mobile-link" 
       onClick={() => toggleMobileMenu()}
       to="/genres">GENRES</Link>
+      <Link className="mobile-link" 
+      onClick={() => toggleMobileMenu()}
+      to="/code_of_conduct">CONDUCT RULES</Link>
           <a 
           href="https://discord.gg/PvxjFYd" 
           className="mobile-link"

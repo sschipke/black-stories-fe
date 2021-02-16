@@ -36,7 +36,8 @@ const genreMap = {
   '10749': 'Romance',
   '10751': 'Family',
   '10752': 'War',
-  '10770': 'TV Movie'
+  '10770': 'TV Movie',
+  '0': 'All Movies'
 }
 
 export default genreMap;
