@@ -15,7 +15,11 @@ export const MovieList = ({genreId, genreTitle, type}) => {
     .map(movie => <MovieCard movie={movie} selectedGenreId={genreId} key={movie.id}/>)
   } else if (type === 'Previously Watched'){
     className = 'previously-watched'
-    specificMovies = previousMovies.reverse().map(movie => <MovieCard movie={movie} key={movie.id}/>)
+    let specificMoviesSorted = previousMovies.sort((a, b)=>{
+      return Date.parse(b.date_watched) - Date.parse(a.date_watched)
+    })
+    console.log(specificMoviesSorted)
+    specificMovies = specificMoviesSorted.map(movie => <MovieCard movie={movie} type='Previously Watched' key={movie.id}/>)
   }
   return <main className={className}>
     <Nav subHeader={genreTitle || type} />
