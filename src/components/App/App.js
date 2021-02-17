@@ -22,6 +22,8 @@ class App extends Component {
         <Route exact path='/' component={Main} />
         <Route path='/genres' component={GenresList} />
         <Route exact path='/code_of_conduct' component={CodeOfConductPage} />
+        <Route path='/previouslywatched'
+          render={()=><MovieList type='Previously Watched'/>} />
         <Route
           path='/genre/:genre_id-:genre_title'
           render={({match}) => {
