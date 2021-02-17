@@ -7,6 +7,7 @@ import './Nav.scss';
 
 const Nav = ({subHeader, isMobileMenuOpen, toggleMobileMenu}) => {
   const openClass = isMobileMenuOpen ? ' animate' : '';
+
   return (
       <nav className="nav-text-container">
         <div className="nav-headers-container">
@@ -16,6 +17,7 @@ const Nav = ({subHeader, isMobileMenuOpen, toggleMobileMenu}) => {
         <div className="links-container">
           <Link to="/genres">GENRES</Link>
           <Link to="/previouslywatched">PREVIOUSLY WATCHED</Link>
+          <Link to="/code_of_conduct">CONDUCT RULES</Link>
           <a href="https://discord.gg/PvxjFYd" target="_blank" rel="noreferrer">DISCORD</a>
         </div>
         <div
