@@ -9,19 +9,22 @@ export const MobileMenu = ({ isMobileMenuOpen, toggleMobileMenu }) => {
   const openClass = isMobileMenuOpen ? 'open' : '';
   return (
     <div className={"mobile-menu-div " + openClass}>
-      <Link className="mobile-link" 
+      <Link className="mobile-link"
       onClick={() => toggleMobileMenu()}
       to="/">HOME</Link>
-      <Link className="mobile-link" 
+      <Link className="mobile-link"
+      onClick={() => toggleMobileMenu()}
+      to="/previouslywatched">PREVIOUSLY WATCHED</Link>
+      <Link className="mobile-link"
       onClick={() => toggleMobileMenu()}
       to="/genres">GENRES</Link>
-      <Link className="mobile-link" 
+      <Link className="mobile-link"
       onClick={() => toggleMobileMenu()}
       to="/code_of_conduct">CONDUCT RULES</Link>
-          <a 
-          href="https://discord.gg/PvxjFYd" 
+          <a
+          href="https://discord.gg/PvxjFYd"
           className="mobile-link"
-          target="_blank" 
+          target="_blank"
           rel="noreferrer">DISCORD</a>
     </div>
   )
