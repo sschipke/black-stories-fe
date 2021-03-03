@@ -2446,7 +2446,8 @@ const unseenMovies =[
     "release_date": "2021-02-26",
     "watch_data": "https://www.hulu.com/movie/the-united-states-vs-billie-holiday-6f7be3b0-69c5-49ab-8472-2b5b1dabcfe8",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "runtime": 130
   },
   {
     "id": 57868,
@@ -2465,7 +2466,8 @@ const unseenMovies =[
     "release_date": "1974-01-31",
     "watch_data": "https://www.themoviedb.org/movie/57868-the-autobiography-of-miss-jane-pittman/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "runtime": 112
   },
   {
     "id": 42489,
@@ -2483,7 +2485,8 @@ const unseenMovies =[
     "release_date": "1972-09-24",
     "watch_data": "https://www.youtube.com/watch?v=j1TqnIgn1P4",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "runtime": 105
   },
   {
     "id": 583406,
@@ -2501,7 +2504,8 @@ const unseenMovies =[
     "release_date": "2021-02-12",
     "watch_data": "https://www.themoviedb.org/movie/583406-judas-and-the-black-messiah/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "runtime": 125
   },
   {
     "id": 661914,
@@ -2519,7 +2523,8 @@ const unseenMovies =[
     "release_date": "2020-12-25",
     "watch_data": "https://www.themoviedb.org/movie/661914-one-night-in-miami/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "runtime": 114
   },
   {
     "id": 581859,
@@ -2537,7 +2542,158 @@ const unseenMovies =[
     "release_date": "2020-06-12",
     "watch_data": "https://www.themoviedb.org/movie/581859-da-5-bloods/watch?locale=US",
     "chosen_by": null,
-    "date_watched": null
+    "date_watched": null,
+    "runtime": 156
+  },{
+    "id": 88614,
+    "title": "The Josephine Baker Story",
+    "genres": [
+      18,
+      85,
+      10402,
+      10770,
+      10749
+    ],
+    "overview": "Biography of the African-American who became a major performer in the Paris cabarets of the 1920s and 1930s. The film follows her life beginning as a struggling performer in 1917 St. Louis, her frustrations leading to her move to France, and follows to her death in 1975.",
+    "video_key": "E8LN_7wI06o",
+    "poster_path": "/lsuA7MH0pwVT4uoVrfAr4JLncdo.jpg",
+    "backdrop_path": "/hYP5a2mI5qyKVYxl46HSWn3yAGg.jpg",
+    "release_date": "1991-03-16",
+    "watch_data": "https://www.youtube.com/watch?v=LN8TBm4IOTI",
+    "chosen_by": null,
+    "date_watched": null,
+    "runtime": 130
+  },
+{
+    "id": 63510,
+    "title": "Jo Jo Dancer, Your Life Is Calling",
+    "genres": [
+      18,
+      91,
+      35,
+      100,
+      10770
+    ],
+    "overview": "Although Jo Jo Dancer (Richard Pryor) has achieved success as a stand-up comedian, he hasn't found happiness. After receiving severe burns in a narcotics-related incident, Jo Jo remains in a coma, and, while in this state, he looks back on his life. Drifting off into memories of his troubled childhood, Jo Jo revisits his youth, recalling his eventual rise to fame and the decadence that followed. As he considers his existence, he must decide if he wants to go on living or not.",
+    "video_key": "QjZAX46xpSM",
+    "poster_path": "/mink4e7kgpaXpovL8FvrmUjcFjI.jpg",
+    "backdrop_path": "/wtoOQVkDG6yQR8YxHa8BuHSDM9R.jpg",
+    "release_date": "1986-05-02",
+    "watch_data": "https://www.themoviedb.org/movie/63510-jo-jo-dancer-your-life-is-calling/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null,
+    "runtime": 97
+  },
+{
+    "id": 362995,
+    "title": "Stompin at the Savoy",
+    "genres": [
+      18,
+      100,
+      36,
+      10402,
+      6251,
+      10770
+    ],
+    "overview": "As the Harlem Renaissance flourishes in jazzy New York City, Pauline (Vanessa Williams), Esther (Lynn Whitfield), and Alice (Jasmine Guy) struggle to survive. By day, they toil at dreary jobs, dreaming of stardom, riches, and happiness. By night, they dance their troubles away at the famous Savoy Ballroom. But when World War II appears on the horizon, the girls find their fortunes unfolding too unevenly to reconcile, and they inevitably begin to drift apart.",
+    "video_key": "x8yewafgvx0",
+    "poster_path": "/keICP8AClFXVDuqJmERXob5JIFf.jpg",
+    "backdrop_path": "/mcnj9havPjcGDfGU0dS7UHsuGwS.jpg",
+    "release_date": "1992-04-19",
+    "watch_data": "https://www.youtube.com/watch?v=o0Z33PXPqy4",
+    "chosen_by": null,
+    "date_watched": null,
+    "runtime": 95
+  },
+{
+    "id": 470197,
+    "title": "Black Liberation (aka Silent Revolution)",
+    "genres": [
+      101,
+      99,
+      36
+    ],
+    "overview": "Produced in collaboration with Malcolm X and narrated by Ossie Davis, this call to arms layers revolutionary text from multiple sources with gritty, shot-on-the-streets-of-New York footage of African-American struggle. A forgotten masterpiece from radical filmmaker, theorist and founder of Cinéma Éngagé, Édouard de Laurot.",
+    "video_key": null,
+    "poster_path": "/dr432IXD6GT4zOsKjPqdL6DLL51.jpg",
+    "backdrop_path": "/vNPkTOI1303kN6qUp6P1qRELBBB.jpg",
+    "release_date": "1967-01-01",
+    "watch_data": "https://www.youtube.com/watch?v=-N0kPLKOuRs",
+    "chosen_by": null,
+    "date_watched": null,
+    "runtime": 37
+  },
+{
+    "id": 696040,
+    "title": "Color Us Black!",
+    "genres": [
+      101,
+      99,
+      36
+    ],
+    "overview": "A documentary looking at how and why Howard University (Washington D.C.) was shut down by African American students, who occupied the Administration Building over four days in March 1968. The disciplining of 39 students led to this initial protest but students are demanding a much wider review of issues relating to racial equality, black identity, and power.",
+    "video_key": null,
+    "poster_path": "/yKz2QmTtHQYnhn2Pn6DFVHjcUx3.jpg",
+    "backdrop_path": "/iyz8RWe9TkxXwOlO9KYsmJFu4rl.jpg",
+    "release_date": "1968-05-06",
+    "watch_data": "https://www.youtube.com/watch?v=UxSoMY21wi4&list=PLYO8mYIVPi4xw-xYuuJAIwwqsLZjSA8B4",
+    "chosen_by": null,
+    "date_watched": null,
+    "runtime": 60
+  },
+{
+    "id": 274845,
+    "title": "Still A Brother: Inside the Negro Middle Class",
+    "genres": [
+      100,
+      99
+    ],
+    "overview": "The Black middle class, torn between white goals and Black needs, are examined by producers William Greaves and William Branch in a 90-minute NET Journal documentary.",
+    "video_key": null,
+    "poster_path": "/8Qq8OFaTnFOiE8EI5UyfwpQXvJa.jpg",
+    "backdrop_path": "/rtgkbZx2WYvhmwRrO9xDqKWJbBE.jpg",
+    "release_date": "1968-01-02",
+    "watch_data": "https://vimeo.com/ondemand/stillabrother",
+    "chosen_by": null,
+    "date_watched": null,
+    "runtime": 90
+  },
+{
+    "id": 504561,
+    "title": "Quincy",
+    "genres": [
+      100,
+      99,
+      10402
+    ],
+    "overview": "An intimate look into the life of icon Quincy Jones. A unique force in music and popular culture for 70 years, Jones has transcended racial and cultural boundaries; his story is inextricably woven into the fabric of America.",
+    "video_key": "WT7gn6nhsAc",
+    "poster_path": "/cVsO2CjPBSXhTprOctNIZK260qJ.jpg",
+    "backdrop_path": "/8McBKWoQOQZfeIGQl23g0TJ6jto.jpg",
+    "release_date": "2018-09-21",
+    "watch_data": "https://www.themoviedb.org/movie/504561-quincy/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null,
+    "runtime": 124
+  },
+{
+    "id": 517019,
+    "title": "Mr. SOUL!",
+    "genres": [
+      100,
+      99,
+      10402,
+      6251
+    ],
+    "overview": "On the heels of the Civil Rights Movement, one fearless black pioneer reconceived a Harlem Renaissance for a new era, ushering giants and rising stars of black American culture onto the national television stage. He was hip. He was smart. He was innovative, political, and gay. In his personal fight for social equality, this man ensured the Revolution would be televised. The man was Ellis Haizlip. The Revolution was soul!",
+    "video_key": "447330944",
+    "poster_path": "/sJAzwN2VjLJDq51e2jauCo3bSzc.jpg",
+    "backdrop_path": "/e7vPOre4zleghlsMLSNcs6UXexy.jpg",
+    "release_date": "2018-04-27",
+    "watch_data": "https://www.pbs.org/independentlens/videos/mr-soul/",
+    "chosen_by": null,
+    "date_watched": null,
+    "runtime": 90
   }
 ]
 
