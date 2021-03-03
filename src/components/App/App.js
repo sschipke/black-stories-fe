@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { connect } from 'react-redux';
 import { Route, Switch } from 'react-router-dom';
 import GenresList from '../../containers/GenresList/GenresList';
 import MovieList from '../../containers/MovieList/MovieList';
@@ -11,9 +12,8 @@ import CodeOfConductPage from '../../containers/CodeOfConductPage/CodeOfConductP
 import genreMap from '../../data/genreMap';
 import './App.scss';
 
-class App extends Component {
+const App = (props) => {
 
-  render = () => {
     return (
       <div className="App">
         <MobileMenu />
@@ -43,7 +43,10 @@ class App extends Component {
       </Switch>
       </div>
     );
-  };
 }
 
-export default App;
+export const mapStateToProps = (state) => ({
+  backgroundClass: state.screen.background_class
+})
+
+export default connect(mapStateToProps)(App);

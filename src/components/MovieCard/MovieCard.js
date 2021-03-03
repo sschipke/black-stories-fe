@@ -53,7 +53,7 @@ export const MovieCard = ({ movie, selectedGenreId, currentMovie, type }) => {
           <p className="card__release-date">
             {date}
           </p>
-          <p className="card__release-date">
+          <p className="card__release-date chosen-by">
             {chosenBy}
           </p>
           <div className="movie-genres-container">

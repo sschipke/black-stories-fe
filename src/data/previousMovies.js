@@ -18,7 +18,9 @@ const previousMovies = [
     "release_date": "1996-09-07",
     "watch_data": "https://www.themoviedb.org/movie/44479-the-watermelon-woman/watch?locale=US",
     "chosen_by": "Garrett",
-    "date_watched": "06/13/2020"
+    "date_watched": "06/13/20",
+    "seen": true,
+    "runtime": 85
   },
   {
     "id": 29478,
@@ -35,7 +37,9 @@ const previousMovies = [
     "release_date": "1961-05-28",
     "watch_data": "https://www.themoviedb.org/movie/29478-a-raisin-in-the-sun/watch?locale=US",
     "chosen_by": "Corey",
-    "date_watched": "06/20/2020"
+    "date_watched": "06/20/20",
+    "seen": true,
+    "runtime": 128
   },
   {
     "id": 448444,
@@ -51,7 +55,9 @@ const previousMovies = [
     "release_date": "2017-07-27",
     "watch_data": "https://www.themoviedb.org/movie/448444-the-death-and-life-of-marsha-p-johnson/watch?locale=US",
     "chosen_by": "Scott",
-    "date_watched": "06/27/2020"
+    "date_watched": "06/27/20",
+    "seen": true,
+    "runtime": 105
   },
   {
     "id": 322903,
@@ -68,7 +74,9 @@ const previousMovies = [
     "release_date": "2014-01-01",
     "watch_data": "https://www.themoviedb.org/movie/322903-naz-maalik/watch?locale=US",
     "chosen_by": "Nicki",
-    "date_watched": "07/05/2020"
+    "date_watched": "07/05/20",
+    "seen": true,
+    "runtime": 86
   },
   {
     "id": 318044,
@@ -85,7 +93,9 @@ const previousMovies = [
     "release_date": "2015-01-22",
     "watch_data": "https://www.themoviedb.org/movie/318044-what-happened-miss-simone/watch?locale=US",
     "chosen_by": "Christopher",
-    "date_watched": "07/11/2020"
+    "date_watched": "07/11/20",
+    "runtime": 101,
+    "seen": true
   },
   {
     "id": 424781,
@@ -105,7 +115,9 @@ const previousMovies = [
     "release_date": "2018-10-29",
     "watch_data": "https://www.themoviedb.org/movie/424781-sorry-to-bother-you/watch?locale=US",
     "chosen_by": "Gillian",
-    "date_watched": "07/18/2020"
+    "date_watched": "07/18/20",
+    "seen": true,
+    "runtime": 112
   },
   {
     "id": 75000,
@@ -121,10 +133,12 @@ const previousMovies = [
     "release_date": "2011-09-09",
     "watch_data": "https://www.themoviedb.org/movie/75000-the-black-power-mixtape-1967-1975/watch?locale=US",
     "chosen_by": "Garrett",
-    "date_watched": "07/25/2020"
+    "date_watched": "07/25/20",
+    "seen": true,
+    "runtime": 100
   },
   {
-    "id": 424781,
+    "id": 411019,
     "title": "I Am Not Your Negro",
     "genres": [
       99,
@@ -138,11 +152,13 @@ const previousMovies = [
     "release_date": "2017-02-03",
     "watch_data": "https://www.themoviedb.org/movie/411019-i-am-not-your-negro/watch?locale=US",
     "chosen_by": "Scott",
-    "date_watched": "08/01/2020"
+    "date_watched": "08/01/20",
+    "runtime": 93,
+    "seen": true
   },
   {
     "id": 207005,
-    "title": "Baldwin's Nigger",
+    "title": "Baldwin's N**ger",
     "genres": [
       99,
       100
@@ -154,7 +170,9 @@ const previousMovies = [
     "release_date": "1968-07-12",
     "watch_data": "https://www.facebook.com/AFROPUNK/videos/10154878614856623",
     "chosen_by": "Scott",
-    "date_watched": "08/01/2020"
+    "date_watched": "08/01/20",
+    "seen": true,
+    "runtime": 46
   },
   {
     "id": 73939,
@@ -173,7 +191,9 @@ const previousMovies = [
     "release_date": "2011-12-28",
     "watch_data": "https://www.themoviedb.org/movie/73939-pariah/watch?locale=US",
     "chosen_by": "Christopher",
-    "date_watched": "08/22/2020"
+    "date_watched": "08/22/20",
+    "seen": true,
+    "runtime": 86
   },
   {
     "id": 31357,
@@ -192,7 +212,9 @@ const previousMovies = [
     "release_date": "1995-12-22",
     "watch_data": "https://www.themoviedb.org/movie/31357-waiting-to-exhale/watch?locale=US",
     "chosen_by": "Corey",
-    "date_watched": "09/01/2020"
+    "date_watched": "09/01/20",
+    "seen": true,
+    "runtime": 127
   },
   {
     "id": 373480,
@@ -209,7 +231,9 @@ const previousMovies = [
     "release_date": "2017-05-26",
     "watch_data": "https://www.themoviedb.org/movie/373480-kiki/watch?locale=US",
     "chosen_by": "Scott",
-    "date_watched": "09/09/2020"
+    "date_watched": "09/09/20",
+    "seen": true,
+    "runtime": 100
   },
   {
     "id": 606215,
@@ -226,7 +250,9 @@ const previousMovies = [
     "release_date": "2019-06-07",
     "watch_data": "https://www.themoviedb.org/movie/606215-the-black-godfather/watch?locale=US",
     "chosen_by": "Gillian",
-    "date_watched": "09/15/2020"
+    "date_watched": "09/15/20",
+    "seen": true,
+    "runtime": 118
   },
   {
     "id": 68427,
@@ -246,7 +272,9 @@ const previousMovies = [
     "release_date": "1992-01-15",
     "watch_data": "https://www.themoviedb.org/movie/68427-daughters-of-the-dust/watch?locale=US",
     "chosen_by": "Garrett",
-    "date_watched": "09/21/2020"
+    "date_watched": "09/21/20",
+    "seen": true,
+    "runtime": 112
   },
   {
     "id": 44783,
@@ -263,7 +291,9 @@ const previousMovies = [
     "release_date": "1968-10-28",
     "watch_data": "https://www.themoviedb.org/movie/44783-symbiopsychotaxiplasm-take-one/watch?locale=US",
     "chosen_by": "Christopher",
-    "date_watched": "09/28/2020"
+    "date_watched": "09/28/20",
+    "seen": true,
+    "runtime": 75
   },
   {
     "id": 417870,
@@ -279,7 +309,9 @@ const previousMovies = [
     "release_date": "2017-07-17",
     "watch_data": "https://www.themoviedb.org/movie/417870-girls-trip/watch?locale=US",
     "chosen_by": "Nicki",
-    "date_watched": "10/05/2020"
+    "date_watched": "10/05/20",
+    "seen": true,
+    "runtime": 122
   },
   {
     "id": 42884,
@@ -298,7 +330,9 @@ const previousMovies = [
     "release_date": "1997-11-02",
     "watch_data": "https://www.youtube.com/watch?v=Fk9uuD86ufk",
     "chosen_by": "Corey",
-    "date_watched": "10/12/2020"
+    "date_watched": "10/12/20",
+    "seen": true,
+    "runtime": 88
   },
   {
     "id": 281571,
@@ -315,7 +349,9 @@ const previousMovies = [
     "release_date": "1997-06-22",
     "watch_data": "https://vimeo.com/62632619",
     "chosen_by": "Scott",
-    "date_watched": "10/19/2020"
+    "date_watched": "10/19/20",
+    "runtime": 83,
+    "seen": true
   },
   {
     "id": 1883,
@@ -334,7 +370,9 @@ const previousMovies = [
     "release_date": "1992-11-18",
     "watch_data": "https://www.themoviedb.org/movie/1883-malcolm-x/watch?locale=US",
     "chosen_by": "Gillian",
-    "date_watched": "10/26/2020"
+    "date_watched": "10/26/20",
+    "seen": true,
+    "runtime": 202
   },
   {
     "id": 62330,
@@ -354,7 +392,9 @@ const previousMovies = [
     "release_date": "1973-09-21",
     "watch_data": "https://www.youtube.com/watch?v=_BynXfREPG8",
     "chosen_by": "Garrett",
-    "date_watched": "11/02/2020"
+    "date_watched": "11/02/20",
+    "seen": true,
+    "runtime": 102
   },
   {
     "id": 24961,
@@ -374,7 +414,9 @@ const previousMovies = [
     "release_date": "1978-10-24",
     "watch_data": "https://www.themoviedb.org/movie/24961-the-wiz/watch?locale=US",
     "chosen_by": "Christopher",
-    "date_watched": "11/16/2020"
+    "date_watched": "11/16/20",
+    "seen": true,
+    "runtime": 134
   },
   {
     "id": 330544,
@@ -394,7 +436,9 @@ const previousMovies = [
     "release_date": "2015-05-16",
     "watch_data": "https://www.themoviedb.org/movie/330544-bessie/watch?locale=US",
     "chosen_by": "Nicki",
-    "date_watched": "11/23/2020"
+    "date_watched": "11/23/20",
+    "seen": true,
+    "runtime": 107
   },
   {
     "id": 873,
@@ -411,7 +455,9 @@ const previousMovies = [
     "release_date": "1985-12-18",
     "watch_data": "https://www.themoviedb.org/movie/873-the-color-purple/watch?locale=US",
     "chosen_by": "Corey",
-    "date_watched": "11/30/2020"
+    "date_watched": "11/30/20",
+    "seen": true,
+    "runtime": 154
   },
   {
     "id": 57082,
@@ -428,14 +474,16 @@ const previousMovies = [
     "release_date": "1980-11-07",
     "watch_data": "https://www.themoviedb.org/movie/57082-babylon/watch?locale=US",
     "chosen_by": "Scott",
-    "date_watched": "12/07/2020"
+    "date_watched": "12/07/20",
+    "seen": true,
+    "runtime": 95
   },
   {
     "id": 42600,
     "title": "Watermelon Man",
     "genres": [
       100,
-      1970,
+      1977,
       102,
       35
     ],
@@ -446,7 +494,9 @@ const previousMovies = [
     "release_date": "1970-01-01",
     "watch_data": "https://www.themoviedb.org/movie/42600-watermelon-man/watch?locale=US",
     "chosen_by": "Garrett",
-    "date_watched": "12/14/2020"
+    "date_watched": "12/14/20",
+    "seen": true,
+    "runtime": 100
   },
   {
     "id": 622855,
@@ -466,10 +516,12 @@ const previousMovies = [
     "release_date": "2020-11-06",
     "watch_data": "https://www.themoviedb.org/movie/622855-jingle-jangle/watch?locale=US",
     "chosen_by": "Gillian",
-    "date_watched": "12/21/2020"
+    "date_watched": "12/21/20",
+    "seen": true,
+    "runtime": 122
   },
   {
-    "id": 622855,
+    "id": 153555,
     "title": "Porgy and Bess",
     "genres": [
       10402,
@@ -484,7 +536,9 @@ const previousMovies = [
     "release_date": "1993-10-06",
     "watch_data": "https://www.youtube.com/watch?v=M-ieCWi1bJY",
     "chosen_by": "Christopher",
-    "date_watched": "12/28/2020"
+    "date_watched": "12/28/20",
+    "seen": true,
+    "runtime": 184
   },
   {
   "id": 308639,
@@ -499,11 +553,13 @@ const previousMovies = [
   "overview": "Malcolm is carefully surviving life in a tough neighborhood in Los Angeles while juggling college applications, academic interviews, and the SAT. A chance invitation to an underground party leads him into an adventure that could allow him to go from being a geek, to being dope, to ultimately being himself.",
   "video_key": "sNlSBM8jVOY",
   "poster_path": "/9j5yZ3cAZARJ479QerpvrRLolDu.jpg",
-  "backdrop_path": "/pyCspB4drqIYJcum8MgiYxnGd6x.jpg",
+  "backdrop_path": "/AftACAlicRQWSnRsGcSQKP4K86m.jpg",
   "release_date": "2015-06-19",
   "watch_data": "https://www.themoviedb.org/movie/308639-dope/watch?locale=US",
   "chosen_by": "Nicki",
-  "date_watched": "01/04/2021"
+  "date_watched": "01/04/21",
+  "seen": true,
+  "runtime": 103
   },
   {
   "id": 615667,
@@ -522,14 +578,15 @@ const previousMovies = [
   "release_date": "2020-11-25",
   "watch_data": "https://www.themoviedb.org/movie/615667-ma-rainey-s-black-bottom/watch?locale=US",
   "chosen_by": "Corey",
-  "date_watched": "01/11/2021"
+  "date_watched": "01/11/21",
+  "seen": true,
+  "runtime": 94
   },
   {
     "id": 5822,
     "title": "Sweet Sweetback's Baadasssss Song",
     "genres": [
       28,
-      100,
       100,
       1977,
       18,
@@ -543,7 +600,9 @@ const previousMovies = [
     "release_date": "1971-04-23",
     "watch_data": "https://www.themoviedb.org/movie/5822-sweet-sweetback-s-baadasssss-song/watch?locale=US",
     "chosen_by": "Scott",
-    "date_watched": "01/18/2021"
+    "date_watched": "01/18/21",
+    "seen": true,
+    "runtime": 97
   },
     {
     "id": 323837,
@@ -562,7 +621,9 @@ const previousMovies = [
     "release_date": "2013-01-19",
     "watch_data": "https://vimeo.com/183085974",
     "chosen_by": "Garrett",
-    "date_watched": "01/21/2021"
+    "date_watched": "01/21/21",
+    "seen": true,
+    "runtime": 13
   },
   {
     "id": 266714,
@@ -582,7 +643,9 @@ const previousMovies = [
     "release_date": "2014-01-18",
     "watch_data": "https://www.youtube.com/watch?v=lb3pu5jXWHU",
     "chosen_by": "Garrett",
-    "date_watched": "01/21/2021"
+    "date_watched": "01/21/21",
+    "seen": true,
+    "runtime": 14
   },
   {
     "id": 557726,
@@ -601,7 +664,9 @@ const previousMovies = [
     "release_date": "2016-03-13",
     "watch_data": "https://vimeo.com/178011614#t=2736s",
     "chosen_by": "Garrett",
-    "date_watched": "01/21/2021"
+    "date_watched": "01/21/21",
+    "seen": true,
+    "runtime": 10
   },
   {
     "id": 285265,
@@ -621,7 +686,9 @@ const previousMovies = [
     "release_date": "2012-09-01",
     "watch_data": "https://vimeo.com/122574484",
     "chosen_by": "Garrett",
-    "date_watched": "01/21/2021"
+    "date_watched": "01/21/21",
+    "seen": true,
+    "runtime": 7
   },
   {
     "id": 507735,
@@ -640,7 +707,9 @@ const previousMovies = [
     "release_date": "2017-09-20",
     "watch_data": "https://www.youtube.com/watch?v=vemJFbayDrM",
     "chosen_by": "Garrett",
-    "date_watched": "01/21/2021"
+    "date_watched": "01/21/21",
+    "seen": true,
+    "runtime": 10
   },
   {
     "id": 324857,
@@ -660,8 +729,90 @@ const previousMovies = [
     "release_date": "2018-12-14",
     "watch_data": "https://www.themoviedb.org/movie/324857-spider-man-into-the-spider-verse/watch?locale=US",
     "chosen_by": "Gillian",
-    "date_watched": "02/01/2021"
-  }
+    "date_watched": "02/01/2021",
+    "seen": true,
+    "runtime": 117
+  },
+    {
+    "id": 68714,
+    "title": "The House on Skull Mountain",
+    "genres": [
+      27,
+      53,
+      1977
+    ],
+    "overview": "Four cousins who have never met are invited by their Great-Grandmother Christophe to visit her mansion outside of Atlanta. When they arrive, they learn she has just died. They stay to hear the reading of her will and soon are being killed off one-by-one with voodoo magic. The survivors try to find the killer before he finishes them all off.",
+    "video_key": "p-BslybxoII",
+    "poster_path": "/obIfAZlmsCe7cl0ikeo2a2itZvG.jpg",
+    "backdrop_path": "/vjjPoelqwMkOUJkB59cdFfrrVkV.jpg",
+    "release_date": "1974-10-04",
+    "watch_data": "https://www.youtube.com/watch?v=pULIS_CbTvg",
+    "chosen_by": "Christopher",
+    "date_watched": "02/08/21",
+    "seen": true,
+    "runtime": 89
+  },
+  {
+    "id": 36739,
+    "title": "School Daze",
+    "genres": [
+      100,
+      18,
+      35,
+      10402,
+      888
+    ],
+    "overview": "Fraternity and sorority members clash with other students at a historically black college during homecoming weekend.",
+    "video_key": "uLT3Qu76-bw",
+    "poster_path": "/iQaYQjnFJqQ4CCAcoYJit7HTbCz.jpg",
+    "backdrop_path": "/pGKSvG6wc1FAFn9ZH8V872m6ITP.jpg",
+    "release_date": "1988-02-12",
+    "watch_data": "https://www.themoviedb.org/movie/36739-school-daze/watch?locale=US",
+    "chosen_by": "Nicki",
+    "date_watched": "02/15/21",
+    "seen": true,
+    "runtime": 121
+  },
+  {
+    "id": 45153,
+    "title": "Eve's Bayou",
+    "genres": [
+      18,
+      100,
+      6251,
+      53
+    ],
+    "overview": "Summer heats up in rural Louisiana beside Eve’s Bayou, 1962, as the Batiste family tries to survive the secrets they’ve kept and the betrayals they’ve endured.",
+    "video_key": "MVKP1G95fyM",
+    "poster_path": "/33yTPcGSv7eo3FVlb7XKACHl1M8.jpg",
+    "backdrop_path": "/ncNEi4CsA5139XsNUlYZP8zGh7d.jpg",
+    "release_date": "1997-11-07",
+    "watch_data": "https://www.themoviedb.org/movie/45153-eve-s-bayou/watch?locale=US",
+    "chosen_by": "Corey",
+    "date_watched": "02/22/21",
+    "seen": true,
+    "runtime": 109
+  },
+  {
+    "id": 95597,
+    "title": "Black Girl",
+    "genres": [
+      18,
+      100,
+      889,
+      91
+    ],
+    "overview": "The film centers on Diouana, a young Senegalese woman, who moves from Dakar, Senegal to Antibes, France to work for a rich French couple. In France, Diouana hopes to continue her former job as a nanny, and anticipates a new cosmopolitan lifestyle. However, upon her arrival in Antibes, Diouana experiences harsh treatment from the couple, who force her to work as a servant. She becomes increasingly aware of her constrained and alienated situation and starts to question her life in France. ",
+    "video_key": "mnN5Scc3ldY",
+    "poster_path": "/qP1slk6opnpKEFzSNvTFk4wBipW.jpg",
+    "backdrop_path": "/3NcTGBFQnGpUUvfloymFiTaejZA.jpg",
+    "release_date": "1966-01-01",
+    "watch_data": "https://www.themoviedb.org/movie/95597-la-noire-de/watch?locale=US",
+    "chosen_by": "Scott",
+    "date_watched": "03/01/2021",
+    "seen": true,
+    "runtime": 60
+  },
 ]
 
 export default previousMovies

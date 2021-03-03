@@ -14,11 +14,11 @@ let initialState = {
 }
 
 const data = (state = initialState, action) => {
-  let new_state = state;
+  let new_state = { ...state };
   switch(action.type) {
     case "SET_CURRENT_MOVIE":
       new_state.currentMovie = action.currentMovie;
-      return { ...new_state };
+      return new_state;
     default:
       return state;
   }

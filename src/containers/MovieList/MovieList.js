@@ -8,8 +8,12 @@ import './MovieList.scss';
 export const MovieList = ({genreId, genreTitle, type}) => {
   let specificMovies = [];
   let className;
+  if(genreId === 0) {
+    className = 'genre-page';
+    specificMovies = unseenMovies.map(movie => <MovieCard movie={movie} selectedGenreId={genreId} key={movie.id}/>)
+  }
   if(genreTitle && genreId) {
-    className = 'genre-page'
+    className = 'genre-page';
     genreTitle = genreTitle.replace('_', ' ').toUpperCase();
     specificMovies = unseenMovies.filter(movie => movie.genres.includes(genreId))
     .map(movie => <MovieCard movie={movie} selectedGenreId={genreId} key={movie.id}/>)
@@ -18,7 +22,6 @@ export const MovieList = ({genreId, genreTitle, type}) => {
     let specificMoviesSorted = previousMovies.sort((a, b)=>{
       return Date.parse(b.date_watched) - Date.parse(a.date_watched)
     })
-    console.log(specificMoviesSorted)
     specificMovies = specificMoviesSorted.map(movie => <MovieCard movie={movie} type='Previously Watched' key={movie.id}/>)
   }
   return <main className={className}>
