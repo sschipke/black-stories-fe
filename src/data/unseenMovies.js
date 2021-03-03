@@ -207,27 +207,6 @@ const unseenMovies =[
     "runtime": 90
   },
   {
-    "id": 36739,
-    "title": "School Daze",
-    "genres": [
-      100,
-      18,
-      35,
-      10402,
-      888
-    ],
-    "overview": "Fraternity and sorority members clash with other students at a historically black college during homecoming weekend.",
-    "video_key": "uLT3Qu76-bw",
-    "poster_path": "/iQaYQjnFJqQ4CCAcoYJit7HTbCz.jpg",
-    "backdrop_path": "/pGKSvG6wc1FAFn9ZH8V872m6ITP.jpg",
-    "release_date": "1988-02-12",
-    "watch_data": "https://www.themoviedb.org/movie/36739-school-daze/watch?locale=US",
-    "chosen_by": null,
-    "date_watched": null,
-    "seen": false,
-    "runtime": 121
-  },
-  {
     "id": 13763,
     "title": "Purple Rain",
     "genres": [
@@ -827,26 +806,6 @@ const unseenMovies =[
     "date_watched": null,
     "seen": false,
     "runtime": 78
-  },
-  {
-    "id": 95597,
-    "title": "Black Girl",
-    "genres": [
-      18,
-      100,
-      889,
-      91
-    ],
-    "overview": "The film centers on Diouana, a young Senegalese woman, who moves from Dakar, Senegal to Antibes, France to work for a rich French couple. In France, Diouana hopes to continue her former job as a nanny, and anticipates a new cosmopolitan lifestyle. However, upon her arrival in Antibes, Diouana experiences harsh treatment from the couple, who force her to work as a servant. She becomes increasingly aware of her constrained and alienated situation and starts to question her life in France. ",
-    "video_key": "mnN5Scc3ldY",
-    "poster_path": "/qP1slk6opnpKEFzSNvTFk4wBipW.jpg",
-    "backdrop_path": "/3NcTGBFQnGpUUvfloymFiTaejZA.jpg",
-    "release_date": "1966-01-01",
-    "watch_data": "https://www.themoviedb.org/movie/95597-la-noire-de/watch?locale=US",
-    "chosen_by": null,
-    "date_watched": null,
-    "seen": false,
-    "runtime": 60
   },
   {
     "id": 137765,
@@ -1569,26 +1528,6 @@ const unseenMovies =[
     "runtime": 93
   },
   {
-    "id": 45153,
-    "title": "Eve's Bayou",
-    "genres": [
-      18,
-      100,
-      6251,
-      53
-    ],
-    "overview": "Summer heats up in rural Louisiana beside Eve’s Bayou, 1962, as the Batiste family tries to survive the secrets they’ve kept and the betrayals they’ve endured.",
-    "video_key": "MVKP1G95fyM",
-    "poster_path": "/33yTPcGSv7eo3FVlb7XKACHl1M8.jpg",
-    "backdrop_path": "/ncNEi4CsA5139XsNUlYZP8zGh7d.jpg",
-    "release_date": "1997-11-07",
-    "watch_data": "https://www.themoviedb.org/movie/45153-eve-s-bayou/watch?locale=US",
-    "chosen_by": null,
-    "date_watched": null,
-    "seen": false,
-    "runtime": 109
-  },
-  {
     "id": 15765,
     "title": "What's Love Got to Do with It",
     "genres": [
@@ -1709,25 +1648,6 @@ const unseenMovies =[
     "date_watched": null,
     "seen": false,
     "runtime": 95
-  },
-  {
-    "id": 68714,
-    "title": "The House on Skull Mountain",
-    "genres": [
-      27,
-      53,
-      1977
-    ],
-    "overview": "Four cousins who have never met are invited by their Great-Grandmother Christophe to visit her mansion outside of Atlanta. When they arrive, they learn she has just died. They stay to hear the reading of her will and soon are being killed off one-by-one with voodoo magic. The survivors try to find the killer before he finishes them all off.",
-    "video_key": "p-BslybxoII",
-    "poster_path": "/obIfAZlmsCe7cl0ikeo2a2itZvG.jpg",
-    "backdrop_path": "/vjjPoelqwMkOUJkB59cdFfrrVkV.jpg",
-    "release_date": "1974-10-04",
-    "watch_data": "https://www.youtube.com/watch?v=pULIS_CbTvg",
-    "chosen_by": null,
-    "date_watched": null,
-    "seen": false,
-    "runtime": 89
   },
   {
     "id": 54008,
