@@ -18,6 +18,8 @@
     }
   }
   .movie-container {
+    min-height: 0;
+    height: 100%;
     padding: 50px;
     overflow: visible;
   }
