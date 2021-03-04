@@ -1,6 +1,8 @@
 .movie-container {
   padding: 50px 50px 0 0;
   overflow: auto;
+  height: 50%;
+  min-height: 100vh;
   -ms-overflow-style: none;
   scrollbar-width: none;
   &::-webkit-scrollbar {

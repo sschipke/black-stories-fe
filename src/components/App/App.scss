@@ -14,7 +14,6 @@ button, a {
   font-weight: 900;
   transition: color 200ms ease-in-out;
     &:hover {
-    // cursor: pointer;
     color: white;
   }
 }
@@ -46,6 +45,7 @@ div {
 .App {
   display: flex;
   min-height: 100vh;
+  min-width: 100vw;
   overflow: auto;
 }
 
