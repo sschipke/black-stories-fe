@@ -44,15 +44,17 @@ div {
   display: flex;
 }
 .App {
-  height: calc(100vh - 2rem);
+  display: flex;
+  min-height: 100vh;
+  overflow: auto;
 }
 
 
 @media screen and (max-width: 950px) {
   .App {
-    height: 100%;
+    flex-direction: column;
     width: 100%;
-    overflow:auto;
+    height: 100vh;
   }
 }
 

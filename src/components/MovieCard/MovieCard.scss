@@ -1,5 +1,5 @@
 .movie-link {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   &:hover {
     .card-image{
       outline-offset: -5px;
@@ -58,5 +58,11 @@
     &:hover {
       fill: white;
     }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .movie {
+      margin: 0 25px 10px 25px;
   }
 }

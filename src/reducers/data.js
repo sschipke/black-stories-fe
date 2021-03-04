@@ -1,16 +1,21 @@
 import unseenMovies from '../data/unseenMovies';
+import previousMovies from '../data/previousMovies';
 import { removeArticles } from '../util/helpers';
-const watchtList = unseenMovies.sort((movieA, movieB) => {
+const watchList = unseenMovies.sort((movieA, movieB) => {
       let titleA = removeArticles(movieA.title.toLowerCase()); 
       let titleB = removeArticles(movieB.title.toLowerCase());
     if (titleA < titleB) return -1;
     if (titleA > titleB) return 1;
     return 0;
 });
+
+const previouslyWatched = previousMovies.sort((a, b)=>{
+      return Date.parse(b.date_watched) - Date.parse(a.date_watched)
+    })
 let initialState = {
-  watchList: watchtList,
+  watchList: watchList,
   currentMovie: null,
-  previouslySeen: [],
+  previouslySeen: previouslyWatched
 }
 
 const data = (state = initialState, action) => {

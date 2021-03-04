@@ -1,15 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { setNavSubHeader, setBackgroundClass } from '../../actions';
 import { determineMainImage } from '../../util/helpers';
-import Nav from '../Nav/Nav';
 import './Main.scss';
 
-const Main = () => {
-  return <main className="landing-page">
-      <Nav />
-      <div className="main-image-div">
-        <img className="main-image" src={determineMainImage()} loading="eager" alt="movie backdrop" />
-      </div>
-  </main>
+const Main = ({setBackgroundClass, setNavSubHeader }) => {
+  useEffect(() => {
+    setNavSubHeader(null);
+    setBackgroundClass("landing-page");
+  })
+return (
+    <div className="main-image-div">
+      <img className="main-image" src={determineMainImage()} loading="eager" alt="movie backdrop" />
+    </div>
+  )
 }
 
-export default Main;
+export const mapDispatchToProps = (dispatch) =>
+  bindActionCreators({ setBackgroundClass, setNavSubHeader  }, dispatch);
+
+export default connect(null, mapDispatchToProps)(Main)

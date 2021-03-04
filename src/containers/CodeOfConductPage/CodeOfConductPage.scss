@@ -1,9 +1,5 @@
-.code-of-conduct-page {
-  overflow: auto;
-}
-
 .ground-rules-div {
-  padding-left: 30px;
+  padding: 50px 50px 50px 0;
   flex-direction: column;
   overflow: auto;
   p {
@@ -25,9 +21,8 @@
 
 @media screen and (max-width: 950px) {
   .ground-rules-div {
+    padding: 10px 90px 0 50px;
     overflow: visible;
-  padding-left: 0;
-  padding-right: 35px;
   }
   .conduct-article-links {
     display: inline-block;

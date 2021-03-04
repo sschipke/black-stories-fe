@@ -10,7 +10,7 @@ import './MovieCard.scss';
 
 export const MovieCard = ({ movie, selectedGenreId, currentMovie, type }) => {
   let genres, blackDirectorSrc, femaleDirectorSrc, genresToDisplay, date, chosenBy
-  let movieRef = createRef(movie.id);
+  const movieRef = createRef(movie.id);
 
   useEffect(() => {
     scrollToPreviousMovie();
@@ -20,7 +20,7 @@ export const MovieCard = ({ movie, selectedGenreId, currentMovie, type }) => {
     if(currentMovie && movie.id === currentMovie.id) {
       const movieToScrollTo = movieRef.current
       if(movieToScrollTo) {
-        movieToScrollTo.scrollIntoView()
+        movieToScrollTo.scrollIntoView({block: "center"});
       }
     }
     return
@@ -71,6 +71,6 @@ export const MovieCard = ({ movie, selectedGenreId, currentMovie, type }) => {
 
 export const mapStateToProps = (state) => ({
   currentMovie: state.data.currentMovie
-})
+});
 
 export default connect(mapStateToProps)(MovieCard);
