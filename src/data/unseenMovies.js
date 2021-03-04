@@ -538,7 +538,6 @@ const unseenMovies =[
     "genres": [
       28,
       100,
-      100,
       1977,
       80,
       18,
