@@ -13,15 +13,15 @@ export const MobileMenu = ({ isMobileMenuOpen, toggleMobileMenu, setCurrentMovie
       onClick={() => toggleMobileMenu()}
       to="/">HOME</Link>
       <Link className="mobile-link"
+      onClick={() => toggleMobileMenu()}
+      to="/genres">GENRES</Link>
+      <Link className="mobile-link"
       onClick={() => {
         setCurrentMovie(null);
         toggleMobileMenu(); 
         }
       }
       to="/previouslywatched">PREVIOUSLY WATCHED</Link>
-      <Link className="mobile-link"
-      onClick={() => toggleMobileMenu()}
-      to="/genres">GENRES</Link>
       <Link className="mobile-link"
       onClick={() => toggleMobileMenu()}
       to="/code_of_conduct">CONDUCT RULES</Link>
