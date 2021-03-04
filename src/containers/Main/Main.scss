@@ -18,6 +18,7 @@
   }
   .main-image {
     height: calc(75vh - 100px);
+    max-width: 100%;
     width: auto;
   }
 }
