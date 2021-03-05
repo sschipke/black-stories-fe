@@ -2,7 +2,7 @@ $bar-width: 50px;
 $bar-height: 5px;
 $bar-spacing: 14px;
 
-h1, h2 {
+h1, h2, h4 {
   font-size: 3.5rem;
   font-style: italic;
   text-transform: uppercase;
@@ -21,6 +21,10 @@ h1, h2 {
   .home-link:hover {
     color: #000000;
   }
+  h4 {
+    margin-top: 30px;
+    font-size: 1.5rem;
+  }
 }
 
 .links-container {
@@ -37,21 +41,20 @@ h1, h2 {
   }
 
 nav {
+    padding: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 650px;
-    height: 100%;
-    margin-right: 20px;
+    height: 100vh;
   }
 
   @media screen and (max-width: 950px) {
     nav {
-      margin: 0;
-      height: 30%;
       max-width: 100%;
-      margin-bottom: 20px;
       flex-direction: row;
+      padding-bottom: 10px;
+      height: 40%;
       h1, h2 {
         font-size: 1.5rem;
         width: 75%;
@@ -62,6 +65,10 @@ nav {
         h2 {
           hyphens: none;
           margin-top: 10px;
+        }
+        h4 {
+          margin-top: 20px;
+          font-size: 1.3rem;
         }
       }
       .links-container{
@@ -97,33 +104,33 @@ nav {
   }
 }
 
-.hamburger-menu:before {
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: $bar-spacing;
-	background: #000000;
-  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-}
+  .hamburger-menu:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: $bar-spacing;
+    background: #000000;
+    transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
 
-.hamburger-menu:after {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: $bar-spacing;
-	background: #000000;
-	transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
-}
+  .hamburger-menu:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: $bar-spacing;
+    background: #000000;
+    transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
 
-.hamburger-menu.animate:after {
-	top: 0;
-	transform: rotate(45deg);
-	transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
-}
+  .hamburger-menu.animate:after {
+    top: 0;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+  }
 
-.hamburger-menu.animate:before {
-	bottom: 0;
-	transform: rotate(-45deg);
-	transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
-}   
+  .hamburger-menu.animate:before {
+    bottom: 0;
+    transform: rotate(-45deg);
+    transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);;
+  }   
 }

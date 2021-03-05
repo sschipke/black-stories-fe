@@ -1,15 +1,26 @@
-main.movie-view {
-  background-image: linear-gradient(to right, #FDE997, #00D8FF);
-  height: 100%;
-  max-height: 100vh;
-}
-
 .movie-container {
-  height: 100%;
+  padding: 50px 50px 0 0;
   overflow: auto;
+  height: 50%;
+  min-height: 100vh;
   -ms-overflow-style: none;
   scrollbar-width: none;
   &::-webkit-scrollbar {
     display: none;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .movie-view {
+    height: 100vh;
+    nav {
+      height: 15%;
+    }
+  }
+  .movie-container {
+    min-height: 0;
+    height: 100%;
+    padding: 50px;
+    overflow: visible;
   }
 }

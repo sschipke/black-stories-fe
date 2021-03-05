@@ -1,6 +1,6 @@
 import genreMap from '../data/genreMap';
 export const determineMainImage = () => {
-  if(window.innerWidth > 720) {
+  if(window.innerWidth > 950) {
     const num = generateRandomImageNumber(19);
     return `../images/main/desktop/${num}-DSK.jpg`
   } else {
@@ -35,12 +35,12 @@ export const displayTwoGenres=(genres, excludeGenreId) => {
 }
 
 export const displayRuntime = (time) => {
-  if(!time || !parseInt(time)) {
+  if(time === undefined || !parseInt(time)) {
     return ''
   }
-  const hours = Math.floor(time / 60);  
+  const hours = Math.floor(time / 60);
   const minutes = time % 60;
-  return `${hours}H ${minutes}M`;         
+  return `${hours}H ${minutes}M`;
 }
 
 export const removeArticles = (title) => {

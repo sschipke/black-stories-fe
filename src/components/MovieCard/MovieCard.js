@@ -8,9 +8,10 @@ import directorIcon from '../../assets/icons/black_directed.svg';
 import './MovieCard.scss';
 
 
-export const MovieCard = ({ movie, selectedGenreId, currentMovie }) => {
-  let movieRef = createRef(movie.id);
-  
+export const MovieCard = ({ movie, selectedGenreId, currentMovie, type }) => {
+  let genres, blackDirectorSrc, femaleDirectorSrc, genresToDisplay, date, chosenBy
+  const movieRef = createRef(movie.id);
+
   useEffect(() => {
     scrollToPreviousMovie();
   })
@@ -19,20 +20,25 @@ export const MovieCard = ({ movie, selectedGenreId, currentMovie }) => {
     if(currentMovie && movie.id === currentMovie.id) {
       const movieToScrollTo = movieRef.current
       if(movieToScrollTo) {
-        movieToScrollTo.scrollIntoView()
+        movieToScrollTo.scrollIntoView({block: "center"});
       }
     }
-    return 
+    return
   }
-
-  const genres = movie.genres
-  const blackDirectorSrc = genres.includes(100) ? directorIcon : '';
-  const femaleDirectorSrc = genres.includes(6251) ? femaleIcon : '';
-  const genresToDisplay =  displayTwoGenres(movie.genres, selectedGenreId).map(genreName => (<p 
-  key={genreName + selectedGenreId}
-  className="movie-card-genre">
-    {genreName}
-  </p>));
+  if(type !== 'Previously Watched'){
+    genres = movie.genres
+    blackDirectorSrc = genres.includes(100) ? directorIcon : '';
+    femaleDirectorSrc = genres.includes(6251) ? femaleIcon : '';
+    genresToDisplay =  displayTwoGenres(movie.genres, selectedGenreId).map(genreName => (<p
+      key={genreName + selectedGenreId}
+      className="movie-card-genre">
+      {genreName}
+      </p>));
+      date = movie.release_date.slice(0, 4);
+  } else {
+    date = movie.date_watched
+    chosenBy = movie.chosen_by
+  }
   return (
     <Link className="movie-link" to={`/movie/${movie.id}-${movie.title.replaceAll(' ', '-').toLowerCase()}`}>
       <div className="movie" id={movie.id} ref={movieRef}>
@@ -40,12 +46,15 @@ export const MovieCard = ({ movie, selectedGenreId, currentMovie }) => {
           className="card-image"
           loading="lazy"
           alt="movie poster"
-          src={"https://image.tmdb.org/t/p/original/"+movie.poster_path} 
+          src={"https://image.tmdb.org/t/p/original/"+movie.poster_path}
         />
         <div className="card__text-container">
           <h4>{movie.title.toUpperCase()}</h4>
           <p className="card__release-date">
-            {movie.release_date.slice(0, 4)}
+            {date}
+          </p>
+          <p className="card__release-date chosen-by">
+            {chosenBy}
           </p>
           <div className="movie-genres-container">
             {genresToDisplay}
@@ -62,6 +71,6 @@ export const MovieCard = ({ movie, selectedGenreId, currentMovie }) => {
 
 export const mapStateToProps = (state) => ({
   currentMovie: state.data.currentMovie
-})
+});
 
 export default connect(mapStateToProps)(MovieCard);

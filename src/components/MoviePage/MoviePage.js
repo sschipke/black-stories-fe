@@ -2,26 +2,35 @@ import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { openVideoPlayer, setCurrentMovie } from '../../actions';
+import { openVideoPlayer, setCurrentMovie, setBackgroundClass, setNavSubHeader } from '../../actions';
 import { displayRuntime } from '../../util/helpers';
 import genreMap from '../../data/genreMap';
 import './MoviePage.scss';
 
-const MoviePage = ({movie, setCurrentMovie, openVideoPlayer}) => {
-  useEffect(() => {
-    setCurrentMovie(movie);
-  })
+const MoviePage = ({movie, setCurrentMovie, openVideoPlayer, setBackgroundClass, setNavSubHeader}) => {
+
   const displayGenres = (genres) => {
   if (genres && genres.length > 0) {
     return genres.map((genreId, i) => {
       if(i === genres.length -1) {
-        return (<Link className="movie-page-genres" key={genreId} to={'/genre/'+ genreId + '-' + genreMap[genreId].replaceAll(' ', '_').toLowerCase()}>{genreMap[genreId]}</Link>)
+        return (<Link 
+          onClick={() => setCurrentMovie(null)}
+          className="movie-page-genres" key={genreId} to={'/genre/'+ genreId + '-' + genreMap[genreId].replaceAll(' ', '_').toLowerCase()}>{genreMap[genreId]}</Link>)
       }
-      return (<Link className="movie-page-genres" key={genreId} to={'/genre/'+ genreId + '-' + genreMap[genreId].replaceAll(' ', '_').toLowerCase()}>{genreMap[genreId] + ","}</Link>)
+      return (<Link 
+        onClick={() => setCurrentMovie(null)}
+        className="movie-page-genres" key={genreId} to={'/genre/'+ genreId + '-' + genreMap[genreId].replaceAll(' ', '_').toLowerCase()}>{genreMap[genreId] + ","}</Link>)
     })
   }
   return
 }
+
+  useEffect(() => {
+      setCurrentMovie(movie);
+      setNavSubHeader(null);
+      setBackgroundClass("movie-view");
+    });
+  
   return <section className="movie-section" >
       <img 
       className="movie-view-backdrop"
@@ -59,7 +68,6 @@ const MoviePage = ({movie, setCurrentMovie, openVideoPlayer}) => {
           {displayGenres(movie.genres)}
           </div>
       </div>
-
   </section>
 }
 
@@ -68,6 +76,6 @@ export const mapStateToProps = state => ({
 })
 
 export const mapDispatchToProps = (dispatch) =>
-  bindActionCreators({ openVideoPlayer, setCurrentMovie  }, dispatch);
+  bindActionCreators({ openVideoPlayer, setCurrentMovie, setBackgroundClass, setNavSubHeader  }, dispatch);
 
 export default connect(mapStateToProps, mapDispatchToProps)(MoviePage)
