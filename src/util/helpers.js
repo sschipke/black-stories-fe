@@ -1,6 +1,6 @@
 import genreMap from '../data/genreMap';
 export const determineMainImage = () => {
-  if(window.innerWidth > 720) {
+  if(window.innerWidth > 950) {
     const num = generateRandomImageNumber(19);
     return `../images/main/desktop/${num}-DSK.jpg`
   } else {

@@ -1,37 +1,24 @@
-main{
-  background-image: linear-gradient(to right, #FDE997, #EC0000);
-  display: flex;
-  padding: 50px;
-  min-height: 100vh;
-  height:100%;
-  width: 100vw;
+
   .main-image-div {
-    margin-left: min(50px)
+    padding: 50px;
   }
   .main-image {
     height: auto;
     width: 100%;
   }
-}
-
 
 @media screen and (max-width: 950px) {
-  main {
-    flex-direction: column;
-    height: 100vh;
-    min-width: 100vw;
-      .main-image-div {
-        margin-left: 0;
+  .landing-page {
+    nav {
+      height: 20%;
     }
-  } 
-}
-
-@media screen and (max-width: 700px) {
-  main {
-        .main-image {
-      margin: auto;
-      height: calc(70vh - 25px);
-      width: auto;
-    }
+  }
+  .main-image-div {
+    margin: 0 auto;
+  }
+  .main-image {
+    height: calc(75vh - 100px);
+    max-width: 100%;
+    width: auto;
   }
 }

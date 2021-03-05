@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { toggleMobileMenu } from '../../actions';
+import { toggleMobileMenu, setCurrentMovie } from '../../actions';
 import './MobileMenu.scss';
 
-export const MobileMenu = ({ isMobileMenuOpen, toggleMobileMenu }) => {
+export const MobileMenu = ({ isMobileMenuOpen, toggleMobileMenu, setCurrentMovie }) => {
   const openClass = isMobileMenuOpen ? 'open' : '';
   return (
     <div className={"mobile-menu-div " + openClass}>
@@ -14,10 +14,14 @@ export const MobileMenu = ({ isMobileMenuOpen, toggleMobileMenu }) => {
       to="/">HOME</Link>
       <Link className="mobile-link"
       onClick={() => toggleMobileMenu()}
-      to="/previouslywatched">PREVIOUSLY WATCHED</Link>
-      <Link className="mobile-link"
-      onClick={() => toggleMobileMenu()}
       to="/genres">GENRES</Link>
+      <Link className="mobile-link"
+      onClick={() => {
+        setCurrentMovie(null);
+        toggleMobileMenu(); 
+        }
+      }
+      to="/previouslywatched">PREVIOUSLY WATCHED</Link>
       <Link className="mobile-link"
       onClick={() => toggleMobileMenu()}
       to="/code_of_conduct">CONDUCT RULES</Link>
@@ -35,7 +39,7 @@ export const mapStateToProps = (state) => ({
 })
 
 export const mapDispatchToProps = dispatch => (bindActionCreators({
-  toggleMobileMenu
+  toggleMobileMenu, setCurrentMovie
 }, dispatch));
 
 export default connect(mapStateToProps, mapDispatchToProps)(MobileMenu);

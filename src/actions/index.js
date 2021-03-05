@@ -22,3 +22,13 @@ export const closeMobileMenu = () => ({
 export const toggleMobileMenu = () => ({
   type: "TOGGLE_MOBILE_MENU"
 });
+
+export const setBackgroundClass = (backgroundClass) => ({
+  type: "SET_BACKGROUND_CLASS",
+  backgroundClass
+})
+
+export const setNavSubHeader = (subHeader) => ({
+  type: "SET_NAV_SUBHEADER",
+  subHeader
+})

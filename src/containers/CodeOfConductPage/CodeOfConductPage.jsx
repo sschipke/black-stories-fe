@@ -1,10 +1,15 @@
-import React from 'react';
-import Nav from '../Nav/Nav';
+import React, { useEffect } from 'react';
+import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
+import { setNavSubHeader, setBackgroundClass } from '../../actions';
 import './CodeOfConductPage.scss';
 
-const CodeOfConductPage = () => {
-  return <main className="code-of-conduct-page">
-    <Nav subHeader={"Ground Rules & Conduct"}  />
+const CodeOfConductPage = ({ setNavSubHeader, setBackgroundClass }) => {
+  useEffect(() => {
+    setNavSubHeader("Ground Rules & Conduct");
+    setBackgroundClass("code-of-conduct-page");
+  })
+  return (
     <div className="ground-rules-div">
       <p>
         Welcome! This is a space not only for learning and growth, but for celebration and joy of the art of filmmaking, and the stories of and contributions by black artists from all over the world. </p>
@@ -45,7 +50,10 @@ const CodeOfConductPage = () => {
       target="_blank" 
       rel="noreferrer">How 'white savior' films like 'The Help' and 'Green Book' hurt Hollywood</a>
     </div>
-  </main>
+  )
 }
 
-export default CodeOfConductPage
+export const mapDispatchToProps = (dispatch) =>
+  bindActionCreators({ setBackgroundClass, setNavSubHeader  }, dispatch);
+
+export default connect(null, mapDispatchToProps)(CodeOfConductPage)

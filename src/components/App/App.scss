@@ -14,7 +14,6 @@ button, a {
   font-weight: 900;
   transition: color 200ms ease-in-out;
     &:hover {
-    // cursor: pointer;
     color: white;
   }
 }
@@ -44,14 +43,41 @@ div {
   display: flex;
 }
 .App {
-  height: calc(100vh - 2rem);
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: auto;
 }
 
 
 @media screen and (max-width: 950px) {
   .App {
-    height: 100%;
+    flex-direction: column;
     width: 100%;
-    overflow:auto;
+    height: 100vh;
   }
+}
+
+.code-of-conduct-page {
+  background-image: linear-gradient(to right, #FDE997, #FF9300);
+}
+
+.genres-list-view {
+  background-image: linear-gradient(to right, #FDE997, #920099);
+}
+
+.landing-page {
+  background-image: linear-gradient(to right, #FDE997, #EC0000);
+}
+
+.genre-page {
+  background-image: linear-gradient(to right, #FDE997, #5ADA44);
+}
+
+.previously-watched {
+  background-image: linear-gradient(to right, #FDE997, #FF3399);
+}
+
+.movie-view {
+  background-image: linear-gradient(to right, #FDE997, #00D8FF);
 }
