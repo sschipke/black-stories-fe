@@ -7,7 +7,6 @@ import './Nav.scss';
 
 const Nav = ({subHeader, isMobileMenuOpen, toggleMobileMenu, setCurrentMovie}) => {
   const openClass = isMobileMenuOpen ? ' animate' : '';
-
   return (
       <nav className="nav-text-container">
         <div className="nav-headers-container">
