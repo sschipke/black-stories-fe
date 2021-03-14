@@ -32,3 +32,12 @@ export const setNavSubHeader = (subHeader) => ({
   type: "SET_NAV_SUBHEADER",
   subHeader
 })
+
+export const setSearchText = (searchText) => ({
+  type: "SET_SEARCH_TEXT",
+  searchText
+})
+
+export const toggleSearchBar = () => ({
+  type: "TOGGLE_SEARCH_BAR"
+})

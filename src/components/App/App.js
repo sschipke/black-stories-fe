@@ -10,6 +10,7 @@ import Main from '../../containers/Main/Main';
 import NotFound from '../../containers/NotFound/NotFound';
 import MobileMenu from '../../containers/MobileMenu/MobileMenu';
 import CodeOfConductPage from '../../containers/CodeOfConductPage/CodeOfConductPage';
+import SearchResultsPage from '../../containers/SearchResultsPage/SearchResultsPage';
 import genreMap from '../../data/genreMap';
 import './App.scss';
 
@@ -41,6 +42,7 @@ const App = ({ backgroundClass }) => {
           return (<MovieView movieId={id} />)
           }}
         />
+        <Route exact path='/search' component={SearchResultsPage} />
         <NotFound />
       </Switch>
       </main>

@@ -2,14 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { toggleMobileMenu, setCurrentMovie } from '../../actions';
+import { toggleMobileMenu, setCurrentMovie, toggleSearchBar } from '../../actions';
+import SearchBar from '../../components/SearchBar/SearchBar';
 import './MobileMenu.scss';
 
-export const MobileMenu = ({ isMobileMenuOpen, toggleMobileMenu, setCurrentMovie }) => {
+export const MobileMenu = ({ isMobileMenuOpen, toggleMobileMenu, setCurrentMovie, isSearchBarOpen, toggleSearchBar }) => {
   const openClass = isMobileMenuOpen ? 'open' : '';
-  return (
-    <div className={"mobile-menu-div " + openClass}>
-      <Link className="mobile-link"
+  const searchBarClass = isSearchBarOpen ? ' search-bar-open' : '';
+  let mobileMenuContent = (<>
+    <Link className="mobile-link"
       onClick={() => toggleMobileMenu()}
       to="/">HOME</Link>
       <Link className="mobile-link"
@@ -30,16 +31,32 @@ export const MobileMenu = ({ isMobileMenuOpen, toggleMobileMenu, setCurrentMovie
           className="mobile-link"
           target="_blank"
           rel="noreferrer">DISCORD</a>
+      </>)
+
+      if(isSearchBarOpen) {
+        mobileMenuContent = <SearchBar />
+      }
+
+  return (
+    <div className={"mobile-menu-div " + openClass + searchBarClass}>
+      <button 
+        className="mobile-link"
+        onClick={() => toggleSearchBar()}
+      >
+            SEARCH
+      </button>
+      {mobileMenuContent}
     </div>
   )
 }
 
 export const mapStateToProps = (state) => ({
-  isMobileMenuOpen: state.screen.mobile_menu_open
+  isMobileMenuOpen: state.screen.mobile_menu_open,
+  isSearchBarOpen: state.screen.search_bar_open
 })
 
 export const mapDispatchToProps = dispatch => (bindActionCreators({
-  toggleMobileMenu, setCurrentMovie
+  toggleMobileMenu, setCurrentMovie, toggleSearchBar
 }, dispatch));
 
 export default connect(mapStateToProps, mapDispatchToProps)(MobileMenu);
