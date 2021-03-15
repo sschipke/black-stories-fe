@@ -15,6 +15,10 @@ export const SearchBar = ({setNavSubHeader, setSearchText, toggleSearchBar, isOp
   })
 
   if(isSearchComplete) {
+    toggleSearchBar();
+    if(isMobileMenuOpen) {
+      toggleMobileMenu();
+    }
     return <Redirect to="/search" />
   }
   
@@ -33,10 +37,6 @@ export const SearchBar = ({setNavSubHeader, setSearchText, toggleSearchBar, isOp
     setNavSubHeader(cleanSearchInput);
     setSearchText(cleanSearchInput);
     setSearchInput("");
-    if(isMobileMenuOpen) {
-      toggleMobileMenu();
-    }
-    toggleSearchBar();
     setSearchComplete(true);
   }
 
