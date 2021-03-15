@@ -1340,28 +1340,6 @@ const unseenMovies =[
     "runtime": 99
   },
   {
-    "id": 376867,
-    "title": "Moonlight",
-    "genres": [
-      18,
-      100,
-      69,
-      10749,
-      86,
-      89
-    ],
-    "overview": "The tender, heartbreaking story of a young man’s struggle to find himself, told across three defining chapters in his life as he experiences the ecstasy, pain, and beauty of falling in love, while grappling with his own sexuality.",
-    "video_key": "_OuY1gyPMnY",
-    "poster_path": "/AekOkoT88EhDHikUQXQcKri2q4B.jpg",
-    "backdrop_path": "/A9KPbYTQvWsp51Lgz85ukVkFrKf.jpg",
-    "release_date": "2016-10-21",
-    "watch_data": "https://www.themoviedb.org/movie/376867-moonlight/watch?locale=US",
-    "chosen_by": null,
-    "date_watched": null,
-    "seen": false,
-    "runtime": 110
-  },
-  {
     "id": 565379,
     "title": "Premature",
     "genres": [
@@ -2040,26 +2018,6 @@ const unseenMovies =[
     "runtime": 49
   },
   {
-    "id": 394269,
-    "title": "Lemonade",
-    "genres": [
-      10402,
-      100,
-      6251,
-      91
-    ],
-    "overview": "The second \"visual album\" (a collection of short films) by Beyoncé, this time around she takes a piercing look at racial issues and feminist concepts through a sexualized, satirical, and solemn tone.",
-    "video_key": "BB5zLq1zcdo",
-    "poster_path": "/1eZNaro6rXlh1ao5jqMg6TgVyMO.jpg",
-    "backdrop_path": "/1y83mUV0AAMRwIDzOh2TycVcdgw.jpg",
-    "release_date": "2016-04-23",
-    "watch_data": null,
-    "chosen_by": null,
-    "date_watched": null,
-    "seen": false,
-    "runtime": 65
-  },
-  {
     "id": 585560,
     "title": "When I Get Home",
     "genres": [
@@ -2613,6 +2571,21 @@ const unseenMovies =[
     "chosen_by": null,
     "date_watched": null,
     "runtime": 90
+  },
+  {
+    "id": 522039,
+    "title": "The Last Black Man in San Francisco",
+    "genres": [
+      18
+      ],
+    "overview": "Jimmie Fails dreams of reclaiming the Victorian home his grandfather built in the heart of San Francisco. Joined on his quest by his best friend Mont, Jimmie searches for belonging in a rapidly changing city that seems to have left them behind.",
+    "video_key": "C0FnJDhY9-0",
+    "poster_path": "/AuKLgnBoSQ8tfK5Do3r1LCXwLWH.jpg",
+    "backdrop_path": "/n0FzDpOvVhkj3uN7WHXXnAXOKFi.jpg",
+    "release_date": "2019-10-25",
+    "watch_data": "https://www.themoviedb.org/movie/522039-the-last-black-man-in-san-francisco/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
   }
 ]
 
