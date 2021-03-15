@@ -13,7 +13,7 @@ export const SearchResultsPage = ({ previouslyWatched, watchList, setBackgroundC
   });
 
   const noResults = <div className="no-results-div">
-    <h1>NO SEARCH RESULTS </h1>
+    <h1>NO SEARCH RESULTS</h1>
     <h1> SORRY, BABY</h1>
     <img className="no-results-gif" src="https://4.bp.blogspot.com/-aRPiVblOJS8/WZ3fd7vph8I/AAAAAAAAocM/E_PRaQ-VuFYSksTXeZB0vUP8V6v9YW82gCLcBGAs/s1600/The%2BWiz.gif" alt="woman lounging on the couch in luxurious green clothing" style={{"font-size": "1.5rem;"}}/>
   </div>
