@@ -27,8 +27,8 @@ const NotFound = ({ location, setBackgroundClass }) => {
   }
 
   setBackgroundClass("not-found-page")
-  return (<div className="movies-container" >
-    <div className="no-results-div">
+  return (<div className="movies-container not-found-container" >
+    <div className="no-results-div not-found-div">
       <h1>Error 404</h1>
       <h1>Nothing's here!!</h1>
       <h1>Better go back &lt;3 </h1>
