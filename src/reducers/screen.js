@@ -19,6 +19,9 @@ const screen = (state = initialState, action) => {
       new_state.mobile_menu_open = true;
       return new_state;
     case "TOGGLE_MOBILE_MENU":
+        if(state.search_bar_open) {
+          new_state.search_bar_open = false;
+        }
         new_state.mobile_menu_open = !state.mobile_menu_open;
         return new_state;
     case "CLOSE_MOBILE_MENU":

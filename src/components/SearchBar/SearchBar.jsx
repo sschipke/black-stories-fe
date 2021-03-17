@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, createRef} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Redirect } from "react-router-dom";
@@ -8,7 +8,12 @@ import './SearchBar.scss';
 export const SearchBar = ({setNavSubHeader, setSearchText, toggleSearchBar, isOpen, toggleMobileMenu, isMobileMenuOpen}) => {
   const [searchInput, setSearchInput] = useState("");
   const [isSearchComplete, setSearchComplete] = useState(false);
+  const focusRef = createRef('search-input-ref');
   useEffect(() => {
+    let searchInputElement = focusRef.current;
+    if(searchInputElement) {
+      searchInputElement.focus();
+    }
     return () => {
       setSearchComplete(false);
     }
@@ -57,6 +62,7 @@ export const SearchBar = ({setNavSubHeader, setSearchText, toggleSearchBar, isOp
         value={searchInput}
         onChange={e => handleChange(e)}
         onKeyPress={(e) => handleEnter(e)}
+        ref={focusRef}
       />
       <button 
         className="search-button"

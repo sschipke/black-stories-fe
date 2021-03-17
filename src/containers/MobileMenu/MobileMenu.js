@@ -10,7 +10,7 @@ export const MobileMenu = ({ isMobileMenuOpen, toggleMobileMenu, setCurrentMovie
   const openClass = isMobileMenuOpen ? 'open' : '';
   const searchBarClass = isSearchBarOpen ? ' search-bar-open' : '';
   let mobileMenuContent = (<>
-    <Link className="mobile-link"
+      <Link className="mobile-link"
       onClick={() => toggleMobileMenu()}
       to="/">HOME</Link>
       <Link className="mobile-link"
@@ -26,25 +26,30 @@ export const MobileMenu = ({ isMobileMenuOpen, toggleMobileMenu, setCurrentMovie
       <Link className="mobile-link"
       onClick={() => toggleMobileMenu()}
       to="/code_of_conduct">CONDUCT RULES</Link>
-          <a
-          href="https://discord.gg/PvxjFYd"
-          className="mobile-link"
-          target="_blank"
-          rel="noreferrer">DISCORD</a>
-      </>)
+      <a
+      href="https://discord.gg/PvxjFYd"
+      className="mobile-link"
+      target="_blank"
+      rel="noreferrer">DISCORD</a>
+      <button 
+      className="mobile-link"
+      onClick={() => toggleSearchBar()}
+        >SEARCH</button>
+    </>)
 
       if(isSearchBarOpen) {
-        mobileMenuContent = <SearchBar />
+        mobileMenuContent = (
+        <>
+          <button 
+          className="mobile-link"
+          onClick={() => toggleSearchBar()}
+          >BACK TO MENU</button>
+          <SearchBar />
+        </>)
       }
 
   return (
     <div className={"mobile-menu-div " + openClass + searchBarClass}>
-      <button 
-        className="mobile-link"
-        onClick={() => toggleSearchBar()}
-      >
-            SEARCH
-      </button>
       {mobileMenuContent}
     </div>
   )
