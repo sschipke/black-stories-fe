@@ -10,7 +10,6 @@
     background-color: #FFFFFF;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     justify-content: center;
     z-index: 10;
     position: absolute;
@@ -18,12 +17,27 @@
     width: 100%;
     transition: all 2s ease-in-out;
   }
-  a.mobile-link {
+  a.mobile-link, button.mobile-link {
     &:hover {
       color: black;
     -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
+    }
+  }
+  .search-bar-open {
+    flex-direction: column-reverse;
+    .search-form {
+      width: 80%;
+    }
+    .search-button {
+      width: 15%;
+      svg {
+        width: 100%;
+        &:hover {
+          fill: #000000;
+        }
+      }
     }
   }
 }

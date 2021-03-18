@@ -2,7 +2,8 @@ let initialState = {
   video_player_open: false,
   mobile_menu_open: false,
   nav_subheader: null,
-  background_class: "landing-page"
+  background_class: "landing-page",
+  search_bar_open: false
 }
 
 const screen = (state = initialState, action) => {
@@ -18,6 +19,9 @@ const screen = (state = initialState, action) => {
       new_state.mobile_menu_open = true;
       return new_state;
     case "TOGGLE_MOBILE_MENU":
+        if(state.search_bar_open) {
+          new_state.search_bar_open = false;
+        }
         new_state.mobile_menu_open = !state.mobile_menu_open;
         return new_state;
     case "CLOSE_MOBILE_MENU":
@@ -28,6 +32,9 @@ const screen = (state = initialState, action) => {
       return new_state;
     case "SET_NAV_SUBHEADER":
       new_state.nav_subheader = action.subHeader;
+      return new_state;
+    case "TOGGLE_SEARCH_BAR":
+      new_state.search_bar_open = !state.search_bar_open;
       return new_state;
     default:
       return state;
