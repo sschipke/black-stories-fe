@@ -1,0 +1,23 @@
+.no-results-div {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  height: 80%;
+  .no-results-gif {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .no-results-div {
+    height: 55%;
+    width: 100%;
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+  .no-results-gif {
+    margin-top: 10px;
+  }
+}

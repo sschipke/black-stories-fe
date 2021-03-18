@@ -15,7 +15,8 @@ const previouslyWatched = previousMovies.sort((a, b)=>{
 let initialState = {
   watchList: watchList,
   currentMovie: null,
-  previouslySeen: previouslyWatched
+  previouslySeen: previouslyWatched,
+  searchText: ""
 }
 
 const data = (state = initialState, action) => {
@@ -23,6 +24,9 @@ const data = (state = initialState, action) => {
   switch(action.type) {
     case "SET_CURRENT_MOVIE":
       new_state.currentMovie = action.currentMovie;
+      return new_state;
+      case "SET_SEARCH_TEXT":
+      new_state.searchText = action.searchText;
       return new_state;
     default:
       return state;

@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { toggleMobileMenu, setCurrentMovie } from '../../actions';
+import { toggleMobileMenu, setCurrentMovie, toggleSearchBar } from '../../actions';
+import SearchBar from '../../components/SearchBar/SearchBar';
 import './Nav.scss';
 
-const Nav = ({subHeader, isMobileMenuOpen, toggleMobileMenu, setCurrentMovie}) => {
+const Nav = ({subHeader, isMobileMenuOpen, toggleMobileMenu, setCurrentMovie, toggleSearchBar, isSearchBarOpen}) => {
   const openClass = isMobileMenuOpen ? ' animate' : '';
   return (
       <nav className="nav-text-container">
@@ -17,6 +18,12 @@ const Nav = ({subHeader, isMobileMenuOpen, toggleMobileMenu, setCurrentMovie}) =
             </h4>}
         </div>
         <div className="links-container">
+          <SearchBar />
+          <button 
+            onClick={() => toggleSearchBar()}
+          >
+            SEARCH
+          </button>
           <Link to="/genres">GENRES</Link>
           <Link to="/previouslywatched"
             onClick={() => setCurrentMovie(null)}
@@ -43,11 +50,12 @@ const Nav = ({subHeader, isMobileMenuOpen, toggleMobileMenu, setCurrentMovie}) =
 
 export const mapStateToProps = (state) => ({
   isMobileMenuOpen: state.screen.mobile_menu_open,
-  subHeader: state.screen.nav_subheader
+  subHeader: state.screen.nav_subheader,
+  isSearchBarOpen: state.screen.search_bar_open
 })
 
 export const mapDispatchToProps = dispatch => (bindActionCreators({
-  toggleMobileMenu, setCurrentMovie
+  toggleMobileMenu, setCurrentMovie, toggleSearchBar
 }, dispatch));
 
 export default connect(mapStateToProps, mapDispatchToProps)(Nav);
