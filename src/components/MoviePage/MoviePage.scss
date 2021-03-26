@@ -13,6 +13,9 @@ section {
     max-height: calc(100% - 15px);
     padding-bottom: 10px;
   }
+  .movie-stats-div {
+    flex-wrap: wrap;
+  }
   .movie-info-div {
     max-height: 90%;
     padding-bottom: 50px;
@@ -39,7 +42,14 @@ section {
     margin-left: 5px;
     text-transform: uppercase;
   }
-
+  .cast-container{
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  .profile-card-container {
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+  }
 }
 .movie-view-backdrop {
   height: auto;
