@@ -2095,7 +2095,7 @@ const unseenMovies =[
     "video_key": "69xEOn4wokc",
     "poster_path": "/dpmQprXRYvpMn1STCkdoYshQP94.jpg",
     "backdrop_path": "/xfItINhmLe1RuMauRAqmu5cHz1V.jpg",
-    "release_date": "",
+    "release_date": "2019-11-23",
     "watch_data": null,
     "chosen_by": null,
     "date_watched": null,

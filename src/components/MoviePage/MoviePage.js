@@ -28,7 +28,9 @@ const MoviePage = ({movie, setCurrentMovie, openVideoPlayer, setBackgroundClass,
   return
 }
 
-let castInfo = movie['isCastLoaded'] && movie.cast.length ? movie.cast.map(actor => <ProfileCard actor={actor} key={actor.name} />) : '';
+let castInfo = movie['isCastLoaded'] && movie.cast.length ? movie.cast.map(actor => <ProfileCard actor={actor} key={actor.name} />) : null;
+
+const castClass = castInfo && castInfo.length > 3 ? " full-cast" : "";
 
   useEffect(() => {
       setCurrentMovie(movie);
@@ -49,12 +51,11 @@ let castInfo = movie['isCastLoaded'] && movie.cast.length ? movie.cast.map(actor
       />
       <h1 className="movie-page-title">{movie.title}</h1>
       <div className="movie-info-div">
-        <div className="movie-interactions-div">
+        <div className={"movie-interactions-div" + castClass }>
           <div className="movie-stats-div">
             {movie['isCastLoaded'] && movie.director && <div style={{width: "100%"}} >
-              <p className="movie-info">DIRECTED BY {movie.director} </p>
+              <p className="movie-info director">DIRECTED BY {movie.director}</p>
             </div>}
-            <br />
             <p className="movie-info">{movie.release_date.slice(0,4)}</p> 
             <p className="movie-info">{displayRuntime(movie.runtime)}</p>
         {movie.video_key && 
@@ -77,7 +78,7 @@ let castInfo = movie['isCastLoaded'] && movie.cast.length ? movie.cast.map(actor
           </div>
           {movie['triggers'] && <p><strong>Possible Triggers:</strong> {movie.triggers}</p>}
             <p className="movie-overview">{movie.overview}</p>
-            {movie['isCastLoaded'] && movie.cast.length && <div className="cast-container">
+            {movie['isCastLoaded'] && castInfo && <div className="cast-container">
               <p className="movie-info">STARRING</p>
               <div className="profile-card-container" > 
                 {castInfo}
