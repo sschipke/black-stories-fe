@@ -41,3 +41,8 @@ export const setSearchText = (searchText) => ({
 export const toggleSearchBar = () => ({
   type: "TOGGLE_SEARCH_BAR"
 })
+
+export const loadCredits = (credits) => ({
+  type: "LOAD_MOVIE_CREDITS",
+  credits
+})
