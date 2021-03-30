@@ -1,0 +1,30 @@
+.profile-card-div {
+  flex-direction: column;
+  text-align: center;
+  height: fit-content;
+  width: 124px;
+  margin-bottom: 15px;
+  margin-right: min(25px);
+  p {
+    max-width: 90%;
+    line-height: 17px;
+    margin-top: 5px;
+  }
+}
+
+.profile-name {
+  font-weight: 900;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.profile-card-image {
+    height: 186px;
+    width: 124px;
+  }
+
+@media screen and (max-width: 950px) {
+  .profile-card-div {
+    margin-right: 20px;
+  }
+}

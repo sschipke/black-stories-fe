@@ -1,13 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, createRef } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { openVideoPlayer, setCurrentMovie, setBackgroundClass, setNavSubHeader } from '../../actions';
 import { displayRuntime } from '../../util/helpers';
+import ProfileCard from '../ProfileCard/ProfileCard';
 import genreMap from '../../data/genreMap';
 import './MoviePage.scss';
 
 const MoviePage = ({movie, setCurrentMovie, openVideoPlayer, setBackgroundClass, setNavSubHeader}) => {
+
+  const moviePageRef = createRef('movie-page');
 
   const displayGenres = (genres) => {
   if (genres && genres.length > 0) {
@@ -25,13 +28,22 @@ const MoviePage = ({movie, setCurrentMovie, openVideoPlayer, setBackgroundClass,
   return
 }
 
+let castInfo = movie['isCastLoaded'] && movie.cast.length ? movie.cast.map(actor => <ProfileCard actor={actor} key={actor.name} />) : null;
+
+const castClass = castInfo && castInfo.length > 3 ? " full-cast" : "";
+
   useEffect(() => {
       setCurrentMovie(movie);
       setNavSubHeader(null);
       setBackgroundClass("movie-view");
+      const currentMoviePage = moviePageRef.current
+      let appContainer = currentMoviePage.parentNode.parentNode
+      if (window.innerWidth < 950 && appContainer.scrollTop !== 0) {
+        appContainer.scrollTop = 0
+      }
     });
   
-  return <section className="movie-section" >
+  return <section className="movie-section" ref={moviePageRef} >
       <img 
       className="movie-view-backdrop"
       alt="Movie backrop"
@@ -39,8 +51,11 @@ const MoviePage = ({movie, setCurrentMovie, openVideoPlayer, setBackgroundClass,
       />
       <h1 className="movie-page-title">{movie.title}</h1>
       <div className="movie-info-div">
-        <div className="movie-interactions-div">
+        <div className={"movie-interactions-div" + castClass }>
           <div className="movie-stats-div">
+            {movie['isCastLoaded'] && movie.director && <div style={{width: "100%"}} >
+              <p className="movie-info director">DIRECTED BY {movie.director}</p>
+            </div>}
             <p className="movie-info">{movie.release_date.slice(0,4)}</p> 
             <p className="movie-info">{displayRuntime(movie.runtime)}</p>
         {movie.video_key && 
@@ -63,6 +78,12 @@ const MoviePage = ({movie, setCurrentMovie, openVideoPlayer, setBackgroundClass,
           </div>
           {movie['triggers'] && <p><strong>Possible Triggers:</strong> {movie.triggers}</p>}
             <p className="movie-overview">{movie.overview}</p>
+            {movie['isCastLoaded'] && castInfo && <div className="cast-container">
+              <p className="movie-info">STARRING</p>
+              <div className="profile-card-container" > 
+                {castInfo}
+              </div>
+              </div>}
         </div>
           <div className="movie-page-genres-div">
           {displayGenres(movie.genres)}

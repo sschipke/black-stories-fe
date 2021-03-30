@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import { Route, Switch } from 'react-router-dom';
+import { loadCredits } from '../../actions/index';
+import { getCleanCredits } from '../../util/apiCalls';
 import Nav from '../../containers/Nav/Nav';
 import GenresList from '../../containers/GenresList/GenresList';
 import MovieList from '../../containers/MovieList/MovieList';
@@ -14,7 +17,15 @@ import SearchResultsPage from '../../containers/SearchResultsPage/SearchResultsP
 import genreMap from '../../data/genreMap';
 import './App.scss';
 
-const App = ({ backgroundClass }) => {
+const App = ({ backgroundClass, loadCredits, watchList, previouslySeen, areCreditsLoaded }) => {
+  useEffect(() => {
+      if (!areCreditsLoaded) {
+        getCleanCredits(watchList, previouslySeen)
+        .then(creds => loadCredits(creds))
+        .catch(e => console.error(e))
+      }
+  }, [areCreditsLoaded, loadCredits, watchList, previouslySeen])
+
     return (
       <main className={"App " + backgroundClass}>
         <MobileMenu />
@@ -51,6 +62,12 @@ const App = ({ backgroundClass }) => {
 
 export const mapStateToProps = (state) => ({
   backgroundClass: state.screen.background_class,
+  watchList: state.data.watchList,
+  previouslySeen: state.data.previouslySeen,
+  areCreditsLoaded: state.data.areCreditsLoaded
 })
 
-export default connect(mapStateToProps)(App);
+export const mapDispatchToProps = (dispatch) =>
+  bindActionCreators({ loadCredits }, dispatch);
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

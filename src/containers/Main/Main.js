@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setNavSubHeader, setBackgroundClass } from '../../actions';
@@ -6,13 +6,15 @@ import { determineMainImage } from '../../util/helpers';
 import './Main.scss';
 
 const Main = ({setBackgroundClass, setNavSubHeader }) => {
+  const [imageSrc] = useState(determineMainImage())
+
   useEffect(() => {
     setNavSubHeader(null);
     setBackgroundClass("landing-page");
   })
 return (
     <div className="main-image-div">
-      <img className="main-image" src={determineMainImage()} loading="eager" alt="movie backdrop" />
+      <img className="main-image" src={imageSrc || determineMainImage()} loading="eager" alt="movie backdrop" />
     </div>
   )
 }

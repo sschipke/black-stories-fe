@@ -1,11 +1,10 @@
 import React from 'react';
 import { Redirect } from 'react-router-dom'
+import { connect } from 'react-redux';
 import MoviePage from '../../components/MoviePage/MoviePage';
-import unseenMovies from '../../data/unseenMovies';
-import previousMovies from '../../data/previousMovies';
 import './MovieView.scss';
 
-const MovieView = ({movieId}) => {
+const MovieView = ({movieId, unseenMovies, previousMovies}) => {
   let currentMovie = unseenMovies.find(movie => movie.id === Number(movieId))
   if(!currentMovie) {
     currentMovie = previousMovies.find(movie => movie.id === Number(movieId))
@@ -19,4 +18,9 @@ const MovieView = ({movieId}) => {
   );
 };
 
-export default MovieView;
+export const mapStateToProps = state => ({
+  unseenMovies: state.data.watchList,
+  previousMovies: state.data.previouslySeen
+})
+
+export default connect(mapStateToProps)(MovieView);
