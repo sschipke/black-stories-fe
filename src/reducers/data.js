@@ -1,6 +1,6 @@
 import unseenMovies from '../data/unseenMovies';
 import previousMovies from '../data/previousMovies';
-import { removeArticles } from '../util/helpers';
+import { removeArticles, mapCreditsToMovies } from '../util/helpers';
 const watchList = unseenMovies.sort((movieA, movieB) => {
       let titleA = removeArticles(movieA.title.toLowerCase()); 
       let titleB = removeArticles(movieB.title.toLowerCase());
@@ -16,7 +16,8 @@ let initialState = {
   watchList: watchList,
   currentMovie: null,
   previouslySeen: previouslyWatched,
-  searchText: ""
+  searchText: "",
+  areCreditsLoaded: false
 }
 
 const data = (state = initialState, action) => {
@@ -28,6 +29,13 @@ const data = (state = initialState, action) => {
       case "SET_SEARCH_TEXT":
       new_state.searchText = action.searchText;
       return new_state;
+    case "LOAD_MOVIE_CREDITS":
+      const credits = action.credits
+      const {watchList, previouslySeen} = state;
+      new_state.watchList = mapCreditsToMovies(watchList, credits);
+      new_state.previouslySeen = mapCreditsToMovies(previouslySeen, credits);
+      new_state.areCreditsLoaded = true;
+      return new_state
     default:
       return state;
   }

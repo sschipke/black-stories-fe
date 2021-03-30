@@ -51,3 +51,15 @@ export const removeArticles = (title) => {
   }
   return title;
 }
+
+export  const mapCreditsToMovies = (movies, credits) => {
+    return movies.map(movie => {
+      let matchingCredit = credits.find(credit => credit.id === movie.id);
+      return {
+        ...movie,
+        cast: matchingCredit.cast,
+        director: matchingCredit.director,
+        isCastLoaded: true
+      }
+    })
+  }
