@@ -2530,6 +2530,21 @@ const unseenMovies =[
     "chosen_by": null,
     "date_watched": null,
     "runtime": 90
+  },
+  {
+    "id": 522039,
+    "title": "The Last Black Man in San Francisco",
+    "genres": [
+      18
+      ],
+    "overview": "Jimmie Fails dreams of reclaiming the Victorian home his grandfather built in the heart of San Francisco. Joined on his quest by his best friend Mont, Jimmie searches for belonging in a rapidly changing city that seems to have left them behind.",
+    "video_key": "C0FnJDhY9-0",
+    "poster_path": "/AuKLgnBoSQ8tfK5Do3r1LCXwLWH.jpg",
+    "backdrop_path": "/n0FzDpOvVhkj3uN7WHXXnAXOKFi.jpg",
+    "release_date": "2019-10-25",
+    "watch_data": "https://www.themoviedb.org/movie/522039-the-last-black-man-in-san-francisco/watch?locale=US",
+    "chosen_by": null,
+    "date_watched": null
   }
 ]
 
