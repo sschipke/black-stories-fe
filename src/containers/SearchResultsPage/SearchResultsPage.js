@@ -20,7 +20,7 @@ export const SearchResultsPage = ({ previouslyWatched, watchList, setBackgroundC
 
 const allMovies = [...previouslyWatched, ...watchList]
 
-let searchResults = allMovies.filter(movie => movie.title.toLowerCase().includes(searchText));
+let searchResults = allMovies.filter(movie => movie.title.toLowerCase().includes(searchText) || movie.director.toLowerCase().includes(searchText));
   const searchResultsLength = searchResults.length
 
   switch (true) {
@@ -46,7 +46,7 @@ let searchResults = allMovies.filter(movie => movie.title.toLowerCase().includes
 export const mapStateToProps = state => ({
   watchList: state.data.watchList,
   previouslyWatched: state.data.previouslySeen,
-  searchText: state.data.searchText
+  searchText: state.data.searchText,
 });
 
 export const mapDispatchToProps = (dispatch) =>
