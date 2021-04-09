@@ -13,8 +13,10 @@ export const SearchResultsPage = ({ previouslyWatched, watchList, setBackgroundC
     if(actorName || directorName) {
       let subHeaderName = actorName ? actorName : directorName;
       setNavSubHeader(subHeaderName.replace('-', ' '));
+    } else {
+      setNavSubHeader(searchText);
     }
-  }, [setBackgroundClass, actorName, directorName, setNavSubHeader]);
+  }, [setBackgroundClass, actorName, directorName, setNavSubHeader, searchText]);
 
   const noResults = <div className="no-results-div">
     <h1>NO SEARCH RESULTS</h1>

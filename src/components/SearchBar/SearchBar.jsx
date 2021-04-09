@@ -2,10 +2,10 @@ import React, {useState, useEffect, createRef} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Redirect } from "react-router-dom";
-import { setNavSubHeader, setSearchText, toggleSearchBar, toggleMobileMenu } from '../../actions';
+import { setSearchText, toggleSearchBar, toggleMobileMenu } from '../../actions';
 import './SearchBar.scss';
 
-export const SearchBar = ({setNavSubHeader, setSearchText, toggleSearchBar, isOpen, toggleMobileMenu, isMobileMenuOpen}) => {
+export const SearchBar = ({ setSearchText, toggleSearchBar, isOpen, toggleMobileMenu, isMobileMenuOpen }) => {
   const [searchInput, setSearchInput] = useState("");
   const [isSearchComplete, setSearchComplete] = useState(false);
   const focusRef = createRef('search-input-ref');
@@ -39,7 +39,6 @@ export const SearchBar = ({setNavSubHeader, setSearchText, toggleSearchBar, isOp
     if (!cleanSearchInput) {
       return
     }
-    setNavSubHeader(cleanSearchInput);
     setSearchText(cleanSearchInput);
     setSearchInput("");
     setSearchComplete(true);
@@ -88,6 +87,6 @@ export const mapStateToProps = state => ({
 });
 
 export const mapDispatchToProps = (dispatch) =>
-  bindActionCreators({ setNavSubHeader, setSearchText, toggleSearchBar, toggleMobileMenu }, dispatch);
+  bindActionCreators({ setSearchText, toggleSearchBar, toggleMobileMenu }, dispatch);
 
   export default connect(mapStateToProps, mapDispatchToProps)(SearchBar);
