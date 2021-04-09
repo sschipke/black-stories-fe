@@ -55,20 +55,40 @@ export const SearchBar = ({ setSearchText, toggleSearchBar, isOpen, toggleMobile
     className={"search-form" + hideClass}
     onSubmit={e => handleSubmit(e)}
     >
+      <label
+      id="input-label"
+      htmlFor="search-input"
+      hidden
+      >
+        Enter text to search movies by title or director
+      </label>
       <input 
         className="searchInput"
+        aria-labelledby="input-label"
+        id="search-input"
         type="text"
         value={searchInput}
         onChange={e => handleChange(e)}
         onKeyPress={(e) => handleEnter(e)}
         ref={focusRef}
       />
+      <label
+      id="search-button-label"
+      htmlFor="enter-search-button"
+      hidden
+      >
+        Search by title or director
+      </label>
       <button 
         className="search-button"
+        aria-labelledby="search-button-label"
+        id="enter-search-button"
         type="submit"
         tabIndex="-1"
+        name="search"
       >
         <svg 
+        aria-hidden="true"
         className="search-icon-svg"
         id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="22.04" height="22.04019" viewBox="0 0 22.04 22.04019">
           <path className="cls-3" d="M2.50042,22.04019A2.5,2.5,0,0,1,.73284,17.77261l6.874-6.874A2.49973,2.49973,0,1,1,11.142,14.43374l-6.874,6.874A2.49107,2.49107,0,0,1,2.50042,22.04019Z"/><path className="cls-3" d="M14.68108,14.716a7.3519,7.3519,0,1,1,5.20459-2.15283A7.33693,7.33693,0,0,1,14.68108,14.716Zm0-9.7168A2.35395,2.35395,0,1,0,16.351,5.6896,2.35486,2.35486,0,0,0,14.68108,4.99917Z"/>
