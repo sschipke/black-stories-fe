@@ -77,6 +77,7 @@ const castClass = castInfo && castInfo.length > 3 ? " full-cast" : "";
             WATCH
           </a>
           }
+          {movie['seen'] && <div><p className="movie-info">WATCHED {movie.date_watched}, CHOSEN BY {movie.chosen_by}</p></div>}
           </div>
           {movie['triggers'] && <p><strong>Possible Triggers:</strong> {movie.triggers}</p>}
             <p className="movie-overview">{movie.overview}</p>
