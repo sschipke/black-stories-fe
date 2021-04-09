@@ -54,7 +54,9 @@ const castClass = castInfo && castInfo.length > 3 ? " full-cast" : "";
         <div className={"movie-interactions-div" + castClass }>
           <div className="movie-stats-div">
             {movie['isCastLoaded'] && movie.director && <div style={{width: "100%"}} >
-              <p className="movie-info director">DIRECTED BY {movie.director}</p>
+              <p className="movie-info director">DIRECTED BY <Link className="movie-info"
+                to={`/director/${movie.director.toLowerCase().replace(' ', '-')}`}
+              >{movie.director}</Link></p>
             </div>}
             <p className="movie-info">{movie.release_date.slice(0,4)}</p> 
             <p className="movie-info">{displayRuntime(movie.runtime)}</p>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import blankPicture from '../../assets/icons/no_actor_image.svg';
 import './ProfileCard.scss';
 
@@ -11,7 +12,9 @@ const ProfileCard = ({ actor }) => {
       loading="lazy"
       alt="head shot of actor" 
       style={{"fontSize": "1rem"}} />
-      <p className="profile-name">{actor.name}</p>
+      <Link className="profile-name"
+        to={`/actor/${actor.id}-${actor.name.toLowerCase().replace(' ', '-')}`}
+      >{actor.name}</Link>
       {actor.character && <p className="profile-character">{actor.character}</p>}
     </div>
   )
