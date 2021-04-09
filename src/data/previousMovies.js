@@ -328,7 +328,7 @@ const previousMovies = [
     "poster_path": "/54awQrtekrsI11bKg2NwQrBHLIe.jpg",
     "backdrop_path": "/c9AKkH8SeyeJphC3vNGJMSjwcR5.jpg",
     "release_date": "1997-11-02",
-    "watch_data": "https://www.youtube.com/watch?v=Fk9uuD86ufk",
+    "watch_data": "https://www.themoviedb.org/movie/42884-rodgers-hammerstein-s-cinderella/watch?locale=US",
     "chosen_by": "Corey",
     "date_watched": "10/12/20",
     "seen": true,
@@ -913,6 +913,27 @@ const previousMovies = [
     "date_watched": "04/05/21",
     "seen": true,
     "runtime": 97
+  },
+    {
+    "id": 15765,
+    "title": "What's Love Got to Do with It",
+    "genres": [
+      18,
+      10402,
+      85,
+      88
+    ],
+    "overview": "Based on the life of the legendary soul singer, Tina Turner -- born Anna Mae Bullock -- discovers her love of singing in her Tennessee church choir. She moves to St. Louis to pursue a career, and there she meets the charismatic Ike Turner, who rechristens her Tina and offers to help her succeed. As a musical team, Ike and Tina take the charts by storm. But as his physical abuse worsens, Tina has to make the tough decision to leave Ike and set out on her own.",
+    "triggers": "Abuse, Sexual Abuse",
+    "video_key": null,
+    "poster_path": "/oFAgqsmjPmwRP4dZqbe51HlpPIi.jpg",
+    "backdrop_path": "/ow5u27LapD6xMe24o2ITnZDoz7z.jpg",
+    "release_date": "1993-06-09",
+    "watch_data": "https://www.themoviedb.org/movie/15765-what-s-love-got-to-do-with-it/watch?locale=US",
+    "chosen_by": "Corey",
+    "date_watched": "04/12/21",
+    "seen": true,
+    "runtime": 118
   },
 ]
 
