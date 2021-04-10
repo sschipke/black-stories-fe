@@ -9,7 +9,8 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 
-const store = createStore(rootReducer, composeWithDevTools())
+let store = process.env.NODE_ENV === 'production' ? createStore(rootReducer) :createStore(rootReducer, composeWithDevTools());
+
 ReactDOM.render(
   <Router>
     <Provider 
