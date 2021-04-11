@@ -5,7 +5,7 @@
   width: 124px;
   margin-bottom: 15px;
   margin-right: min(25px);
-  p,a {
+  p {
     max-width: 90%;
     line-height: 17px;
     margin-top: 5px;
@@ -17,6 +17,11 @@
   font-weight: 900;
   font-style: italic;
   text-transform: uppercase;
+}
+
+.profile-character {
+  font-weight: normal;
+  font-style: normal;
 }
 
 .profile-card-image {
