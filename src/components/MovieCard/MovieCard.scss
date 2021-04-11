@@ -1,7 +1,7 @@
 .movie-link {
   margin-bottom: 20px;
   &:hover {
-    .card-image{
+    .card-image, .profile-card-image {
       outline-offset: -5px;
       outline: 5px solid white;
     }

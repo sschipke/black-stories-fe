@@ -58,26 +58,28 @@ const castClass = castInfo && castInfo.length > 3 ? " full-cast" : "";
                 to={`/director/${movie.director.toLowerCase().replace(' ', '-')}`}
               >{movie.director}</Link></p>
             </div>}
-            <p className="movie-info">{movie.release_date.slice(0,4)}</p> 
-            <p className="movie-info">{displayRuntime(movie.runtime)}</p>
-        {movie.video_key && 
-          <button 
-          className="trailer-button movie-info"
-          type="button"
-          onClick={() => openVideoPlayer()}
-          >
-            TRAILER
-          </button>}
-          { movie.watch_data && 
-          <a className="movie-info" 
-          href={movie.watch_data}
-          target="_blank" 
-          rel="noreferrer"
-          >
-            WATCH
-          </a>
+            <div>
+              <p className="movie-info">{movie.release_date.slice(0,4)}</p> 
+              <p className="movie-info">{displayRuntime(movie.runtime)}</p>
+          {movie.video_key && 
+            <button 
+            className="trailer-button movie-info"
+            type="button"
+            onClick={() => openVideoPlayer()}
+            >
+              TRAILER
+            </button>}
+            { movie.watch_data && 
+            <a className="movie-info" 
+            href={movie.watch_data}
+            target="_blank" 
+            rel="noreferrer"
+            >
+              WATCH
+            </a>
           }
-          {movie['seen'] && <div><p className="movie-info">WATCHED {movie.date_watched}, CHOSEN BY {movie.chosen_by}</p></div>}
+          </div>
+          {movie['seen'] && <div className="watched-div"><p className="movie-info">WATCHED {movie.date_watched}<span className="chosen-by-span"> CHOSEN BY {movie.chosen_by}</span> </p></div>}
           </div>
           {movie['triggers'] && <p><strong>Possible Triggers:</strong> {movie.triggers}</p>}
             <p className="movie-overview">{movie.overview}</p>
