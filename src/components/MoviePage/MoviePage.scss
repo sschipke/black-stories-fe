@@ -19,6 +19,9 @@ section {
   .movie-stats-div {
     flex-wrap: wrap;
     margin-bottom: 10px;
+    div {
+      flex-wrap: wrap;
+    }
   }
   .movie-info-div {
     max-height: 80%;
