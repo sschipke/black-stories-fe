@@ -9,6 +9,7 @@
     max-width: 90%;
     line-height: 17px;
     margin-top: 5px;
+    font-size: 1rem;
   }
 }
 
@@ -16,6 +17,11 @@
   font-weight: 900;
   font-style: italic;
   text-transform: uppercase;
+}
+
+.profile-character {
+  font-weight: normal;
+  font-style: normal;
 }
 
 .profile-card-image {
