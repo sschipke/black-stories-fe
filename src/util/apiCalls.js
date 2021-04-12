@@ -24,6 +24,7 @@ export const getCredits = async (unseenMovies, previouslyWatched) => {
         return {
           id: movieCredit.id,
           cast: movieCredit.cast.splice(0, 8).map(member => ({
+            id: member.id,
             name: member.name,
             profile_path: member.profile_path,
             character: member.character ? member.character : null

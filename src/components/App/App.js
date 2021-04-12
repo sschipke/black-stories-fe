@@ -53,6 +53,21 @@ const App = ({ backgroundClass, loadCredits, watchList, previouslySeen, areCredi
           return (<MovieView movieId={id} />)
           }}
         />
+        <Route
+          path='/actor/:actor_id-:actor_name'
+          render={({match}) => {
+          let actorId = match.params.actor_id;
+          let actorName = match.params.actor_name;
+          return (<SearchResultsPage actorId={Number(actorId)} actorName={actorName} />)
+          }}
+        />
+        <Route
+          path='/director/:director_name'
+          render={({match}) => {
+          let directorName = match.params.director_name;
+          return (<SearchResultsPage directorName={directorName} />)
+          }}
+        />
         <Route exact path='/search' component={SearchResultsPage} />
         <NotFound />
       </Switch>
