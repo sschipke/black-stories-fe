@@ -2511,11 +2511,7 @@ const unseenMovies =[
     "chosen_by": null,
     "seen": false,
     "date_watched": null
-  },
-
-
-
-
+  }
 ]
 
 export default unseenMovies;
