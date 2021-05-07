@@ -935,6 +935,129 @@ const previousMovies = [
     "seen": true,
     "runtime": 118
   },
+  {
+    "id": 349003,
+    "title": "I Am Somebody",
+    "genres": [
+      100,
+      6251,
+      888,
+      99,
+      52
+    ],
+    "overview": "Madeline Anderson’s documentary brings viewers to the front lines of the civil rights movement during the 1969 Charleston hospital workers’ strike, when 400 poorly paid Black women went on strike to demand union recognition and a wage increase, only to find themselves in confrontation with the National Guard and the state government. Anderson personally participated in the strike, along with such notable figures as Coretta Scott King, Ralph Abernathy and Andrew Young, all affiliated with Martin Luther King’s Southern Christian Leadership Conference. Anderson’s film shows the courage and resiliency of the strikers and the support they received from the local black community. It is an essential filmed record of this important moment in the history of civil and women’s rights. The film is also notable as arguably the first televised documentary on civil rights directed by a woman of color, solidifying its place in American film history.",
+    "video_key": null,
+    "poster_path": "/ea7V3R85ufb6TxBwAjcCY1LQK9y.jpg",
+    "backdrop_path": "/24lCXJEet7DSXXJQlSQLu1woDkX.jpg",
+    "release_date": "1970-01-01",
+    "watch_data": "https://vimeo.com/425583946",
+    "chosen_by": "Scott",
+    "date_watched": "04/19/21",
+    "seen": true,
+    "runtime": 30
+  },
+  {
+    "id": 162660,
+    "title": "Illusions",
+    "genres": [
+      100,
+      6251,
+      888,
+      99,
+      52
+    ],
+    "overview": "An African American woman rises to prominence in a fictional movie studio in the 1940s by passing as a white woman, affording others some dignity in the business that frequently portrayed movies as an illusion of a purely 'white world'.",
+    "video_key": null,
+    "poster_path": "/f7jJlhShXKs1kMs9cxMstebUrPo.jpg",
+    "backdrop_path": "/uXTJ6dhG9QhVCyvQNyuDdDhr1Pu.jpg",
+    "release_date": "1982-01-01",
+    "watch_data": "https://www.youtube.com/watch?v=a_O_ONYINLY",
+    "chosen_by": "Scott",
+    "date_watched": "04/19/21",
+    "seen": true,
+    "runtime": 34
+  },
+  {
+    "id": 83232,
+    "title": "Portrait of Jason",
+    "genres": [
+      99,
+      6251,
+      69
+    ],
+    "overview": "Interview with Jason Holliday aka Aaron Payne. House-boy, would-be cabaret performer, and self-proclaimed hustler giving one man's gin-soaked, pill-popped view of what it was like to be coloured and gay in 1960s Unites States.",
+    "video_key": "vwdczX__C0w",
+    "poster_path": "/vxYaclAP985krSCYiqIMJ0tsbGg.jpg",
+    "backdrop_path": "/5VBzuCvNjSkAF9jfS3Zmflpwcdl.jpg",
+    "release_date": "1967-09-29",
+    "watch_data": "https://milestone.vhx.tv/packages/portrait-of-jason/videos/portrait-of-jason",
+    "chosen_by": "Garrett",
+    "date_watched": "04/26/21",
+    "seen": true,
+    "runtime": 105
+  },
+  {
+    "id": 242493,
+    "title": "The Bloodettes",
+    "genres": [
+      80,
+      53,
+      35,
+      9648,
+      889,
+      100
+    ],
+    "overview": "Best friends Majolie and Chouchou are two beautiful young women trying to get ahead in a near-future Cameroon. After accidentally killing a powerful politician during sex, the two come up with a plot to dispose of the body, and get into the glamorous wakes that have taken over the local nightlife.",
+    "video_key": "TVaaDPkeuP0",
+    "poster_path": "/fKPL6u2iLXyd6W5sNsrH0J49a16.jpg",
+    "backdrop_path": "/fKeeSrFswJHfmhTFDnWVHEmMAsa.jpg",
+    "release_date": "2005-05-20",
+    "watch_data": "https://www.kanopy.com/product/bloodettes",
+    "chosen_by": "Nathaniel",
+    "date_watched": "05/03/21",
+    "seen": true,
+    "runtime": 97
+  },
+  {
+    "id": 682747,
+    "title": "Dark City Beneath the Beat",
+    "genres": [
+      10402,
+      100,
+      99,
+      6251
+    ],
+    "overview": "Dark City Beneath The Beat is an audiovisual experience that defines the soundscape of Baltimore city. Inspired by an all original Baltimore club music soundtrack, the film spotlights local club artists, DJs, dancers, producers, and Baltimore’s budding creative community as they are realizing their life dreams. Rhythmic and raw, these stories illustrate the unique characteristics of the city’s landscape and social climate through music, poetry, and dance. From the city’s social climate to its creative LGBTQ community, Dark City Beneath The Beat showcases Baltimore club music as a positive subculture in a city overshadowed by trauma, drugs, and violence.",
+    "video_key": "el_j-Xc5MZY",
+    "poster_path": "/5h0bcFqqPk5XiobC4785JYCnAli.jpg",
+    "backdrop_path": "/lyvwJkA8wS4tDuUSm44MmpllTBS.jpg",
+    "release_date": "2020-05-08",
+    "watch_data": "https://www.themoviedb.org/movie/682747-dark-city-beneath-the-beat/watch?locale=US",
+    "chosen_by": "Gillian",
+    "date_watched": "05/10/21",
+    "seen": true
+  },
+  {
+    "id": 329587,
+    "title": "Drylongso",
+    "genres": [
+      18,
+      100,
+      6251,
+      888
+    ],
+    "overview": "A young woman (Toby Smith) in a photography class begins taking pictures of black men out of fear they will soon be extinct.",
+    "trigger": "Abuse",
+    "video_key": null,
+    "poster_path": "/8ethJ2FuHMMwMYh0hJR2hpec0YX.jpg",
+    "backdrop_path": "/dtbtAEYwZXd8S2qF5uvg5nbrnjG.jpg",
+    "release_date": "1998-10-17",
+    "watch_data": "https://www.youtube.com/watch?v=Q3iyMrf9E7c",
+    "chosen_by": "Nicki",
+    "date_watched": "05/17/21",
+    "seen": true,
+    "runtime": 86
+  }
 ]
 
 export default previousMovies

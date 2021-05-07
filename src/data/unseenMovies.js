@@ -346,48 +346,6 @@ const unseenMovies =[
     "runtime": 103
   },
   {
-    "id": 162660,
-    "title": "Illusions",
-    "genres": [
-      100,
-      6251,
-      888,
-      99,
-      52
-    ],
-    "overview": "An African American woman rises to prominence in a fictional movie studio in the 1940s by passing as a white woman, affording others some dignity in the business that frequently portrayed movies as an illusion of a purely 'white world'.",
-    "video_key": null,
-    "poster_path": "/f7jJlhShXKs1kMs9cxMstebUrPo.jpg",
-    "backdrop_path": "/uXTJ6dhG9QhVCyvQNyuDdDhr1Pu.jpg",
-    "release_date": "1982-01-01",
-    "watch_data": "https://www.youtube.com/watch?v=a_O_ONYINLY",
-    "chosen_by": "Scott",
-    "date_watched": "04/19/21",
-    "seen": false,
-    "runtime": 34
-  },
-  {
-    "id": 349003,
-    "title": "I Am Somebody",
-    "genres": [
-      100,
-      6251,
-      888,
-      99,
-      52
-    ],
-    "overview": "Madeline Anderson’s documentary brings viewers to the front lines of the civil rights movement during the 1969 Charleston hospital workers’ strike, when 400 poorly paid Black women went on strike to demand union recognition and a wage increase, only to find themselves in confrontation with the National Guard and the state government. Anderson personally participated in the strike, along with such notable figures as Coretta Scott King, Ralph Abernathy and Andrew Young, all affiliated with Martin Luther King’s Southern Christian Leadership Conference. Anderson’s film shows the courage and resiliency of the strikers and the support they received from the local black community. It is an essential filmed record of this important moment in the history of civil and women’s rights. The film is also notable as arguably the first televised documentary on civil rights directed by a woman of color, solidifying its place in American film history.",
-    "video_key": null,
-    "poster_path": "/ea7V3R85ufb6TxBwAjcCY1LQK9y.jpg",
-    "backdrop_path": "/24lCXJEet7DSXXJQlSQLu1woDkX.jpg",
-    "release_date": "1970-01-01",
-    "watch_data": "https://vimeo.com/425583946",
-    "chosen_by": "Scott",
-    "date_watched": "04/19/21",
-    "seen": false,
-    "runtime": 30
-  },
-  {
     "id": 337215,
     "title": "Hidden Memories",
     "genres": [
@@ -887,27 +845,6 @@ const unseenMovies =[
     "date_watched": null,
     "seen": false,
     "runtime": 135
-  },
-  {
-    "id": 329587,
-    "title": "Drylongso",
-    "genres": [
-      18,
-      100,
-      6251,
-      888
-    ],
-    "overview": "A young woman (Toby Smith) in a photography class begins taking pictures of black men out of fear they will soon be extinct.",
-    "trigger": "Abuse",
-    "video_key": null,
-    "poster_path": "/8ethJ2FuHMMwMYh0hJR2hpec0YX.jpg",
-    "backdrop_path": "/dtbtAEYwZXd8S2qF5uvg5nbrnjG.jpg",
-    "release_date": "1998-10-17",
-    "watch_data": "https://www.youtube.com/watch?v=Q3iyMrf9E7c",
-    "chosen_by": null,
-    "date_watched": null,
-    "seen": false,
-    "runtime": 86
   },
   {
     "id": 48992,
@@ -1641,25 +1578,6 @@ const unseenMovies =[
     "runtime": 76
   },
   {
-    "id": 83232,
-    "title": "Portrait of Jason",
-    "genres": [
-      99,
-      6251,
-      69
-    ],
-    "overview": "Interview with Jason Holliday aka Aaron Payne. House-boy, would-be cabaret performer, and self-proclaimed hustler giving one man's gin-soaked, pill-popped view of what it was like to be coloured and gay in 1960s Unites States.",
-    "video_key": "vwdczX__C0w",
-    "poster_path": "/vxYaclAP985krSCYiqIMJ0tsbGg.jpg",
-    "backdrop_path": "/5VBzuCvNjSkAF9jfS3Zmflpwcdl.jpg",
-    "release_date": "1967-09-29",
-    "watch_data": "https://milestone.vhx.tv/packages/portrait-of-jason/videos/portrait-of-jason",
-    "chosen_by": "Garrett",
-    "date_watched": "04/26/21",
-    "seen": false,
-    "runtime": 105
-  },
-  {
     "id": 566235,
     "title": "Toni Morrison: The Pieces I Am",
     "genres": [
@@ -2184,28 +2102,6 @@ const unseenMovies =[
     "runtime": 92
   },
   {
-    "id": 242493,
-    "title": "The Bloodettes",
-    "genres": [
-      80,
-      53,
-      35,
-      9648,
-      889,
-      100
-    ],
-    "overview": "Best friends Majolie and Chouchou are two beautiful young women trying to get ahead in a near-future Cameroon. After accidentally killing a powerful politician during sex, the two come up with a plot to dispose of the body, and get into the glamorous wakes that have taken over the local nightlife.",
-    "video_key": "TVaaDPkeuP0",
-    "poster_path": "/fKPL6u2iLXyd6W5sNsrH0J49a16.jpg",
-    "backdrop_path": "/fKeeSrFswJHfmhTFDnWVHEmMAsa.jpg",
-    "release_date": "2005-05-20",
-    "watch_data": "https://www.kanopy.com/product/bloodettes",
-    "chosen_by": null,
-    "date_watched": null,
-    "seen": false,
-    "runtime": 97
-  },
-  {
     "id": 124085,
     "title": "Hyenas",
     "genres": [
@@ -2527,6 +2423,94 @@ const unseenMovies =[
     "date_watched": null,
     "seen": false,
     "runtime": 111
+  },
+  {
+    "id": 77341,
+    "title": "Black Is … Black Ain’t",
+    "genres": [
+      100,
+      99
+    ],
+    "overview": "African-American documentary filmmaker Marlon Riggs was working on this final film as he died from AIDS-related complications in 1994; he addresses the camera from his hospital bed in several scenes. The film directly addresses sexism and homophobia within the black community, with snippets of misogynistic and anti-gay slurs from popular hip-hop songs juxtaposed with interviews with African-American intellectuals and political theorists, including Cornel West, bell hooks and Angela Davis.",
+    "video_key": "ULGpzTTd-bk",
+    "poster_path": "/sqEUXvyBBX7iFXbURAo40ELQLp7.jpg",
+    "backdrop_path": "/tPMgu3N91G8h2QxWmYBbIK7C6X0.jpg",
+    "release_date": "1994-01-01",
+    "watch_data": "https://www.themoviedb.org/movie/77341-black-is-black-ain-t/watch?locale=US",
+    "chosen_by": null,
+    "seen": false,
+    "date_watched": null
+  },
+  {
+    "id": 653729,
+    "title": "Time",
+    "genres": [
+      100,
+      99,
+      6251
+    ],
+    "overview": "Fox Rich, indomitable matriarch and modern-day abolitionist, strives to keep her family together while fighting for the release of her incarcerated husband. An intimate, epic, and unconventional love story, filmed over two decades.",
+    "video_key": "kq6Hh07oLvs",
+    "poster_path": "/tQ1FbMz5zQTCr91iGf7FTu3utBY.jpg",
+    "backdrop_path": "/zqMT7xmPdN5WLwxP2UonlESFaiC.jpg",
+    "release_date": "2020-10-09",
+    "watch_data": "https://www.themoviedb.org/movie/653729-time/watch?locale=US",
+    "chosen_by": null,
+    "seen": false,
+    "date_watched": null
+  },
+  {
+    "id": 823765,
+    "title": "From Trash to Treasure",
+    "genres": [
+      99,
+      6251,
+      52
+    ],
+    "overview": "In Lesotho—a highland country surrounded by South Africa—an artist named Nthabiseng TeReo Mohanela takes discarded materials and transforms them into unique clothing and accessories. Teaching young people the benefits of recycling and re-creation, she calls her project “From Trash to Treasure.” With TeReo’s work as a starting point, this short film showcases a broader spirit of reimagination among artists in Lesotho, who use creativity to respond to entrenched social problems: Filmmakers show the need to end child marriage. Musicians write songs about climate change. Farmers collect seeds to protect endangered tree species. Designers use fashion to preserve traditional Basotho culture and challenge common perceptions of Africa. Profiling a variety of these innovators, FROM TRASH TO TREASURE: turning negatives into positives encourages us to take lessons from those who rethink, reuse, and reinvent in order to promote positive change.",
+    "video_key": "kUR8_zeyBdg",
+    "poster_path": "/vuFUWQTWaqY2cAF1ykWeFWEHmh9.jpg",
+    "backdrop_path": "/zbk1TlsyIvmapg7gMuGjTOota1X.jpg",
+    "release_date": "2020-06-01",
+    "watch_data": "https://www.youtube.com/watch?v=udLsJuTKrmo",
+    "chosen_by": null,
+    "seen": false,
+    "date_watched": null
+  },
+  {
+    "id": 623717,
+    "title": "Sierra Leone Rising",
+    "genres": [
+      99,
+      6251,
+      52
+    ],
+    "overview": "Having emerged from an 11-year civil war that left more than 50,000 people dead and two million displaced, Sierra Leone strives for a peaceful and democratic future. Since the end of conflict in 2002, the people of Sierra Leone have strived to build a democratic and peaceful society. The path remains difficult, with poverty entrenched, yet signs of progress, too often ignored by the international media, can also be found. Sierra Leone has held two consecutive democratic elections, and women and young people have taken the lead in creating an engaged civil society. This short film documents the progress Sierra Leone has made since the end of its brutal civil war and the hope of a new generation for creating a more just society.",
+    "video_key": null,
+    "poster_path": "/p8Yqxc7ooYglwl9LcbRvSR73Hh3.jpg",
+    "backdrop_path": "/qM52ARlMsvxWjRYJucwUY7sTkUS.jpg",
+    "release_date": "2010-01-01",
+    "watch_data": "https://www.youtube.com/watch?v=3NTtFYB2giQ",
+    "chosen_by": null,
+    "seen": false,
+    "date_watched": null
+  },
+  {
+    "id": 556192,
+    "title": "Burkinabè Rising - The Art of Resistance in Burkina Faso",
+    "genres": [
+      99,
+      6251
+    ],
+    "overview": "BURKINABÈ RISING: the art of resistnace in Burkina Faso showcases creative nonviolent resistance in Burkina Faso. A small, landlocked country in West Africa, Burkina Faso is home to a vibrant community of artists and engaged citizens, who provide an example of the type of political change that can be achieved when people come together. It is an inspiration, not only to the rest of Africa but also to the rest of the world.Through music, film, ecology, visual art, and architecture, the people featured in this film are carrying on the revolutionary spirit of Thomas Sankara.After assuming the presidency in 1983, Sankara was killed in a 1987 coup d'état led by his friend and close advisor Blaise Compaoré, who subsequently ruled the country as an autocrat for twenty-seven years. In October 2014, a massive popular insurrection led to his removal. Today, the spirit of resistance is mightier than ever in Burkina Faso.",
+    "video_key": "0NvrxUucNfg",
+    "poster_path": "/4BsPGsajZsDBVJhO5dSSkOTsAUs.jpg",
+    "backdrop_path": "/zP4xYJrJadFYXa3u5TYBJvdxm1T.jpg",
+    "release_date": "2018-04-07",
+    "watch_data": "https://www.youtube.com/watch?v=yE3W6Hq_SVs",
+    "chosen_by": null,
+    "seen": false,
+    "date_watched": null
   }
 ]
 
