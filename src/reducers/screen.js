@@ -2,6 +2,7 @@ let initialState = {
   video_player_open: false,
   mobile_menu_open: false,
   nav_subheader: null,
+  isLoading: false,
   background_class: "landing-page",
   search_bar_open: false
 }

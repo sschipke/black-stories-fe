@@ -1,4 +1,6 @@
 const movieDbApiKey = process.env.REACT_APP_MOVIEDB_API_KEY;
+const noirFilmsApiUrl = process.env.REACT_APP_FILM_NOIR_BASE_URL;
+
 export const getCredits = async (unseenMovies, previouslyWatched) => {
   let movieList = [...unseenMovies, ...previouslyWatched]
     try {
@@ -35,6 +37,16 @@ export const getCredits = async (unseenMovies, previouslyWatched) => {
       return cleanedCredits;
     } catch (error) {
       throw new Error(error);
+    }
+  }
+
+  export const fetchMovies = async () => {
+    let url = noirFilmsApiUrl + "movies";
+    try {
+      return fetch(url)
+      .then(res => res.json())
+    } catch (error) {
+      console.error("Error getting initial movies!");
     }
   }
 

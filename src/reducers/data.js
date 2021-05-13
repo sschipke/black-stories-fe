@@ -17,12 +17,18 @@ let initialState = {
   currentMovie: null,
   previouslySeen: previouslyWatched,
   searchText: "",
+  areMoviesLoaded: false,
   areCreditsLoaded: false
 }
 
 const data = (state = initialState, action) => {
   let new_state = { ...state };
   switch(action.type) {
+    case "LOAD_MOVIES":
+      new_state.watchList = action.movies.watchList;
+      new_state.previouslySeen = action.movies.previouslyWatched;
+      new_state.areMoviesLoaded = true;
+      return new_state;
     case "SET_CURRENT_MOVIE":
       new_state.currentMovie = action.currentMovie;
       return new_state;
