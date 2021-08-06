@@ -1,4 +1,4 @@
-import React, { useReducer, useEffect } from 'react';
+import React, { useReducer } from 'react';
 import genreMap from '../../data/genreMap';
 
 export const useGenreSelectors = (movieGenres = []) => {
@@ -59,12 +59,7 @@ const GenreSelector = ({ genres, handleGenreChange}) => {
       </div>)
     })
   }
-  let checkBoxes = showGenreOptions(genres);
-
-  useEffect(() => {
-    checkBoxes = showGenreOptions(genres)
-  }, [genres])
-
+const checkBoxes = showGenreOptions(genres);
 
   return (<div style={{'flexWrap': 'wrap', 'marginTop': '10px'}}>
     {checkBoxes}
