@@ -44,11 +44,13 @@ const castClass = castInfo && castInfo.length > 3 ? " full-cast" : "";
     });
   
   return <section className="movie-section" ref={moviePageRef} >
-      <img 
-      className="movie-view-backdrop"
-      alt="Movie backrop"
-      src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
-      />
+    <Link to="/edit" className="edit-link">
+        <img
+        className="movie-view-backdrop"
+        alt="Movie backrop"
+        src={`https://image.tmdb.org/t/p/original/${movie.backdrop_path}`}
+        />
+    </Link>
       <h1 className="movie-page-title">{movie.title}</h1>
       <div className="movie-info-div">
         <div className={"movie-interactions-div" + castClass }>

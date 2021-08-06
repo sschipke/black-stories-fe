@@ -4,7 +4,8 @@ let initialState = {
   nav_subheader: null,
   isLoading: false,
   background_class: "landing-page",
-  search_bar_open: false
+  search_bar_open: false,
+  errors: null
 }
 
 const screen = (state = initialState, action) => {
@@ -36,6 +37,10 @@ const screen = (state = initialState, action) => {
       return new_state;
     case "TOGGLE_SEARCH_BAR":
       new_state.search_bar_open = !state.search_bar_open;
+      return new_state;
+    case "SET_ERRORS":
+      console.log(action.errors)
+      new_state.errors = action.errors;
       return new_state;
     default:
       return state;

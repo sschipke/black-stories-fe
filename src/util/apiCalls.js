@@ -50,3 +50,31 @@ export const getCredits = async (unseenMovies, previouslyWatched) => {
     }
   }
 
+  export const updateMovie = async (movie) => {
+    const url = noirFilmsApiUrl + 'movies/' + movie.id;
+    const {password} = movie;
+    delete movie.password;
+    let options = {
+    method: "PUT",
+    body: JSON.stringify({movie, password}),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  };
+
+  let res = await fetch(url, options);
+
+    if (!res.ok) {
+      const error = await res.json();
+      switch (res.status) {  
+        case 401:
+          throw error
+        case 422: 
+          throw error
+        default:
+          throw Error("Something went wrong. Try again")
+      }
+    }
+  return res.json();
+}
+

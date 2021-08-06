@@ -46,3 +46,8 @@ export const loadCredits = (credits) => ({
   type: "LOAD_MOVIE_CREDITS",
   credits
 })
+
+export const updateMovieResponse = (movie) => ({
+  type: "UPDATE_MOVIE",
+  movie
+})

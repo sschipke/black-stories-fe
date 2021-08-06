@@ -14,6 +14,7 @@ import NotFound from '../../containers/NotFound/NotFound';
 import MobileMenu from '../../containers/MobileMenu/MobileMenu';
 import CodeOfConductPage from '../../containers/CodeOfConductPage/CodeOfConductPage';
 import SearchResultsPage from '../../containers/SearchResultsPage/SearchResultsPage';
+import EditForm from '../EditForm/EditForm';
 import genreMap from '../../data/genreMap';
 import './App.scss';
 
@@ -28,10 +29,13 @@ const App = ({ backgroundClass, loadCredits, watchList, previouslySeen, areCredi
         dispatch(action);
         return;
       })
-      .catch(err => console.error("Error in react hook for movies", err));
+      .catch(err => {
+        console.error("Error in react hook for movies", err)
+        return dispatch({type: "FAILED_TO_LOAD_MOVIES"})
+      });
     }
 
-    if(areMoviesLoaded && !areCreditsLoaded) {
+    if(areMoviesLoaded !== false && !areCreditsLoaded) {
       getCleanCredits(watchList, previouslySeen)
         .then(creds => loadCredits(creds))
         .catch(e => console.error("Error loading credits", e))
@@ -81,6 +85,7 @@ const App = ({ backgroundClass, loadCredits, watchList, previouslySeen, areCredi
           }}
         />
         <Route exact path='/search' component={SearchResultsPage} />
+        <Route exact path="/edit" component={EditForm} />
         <NotFound />
       </Switch>
       </main>
