@@ -1,4 +1,5 @@
 import genreMap from '../data/genreMap';
+
 export const determineMainImage = () => {
   if(window.innerWidth > 950) {
     const num = generateRandomImageNumber(19);
@@ -52,7 +53,7 @@ export const removeArticles = (title) => {
   return title;
 }
 
-export  const mapCreditsToMovies = (movies, credits) => {
+export const mapCreditsToMovies = (movies, credits) => {
     return movies.map(movie => {
       let matchingCredit = credits.find(credit => credit.id === movie.id);
       return {
@@ -62,4 +63,13 @@ export  const mapCreditsToMovies = (movies, credits) => {
         isCastLoaded: true
       }
     })
+  }
+
+  export const convertToWatchDate = (dateInput) => {
+    let initialDate = dateInput.split("-");
+    const year = initialDate.splice(0, 1)[0].slice(2)
+    initialDate.push(year);
+    let finalDate = initialDate.join("/");
+    console.log({ finalDate })
+    return finalDate;
   }

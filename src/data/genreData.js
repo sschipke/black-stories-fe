@@ -46,39 +46,39 @@ const genreData = [
     {
       "id": 37,
       "name": "Western"
-    }
+    },
     {
       "id": 87,
       "name": "Classic"
-    }
+    },
     {
       "id": 88,
       "name": "Based on a Book"
-    }
+    },
     {
       "id": 89,
       "name": "Based on a Play"
-    }
+    },
     {
       "id": 90,
       "name": "Silent"
-    }
+    },
     {
       "id": 91,
       "name": "Based on a True Story"
-    }
+    },
     {
       "id": 92,
       "name": "Sports"
-    }
+    },
     {
       "id": 101,
       "name": "Political"
-    }
+    },
     {
       "id": 102,
       "name": "Satire"
-    }
+    },
     {
       "id": 103,
       "name": "Holiday"

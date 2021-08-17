@@ -1,4 +1,6 @@
 const movieDbApiKey = process.env.REACT_APP_MOVIEDB_API_KEY;
+const noirFilmsApiUrl = process.env.REACT_APP_FILM_NOIR_BASE_URL;
+
 export const getCredits = async (unseenMovies, previouslyWatched) => {
   let movieList = [...unseenMovies, ...previouslyWatched]
     try {
@@ -37,4 +39,42 @@ export const getCredits = async (unseenMovies, previouslyWatched) => {
       throw new Error(error);
     }
   }
+
+  export const fetchMovies = async () => {
+    let url = noirFilmsApiUrl + "movies";
+    try {
+      return fetch(url)
+      .then(res => res.json())
+    } catch (error) {
+      console.error("Error getting initial movies!");
+    }
+  }
+
+  export const updateMovie = async (movie) => {
+    const url = noirFilmsApiUrl + 'movies/' + movie.id;
+    const {password} = movie;
+    delete movie.password;
+    let options = {
+    method: "PUT",
+    body: JSON.stringify({movie, password}),
+    headers: {
+      "Content-Type": "application/json"
+    }
+  };
+
+  let res = await fetch(url, options);
+
+    if (!res.ok) {
+      const error = await res.json();
+      switch (res.status) {  
+        case 401:
+          throw error
+        case 422: 
+          throw error
+        default:
+          throw Error("Something went wrong. Try again")
+      }
+    }
+  return res.json();
+}
 
