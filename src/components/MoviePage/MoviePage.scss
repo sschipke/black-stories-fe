@@ -64,6 +64,10 @@ section {
   max-width: 100%;
 }
 
+.edit-link {
+  cursor: default
+}
+
 @media screen and (max-width: 950px) {
   .movie-stats-div {
     flex-wrap: wrap;

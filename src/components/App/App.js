@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
-import { connect } from 'react-redux';
+import { connect, useDispatch, useSelector } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Route, Switch } from 'react-router-dom';
 import { loadCredits } from '../../actions/index';
-import { getCleanCredits } from '../../util/apiCalls';
+import { getCleanCredits, fetchMovies } from '../../util/apiCalls';
 import Nav from '../../containers/Nav/Nav';
 import GenresList from '../../containers/GenresList/GenresList';
 import MovieList from '../../containers/MovieList/MovieList';
@@ -14,17 +14,33 @@ import NotFound from '../../containers/NotFound/NotFound';
 import MobileMenu from '../../containers/MobileMenu/MobileMenu';
 import CodeOfConductPage from '../../containers/CodeOfConductPage/CodeOfConductPage';
 import SearchResultsPage from '../../containers/SearchResultsPage/SearchResultsPage';
+import EditForm from '../EditForm/EditForm';
 import genreMap from '../../data/genreMap';
 import './App.scss';
 
 const App = ({ backgroundClass, loadCredits, watchList, previouslySeen, areCreditsLoaded }) => {
-  useEffect(() => {
-      if (!areCreditsLoaded) {
-        getCleanCredits(watchList, previouslySeen)
+  const dispatch = useDispatch();
+  const areMoviesLoaded = useSelector(state => state.data.areMoviesLoaded);
+  useEffect( () => {
+    if(!areMoviesLoaded) {
+      fetchMovies()
+      .then(movies => {
+        const action = {type: "LOAD_MOVIES", movies}
+        dispatch(action);
+        return;
+      })
+      .catch(err => {
+        console.error("Error in react hook for movies", err)
+        return dispatch({type: "FAILED_TO_LOAD_MOVIES"})
+      });
+    }
+
+    if(areMoviesLoaded !== false && !areCreditsLoaded) {
+      getCleanCredits(watchList, previouslySeen)
         .then(creds => loadCredits(creds))
-        .catch(e => console.error(e))
-      }
-  }, [areCreditsLoaded, loadCredits, watchList, previouslySeen])
+        .catch(e => console.error("Error loading credits", e))
+    }
+  }, [areMoviesLoaded, dispatch, areCreditsLoaded, loadCredits, watchList, previouslySeen])
 
     return (
       <main className={"App " + backgroundClass}>
@@ -69,6 +85,7 @@ const App = ({ backgroundClass, loadCredits, watchList, previouslySeen, areCredi
           }}
         />
         <Route exact path='/search' component={SearchResultsPage} />
+        <Route exact path="/edit" component={EditForm} />
         <NotFound />
       </Switch>
       </main>
