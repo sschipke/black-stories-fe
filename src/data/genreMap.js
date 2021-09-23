@@ -37,6 +37,7 @@ const genreMap = {
   '10751': 'Family',
   '10752': 'War',
   '10770': 'TV Movie',
+  '1923': 'TV Show',
   '0': 'All Movies'
 }
 
