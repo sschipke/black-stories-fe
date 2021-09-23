@@ -70,6 +70,5 @@ export const mapCreditsToMovies = (movies, credits) => {
     const year = initialDate.splice(0, 1)[0].slice(2)
     initialDate.push(year);
     let finalDate = initialDate.join("/");
-    console.log({ finalDate })
     return finalDate;
   }

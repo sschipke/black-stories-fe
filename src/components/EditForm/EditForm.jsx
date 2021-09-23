@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Redirect } from "react-router-dom";
@@ -9,7 +9,7 @@ import { updateMovie } from '../../util/apiCalls';
 import {convertToWatchDate} from '../../util/helpers';
 import './EditForm.scss';
 
-const EditForm = ({currentMovie, updateMovieResponse}) => {
+const EditForm = ({currentMovie, updateMovieResponse, type}) => {
   const { inputs, handleInputChange, getState } = useEditForm(currentMovie);
 
   const ErrorMessage = ({message}) => (<p style={{color: 'red'}}>{message}</p>);
@@ -64,9 +64,9 @@ const EditForm = ({currentMovie, updateMovieResponse}) => {
         }
     }
     setErrors(initialErrors);
-    updateMovie(movie)
+    const shouldAddNewMovie = type === 'NEW' ? true : false;
+    updateMovie(movie, shouldAddNewMovie)
     .then(movie => { 
-      console.log('Success:', {movie});
       updateMovieResponse(movie);
       setSuccess(true);
     })
@@ -78,8 +78,9 @@ const EditForm = ({currentMovie, updateMovieResponse}) => {
 
   return (
     <form
+    className="edit-form"
     onSubmit={handleSubmit}
-    style={{display: "flex", "flexDirection": "column", "height": "100vh", "overflowX": "hidden"}}
+    style={{display: "flex", "flexDirection": "column", "overflowX": "hidden"}}
     >
       <label htmlFor="password">Password</label>
       <input
@@ -146,6 +147,14 @@ const EditForm = ({currentMovie, updateMovieResponse}) => {
         onChange={handleInputChange}
       />
 
+      <label htmlFor="watch_data">Watch Data</label>
+      <input
+        type="text"
+        name="watch_data"
+        value={inputs.watch_data ? inputs.watch_data : ''}
+        onChange={handleInputChange}
+      />
+
       <label htmlFor="runtime">Runtime</label>
       <input
         type="number"
@@ -179,13 +188,15 @@ const EditForm = ({currentMovie, updateMovieResponse}) => {
       {errors.backdrop && <ErrorMessage message={errors.backdrop} />}
 
       <label htmlFor="seen">Has this movie been watched?</label>
-      <input 
-        checked={inputs.seen}
-        type="checkbox"
-        name="seen"
-        onChange={handleInputChange}
-        value="seen"
-      />
+      <div>
+        <input
+          checked={inputs.seen}
+          type="checkbox"
+          name="seen"
+          onChange={handleInputChange}
+          value="seen"
+        />
+        </div>
 
       <label htmlFor="date_watched">Discussion Date</label>
       <input

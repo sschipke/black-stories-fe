@@ -39,7 +39,6 @@ const screen = (state = initialState, action) => {
       new_state.search_bar_open = !state.search_bar_open;
       return new_state;
     case "SET_ERRORS":
-      console.log(action.errors)
       new_state.errors = action.errors;
       return new_state;
     default:
