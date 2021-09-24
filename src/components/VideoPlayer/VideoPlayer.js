@@ -11,7 +11,6 @@ export const VideoPlayer = ({currentMovie, isOpen, closeVideoPlayer}) => {
   const {video_key} = currentMovie;
   return (
     <div className="modal-background" 
-    title="close video player"
     onClick={() => closeVideoPlayer()}>
       <div className="modal-content">
         <div className="preview-container">
