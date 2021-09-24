@@ -97,10 +97,11 @@ export const getMovie = async (id) => {
         const { status } = res;
         switch (status) {
           case 404:
+          // eslint-disable-next-line
             throw `Movie with id: ${id} does not exist in the MovieDB.`
-            break;
         
           default:
+            // eslint-disable-next-line
             throw 'Woops something went wrong looking for that movie. Try again in a few seconds.'
         }
       }
