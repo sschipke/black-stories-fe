@@ -28,7 +28,7 @@ const allMovies = [...watchList, ...previouslyWatched]
 
 let searchResults = [];
   if(!actorId && !directorName) { 
-    searchResults = allMovies.filter(movie => movie.title.toLowerCase().includes(searchText) || movie.director.toLowerCase().includes(searchText));
+    searchResults = allMovies.filter(movie => movie.title.toLowerCase().includes(searchText) || (movie['director'] || '').toLowerCase().includes(searchText));
   };
 
   if(actorId) {
@@ -47,11 +47,10 @@ let searchResults = [];
 
   if(directorName) {
     let nameToMatch = directorName.replace('-', ' ').toLowerCase();
-    searchResults = allMovies.filter(movie => movie.director.toLowerCase() ===  nameToMatch);
+    searchResults = allMovies.filter(movie => (movie['director'] || '').toLowerCase() ===  nameToMatch);
   }
 
   const searchResultsLength = searchResults.length
-  console.log(searchResults)
   switch (true) {
     case (searchResultsLength === 0):
       searchResults = noResults

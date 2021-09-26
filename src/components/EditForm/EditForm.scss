@@ -1,7 +1,16 @@
-form {
+form.edit-form {
   padding: 2%;
   overflow: scroll;
+  height: 100%;
+  max-height: 100vh;
   input, textarea {
     padding-left: 5px;
+  }
+  [type=checkbox] {
+    height: 100%;
+    margin-right: 2px;
+  }
+  [name="seen"] {
+    height: 15px;
   }
 }

@@ -68,8 +68,8 @@ export const SearchBar = ({ setSearchText, toggleSearchBar, isOpen, toggleMobile
         id="search-input"
         type="text"
         value={searchInput}
-        onChange={e => handleChange(e)}
-        onKeyPress={(e) => handleEnter(e)}
+        onChange={handleChange}
+        onKeyPress={handleEnter}
         ref={focusRef}
       />
       <label
