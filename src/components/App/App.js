@@ -15,6 +15,7 @@ import MobileMenu from '../../containers/MobileMenu/MobileMenu';
 import CodeOfConductPage from '../../containers/CodeOfConductPage/CodeOfConductPage';
 import SearchResultsPage from '../../containers/SearchResultsPage/SearchResultsPage';
 import EditForm from '../EditForm/EditForm';
+import AddMovieModal from '../../containers/AddMovieModal/AddMovieModal';
 import genreMap from '../../data/genreMap';
 import './App.scss';
 
@@ -86,6 +87,7 @@ const App = ({ backgroundClass, loadCredits, watchList, previouslySeen, areCredi
         />
         <Route exact path='/search' component={SearchResultsPage} />
         <Route exact path="/edit" component={EditForm} />
+        <Route exact path="/new" component={AddMovieModal} />
         <NotFound />
       </Switch>
       </main>

@@ -1,0 +1,19 @@
+.add-movie-background {
+  background-color: beige;
+  // height: 100%;
+  // margin-bottom: 0 auto;
+  max-height: 100vh;
+  form {
+    overflow: scroll;
+  }
+  .add-movie-form {
+    overflow: scroll;
+    display: inline-flex;
+    height: 90%;
+    justify-content: center;
+    overflow: auto;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
