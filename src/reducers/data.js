@@ -49,12 +49,18 @@ const data = (state = initialState, action) => {
     case "UPDATE_MOVIE":
       const { movie } = action;
       new_state.currentMovie = movie;
-      let index = watchList.findIndex(m => m.id === movie.id);
-      if (index > -1) {
-        new_state.watchList[index] = movie; 
+      let watchListIndex = watchList.findIndex(m => m.id === movie.id);
+      let previouslySeenIndex = previouslySeen.findIndex(m => m.id === movie.id);
+      if (watchListIndex > -1) {
+        new_state.watchList[watchListIndex] = movie; 
+      } else if (previouslySeenIndex > -1) {
+        new_state.previouslySeen[previouslySeenIndex] = movie;
       } else {
-        index = previouslySeen.findIndex(m => m.id === movie.id);
-        new_state.previouslySeen[index] = movie;
+        if (movie.seen) {
+          new_state.previouslySeen = [...previouslySeen, movie];
+        } else {
+          new_state.watchList = [...watchList, movie];
+        }
       }
       return new_state;
     default:
