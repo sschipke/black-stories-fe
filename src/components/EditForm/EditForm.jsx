@@ -222,6 +222,8 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
         <option value="Garrett">Garrett</option>
         <option value="Nathaniel">Nathaniel</option>
         <option value="Gillian">Gillian</option>
+        <option value="Gabriel">Gabriel</option>
+        <option value="Aaron">Aaron</option>
       </select>
       {errors.chosen_by && <ErrorMessage message={errors.chosen_by} />}
     <div style={{"display": "flex"}}>

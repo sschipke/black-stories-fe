@@ -14,7 +14,7 @@ const Nav = ({subHeader, isMobileMenuOpen, toggleMobileMenu, setCurrentMovie, to
           <Link to="/" className="home-link"><h1>BLACK STORIES FILM CLUB</h1></Link>
           <div className="subheader-div">{subHeader && <h2>{subHeader}</h2>}</div>
           {subHeader === "Previously Watched" && <h4 className="discussion-order">
-            DISCUSSION ORDER: Garrett, Nicki, Scott, Nathaniel, Gillian, Gabriel
+            DISCUSSION ORDER: Garrett, Nicki, Scott, Aaron, Nathaniel, Gillian, Gabriel
             </h4>}
         </div>
         <div className="links-container">
