@@ -91,7 +91,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
     style={{display: "flex", "flexDirection": "column", "overflowX": "hidden"}}
     >
       {errors.field && <ErrorMessage message={errors.field} />}
-      <label htmlFor="id">ID</label>
+      <label className="header-style-font" htmlFor="id">Movie ID</label>
       <input
         type="number"
         required
@@ -102,7 +102,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
       />
       {errors.id && <ErrorMessage message={errors.id} />}
 
-      <label htmlFor="title">Title</label>
+      <label className="header-style-font" htmlFor="title">Title</label>
       <input 
       type="text"
       required
@@ -112,7 +112,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
       onChange={handleInputChange}
       />
 
-      <label htmlFor="overview">Overview</label>
+      <label className="header-style-font" htmlFor="overview">Overview</label>
       <textarea
         type="textarea"
         required
@@ -123,7 +123,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
         style={{"minHeight": "10%"}}
       />
 
-      <label htmlFor="release_date">Release Date</label>
+      <label className="header-style-font" htmlFor="release_date">Release Date</label>
       <input
         type="date"
         required
@@ -133,7 +133,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
         style={{"minHeight": "25px"}}
       />
 
-      <label htmlFor="video_key">Youtube Video Key</label>
+      <label className="header-style-font" htmlFor="video_key">Youtube Video Key</label>
       <input
         type="text"
         max="11"
@@ -145,7 +145,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
         onChange={handleInputChange}
       />
 
-      <label htmlFor="watch_data">Watch Data</label>
+      <label className="header-style-font" htmlFor="watch_data">Watch Data</label>
       <input
         type="text"
         name="watch_data"
@@ -153,7 +153,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
         onChange={handleInputChange}
       />
 
-      <label htmlFor="runtime">Runtime</label>
+      <label className="header-style-font" htmlFor="runtime">Runtime</label>
       <input
         type="number"
         required
@@ -163,7 +163,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
         value={inputs.runtime}
         onChange={handleInputChange}
       />
-      <label htmlFor="poster_path">Poster Path</label>
+      <label className="header-style-font" htmlFor="poster_path">Poster Path</label>
       <input
         type="text"
         required
@@ -174,7 +174,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
       />
       {errors.poster && <ErrorMessage message={errors.poster} />}
 
-      <label htmlFor="backdrop_path">Backrop Path</label>
+      <label  className="header-style-font"htmlFor="backdrop_path">Backrop Path</label>
       <input
         type="text"
         required
@@ -185,7 +185,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
       />
       {errors.backdrop && <ErrorMessage message={errors.backdrop} />}
 
-      <label htmlFor="seen">Has this movie been watched?</label>
+      <label className="header-style-font" htmlFor="seen">Has this movie been watched?</label>
       <div>
         <input
           checked={inputs.seen}
@@ -196,7 +196,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
         />
         </div>
 
-      <label htmlFor="date_watched">Discussion Date</label>
+      <label className="header-style-font" htmlFor="date_watched">Discussion Date</label>
       <input
         type="date"
         name="date_watched"
@@ -207,7 +207,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
       />
       {errors.watched && <ErrorMessage message={errors.watched} />}
 
-      <label htmlFor="chosen_by">Chosen by:</label>
+      <label className="header-style-font" htmlFor="chosen_by">Chosen by:</label>
       <select name="chosen_by" 
       value={inputs.chosen_by || ''}
       onChange={handleInputChange}
@@ -224,6 +224,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
         <option value="Aaron">Aaron</option>
       </select>
       {errors.chosen_by && <ErrorMessage message={errors.chosen_by} />}
+      <label className="header-style-font">Genre Categories</label>
     <div style={{"display": "flex"}}>
       <GenreSelector genres={selectedGenres} handleGenreChange={handleGenreChange} 
       />
@@ -231,6 +232,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
 
       <button
       type="submit"
+      className="header-style-font"
       >
         Submit
       </button>

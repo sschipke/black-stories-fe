@@ -1,16 +1,41 @@
 form.edit-form {
   padding: 2%;
+  padding-right: 5%;
   overflow: scroll;
   height: 100%;
   max-height: 100vh;
-  input, textarea {
+  > label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  input, textarea, select {
+    background: none;
+    border: 2px solid black;
+    font-size: 1rem;
+    margin-bottom: 15px;
     padding-left: 5px;
   }
   [type=checkbox] {
-    height: 100%;
+    appearance: none;
+    height: 20px;
+    width: 20px;
     margin-right: 2px;
+    cursor: pointer;
+    margin-bottom: 0;
   }
-  [name="seen"] {
-    height: 15px;
+  [type=checkbox]:checked:before {
+    font-size: 15px;
+    font-family: system-ui;
+    font-weight: 900;
+    position: relative;
+    left: -4px;
+    top: -4px;
+    content: "✓";
+  }
+  [name=seen] {
+    margin-bottom: 15px;
+  }
+  button {
+    margin-top: 20px;
   }
 }

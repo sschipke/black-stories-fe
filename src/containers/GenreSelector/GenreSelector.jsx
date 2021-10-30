@@ -61,7 +61,7 @@ const GenreSelector = ({ genres, handleGenreChange}) => {
   }
 const checkBoxes = showGenreOptions(genres);
 
-  return (<div style={{'flexWrap': 'wrap', 'marginTop': '10px'}}>
+  return (<div style={{'flexWrap': 'wrap'}}>
     {checkBoxes}
     {error && <p style={{ 'color': 'red' }}>{error}</p>}
   </div>)

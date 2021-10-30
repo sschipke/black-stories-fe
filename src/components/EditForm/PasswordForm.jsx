@@ -20,12 +20,10 @@ const PasswordForm = ({ setAuth, setPassword, setRemainingAttempts, isAuthentica
     const password = inputValue;
     authenticatePassword(password)
     .then(res => {
-      console.log({res})
       setPassword(inputValue);
       setAuth(true);
     })
     .catch(error => {
-      console.warn({error});
       setErrors(error);
       if (error["remaining"] !== undefined) {
         setRemainingAttempts(error.remaining);
@@ -47,8 +45,8 @@ const PasswordForm = ({ setAuth, setPassword, setRemainingAttempts, isAuthentica
         <h2 style={{fontSize: "2.5rem", marginBottom: "25px"}}>Locked out!</h2>
         <img 
           className="password-img"
-          src="https://media.giphy.com/media/BcmAGINZoPCh61NtxS/giphy.gif"
-          alt="Dorothy from the wiz on the verge of tears"
+          src="https://media.giphy.com/media/2wW4T7W638MD20McEt/giphy.gif"
+          alt="Yellow cabs drive off, leaving Dorothy behind."
         />
       </div>
     );
