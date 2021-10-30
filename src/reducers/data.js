@@ -18,7 +18,10 @@ let initialState = {
   previouslySeen: previouslyWatched,
   searchText: "",
   areMoviesLoaded: false,
-  areCreditsLoaded: false
+  areCreditsLoaded: false,
+  password: "",
+  isAuthenticated: false,
+  remainingAttempts: null
 }
 
 const data = (state = initialState, action) => {
@@ -62,6 +65,14 @@ const data = (state = initialState, action) => {
           new_state.watchList = [...watchList, movie];
         }
       }
+      return new_state;
+    case "SET_PASSWORD":
+      const { password } = action;
+      new_state.password = password;
+      new_state.isAuthenticated = true;
+      return new_state;
+    case "SET_REMAINING_ATTEMPTS":
+      new_state.remainingAttempts = action.remainingAttempts;
       return new_state;
     default:
       return state;

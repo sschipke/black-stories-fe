@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Redirect } from "react-router-dom";
+import PasswordForm from './PasswordForm';
 import { useEditForm } from '../../cutomHooks';
 import { updateMovieResponse } from '../../actions';
 import GenreSelector, {useGenreSelectors} from '../../containers/GenreSelector/GenreSelector';
@@ -9,7 +10,7 @@ import { updateMovie } from '../../util/apiCalls';
 import {convertToWatchDate} from '../../util/helpers';
 import './EditForm.scss';
 
-const EditForm = ({currentMovie, updateMovieResponse, type}) => {
+const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
   const { inputs, handleInputChange, getState } = useEditForm(currentMovie);
 
   const ErrorMessage = ({message}) => (<p style={{color: 'red'}}>{message}</p>);
@@ -23,6 +24,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
   }
 
     const [errors, setErrors] = useState(initialErrors);
+    const [isAuthenticated, setAuthentication] = useState(false);
     const [success, setSuccess] = useState(false);
 
     const { genres, handleGenreChange } = useGenreSelectors(currentMovie? currentMovie.genres : null);
@@ -35,6 +37,12 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
   
     if (success) {
     return <Redirect to={`/movie/${currentMovie.id}-${currentMovie.title.replaceAll(' ', '-').toLowerCase()}`} />
+  }
+
+  if (!isAuthenticated) {
+    return (<>
+      <PasswordForm setAuth={setAuthentication} />
+    </>)
   }
 
   const handleSubmit = (e) => {
@@ -65,7 +73,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
     }
     setErrors(initialErrors);
     const shouldAddNewMovie = type === 'NEW' ? true : false;
-    updateMovie(movie, shouldAddNewMovie)
+    updateMovie(movie, shouldAddNewMovie, password)
     .then(movie => { 
       updateMovieResponse(movie);
       setSuccess(true);
@@ -82,16 +90,6 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
     onSubmit={handleSubmit}
     style={{display: "flex", "flexDirection": "column", "overflowX": "hidden"}}
     >
-      <label htmlFor="password">Password</label>
-      <input
-        type="password"
-        name="password"
-        required
-        autoComplete="true"
-        value={inputs.password || ''}
-        onChange={handleInputChange}
-      />
-      {errors.password && <ErrorMessage message={errors.password} />}
       {errors.field && <ErrorMessage message={errors.field} />}
       <label htmlFor="id">ID</label>
       <input
@@ -243,7 +241,8 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
 
 export const mapStateToProps = state => ({
   currentMovie: state.data.currentMovie,
-})
+  password: state.data.password
+});
 
 export const mapDispatchToProps = (dispatch) => 
   bindActionCreators({ updateMovieResponse }, dispatch);
