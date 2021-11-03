@@ -98,7 +98,7 @@ export const getMovie = async (id) => {
         switch (status) {
           case 404:
           // eslint-disable-next-line
-            throw `Movie with id: ${id} does not exist in the MovieDB.`
+            throw `Movie ${id} does not exist in the MovieDB.`
         
           default:
             // eslint-disable-next-line
@@ -143,7 +143,7 @@ const convertMovieData= (movieDbMovie) => {
 export const authenticatePassword = async (password) => {
   const url = noirFilmsApiUrl + 'auth/passwordcheck';
   const options = {
-    method: 'POST',
+    method: "POST",
     body: JSON.stringify({password}),
     headers: {
       "Content-Type": "application/json",

@@ -1,0 +1,58 @@
+.add-movie-page {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  width: 90%;
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    justify-content: center;
+    height: 30%;
+    width: 70%;
+    .add-movie-page-inputs {
+      height: 30%;
+      width: 100%;
+      div {
+        flex-direction: column;
+        margin-right: 20px;
+        text-align: center;
+        height: 25%;
+        width: 100%;
+      }
+    }
+    label {
+      margin: auto;
+    }
+    input {
+      background: none;
+      border: 1px solid black;
+      text-align: center;
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+  img {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .add-movie-page {
+    height: 60%;
+    h2 {
+      font-size: 2rem;;
+    }
+    form {
+      height: 60%;
+      .add-movie-page-inputs {
+      flex-direction: column;
+      justify-content: space-around;
+      height: 100%;
+      }
+    }
+    img {
+      width: 80%;
+    }
+  }
+}

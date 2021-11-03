@@ -36,6 +36,7 @@ const PasswordForm = ({ setAuth, setPassword, setRemainingAttempts, isAuthentica
 
 
   const gifSrc = error ? "https://media.giphy.com/media/ZeGosPpNe4gP6/giphy.gif" : "https://media.giphy.com/media/YkeO0lyOCIDNeD0d9y/giphy.gif";
+  const altText = error ? "The Scarecrow being eaten by trash cans." : "Richard Prior hiding behind a giant black mask";
 
   const header = error ? "That's Trash. Try again..." : "You got a Password?"; 
 
@@ -47,7 +48,8 @@ const PasswordForm = ({ setAuth, setPassword, setRemainingAttempts, isAuthentica
           className="password-img"
           src="https://media.giphy.com/media/2wW4T7W638MD20McEt/giphy.gif"
           alt="Yellow cabs drive off, leaving Dorothy behind."
-        />
+          loading="eager"
+          />
       </div>
     );
   }
@@ -92,9 +94,9 @@ const PasswordForm = ({ setAuth, setPassword, setRemainingAttempts, isAuthentica
       </div>
       <img src={gifSrc}
       className="password-img" 
-      allowFullScreen
       title="password gif"
-      alt="Richard Prior hiding behind a giant black mask"
+      alt={altText}
+      loading="eager"
       />
         { error && 
         <h4>
