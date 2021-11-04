@@ -38,16 +38,9 @@ export const useGenreSelectors = (movieGenres = []) => {
   };
 }
 
-
 const GenreSelector = ({ genres, handleGenreChange}) => {
   let error = genres.length === 0 ? 'You must select at least one genre.' : '';
-
-  const showGenreOptions = (genres) => {
-    const genreOptions = Object.keys(genreMap);
-    delete genreOptions[0];
-    return genreOptions.map(genreId => {
-      const isChecked = genres.includes(parseInt(genreId));
-      return (<div key={genreId} style={{'margin': '1%'}}>
+  const createGenreSelection = (genreId, isChecked) => (<div key={genreId} style={{'margin': '1%'}}>
         <input type="checkbox"
           name={genreMap[genreId]}
           value={genreId}
@@ -57,7 +50,17 @@ const GenreSelector = ({ genres, handleGenreChange}) => {
         />
         <label htmlFor={genreId} >{genreMap[genreId]}</label>
       </div>)
-    })
+
+  const showGenreOptions = (genres) => {
+    const genreOptions = Object.entries(genreMap);
+    delete genreOptions[0];
+    let organizedSelectors = [];
+    genreOptions.sort((genre1, genre2) => genre1[1].localeCompare(genre2[1])).forEach(genre => {
+      const genreId= genre[0];
+      const isChecked = genres.includes(parseInt(genreId));
+      organizedSelectors.push(createGenreSelection(genreId, isChecked));
+    });
+    return organizedSelectors;
   }
 const checkBoxes = showGenreOptions(genres);
 

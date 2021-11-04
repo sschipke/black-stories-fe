@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useReducer } from 'react';
+import React, { useEffect, useReducer } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setBackgroundClass, setPassword, setCurrentMovie, setRemainingAttempts } from '../../actions';
@@ -47,12 +47,14 @@ const AddMoviePage = ({ isAuthenticated, password, setBackgroundClass, watchList
         new_state.movieIdError = null;
         new_state.isIdValid = true;
         return new_state;
+      case "ADD_ANOTHER": 
+        new_state.isIdValid = false;
+        return new_state;
         default:
           return state;
         }
     }
   const [state, dispatch] = useReducer(reducer, initialState);
-
 
   useEffect(() => {
     setBackgroundClass("movie-view");
@@ -75,8 +77,12 @@ const AddMoviePage = ({ isAuthenticated, password, setBackgroundClass, watchList
     );
   }
 
+  function addAnother() {
+    dispatch({type: "ADD_ANOTHER"})
+  }
+
   if (state.isPasswordComplete && state.isIdValid ) {
-    return <EditForm type="NEW" />
+    return <EditForm type="NEW" addAnother={addAnother} />
   }
 
   const handlePasswordSubmit = async (password) => {

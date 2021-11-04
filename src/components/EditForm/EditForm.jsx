@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Redirect } from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
 import PasswordForm from './PasswordForm';
 import { useEditForm } from '../../cutomHooks';
 import { updateMovieResponse } from '../../actions';
@@ -10,11 +10,21 @@ import { updateMovie } from '../../util/apiCalls';
 import {convertToWatchDate} from '../../util/helpers';
 import './EditForm.scss';
 
-const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
+const EditForm = ({currentMovie, updateMovieResponse, type, password, addAnother}) => {
   const { inputs, handleInputChange, getState } = useEditForm(currentMovie);
 
-  const ErrorMessage = ({message}) => (<p style={{color: 'red'}}>{message}</p>);
+  const ErrorMessage = ({message}) => {
+    const errorRef = useRef('error');
+    useEffect(() => {
+      if (errorRef.current) {
+        errorRef.current.scrollIntoView();
+      }
+    }, [])
+    return (<p ref={errorRef} style={{color: 'red'}}>{message}</p>)
+  };
+
   const initialErrors = {
+    id: null,
     password: null,
     field: null,
     poster: null,
@@ -36,7 +46,23 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
 
   
     if (success) {
-    return <Redirect to={`/movie/${currentMovie.id}-${currentMovie.title.replaceAll(' ', '-').toLowerCase()}`} />
+    return(
+      <div className="success-message-div">
+          <h2>Congrats! It worked!</h2>
+          {type === "NEW" && <button
+          className="header-style-font"
+          onClick={() => {addAnother()}}
+          >Want to add another?</button>}
+          <img
+          src="https://media.giphy.com/media/2kYsTdwakE2QgoCr8S/giphy.gif"
+          alt="Dorothy and the Winkies dancing in celebration."
+          loading="eager"
+          />
+          <Link to={`/movie/${currentMovie.id}-${currentMovie.title.replaceAll(' ', '-').toLowerCase()}`} 
+          className="header-style-font"
+          >See Changes</Link>
+      </div>
+    )
   }
 
   if (!isAuthenticated) {
@@ -75,8 +101,8 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password}) => {
     const shouldAddNewMovie = type === 'NEW' ? true : false;
     updateMovie(movie, shouldAddNewMovie, password)
     .then(movie => { 
-      updateMovieResponse(movie);
       setSuccess(true);
+      updateMovieResponse(movie);
     })
     .catch(errors =>{ 
       console.error('Error updating movie',errors)

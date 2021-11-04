@@ -39,3 +39,32 @@ form.edit-form {
     margin-top: 20px;
   }
 }
+
+.success-message-div {
+  flex-direction: column;
+  padding: 50px;
+  padding-left: 0;
+  margin: 0 auto;
+  width: 80%;
+  height: 90%;
+  align-items: center;
+  text-align: center;
+  button {
+    margin: 15px 0;
+  }
+  img {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .edit-form {
+    margin-top: 40px;
+  }
+  .success-message-div {
+    padding-right: 0;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+}
