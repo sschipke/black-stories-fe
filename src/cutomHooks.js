@@ -2,10 +2,10 @@ import { useState }  from 'react';
 import { convertToInputDate } from './util/helpers';
 
 export const useEditForm = (movie) => {
-  const initialState = {
+  const initialState = movie ? {
     ...movie,
     date_watched: convertToInputDate(movie.date_watched)
-  }
+  } : {};
   const [inputs, setInputs] = useState(initialState);
   const getState = (event) => {
     return inputs
