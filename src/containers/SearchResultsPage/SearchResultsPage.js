@@ -46,11 +46,7 @@ let searchResults = [];
   };
 
   if(directorName) {
-    let nameToMatch = directorName.replace('-', ' ').toLowerCase();
-    if (directorName === 'jean-pierre-bekolo') {
-      nameToMatch = 'jean-pierre bekolo'
-    }
-    searchResults = allMovies.filter(movie => (movie['director'] || '').toLowerCase() ===  nameToMatch);
+    searchResults = allMovies.filter(movie => (movie['director'] || '') ===  (directorName || ''));
   }
 
   const searchResultsLength = searchResults.length

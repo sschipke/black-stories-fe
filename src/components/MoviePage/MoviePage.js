@@ -57,7 +57,7 @@ const castClass = castInfo && castInfo.length > 3 ? " full-cast" : "";
           <div className="movie-stats-div">
             {movie['isCastLoaded'] && movie.director && <div style={{width: "100%"}} >
               <p className="movie-info director">DIRECTED BY <Link className="movie-info"
-                to={`/director/${movie.director.toLowerCase().replace(' ', '-')}`}
+                to={`/director/${encodeURI(movie.director)}`}
               >{movie.director}</Link></p>
             </div>}
             <div>

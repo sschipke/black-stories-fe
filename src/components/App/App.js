@@ -81,7 +81,7 @@ const App = ({ backgroundClass, loadCredits, watchList, previouslySeen, areCredi
         <Route
           path='/director/:director_name'
           render={({match}) => {
-          let directorName = match.params.director_name;
+          let directorName = decodeURI(match.params.director_name);
           return (<SearchResultsPage directorName={directorName} />)
           }}
         />
