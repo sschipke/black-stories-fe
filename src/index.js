@@ -11,6 +11,10 @@ import reportWebVitals from './reportWebVitals';
 
 let store = process.env.NODE_ENV === 'production' ? createStore(rootReducer) : createStore(rootReducer, composeWithDevTools());
 
+if (process.env.NODE_ENV === 'production') {
+  window.__REACT_DEVTOOLS_GLOBAL_HOOK__.inject = function(){}
+}
+
 ReactDOM.render(
   <Router>
     <Provider 
