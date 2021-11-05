@@ -7,7 +7,7 @@ import { useEditForm } from '../../cutomHooks';
 import { updateMovieResponse } from '../../actions';
 import GenreSelector, {useGenreSelectors} from '../../containers/GenreSelector/GenreSelector';
 import { updateMovie } from '../../util/apiCalls';
-import {convertToWatchDate} from '../../util/helpers';
+import { convertToWatchDate } from '../../util/helpers';
 import './EditForm.scss';
 
 const EditForm = ({currentMovie, updateMovieResponse, type, password, addAnother}) => {
