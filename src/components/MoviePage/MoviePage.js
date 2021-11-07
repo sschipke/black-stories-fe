@@ -82,7 +82,9 @@ const castClass = castInfo && castInfo.length > 3 ? " full-cast" : "";
             </a>
           }
           </div>
-          {movie['seen'] && <div className="watched-div"><p className="movie-info">WATCHED {movie.date_watched}<span className="chosen-by-span"> CHOSEN BY {movie.chosen_by}</span> </p></div>}
+          {movie['seen'] && <div className="watched-div"><p className="movie-info">WATCHED {movie.date_watched}<span className="chosen-by-span"> CHOSEN BY <Link className="movie-info"
+                to={`/chosen_by/${encodeURI(movie.chosen_by.toLowerCase())}`}
+              >{movie.chosen_by}</Link></span> </p></div>}
           </div>
           {movie['triggers'] && <p><strong>Possible Triggers:</strong> {movie.triggers}</p>}
             <p className="movie-overview">{movie.overview}</p>

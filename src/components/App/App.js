@@ -85,6 +85,13 @@ const App = ({ backgroundClass, loadCredits, watchList, previouslySeen, areCredi
           return (<SearchResultsPage directorName={directorName} />)
           }}
         />
+        <Route
+          path='/chosen_by/:member_name'
+          render={({match}) => {
+          let memberName = decodeURI(match.params.member_name);
+          return (<MovieList memberName={memberName} />)
+          }}
+        />
         <Route exact path='/search' component={SearchResultsPage} />
         <Route exact path="/edit" component={EditForm} />
         <Route exact path="/new" component={AddMoviePage} />
