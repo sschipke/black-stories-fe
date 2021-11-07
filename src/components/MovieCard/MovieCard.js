@@ -40,7 +40,7 @@ export const MovieCard = ({ movie, selectedGenreId, currentMovie, type }) => {
     chosenBy = movie.chosen_by
   }
   return (
-    <Link className="movie-link" to={`/movie/${movie.id}-${movie.title.replaceAll(' ', '-').toLowerCase()}`}>
+    <Link className="movie-link" to={`/movie/${movie.id}-${encodeURI(movie.title.toLowerCase())}`}>
       <div className="movie" id={movie.id} ref={movieRef}>
         <img
           className="card-image"

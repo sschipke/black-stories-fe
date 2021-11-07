@@ -58,7 +58,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type, password, addAnother
           alt="Dorothy and the Winkies dancing in celebration."
           loading="eager"
           />
-          <Link to={`/movie/${currentMovie.id}-${currentMovie.title.replaceAll(' ', '-').toLowerCase()}`} 
+          <Link to={`/movie/${currentMovie.id}-${encodeURI(currentMovie.title.toLowerCase())}`} 
           className="header-style-font"
           >See Changes</Link>
       </div>

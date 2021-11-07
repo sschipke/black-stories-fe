@@ -74,7 +74,7 @@ const App = ({ backgroundClass, loadCredits, watchList, previouslySeen, areCredi
           path='/actor/:actor_id-:actor_name'
           render={({match}) => {
           let actorId = match.params.actor_id;
-          let actorName = match.params.actor_name;
+          let actorName = decodeURI(match.params.actor_name);
           return (<SearchResultsPage actorId={Number(actorId)} actorName={actorName} />)
           }}
         />

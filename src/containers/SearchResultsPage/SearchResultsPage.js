@@ -46,7 +46,7 @@ let searchResults = [];
   };
 
   if(directorName) {
-    searchResults = allMovies.filter(movie => (movie['director'] || '') ===  (directorName || ''));
+    searchResults = allMovies.filter(movie => (movie['director']|| '').toLowerCase()  === (directorName || ''));
   }
 
   const searchResultsLength = searchResults.length
