@@ -1,4 +1,4 @@
-import React, {useState, useEffect, createRef} from 'react';
+import React, {useState, useEffect, createRef, useRef} from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { Redirect } from "react-router-dom";
@@ -9,15 +9,23 @@ export const SearchBar = ({ setSearchText, toggleSearchBar, isOpen, toggleMobile
   const [searchInput, setSearchInput] = useState("");
   const [isSearchComplete, setSearchComplete] = useState(false);
   const focusRef = createRef('search-input-ref');
+  const doneWithFirstRender = useRef(false);
   useEffect(() => {
     let searchInputElement = focusRef.current;
     if(searchInputElement) {
       searchInputElement.focus();
     }
+    if (!doneWithFirstRender.current) {
+      doneWithFirstRender.current = true;
+    }
     return () => {
       setSearchComplete(false);
     }
   })
+
+  if (!doneWithFirstRender.current && !isOpen) {
+    return null;
+  }
 
   if(isSearchComplete) {
     toggleSearchBar();

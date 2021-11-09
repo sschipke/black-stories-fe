@@ -72,3 +72,17 @@ export const mapCreditsToMovies = (movies, credits) => {
     let finalDate = initialDate.join("/");
     return finalDate;
   }
+
+  export const convertToInputDate = (date) => {
+    let finalDate = "";
+    if (!date) {
+      return finalDate;
+    }
+    let initialDate = date.split("/");
+    let year = initialDate.splice(2,1);
+    // Will fix if this app lasts for more than 100 years ;)
+    initialDate.unshift("20"+year);
+    finalDate = initialDate.join("-");
+    return finalDate;
+  }
+

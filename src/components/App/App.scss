@@ -5,6 +5,11 @@
   font-family: 'Prompt', sans-serif;
 }
 
+img {
+  font-size: .85rem;
+  font-weight: 100;
+}
+
 button, a {
   cursor: pointer;
   text-decoration: none;
@@ -42,11 +47,18 @@ button {
 div {
   display: flex;
 }
+
 .App {
   display: flex;
   min-height: 100vh;
   min-width: 100vw;
   overflow: auto;
+}
+
+.header-style-font {
+  font-style: italic;
+  text-transform: uppercase;
+  font-weight: 900;
 }
 
 

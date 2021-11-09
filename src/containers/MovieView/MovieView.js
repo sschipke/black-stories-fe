@@ -20,8 +20,8 @@ const MovieView = ({movieId, unseenMovies, previousMovies, areMoviesLoaded, setB
   if(!areMoviesLoaded && !currentMovie) {
     return ( <div className="modal-background">
       <div className="modal-content modal-loading-div">
-        Loading...
         <img className="modal-loading-gif" src={loadingGif} alt="loading gif" />
+        <p>Loading...</p>
       </div>
     </div>
     )
