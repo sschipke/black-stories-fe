@@ -59,16 +59,16 @@ export const getCredits = async (unseenMovies, previouslyWatched) => {
   return res.json();
   }
 
-  export const updateMovie = async (movie, shouldAddNewMovie) => {
+  export const updateMovie = async (movie, shouldAddNewMovie, password) => {
     const url = `${noirFilmsApiUrl}movies${shouldAddNewMovie ? '' : '/' + movie.id}`
     const method = shouldAddNewMovie ? 'POST' : 'PUT';
-    const {password} = movie;
     delete movie.password;
     let options = {
     method: `${method}`,
     body: JSON.stringify({movie, password}),
     headers: {
-      "Content-Type": "application/json"
+      "Content-Type": "application/json",
+      "Authentication": password
     }
   };
 
@@ -98,7 +98,7 @@ export const getMovie = async (id) => {
         switch (status) {
           case 404:
           // eslint-disable-next-line
-            throw `Movie with id: ${id} does not exist in the MovieDB.`
+            throw `Movie ${id} does not exist in the MovieDB.`
         
           default:
             // eslint-disable-next-line
@@ -138,4 +138,25 @@ const convertMovieData= (movieDbMovie) => {
     triggers: null
   }
   return movie;
+}
+
+export const authenticatePassword = async (password) => {
+  const url = noirFilmsApiUrl + 'auth/passwordcheck';
+  const options = {
+    method: "POST",
+    body: JSON.stringify({password}),
+    headers: {
+      "Content-Type": "application/json",
+      "Bearer": "Black Stories"
+    }
+  };
+
+  let res = await fetch(url, options)
+    if (!res.ok) {
+    const error = await res.json();
+    throw error;
+  } else {
+    return true;
+  }
+  
 }

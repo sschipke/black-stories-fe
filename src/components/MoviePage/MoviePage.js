@@ -15,14 +15,15 @@ const MoviePage = ({movie, setCurrentMovie, openVideoPlayer, setBackgroundClass,
   const displayGenres = (genres) => {
   if (genres && genres.length > 0) {
     return genres.map((genreId, i) => {
+      // don't add a comma to the last genre
       if(i === genres.length -1) {
         return (<Link 
           onClick={() => setCurrentMovie(null)}
-          className="movie-page-genres" key={genreId} to={'/genre/'+ genreId + '-' + genreMap[genreId].replaceAll(' ', '_').toLowerCase()}>{genreMap[genreId]}</Link>)
+          className="movie-page-genres" key={genreId} to={`/genre/${genreId}-${encodeURI(genreMap[genreId].toLowerCase())}`}>{genreMap[genreId]}</Link>)
       }
       return (<Link 
         onClick={() => setCurrentMovie(null)}
-        className="movie-page-genres" key={genreId} to={'/genre/'+ genreId + '-' + genreMap[genreId].replaceAll(' ', '_').toLowerCase()}>{genreMap[genreId] + ","}</Link>)
+        className="movie-page-genres" key={genreId} to={`/genre/${genreId}-${encodeURI(genreMap[genreId].toLowerCase())}`}>{genreMap[genreId] + ","}</Link>)
     })
   }
   return
@@ -57,7 +58,7 @@ const castClass = castInfo && castInfo.length > 3 ? " full-cast" : "";
           <div className="movie-stats-div">
             {movie['isCastLoaded'] && movie.director && <div style={{width: "100%"}} >
               <p className="movie-info director">DIRECTED BY <Link className="movie-info"
-                to={`/director/${movie.director.toLowerCase().replace(' ', '-')}`}
+                to={`/director/${encodeURI(movie.director.toLowerCase())}`}
               >{movie.director}</Link></p>
             </div>}
             <div>
@@ -81,7 +82,9 @@ const castClass = castInfo && castInfo.length > 3 ? " full-cast" : "";
             </a>
           }
           </div>
-          {movie['seen'] && <div className="watched-div"><p className="movie-info">WATCHED {movie.date_watched}<span className="chosen-by-span"> CHOSEN BY {movie.chosen_by}</span> </p></div>}
+          {movie['seen'] && <div className="watched-div"><p className="movie-info">WATCHED {movie.date_watched}<span className="chosen-by-span"> CHOSEN BY <Link className="movie-info"
+                to={`/chosen_by/${encodeURI(movie.chosen_by.toLowerCase())}`}
+              >{movie.chosen_by}</Link></span> </p></div>}
           </div>
           {movie['triggers'] && <p><strong>Possible Triggers:</strong> {movie.triggers}</p>}
             <p className="movie-overview">{movie.overview}</p>

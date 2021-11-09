@@ -1,19 +1,30 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Redirect } from "react-router-dom";
+import { Redirect, Link } from "react-router-dom";
+import PasswordForm from './PasswordForm';
 import { useEditForm } from '../../cutomHooks';
 import { updateMovieResponse } from '../../actions';
 import GenreSelector, {useGenreSelectors} from '../../containers/GenreSelector/GenreSelector';
 import { updateMovie } from '../../util/apiCalls';
-import {convertToWatchDate} from '../../util/helpers';
+import { convertToWatchDate } from '../../util/helpers';
 import './EditForm.scss';
 
-const EditForm = ({currentMovie, updateMovieResponse, type}) => {
+const EditForm = ({currentMovie, updateMovieResponse, type, password, addAnother}) => {
   const { inputs, handleInputChange, getState } = useEditForm(currentMovie);
 
-  const ErrorMessage = ({message}) => (<p style={{color: 'red'}}>{message}</p>);
+  const ErrorMessage = ({message}) => {
+    const errorRef = useRef('error');
+    useEffect(() => {
+      if (errorRef.current) {
+        errorRef.current.scrollIntoView();
+      }
+    }, [])
+    return (<p ref={errorRef} style={{color: 'red'}}>{message}</p>)
+  };
+
   const initialErrors = {
+    id: null,
     password: null,
     field: null,
     poster: null,
@@ -23,6 +34,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
   }
 
     const [errors, setErrors] = useState(initialErrors);
+    const [isAuthenticated, setAuthentication] = useState(false);
     const [success, setSuccess] = useState(false);
 
     const { genres, handleGenreChange } = useGenreSelectors(currentMovie? currentMovie.genres : null);
@@ -34,7 +46,29 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
 
   
     if (success) {
-    return <Redirect to={`/movie/${currentMovie.id}-${currentMovie.title.replaceAll(' ', '-').toLowerCase()}`} />
+    return(
+      <div className="success-message-div">
+          <h2>Congrats! It worked!</h2>
+          {type === "NEW" && <button
+          className="header-style-font"
+          onClick={() => {addAnother()}}
+          >Want to add another?</button>}
+          <img
+          src="https://media.giphy.com/media/2kYsTdwakE2QgoCr8S/giphy.gif"
+          alt="Dorothy and the Winkies dancing in celebration."
+          loading="eager"
+          />
+          <Link to={`/movie/${currentMovie.id}-${encodeURI(currentMovie.title.toLowerCase())}`} 
+          className="header-style-font"
+          >See Changes</Link>
+      </div>
+    )
+  }
+
+  if (!isAuthenticated) {
+    return (<>
+      <PasswordForm setAuth={setAuthentication} />
+    </>)
   }
 
   const handleSubmit = (e) => {
@@ -65,10 +99,10 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
     }
     setErrors(initialErrors);
     const shouldAddNewMovie = type === 'NEW' ? true : false;
-    updateMovie(movie, shouldAddNewMovie)
+    updateMovie(movie, shouldAddNewMovie, password)
     .then(movie => { 
-      updateMovieResponse(movie);
       setSuccess(true);
+      updateMovieResponse(movie);
     })
     .catch(errors =>{ 
       console.error('Error updating movie',errors)
@@ -82,18 +116,8 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
     onSubmit={handleSubmit}
     style={{display: "flex", "flexDirection": "column", "overflowX": "hidden"}}
     >
-      <label htmlFor="password">Password</label>
-      <input
-        type="password"
-        name="password"
-        required
-        autoComplete="true"
-        value={inputs.password || ''}
-        onChange={handleInputChange}
-      />
-      {errors.password && <ErrorMessage message={errors.password} />}
       {errors.field && <ErrorMessage message={errors.field} />}
-      <label htmlFor="id">ID</label>
+      <label className="header-style-font" htmlFor="id">Movie ID</label>
       <input
         type="number"
         required
@@ -104,7 +128,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
       />
       {errors.id && <ErrorMessage message={errors.id} />}
 
-      <label htmlFor="title">Title</label>
+      <label className="header-style-font" htmlFor="title">Title</label>
       <input 
       type="text"
       required
@@ -114,7 +138,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
       onChange={handleInputChange}
       />
 
-      <label htmlFor="overview">Overview</label>
+      <label className="header-style-font" htmlFor="overview">Overview</label>
       <textarea
         type="textarea"
         required
@@ -125,7 +149,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
         style={{"minHeight": "10%"}}
       />
 
-      <label htmlFor="release_date">Release Date</label>
+      <label className="header-style-font" htmlFor="release_date">Release Date</label>
       <input
         type="date"
         required
@@ -135,7 +159,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
         style={{"minHeight": "25px"}}
       />
 
-      <label htmlFor="video_key">Youtube Video Key</label>
+      <label className="header-style-font" htmlFor="video_key">Youtube Video Key</label>
       <input
         type="text"
         max="11"
@@ -147,7 +171,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
         onChange={handleInputChange}
       />
 
-      <label htmlFor="watch_data">Watch Data</label>
+      <label className="header-style-font" htmlFor="watch_data">Watch Data</label>
       <input
         type="text"
         name="watch_data"
@@ -155,7 +179,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
         onChange={handleInputChange}
       />
 
-      <label htmlFor="runtime">Runtime</label>
+      <label className="header-style-font" htmlFor="runtime">Runtime</label>
       <input
         type="number"
         required
@@ -165,7 +189,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
         value={inputs.runtime}
         onChange={handleInputChange}
       />
-      <label htmlFor="poster_path">Poster Path</label>
+      <label className="header-style-font" htmlFor="poster_path">Poster Path</label>
       <input
         type="text"
         required
@@ -176,7 +200,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
       />
       {errors.poster && <ErrorMessage message={errors.poster} />}
 
-      <label htmlFor="backdrop_path">Backrop Path</label>
+      <label  className="header-style-font"htmlFor="backdrop_path">Backrop Path</label>
       <input
         type="text"
         required
@@ -187,7 +211,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
       />
       {errors.backdrop && <ErrorMessage message={errors.backdrop} />}
 
-      <label htmlFor="seen">Has this movie been watched?</label>
+      <label className="header-style-font" htmlFor="seen">Has this movie been watched?</label>
       <div>
         <input
           checked={inputs.seen}
@@ -198,7 +222,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
         />
         </div>
 
-      <label htmlFor="date_watched">Discussion Date</label>
+      <label className="header-style-font" htmlFor="date_watched">Discussion Date</label>
       <input
         type="date"
         name="date_watched"
@@ -209,7 +233,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
       />
       {errors.watched && <ErrorMessage message={errors.watched} />}
 
-      <label htmlFor="chosen_by">Chosen by:</label>
+      <label className="header-style-font" htmlFor="chosen_by">Chosen by:</label>
       <select name="chosen_by" 
       value={inputs.chosen_by || ''}
       onChange={handleInputChange}
@@ -226,6 +250,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
         <option value="Aaron">Aaron</option>
       </select>
       {errors.chosen_by && <ErrorMessage message={errors.chosen_by} />}
+      <label className="header-style-font">Genre Categories</label>
     <div style={{"display": "flex"}}>
       <GenreSelector genres={selectedGenres} handleGenreChange={handleGenreChange} 
       />
@@ -233,6 +258,7 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
 
       <button
       type="submit"
+      className="header-style-font"
       >
         Submit
       </button>
@@ -243,7 +269,8 @@ const EditForm = ({currentMovie, updateMovieResponse, type}) => {
 
 export const mapStateToProps = state => ({
   currentMovie: state.data.currentMovie,
-})
+  password: state.data.password
+});
 
 export const mapDispatchToProps = (dispatch) => 
   bindActionCreators({ updateMovieResponse }, dispatch);

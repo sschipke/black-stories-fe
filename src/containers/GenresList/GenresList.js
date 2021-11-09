@@ -14,7 +14,7 @@ export const GenresList = ({ setCurrentMovie, setBackgroundClass, setNavSubHeade
     setNavSubHeader(null);
   });
 
-  const genreLinks =  specialGenres.map(genre => <Link key={genre.id} to={'genre/'+genre.id + '-' + genre.name.replace(' ', '_').toLocaleLowerCase()}><span>{genre.name.toUpperCase()}</span></Link>)
+  const genreLinks = specialGenres.map(genre => <Link key={genre.id} to={`/genre/${genre.id}-${encodeURI(genre.name)}`}><span>{genre.name.toUpperCase()}</span></Link>)
   return (
     <div className="genre-links-container">
       {genreLinks}

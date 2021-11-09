@@ -7,7 +7,7 @@ const ProfileCard = ({ actor }) => {
   let imageSrc = actor.profile_path ? "https://image.tmdb.org/t/p/original/" + actor.profile_path : blankPicture;
   return (
     <Link className="movie-link"
-        to={`/actor/${actor.id}-${actor.name.toLowerCase().replace(' ', '-')}`}
+        to={`/actor/${actor.id}-${encodeURI(actor.name.toLowerCase())}`}
       >
       <div className="profile-card-div">
         <img className="profile-card-image" 

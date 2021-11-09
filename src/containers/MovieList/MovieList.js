@@ -5,7 +5,8 @@ import { setNavSubHeader, setBackgroundClass } from '../../actions';
 import MovieCard from '../../components/MovieCard/MovieCard';
 import './MovieList.scss';
 
-export const MovieList = ({genreId, genreTitle, type, previouslyWatched, watchList, currentMovie, setBackgroundClass, setNavSubHeader}) => {
+export const MovieList = ({genreId, genreTitle, type, previouslyWatched, watchList, currentMovie, setBackgroundClass, setNavSubHeader, memberName}) => {
+  console.log({memberName})
   const moviesContainerRef = createRef("movieContainer");
   let specificMovies = [];
   let className;
@@ -21,7 +22,13 @@ export const MovieList = ({genreId, genreTitle, type, previouslyWatched, watchLi
   } else if (type === 'Previously Watched'){
     className = 'previously-watched'
     specificMovies = previouslyWatched.map(movie => <MovieCard movie={movie} type='Previously Watched' key={movie.id}/>)
+  } else if (memberName) {
+    className = 'previously-watched'
+    specificMovies = previouslyWatched
+      .filter(movie => (movie.chosen_by || '').toLowerCase() === memberName)
+      .map(movie => <MovieCard movie={movie} type='Previously Watched' key={movie.id}/>);
   }
+
   useEffect(() => {
     setNavSubHeader(genreTitle || type);
     setBackgroundClass(className);
