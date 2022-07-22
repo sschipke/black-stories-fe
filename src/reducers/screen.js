@@ -5,6 +5,7 @@ let initialState = {
   isLoading: false,
   background_class: "landing-page",
   search_bar_open: false,
+  pagination_page: 1,
   errors: null
 }
 
@@ -40,6 +41,12 @@ const screen = (state = initialState, action) => {
       return new_state;
     case "SET_ERRORS":
       new_state.errors = action.errors;
+      return new_state;
+    case "UPDATE_PAGINATION_PAGE":
+      new_state.pagination_page = action.paginationPage;
+      return new_state;
+    case "RESET_PAGINATION_PAGE":
+      new_state.pagination_page = 1;
       return new_state;
     default:
       return state;

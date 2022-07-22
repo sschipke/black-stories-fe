@@ -1,4 +1,5 @@
 import React, { createRef, useEffect } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { displayTwoGenres } from  '../../util/helpers';
@@ -6,6 +7,7 @@ import DirectorIcon from './DirectorIcon';
 import femaleIcon from '../../assets/icons/female_directed.svg';
 import directorIcon from '../../assets/icons/black_directed.svg';
 import './MovieCard.scss';
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 
 export const MovieCard = ({ movie, selectedGenreId, currentMovie, type }) => {
@@ -23,7 +25,6 @@ export const MovieCard = ({ movie, selectedGenreId, currentMovie, type }) => {
         movieToScrollTo.scrollIntoView({block: "center"});
       }
     }
-    return
   }
   if(type !== 'Previously Watched'){
     genres = movie.genres
@@ -42,9 +43,9 @@ export const MovieCard = ({ movie, selectedGenreId, currentMovie, type }) => {
   return (
     <Link className="movie-link" to={`/movie/${movie.id}-${encodeURI(movie.title.toLowerCase())}`}>
       <div className="movie" id={movie.id} ref={movieRef}>
-        <img
+        <LazyLoadImage
           className="card-image"
-          loading="lazy"
+          effect="blur"
           alt="movie poster"
           src={"https://image.tmdb.org/t/p/original/"+movie.poster_path}
         />

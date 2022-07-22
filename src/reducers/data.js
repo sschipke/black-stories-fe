@@ -1,17 +1,15 @@
-import unseenMovies from '../data/unseenMovies';
-import previousMovies from '../data/previousMovies';
-import { removeArticles, mapCreditsToMovies } from '../util/helpers';
-const watchList = unseenMovies.sort((movieA, movieB) => {
-      let titleA = removeArticles(movieA.title.toLowerCase());
-      let titleB = removeArticles(movieB.title.toLowerCase());
-    if (titleA < titleB) return -1;
-    if (titleA > titleB) return 1;
-    return 0;
-});
+import unseenMovies from "../data/unseenMovies";
+import previousMovies from "../data/previousMovies";
+import {
+  alphebatizeMovies,
+  mapCreditsToMovies,
+  sortByDate,
+} from "../util/helpers";
+const watchList = unseenMovies.sort(alphebatizeMovies);
 
-const previouslyWatched = previousMovies.sort((a, b)=>{
-      return Date.parse(b.date_watched) - Date.parse(a.date_watched)
-    })
+const previouslyWatched = previousMovies.sort((a, b) => {
+  return Date.parse(b.date_watched) - Date.parse(a.date_watched);
+});
 let initialState = {
   watchList: watchList,
   currentMovie: null,
@@ -21,14 +19,14 @@ let initialState = {
   areCreditsLoaded: false,
   password: "",
   isAuthenticated: false,
-  remainingAttempts: null
-}
+  remainingAttempts: null,
+};
 
 const data = (state = initialState, action) => {
   let new_state = { ...state };
   const { watchList, previouslySeen } = state;
 
-  switch(action.type) {
+  switch (action.type) {
     case "LOAD_MOVIES":
       new_state.watchList = action.movies.watchList;
       new_state.previouslySeen = action.movies.previouslyWatched;
@@ -40,31 +38,40 @@ const data = (state = initialState, action) => {
     case "SET_CURRENT_MOVIE":
       new_state.currentMovie = action.currentMovie;
       return new_state;
-      case "SET_SEARCH_TEXT":
+    case "SET_SEARCH_TEXT":
       new_state.searchText = action.searchText;
       return new_state;
     case "LOAD_MOVIE_CREDITS":
-      const credits = action.credits
+      const credits = action.credits;
       new_state.watchList = mapCreditsToMovies(watchList, credits);
       new_state.previouslySeen = mapCreditsToMovies(previouslySeen, credits);
       new_state.areCreditsLoaded = true;
-      return new_state
+      return new_state;
     case "UPDATE_MOVIE":
       const { movie } = action;
-      new_state.currentMovie = movie;
-      let watchListIndex = watchList.findIndex(m => m.id === movie.id);
-      let previouslySeenIndex = previouslySeen.findIndex(m => m.id === movie.id);
+      const { currentMovie } = state;
+      let watchListIndex = watchList.findIndex((m) => m.id === movie.id);
+      let previouslySeenIndex = previouslySeen.findIndex(
+        (m) => m.id === movie.id
+      );
+      let indexToRemove;
       if (watchListIndex > -1) {
-        new_state.watchList[watchListIndex] = movie; 
+        new_state.watchList[watchListIndex] = movie;
+        indexToRemove = watchListIndex;
       } else if (previouslySeenIndex > -1) {
         new_state.previouslySeen[previouslySeenIndex] = movie;
-      } else {
-        if (movie.seen) {
-          new_state.previouslySeen = [...previouslySeen, movie];
-        } else {
-          new_state.watchList = [...watchList, movie];
-        }
+        indexToRemove = previouslySeenIndex;
       }
+      if (movie.seen && !currentMovie.seen) {
+        new_state.previouslySeen = sortByDate([movie, ...previouslySeen]);
+        watchList.splice(indexToRemove, 1);
+        new_state.watchList = watchList.sort(alphebatizeMovies);
+      } else if (!movie.seen && currentMovie.seen) {
+        new_state.watchList = [...watchList, movie].sort(alphebatizeMovies);
+        previouslySeen.splice(indexToRemove, 1);
+        new_state.previouslySeen = sortByDate(previouslySeen);
+      }
+      new_state.currentMovie = movie;
       return new_state;
     case "SET_PASSWORD":
       const { password } = action;
