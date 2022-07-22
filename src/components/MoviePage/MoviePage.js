@@ -148,6 +148,7 @@ const MoviePage = ({
                     CHOSEN BY{" "}
                     <Link
                       className="movie-info"
+                      onClick={() => resetPaginationPage()}
                       to={`/chosen_by/${encodeURI(
                         movie.chosen_by.toLowerCase()
                       )}`}
