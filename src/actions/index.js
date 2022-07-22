@@ -61,3 +61,12 @@ export const setPassword = (password) => ({
   type: "SET_PASSWORD",
   password
 });
+
+export const updatePaginationPage = (paginationPage) => ({
+  type: "UPDATE_PAGINATION_PAGE",
+  paginationPage,
+});
+
+export const resetPaginationPage = () => ({
+  type: "RESET_PAGINATION_PAGE",
+});

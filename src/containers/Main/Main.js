@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { setNavSubHeader, setBackgroundClass } from '../../actions';
 import { determineMainImage } from '../../util/helpers';
 import './Main.scss';
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Main = ({setBackgroundClass, setNavSubHeader }) => {
   const [imageSrc] = useState(determineMainImage())
@@ -14,7 +16,12 @@ const Main = ({setBackgroundClass, setNavSubHeader }) => {
   })
 return (
     <div className="main-image-div">
-      <img className="main-image" src={imageSrc || determineMainImage()} loading="eager" alt="movie backdrop" />
+      <LazyLoadImage
+        alt={"movie backdrop"}
+        src={imageSrc || determineMainImage()}
+        className="main-image"
+        effect="blur"
+      />
     </div>
   )
 }

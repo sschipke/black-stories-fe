@@ -49,7 +49,7 @@ section {
     margin-left: 5px;
     text-transform: uppercase;
   }
-  .cast-container{
+  .cast-container {
     margin-top: 10px;
     flex-direction: column;
   }
@@ -59,13 +59,12 @@ section {
   }
 }
 .movie-view-backdrop {
-  height: auto;
-  width: auto;
-  max-width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .edit-link {
-  cursor: default
+  cursor: default;
 }
 
 @media screen and (max-width: 1024px) {
@@ -81,22 +80,22 @@ section {
   section {
     margin-left: 0;
     h1.movie-page-title {
-        overflow-wrap:break-word;
-      }
-      .movie-info {
-        line-height: 25px;
-      }
+      overflow-wrap: break-word;
+    }
+    .movie-info {
+      line-height: 25px;
+    }
     .movie-info-div {
       flex-direction: column;
       max-height: none;
       flex-direction: column-reverse;
     }
     .movie-page-genres-div {
-    width: 100%;
-    height: 15%;
-    margin-bottom: 10px;
+      width: 100%;
+      height: 15%;
+      margin-bottom: 10px;
     }
-  }  
+  }
 }
 
 @media screen and (max-width: 450px) {
