@@ -86,3 +86,17 @@ export const mapCreditsToMovies = (movies, credits) => {
     return finalDate;
   }
 
+
+  export const alphebatizeMovies = (movieA, movieB) => {
+      let titleA = removeArticles(movieA.title.toLowerCase());
+      let titleB = removeArticles(movieB.title.toLowerCase());
+      if (titleA < titleB) return -1;
+      if (titleA > titleB) return 1;
+      return 0;
+  }
+
+  export const sortByDate = (previouslySeen) => {
+      return previouslySeen.sort((a, b) => {
+        return Date.parse(b.date_watched) - Date.parse(a.date_watched);
+      });
+  }
