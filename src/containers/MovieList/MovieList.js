@@ -4,15 +4,17 @@ import { bindActionCreators } from "redux";
 import {
   setNavSubHeader,
   setBackgroundClass,
-  updatePaginationPage,
+  updatePaginationPage
 } from "../../actions";
 import Pagination from "../../components/Pagination/Pagination";
 import MovieCard from "../../components/MovieCard/MovieCard";
+import loadingGif from "../../assets/gifs/loading_fist.gif";
 import "./MovieList.scss";
 
 const PAGE_SIZE = 10;
 
 export const MovieList = ({
+  areMoviesLoaded,
   genreId,
   genreTitle,
   type,
@@ -23,8 +25,10 @@ export const MovieList = ({
   setNavSubHeader,
   memberName,
   currentPage,
-  updatePaginationPage,
+  updatePaginationPage
 }) => {
+  const shouldRenderLoadingModal =
+    !areMoviesLoaded && type === "Previously Watched";
   const moviesContainerRef = createRef("movieContainer");
   let specificMovies = useMemo(() => [], []);
   let className;
@@ -66,7 +70,7 @@ export const MovieList = ({
   useEffect(() => {
     setNavSubHeader(genreTitle || type);
     setBackgroundClass(className);
-    if (type === "Previously Watched" && !currentMovie) {
+    if (type === "Previously Watched" && !currentMovie && !shouldRenderLoadingModal) {
       const currentMovieContainer = moviesContainerRef.current;
       currentMovieContainer.scrollTop = 0;
       if (
@@ -77,6 +81,14 @@ export const MovieList = ({
       }
     }
   });
+
+  if (shouldRenderLoadingModal) {
+    return (
+      <div className="previously-watched-loading-container">
+        <img className="previously-watched-modal-loading-gif" src={loadingGif} alt="loading gif" />
+      </div>
+    );
+  }
 
   return (
     <div className="movies-container" ref={moviesContainerRef}>
@@ -102,10 +114,11 @@ export const MovieList = ({
 };
 
 export const mapStateToProps = (state) => ({
+  areMoviesLoaded: state.data.areMoviesLoaded,
   watchList: state.data.watchList,
   previouslyWatched: state.data.previouslySeen,
   currentMovie: state.data.currentMovie,
-  currentPage: state.screen.pagination_page,
+  currentPage: state.screen.pagination_page
 });
 
 export const mapDispatchToProps = (dispatch) =>
@@ -113,7 +126,7 @@ export const mapDispatchToProps = (dispatch) =>
     {
       setBackgroundClass,
       setNavSubHeader,
-      updatePaginationPage,
+      updatePaginationPage
     },
     dispatch
   );

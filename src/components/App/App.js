@@ -3,6 +3,7 @@ import { connect, useDispatch, useSelector } from "react-redux";
 import { bindActionCreators } from "redux";
 import { Route, Switch } from "react-router-dom";
 import { loadCredits } from "../../actions/index";
+import { handleSessionLoad } from "../../thunks/session";
 import { getCleanCredits, fetchMovies } from "../../util/apiCalls";
 import Nav from "../../containers/Nav/Nav";
 import GenresList from "../../containers/GenresList/GenresList";
@@ -25,7 +26,8 @@ const App = ({
   loadCredits,
   watchList,
   previouslySeen,
-  areCreditsLoaded
+  areCreditsLoaded,
+  haveCheckedForSession
 }) => {
   const dispatch = useDispatch();
   const areMoviesLoaded = useSelector((state) => state.data.areMoviesLoaded);
@@ -38,7 +40,7 @@ const App = ({
           return;
         })
         .catch((err) => {
-          console.error("Error in react hook for movies", err);
+          console.error("Error in getting movies", err);
           return dispatch({ type: "FAILED_TO_LOAD_MOVIES" });
         });
     }
@@ -48,6 +50,10 @@ const App = ({
         .then((creds) => loadCredits(creds))
         .catch((e) => console.error("Error loading credits", e));
     }
+    if (!haveCheckedForSession) {
+      console.log("Checking session")
+      dispatch(handleSessionLoad())
+    }
   }, [
     areMoviesLoaded,
     dispatch,
@@ -55,6 +61,7 @@ const App = ({
     loadCredits,
     watchList,
     previouslySeen,
+    haveCheckedForSession
   ]);
 
   return (
@@ -129,6 +136,7 @@ export const mapStateToProps = (state) => ({
   previouslySeen: state.data.previouslySeen,
   subHeader: state.screen.nav_subheader,
   areCreditsLoaded: state.data.areCreditsLoaded,
+  haveCheckedForSession: state.data.haveCheckedForSession
 });
 
 export const mapDispatchToProps = (dispatch) =>

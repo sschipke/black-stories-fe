@@ -20,6 +20,7 @@ let initialState = {
   password: "",
   isAuthenticated: false,
   remainingAttempts: null,
+  haveCheckedForSession: false,
 };
 
 const data = (state = initialState, action) => {
@@ -80,6 +81,10 @@ const data = (state = initialState, action) => {
       return new_state;
     case "SET_REMAINING_ATTEMPTS":
       new_state.remainingAttempts = action.remainingAttempts;
+      return new_state;
+    case "SET_HAVE_CHECKED_FOR_SESSION":
+      const { haveChecked } = action;
+      new_state.haveCheckedForSession = haveChecked;
       return new_state;
     default:
       return state;
