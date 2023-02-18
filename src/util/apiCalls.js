@@ -156,7 +156,26 @@ export const authenticatePassword = async (password) => {
     const error = await res.json();
     throw error;
   } else {
+    return res.json();
+  }
+}
+
+export const authenticateSession = async (sessionId) => {
+  const url = noirFilmsApiUrl + "auth/sessioncheck";
+  const options = {
+    method: "POST",
+    body: JSON.stringify({ sessionId }),
+    headers: {
+      "Content-Type": "application/json",
+      Bearer: "Black Stories"
+    }
+  };
+
+  let res = await fetch(url, options);
+  if (!res.ok) {
+    const error = await res.json();
+    throw error;
+  } else {
     return true;
   }
-  
-}
+};

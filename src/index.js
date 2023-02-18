@@ -1,15 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware, compose } from "redux";
 import { Provider } from 'react-redux';
+import thunk from "redux-thunk";
 import { composeWithDevTools } from 'redux-devtools-extension';
 import rootReducer from './reducers';
 import { BrowserRouter as Router } from 'react-router-dom'
 import App from './components/App/App';
 import reportWebVitals from './reportWebVitals';
 
-let store = process.env.NODE_ENV === 'production' ? createStore(rootReducer) : createStore(rootReducer, composeWithDevTools());
+const createDevStore = () => {
+  console.log("Creating redux store with devtools.");
+  return createStore(
+    rootReducer,
+    composeWithDevTools(applyMiddleware(thunk), compose)
+  );
+};
+
+const store =
+  process.env.NODE_ENV === "production"
+    ? createStore(rootReducer, applyMiddleware(thunk))
+    : createDevStore();
 
 ReactDOM.render(
   <Router>

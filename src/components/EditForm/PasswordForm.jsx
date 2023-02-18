@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { authenticatePassword } from '../../util/apiCalls';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import { setSession } from '../../util/session';
 import { setPassword, setRemainingAttempts } from '../../actions';
 import './PasswordForm.scss';
 
@@ -20,7 +21,9 @@ const PasswordForm = ({ setAuth, setPassword, setRemainingAttempts, isAuthentica
     const password = inputValue;
     authenticatePassword(password)
     .then(res => {
-      setPassword(inputValue);
+      const { sessionId } = res;
+      setSession(sessionId);
+      setPassword(sessionId);
       setAuth(true);
     })
     .catch(error => {

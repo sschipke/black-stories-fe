@@ -70,3 +70,7 @@ export const updatePaginationPage = (paginationPage) => ({
 export const resetPaginationPage = () => ({
   type: "RESET_PAGINATION_PAGE",
 });
+
+export const setHaveCheckedForSession = (haveChecked) => ({
+  type: "SET_HAVE_CHECKED_FOR_SESSION", haveChecked
+})
